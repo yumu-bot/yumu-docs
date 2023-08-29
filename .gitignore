@@ -14,9 +14,6 @@ dist-ssr
 coverage
 *.local
 
-/cypress/videos/
-/cypress/screenshots/
-
 # Editor directories and files
 # .vscode/*
 # !.vscode/extensions.json
@@ -26,6 +23,6 @@ coverage
 # *.njsproj
 # *.sln
 # *.sw?
-# /img/*
-# /src/assets/img/*
-# /public/*
+node_modules/
+src/.vuepress/.cache/*
+src/.vuepress/.temp/*
