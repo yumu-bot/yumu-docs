@@ -25,4 +25,9 @@ export default navbar([
     icon: "network-wired",
     link: "https://bot.365246692.xyz/",
   },
+  {
+    text: "osu! 主站",
+    icon: "globe",
+    link: "https://osu.ppy.sh/home",
+  },
 ]);

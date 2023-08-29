@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: 主页
-heroImage: /hero.jpg
+heroImage: /hero.png
 bgImage: /assets/image/homeInLight.svg
 bgImageDark: /assets/image/homeInDark.svg
 bgImageStyle:
