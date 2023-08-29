@@ -23,6 +23,6 @@ export default navbar([
   {
     text: "Bot 主站",
     icon: "network-wired",
-    link: "https://theme-hope.vuejs.press/zh/",
+    link: "https://bot.365246692.xyz/",
   },
 ]);
