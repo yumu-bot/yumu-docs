@@ -9,5 +9,5 @@ icon: lightbulb
 
 ## 详情
 
-- [ray](ray.md)
+- [ray](osuTrivia.md)
 - ...

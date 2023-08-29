@@ -9,17 +9,17 @@ bgImageStyle:
   background-attachment: fixed
 heroText: Yumu Docs
 heroFullScreen: true
-tagline: 雨沐bot帮助文档
+tagline: 雨沐 Bot 帮助文档
 actions:
   - text: 使用指南 💡
-    link: ./demo/
+    link: ./help/
     type: primary
 
-  - text: 文档
-    link: ./guide/
+  - text: 小提示
+    link: ./tips/
 
-  - text: 说明
-    link: ./help/
+  - text: 其他的东西
+    link: ./demo/
 
   - text: 关于
     link: ./about/

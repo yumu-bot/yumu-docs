@@ -1,6 +1,6 @@
 ---
-title: Bar 功能
-icon: lightbulb
+title: Bot 功能
+icon: icons
 ---
 
 ## 介绍
@@ -9,5 +9,5 @@ icon: lightbulb
 
 ## 详情
 
-- [baz](baz.md)
+- [baz](botFunction.md)
 - ...

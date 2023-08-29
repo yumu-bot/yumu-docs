@@ -2,29 +2,27 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/demo/",
+  "/help/",
   {
-    text: "指南",
+    text: "小提示",
     icon: "lightbulb",
-    prefix: "/guide/",
+    prefix: "/tips/",
     children: [
       {
-        text: "Bar",
-        icon: "lightbulb",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "" }],
+        text: "Bot 功能",
+        icon: "icons",
+        link: "botFunction/",
       },
       {
-        text: "Foo",
-        icon: "lightbulb",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "" }],
+        text: "osu! 冷知识",
+        icon: "compass-drafting",
+        link: "osuTrivia/",
       },
     ],
   },
   {
-    text: "V2 文档",
-    icon: "book",
+    text: "Bot 主站",
+    icon: "network-wired",
     link: "https://theme-hope.vuejs.press/zh/",
   },
 ]);
