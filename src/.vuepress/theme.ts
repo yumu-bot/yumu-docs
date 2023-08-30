@@ -14,10 +14,17 @@ export default hopeTheme({
 
   logo: "/favicon.ico",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "http://git.365246692.xyz/bot/yumu-docs",
+  
+  repoLabel: "GitLab",
+  
+  repoDisplay: true,
+
+  editLinkPattern: ":repo/-/blob/:branch/:path",
+  
+  docsRepo:"http://git.365246692.xyz/bot/yumu-docs",
 
   docsDir: "src",
-
   // navbar
   navbar,
 
