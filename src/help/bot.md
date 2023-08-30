@@ -27,7 +27,7 @@ copyright: false
 
 !ymhelp / h (**功能分类**)
 
-- **功能分类**：需要查询的功能类别。可输入：
+- **<HopeIcon icon="table-list"/> 功能分类**：需要查询的功能类别。可输入：
   - bot / b：内部指令
   - score / s：成绩指令
   - player / p：玩家指令
@@ -61,7 +61,7 @@ copyright: false
 
 基础绑定方法是 !ymbind，然后点击链接，在==浏览器==登录、授权、从而完成绑定（如上图）。
 
-!ymbind + osuname 也可绑定，但是==无法使用绝大多数功能==。
+!ymbind + <HopeIcon icon="address-card"/> 玩家名也可绑定，但是==无法使用绝大多数功能==。
 
 :::
 

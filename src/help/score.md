@@ -27,7 +27,7 @@ copyright: false
 
 !ymmode [**游戏模式**]
 
-- **游戏模式**：必填，需要设定的默认 <HopeIcon icon="gamepad"/> 游戏模式。可输入：
+- **<HopeIcon icon="gamepad"/> 游戏模式**：必填，需要设定的默认 <HopeIcon icon="gamepad"/> 游戏模式。可输入：
   - osu / o / 0：<HopeIcon icon="circle-dot"/> 主模式，osu!standard，osu!std
   - taiko / t / 1：<HopeIcon icon="drum"/> 太鼓模式，osu!taiko
   - catch / fruits / c / 2：<HopeIcon icon="apple-whole"/> 接水果模式，osu!catch

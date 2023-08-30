@@ -30,13 +30,15 @@ star: false
 
 !yminfo / i (**`:`游戏模式**) (**玩家名称**)
 
-- **游戏模式**：需要设定的默认游戏模式。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
-- **玩家名**：需要查询的玩家名称。暂不支持使用 UID 查询。
+- **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
+- **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。暂不支持使用 UID 查询。
 
 **内容解析**
 
 - **Mocha**：玩家所查询的 <HopeIcon icon="gamepad"/> 游戏模式旗下的吉祥物名称。
-- **Recents**：玩家 BP 末五。
+- **Recents**：玩家的最近三个成绩（包括失败）。
+  - 左上角的颜色和数字表示谱面 <HopeIcon icon="star"/> 星数（SR）。
+  - 右下角的白色字符串表示成绩的 <HopeIcon icon="link"/> 连击数和 <HopeIcon icon="bullseye"/> 准确率。
 
 ::: tip 提示
 
@@ -52,7 +54,7 @@ star: false
 
 !ymimmapper / im (**玩家名称**)
 
-- **玩家名**：需要查询的玩家名称。暂不支持使用 UID 查询。
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
 
 **内容解析**
 
