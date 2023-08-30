@@ -15,7 +15,7 @@ export default navbar([
       },
       {
         text: "osu! 冷知识",
-        icon: "compass-drafting",
+        icon: "ear-listen",
         link: "osuTrivia/",
       },
     ],
