@@ -5,6 +5,8 @@ icon: info
 link: true
 category:
   - 功能介绍
+footer: Yumu Docs - 关于
+copyright: false
 ---
 ## 目录
 

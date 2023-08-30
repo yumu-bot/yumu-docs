@@ -4,6 +4,8 @@ index: false
 icon: book
 category:
   - 功能介绍
+footer: Yumu Docs - 帮助
+copyright: false
 ---
 ## 目录
 

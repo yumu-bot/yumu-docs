@@ -3,7 +3,7 @@ title: 小提示
 icon: lightbulb
 index: false
 ---
-## 小提示
+## 目录
 
 ### Bot 功能
 

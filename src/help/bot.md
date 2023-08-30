@@ -12,10 +12,12 @@ tag:
   - 内部
 sticky: false
 star: false
+footer: Yumu Docs - 内部指令
+copyright: false
 ---
 # 内部指令
 
-## <HopeIcon icon="list"/> 1 查询指令列表 !ymhelp (!h)
+## `<HopeIcon icon="list"/>` 1 查询指令列表 !ymhelp (!h)
 
 通过 QQ 群聊，查询机器人基础指令，以及以下所有模块的指令。
 
@@ -35,7 +37,7 @@ star: false
   - fun / f：娱乐指令
   - aid / a：辅助指令
 
-## <HopeIcon icon="server"/> 2 查询服务状态 !ymping (!pi)
+## `<HopeIcon icon="server"/>` 2 查询服务状态 !ymping (!pi)
 
 如果Bot在线，则会立即回复一张含 pong! 的图片。
 
@@ -45,11 +47,11 @@ star: false
 
 有时候，Bot 响应缓慢不一定是 Bot 服务器的问题，也可能是 ppy 服务器炸了。
 
-如果您还是想弄懂问题到底出在哪，可以访问 <HopeIcon icon="link"/> [ppy 服务器状态检测网站](https://status.ppy.sh/)（需要科学上网）。
+如果您还是想弄懂问题到底出在哪，可以访问 `<HopeIcon icon="link"/>` [ppy 服务器状态检测网站](https://status.ppy.sh/)（需要科学上网）。
 
 :::
 
-## <HopeIcon icon="network-wired"/> 3 绑定 osu! 玩家 !ymbind (!bi)
+## `<HopeIcon icon="network-wired"/>` 3 绑定 osu! 玩家 !ymbind (!bi)
 
 如果用户想要使用 YumuBot 的功能，则必须至少绑定一个 osu! 玩家账号。绑定方法如下。
 
@@ -65,11 +67,11 @@ star: false
 
 ::: warning 注意
 
-只有管理员可以使用 !unbind / !unbind @User 解绑。如果玩家想解绑，请 <HopeIcon icon="link"/> [==联系开发者==](../about/dev.md)。
+只有管理员可以使用 !unbind / !unbind @User 解绑。如果玩家想解绑，请 `<HopeIcon icon="link"/>` [==联系开发者==](../about/dev.md)。
 
 :::
 
-## <HopeIcon icon="ban"/> 4 封禁或解封玩家 !ymban (!bq / !bu / !bg)
+## `<HopeIcon icon="ban"/>` 4 封禁或解封玩家 !ymban (!bq / !bu / !bg)
 
 ::: warning 注意
 
@@ -79,7 +81,7 @@ star: false
 
 :::
 
-## <HopeIcon icon="sliders"/> 5 模块开关 !ymswitch (!sw)
+## `<HopeIcon icon="sliders"/>` 5 模块开关 !ymswitch (!sw)
 
 ::: warning 注意
 
@@ -87,7 +89,7 @@ star: false
 
 :::
 
-## ~~<HopeIcon icon="desktop"/> 6 刷屏限制开关 !ymantispam (!as)~~
+## ~~`<HopeIcon icon="desktop"/>` 6 刷屏限制开关 !ymantispam (!as)~~
 
 ::: info 备注
 
