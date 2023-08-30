@@ -14,6 +14,8 @@ tag:
   - 成绩
 sticky: false
 star: false
+footer: Yumu Docs - 成绩指令
+copyright: false
 ---
 # 成绩指令
 
@@ -177,7 +179,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
   - 标题右侧是玩家的该模式总 PP，括号里的灰色字是谱面 PP + <HopeIcon icon="sack-dollar"/> 奖励 PP（Bonus PP）。灰色字下方是该 <HopeIcon icon="gamepad"/> 游戏模式。
   - 下方的 <HopeIcon icon="chart-line"/> 折线图反映了玩家 BP 成绩的 PP 分布。
   - 下方的 <HopeIcon icon="chart-column"/> 条形图反映了玩家 BP 成绩的 <HopeIcon icon="clock"/> 时长（高度）以及 <HopeIcon icon="ranking-star"/> 评级（颜色）分布。
-- **Length、Combo、Star Rating**：分析玩家 BP 内 `<HopeIcon icon="clock"/>` 时长、<HopeIcon icon="link"/> 连击数、<HopeIcon icon="star"/> 星数的分布情况。
+- **Length、Combo、Star Rating**：分析玩家 BP 内 <HopeIcon icon="clock"/> 时长、<HopeIcon icon="link"/> 连击数、<HopeIcon icon="star"/> 星数的分布情况。
   - 带有 <HopeIcon icon="angles-up"/> 图标的指对应值的最大值。相应地，<HopeIcon icon="angles-down"/> 指最小值， <HopeIcon icon="minus"/> 指中位数（不是平均数！）。
   - 每个图标最下面的图片即代表了对应的成绩。
     - 图片左上方的圆圈表示 <HopeIcon icon="star"/> 星数（SR）。

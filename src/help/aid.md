@@ -13,4 +13,6 @@ tag:
   - 辅助
 sticky: false
 star: false
+footer: Yumu Docs - 辅助指令
+copyright: false
 ---

@@ -6,6 +6,8 @@ order: 2
 date: 2023-08-29
 category:
   - 指令
+footer: Yumu Docs - 指令列表
+copyright: false
 ---
 # 指令列表
 

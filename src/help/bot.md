@@ -12,6 +12,8 @@ tag:
   - 内部
 sticky: false
 star: false
+footer: Yumu Docs - 内部指令
+copyright: false
 ---
 # 内部指令
 
