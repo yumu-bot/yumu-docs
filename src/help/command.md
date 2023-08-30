@@ -1,11 +1,12 @@
 ---
 title: 指令列表
 icon: play
-author: Muziyami
+author: Muzi
+order: 2
+date: 2023-08-29
 category:
   - 指令
 ---
-
 # 指令列表
 
 - **A / audition (ymsongs)**

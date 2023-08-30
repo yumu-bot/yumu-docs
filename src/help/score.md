@@ -1,7 +1,7 @@
 ---
 title: 成绩指令
 icon: gamepad
-order: 2
+order: 4
 author: Muzi
 date: 2023-08-30
 category:
@@ -15,7 +15,6 @@ tag:
 sticky: false
 star: false
 ---
-
 # 成绩指令
 
 ![成绩指令列表](img/help-score.png)
@@ -27,10 +26,10 @@ star: false
 !ymmode [**游戏模式**]
 
 - **游戏模式**：必填，需要设定的默认游戏模式。可输入：
-    - osu / o / 0：主模式，osu!standard，osu!std
-    - taiko / t / 1：太鼓模式，osu!taiko
-    - catch / fruits / c / 2：接水果模式，osu!catch
-    - mania / m / 3：下落模式，键盘模式，osu!mania
+  - osu / o / 0：主模式，osu!standard，osu!std
+  - taiko / t / 1：太鼓模式，osu!taiko
+  - catch / fruits / c / 2：接水果模式，osu!catch
+  - mania / m / 3：下落模式，键盘模式，osu!mania
 
 ::: warning 注意
 
@@ -40,7 +39,7 @@ star: false
 
 ::: tip 提示
 
-如果事先设定了默认游戏模式，那么在之后，使用需要输入游戏模式参数的功能的情况下，可以不用通过输入`:` + 游戏模式的方式，来设定游戏模式参数。
+如果事先设定了默认游戏模式，那么在之后，使用需要输入游戏模式参数的功能的情况下，可以不用通过输入 `:` + 游戏模式的方式，来设定游戏模式参数。
 
 同样地，在这里设定的默认游戏模式，可以与玩家的主页游戏模式，或者玩家在其他 Bot 下设定的默认游戏模式不同。
 
@@ -172,7 +171,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
   - 标题右侧是玩家的该模式总 PP，括号里的灰色字是谱面 PP + 奖励 PP（Bonus PP）。灰色字下方是该游戏模式。
   - 下方的 <HopeIcon icon="chart-line"/> 折线图反映了玩家 BP 成绩的 PP 分布。
   - 下方的 <HopeIcon icon="chart-column"/> 条形图反映了玩家 BP 成绩的 <HopeIcon icon="clock"/> 时长（高度）以及 <HopeIcon icon="ranking-star"/> 评级（颜色）分布。
-- **Length、Combo、Star Rating**：分析玩家 BP 内 <HopeIcon icon="clock"/> 时长、<HopeIcon icon="link"/> 连击数、<HopeIcon icon="star"/> 星数的分布情况。
+- **Length、Combo、Star Rating**：分析玩家 BP 内 `<HopeIcon icon="clock"/>` 时长、<HopeIcon icon="link"/> 连击数、<HopeIcon icon="star"/> 星数的分布情况。
   - 带有 <HopeIcon icon="angles-up"/> 图标的指对应值的最大值。相应地，<HopeIcon icon="angles-down"/> 指最小值， <HopeIcon icon="minus"/> 指中位数（不是平均数！）。
   - 每个图标最下面的图片即代表了对应的成绩。
     - 图片左上方的圆圈表示 <HopeIcon icon="star"/> 星数（SR）。
@@ -189,4 +188,3 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 并且，据说输入某个老师和学生深入交流的游戏英文名，也可以调出此功能哦？
 
 :::
-

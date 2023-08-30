@@ -1,7 +1,7 @@
 ---
 title: 内部指令
 icon: terminal
-order: 1
+order: 3
 author: Muzi
 date: 2023-08-29
 category:
@@ -13,7 +13,6 @@ tag:
 sticky: false
 star: false
 ---
-
 # 内部指令
 
 ## <HopeIcon icon="list"/> 1 查询指令列表 !ymhelp (!h)
