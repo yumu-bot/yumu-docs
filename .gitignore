@@ -26,3 +26,4 @@ coverage
 node_modules/
 src/.vuepress/.cache/*
 src/.vuepress/.temp/*
+src/.vuepress/config.ts.5f20acfa.mjs
