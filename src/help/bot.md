@@ -57,6 +57,30 @@ copyright: false
 
 ![Bot 绑定](img/bot-bind.png)
 
+```flow:preset
+
+st=>start: 开始绑定|past:
+e=>end: 绑定成功|future:
+op1=>operation: 输入 !ymbind|past
+op2=>operation: OK 确认|check
+op3=>operation: 点击链接|current
+op4=>operation: 授权|authorise
+cond1=>condition: 是否重新绑定?|approved:
+cond2=>condition: 是否登录账号
+并授权?|authorized:
+sub1=>subroutine: 绑定失败|failed
+
+st->op1->cond1
+cond1(yes)->op2
+cond1(no)->sub1(right)->op1
+op2->op3->cond2
+cond2(yes)->op4
+cond2(no)->sub1(right)->op1
+op4->e
+
+
+```
+
 ::: tip 提示
 
 基础绑定方法是 !ymbind，然后点击链接，在==浏览器==登录、授权、从而完成绑定（如上图）。
