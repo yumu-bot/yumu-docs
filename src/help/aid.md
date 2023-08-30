@@ -1,7 +1,7 @@
 ---
 title: 辅助指令
 icon: person-circle-check
-order: 5
+order: 6
 author: Muzi
 date: 2023-08-30
 category:

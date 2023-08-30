@@ -1,6 +1,6 @@
 ---
 title: osu! 冷知识
-icon: compass-drafting
+icon: ear-listen
 ---
 
 功能详情...
