@@ -1,8 +1,8 @@
 ---
 title: 小提示
 icon: lightbulb
+index: false
 ---
-
 ## 小提示
 
 ### Bot 功能

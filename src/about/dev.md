@@ -1,7 +1,8 @@
 ---
 title: 开发人员
+author: Muzi、SIyuyuko
+icon: code
 ---
-
 ```card
 title: Muziyami
 desc: 项目主负责人

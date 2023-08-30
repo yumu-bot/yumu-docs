@@ -11,21 +11,25 @@ export default sidebar({
       children: "structure",
     },
     {
-      text: "文档",
-      icon: "book",
-      prefix: "guide/",
-      children: "structure",
-    },
-    {
       text: "帮助",
       icon: "book",
       prefix: "help/",
+      link:"help/",
       children: "structure",
+    },
+     {
+      text: "小提示",
+      icon: "lightbulb",
+      prefix: "tips/",
+      link:"tips/",
+      children:"structure",
+      // children:["botFunction"]
     },
     {
       text: "关于",
-      icon: "book",
+      icon: "info",
       prefix: "about/",
+      link: "about/",
       children: "structure",
     },
     "slides",

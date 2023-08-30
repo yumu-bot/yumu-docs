@@ -1,13 +1,6 @@
 ---
-title: Foo 功能
-icon: lightbulb
+title: osu! 冷知识
+index: false
+icon: compass-drafting
+link: false
 ---
-
-## 介绍
-
-我们支持 foo 功能，...
-
-## 详情
-
-- [ray](osuTrivia.md)
-- ...

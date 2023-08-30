@@ -1,13 +1,6 @@
 ---
 title: Bot 功能
+index: false
 icon: icons
+link: false
 ---
-
-## 介绍
-
-我们支持 bar 功能，...
-
-## 详情
-
-- [baz](botFunction.md)
-- ...
