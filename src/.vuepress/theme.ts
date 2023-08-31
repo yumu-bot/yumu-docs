@@ -1,4 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import { componentsPlugin } from "vuepress-plugin-components";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
@@ -17,7 +18,7 @@ export default hopeTheme({
 
   editLinkPattern: ":repo/-/blob/:branch/:path",
   
-  docsRepo:"http://git.365246692.xyz/bot/yumu-docs",
+  docsRepo: "http://git.365246692.xyz/bot/yumu-docs",
 
   docsDir: "src",
   // navbar
@@ -68,7 +69,7 @@ export default hopeTheme({
       katex: true,
       mark: true,
       mermaid: true,
-      card:true,
+      card: true,
       playground: {
         presets: ["ts", "vue"],
       },
@@ -92,7 +93,12 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
-
+    
+    components: {
+      "components": [
+        "AudioPlayer"
+      ]
+    }
     // uncomment these if you want a pwa
     // pwa: {
     //   favicon: "/favicon.ico",
@@ -150,4 +156,5 @@ export default hopeTheme({
     //   },
     // },
   },
+  
 });
