@@ -2,7 +2,6 @@
 title: 玩家指令
 icon: user
 order: 5
-author: Muzi
 date: 2023-08-30
 category:
   - 指令
@@ -86,13 +85,13 @@ star: false
 
 **使用方法**
 
-!ymfriend / f (**数量或区间**) (**@某某 QQ 用户**)
+!ymfriend / f (**数量或区间**) (**`@`QQ 用户**)
 
 - **<HopeIcon icon="ruler-combined"/> 数量或区间**：可以输入 1-100 内的单个值，也可以输入==差值==在 1-100 内的区间（x-y）。
   - 输入 1，就是随机查询自己的一个好友。
   - 输入 111-120，就是查询自己好友列表内第一百一十一到第一百二十个好友（<HopeIcon icon="arrow-down-a-z"/> 按首字母排列）。
   - 如果 <HopeIcon icon="circle-question"/> 不输入任何值，则默认随机查询二十个好友。
-- **<HopeIcon icon="at"/> 某 QQ 用户**
+- **<HopeIcon icon="at"/> QQ 用户**
   - 可以查询自己是否和对方互相关注（双向）。
 
 ## <HopeIcon icon="link"/> 4 查询玩家的主页链接 !ymmutual (!mu)
@@ -101,9 +100,38 @@ star: false
 
 **使用方法**
 
-!ymmutual / mu (**玩家名**) (**@某某 QQ 用户**)
+!ymmutual / mu (**玩家名**) (**`@`QQ 用户**)
 
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-- **<HopeIcon icon="at"/> 某 QQ 用户**
+- **<HopeIcon icon="at"/> QQ 用户**
   - 可以查询对方的主页链接。
 
+## <HopeIcon icon="link"/> 5 查询玩家的 PP- !ymppminus (!ppm)
+
+**PP-(PPM)** 是 YumuBot 开发的一套特殊评价系统，来从不同角度量化玩家的实力。
+
+**使用方法**
+
+!ymppminus / ppm (**`:`游戏模式**) (**玩家名称**)
+
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+
+![PPM 面板](img/bot-ppm.png)
+
+**内容解析**
+
+::: details 内容解析
+
+* **ACC**：准度，更严格的准确率评价。
+* **PTT**：潜力，与BP密度有关，这个值越低，潜力越高
+* **STA**：耐力，与BP长度有关，越高耐力越高
+* **STB**：稳定，与BP评价有关，反映了玩家的稳定能力
+* **PRE**：彩率，与BP彩率有关，反映了玩家的抓彩能力
+* **ENG**：肝力，与玩家投入了多少精力有关
+* **STH**：强度，与玩家BP谱面的密度有关
+
+* OVA：全览：
+* SAN：理智，理智低则可认为有其他音游基础
+
+:::
