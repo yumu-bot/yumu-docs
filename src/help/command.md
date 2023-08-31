@@ -1,7 +1,6 @@
 ---
 title: 指令列表
 icon: play
-author: Muzi
 order: 2
 date: 2023-08-29
 category:
