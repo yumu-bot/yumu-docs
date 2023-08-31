@@ -38,11 +38,13 @@ copyright: false
 
 ## <HopeIcon icon="server"/> 2 查询服务状态 !ymping (!pi)
 
-如果Bot在线，则会立即回复一张含 pong! 的图片。
+如果 Bot 在线，则会立即回复一张含 pong! 的图片。
 
 ![Bot 回复](img/bot-ping.png)
 
 ::: tip 提示
+
+可以利用此功能来判断 Bot 是否在线。
 
 有时候，Bot 响应缓慢不一定是 Bot 服务器的问题，也可能是 ppy 服务器炸了。
 
@@ -52,7 +54,11 @@ copyright: false
 
 ## <HopeIcon icon="network-wired"/> 3 绑定 osu! 玩家 !ymbind (!bi)
 
-如果用户想要使用 YumuBot 的功能，则必须至少绑定一个 osu! 玩家账号。绑定方法如下。
+如果用户想要使用 YumuBot 的功能，则必须至少绑定一个 osu! 玩家账号。
+
+**使用方法**
+
+!ymbind / bi
 
 ![Bot 绑定](img/bot-bind.png)
 
@@ -82,7 +88,7 @@ op4->e
 
 ::: tip 提示
 
-基础绑定方法是 !ymbind，然后点击链接，在==浏览器==登录、授权、从而完成绑定（如上图）。
+基础绑定方法是 !ymbind，然后点击链接，在浏览器登录、授权、从而完成绑定（如上图）。
 
 !ymbind + <HopeIcon icon="address-card"/> 玩家名也可绑定，但是==无法使用绝大多数功能==。
 
@@ -90,21 +96,40 @@ op4->e
 
 ::: warning 注意
 
+为了与其他 Bot 的绑定指令区分，!bind 是无法唤起 YumuBot 的。
+
 只有管理员可以使用 !unbind / !unbind @User 解绑。如果玩家想解绑，请 <HopeIcon icon="link"/> [==联系开发者==](../about/dev.md)。
 
 :::
 
 ## <HopeIcon icon="ban"/> 4 封禁或解封玩家 !ymban (!bq / !bu / !bg)
 
+::: info 备注
+
+功能尚未开发完毕。
+
+:::
+
 ::: warning 注意
 
 只有管理员可以封禁或解封玩家。
 
-一般来说，YumuBot 是免费，开放且包容的。但如果您==滥用功能、攻击 Bot 及开发者==，那么开发者将有权禁用您使用 Bot 的一切权利。
+:::
+
+::: danger 警告
+
+一般来说，YumuBot 是免费，开放且包容的。但如果您滥用功能、攻击 Bot 及开发者，那么开发者将有权收回您使用 Bot 的一切权利。
 
 :::
 
 ## <HopeIcon icon="sliders"/> 5 模块开关 !ymswitch (!sw)
+
+**使用方法**
+
+!ymswitch / sw (**功能名**)
+
+- **<HopeIcon icon="robot"/> 功能名**：可开关的功能名称。
+  - 如果记不住功能名，可以留空。Bot 会输出一张列出了所有功能的 <HopeIcon icon="image"/> 图片。
 
 ::: warning 注意
 
@@ -116,7 +141,7 @@ op4->e
 
 ::: info 备注
 
-暂未开放
+暂未开放。
 
 或者说，这个功能还没有设计的必要吧？
 

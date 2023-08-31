@@ -23,14 +23,14 @@ star: false
 
 可以查询玩家在不同模式上的游玩信息。
 
-![Info 面板](img/bot-info.png)
-
 **使用方法**
 
 !yminfo / i (**`:`游戏模式**) (**玩家名称**)
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。暂不支持使用 UID 查询。
+
+![Info 面板](img/bot-info.png)
 
 **内容解析**
 
@@ -87,7 +87,7 @@ star: false
 
 !ymfriend / f (**数量或区间**) (**`@`QQ 用户**)
 
-- **<HopeIcon icon="ruler-combined"/> 数量或区间**：可以输入 1-100 内的单个值，也可以输入==差值==在 1-100 内的区间（x-y）。
+- **<HopeIcon icon="ruler-combined"/> 数量或区间**：可以输入 1-100 内的单个值，也可以输入==差值在 1-100 内==的区间（x-y）。
   - 输入 1，就是随机查询自己的一个好友。
   - 输入 111-120，就是查询自己好友列表内第一百一十一到第一百二十个好友（<HopeIcon icon="arrow-down-a-z"/> 按首字母排列）。
   - 如果 <HopeIcon icon="circle-question"/> 不输入任何值，则默认随机查询二十个好友。
@@ -106,7 +106,7 @@ star: false
 - **<HopeIcon icon="at"/> QQ 用户**
   - 可以查询对方的主页链接。
 
-## <HopeIcon icon="link"/> 5 查询玩家的 PP- !ymppminus (!ppm)
+## <HopeIcon icon="chart-simple"/> 5 查询玩家的 PP- !ymppminus (!ppm)
 
 **PP-(PPM)** 是 YumuBot 开发的一套特殊评价系统，来从不同角度量化玩家的实力。
 
@@ -123,15 +123,15 @@ star: false
 
 ::: details 内容解析
 
-* **ACC**：准度，更严格的准确率评价。
-* **PTT**：潜力，与BP密度有关，这个值越低，潜力越高
-* **STA**：耐力，与BP长度有关，越高耐力越高
-* **STB**：稳定，与BP评价有关，反映了玩家的稳定能力
-* **PRE**：彩率，与BP彩率有关，反映了玩家的抓彩能力
-* **ENG**：肝力，与玩家投入了多少精力有关
-* **STH**：强度，与玩家BP谱面的密度有关
+* **ACC**：准度，更严格的 <HopeIcon icon="bullseye"/> 准确率评价。
+* **PTT**：潜力，与 BP <HopeIcon icon="arrow-up-right-dots"/> 密度有关。越高，说明 BP 间隙越大，打出好成绩的几率也会越高。
+* **STA**：耐力，与 BP <HopeIcon icon="clock"/> 长度有关，越高耐力越高
+* **STB**：稳定，与 BP <HopeIcon icon="ranking-star"/> 评级有关。
+* **PRE**：彩率，与 BP <HopeIcon icon="barcode"/> 彩率有关。
+* **ENG**：肝力，与玩家投入了多少 <HopeIcon icon="person-running"/> 精力（游玩次数）有关。
+* **STH**：强度，与玩家 BP 谱面内的 <HopeIcon icon="arrow-up-right-dots"/> 物件密度有关。越高，说明玩家越能应付高密度的谱面。
 
-* OVA：全览：
-* SAN：理智，理智低则可认为有其他音游基础
+* **OVA**：全览。
+* **SAN**：理智， <HopeIcon icon="brain"/> 理智低则可认为其有其他音游基础，当然也可能是小号或 <HopeIcon icon="ban"/> 作弊玩家。
 
 :::
