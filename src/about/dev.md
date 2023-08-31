@@ -1,6 +1,5 @@
 ---
 title: 开发人员
-author: Muzi、SIyuyuko
 icon: code
 footer: Yumu Docs - 开发人员
 copyright: false
