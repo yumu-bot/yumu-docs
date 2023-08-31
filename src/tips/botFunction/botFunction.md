@@ -6,4 +6,4 @@ footer: Yumu Docs - Bot 功能
 copyright: false
 ---
 谱面试听功能测试
-<AudioPlayer src="https://b.ppy.sh/preview/1790824.mp3" />
+<AudioPlayer src="/assets/audio/1789653.mp3" title="ginkiha - イクシャ・ポリスタキア（戦闘）"/>
