@@ -13,6 +13,8 @@ tag:
   - 玩家
 sticky: false
 star: false
+footer: Yumu Docs - 玩家指令
+copyright: false
 ---
 
 # 玩家指令
