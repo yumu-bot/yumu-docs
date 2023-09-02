@@ -106,7 +106,7 @@ op4->e
 
 ::: info 备注
 
-功能尚未开发完毕。
+功能尚未开发完毕，但已经可以做到差不多的效果。
 
 :::
 
@@ -126,10 +126,13 @@ op4->e
 
 **使用方法**
 
-!ymswitch / sw (**功能名**)
+!ymswitch / sw (**功能名**) (**操作**)
 
 - **<HopeIcon icon="robot"/> 功能名**：可开关的功能名称。
   - 如果记不住功能名，可以留空。Bot 会输出一张列出了所有功能的 <HopeIcon icon="image"/> 图片。
+- **<HopeIcon icon="up-down-left-right"/> 操作**：开启或关闭。
+  - on：<HopeIcon icon="toggle-on"/> 开启
+  - off：<HopeIcon icon="toggle-off"/> 关闭
 
 ::: warning 注意
 

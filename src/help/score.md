@@ -172,23 +172,23 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: details 内容解析
 
-- **Top 5 BPs**：玩家 BP 前五位。
-- **Last 5 BPs**：玩家 BP 末五位。
+- **Top 5 BPs**：玩家 BP <HopeIcon icon="arrow-up"/> 前五位。
+- **Last 5 BPs**：玩家 BP <HopeIcon icon="arrow-down"/> 末五位。
 - **Mods**：玩家 BP 内 <HopeIcon icon="music"/> 模组的分布情况。
-  - 靠中间的 <HopeIcon icon="chart-pie"/> 饼图下方依次是各个 <HopeIcon icon="music"/> 模组的名称、数量（灰色字）以及所占 PP（加权后）。这个 PP 越高，说明玩家在这个 <HopeIcon icon="music"/> 模组上越熟练。
+  - 靠中间的 <HopeIcon icon="chart-pie"/> 饼图下方依次是各个 <HopeIcon icon="music"/> 模组的名称、<HopeIcon icon="hashtag"/> 数量（灰色字）以及所占 <HopeIcon icon="medal"/> PP（加权后）。这个 <HopeIcon icon="medal"/> PP 越高，说明玩家在这个 <HopeIcon icon="music"/> 模组上越熟练。
 - **BP Distribution**：BP 分布情况。
-  - 标题右侧是玩家的该模式总 PP，括号里的灰色字是谱面 PP + <HopeIcon icon="sack-dollar"/> 奖励 PP（Bonus PP）。灰色字下方是该 <HopeIcon icon="gamepad"/> 游戏模式。
-  - 下方的 <HopeIcon icon="chart-line"/> 折线图反映了玩家 BP 成绩的 PP 分布。
+  - 标题右侧是玩家的该模式 <HopeIcon icon="medal"/> 总 PP，括号里的灰色字是 <HopeIcon icon="map"/> 谱面 PP + <HopeIcon icon="sack-dollar"/> 奖励 PP（Bonus PP）。灰色字下方是该 <HopeIcon icon="gamepad"/> 游戏模式。
+  - 下方的 <HopeIcon icon="chart-line"/> 折线图反映了玩家 BP 成绩的 <HopeIcon icon="medal"/> PP 分布。
   - 下方的 <HopeIcon icon="chart-column"/> 条形图反映了玩家 BP 成绩的 <HopeIcon icon="clock"/> 时长（高度）以及 <HopeIcon icon="ranking-star"/> 评级（颜色）分布。
 - **Length、Combo、Star Rating**：分析玩家 BP 内 <HopeIcon icon="clock"/> 时长、<HopeIcon icon="link"/> 连击数、<HopeIcon icon="star"/> 星数的分布情况。
   - 带有 <HopeIcon icon="angles-up"/> 图标的指对应值的最大值。相应地，<HopeIcon icon="angles-down"/> 指最小值， <HopeIcon icon="minus"/> 指中位数（不是平均数！）。
   - 每个图标最下面的 <HopeIcon icon="image"/> 图片即代表了对应的成绩。
-  - 图片左上方的 <HopeIcon icon="circle"/> 圆圈表示 <HopeIcon icon="star"/> 星数（SR）。
-  - 图片右上方的 <HopeIcon icon="circle"/> 圆圈表示 <HopeIcon icon="ranking-star"/> 评级（Ranking）。
-  - **Favorite Mappers**：最喜爱的谱师分布情况。
-    - 标题右侧指明了玩家的榜单上，不同的谱师数量。
-    - 谱师名称下方依次是各个谱师所制作的谱面的成绩数量，以及所占 PP（加权后）。这个 PP 越高，说明玩家越能刷这个谱师制作的谱面。
-- **Ranks**：玩家 BP 内 <HopeIcon icon="ranking-star"/> 评级（Ranking）的名称、数量以及所占 PP（加权后，灰字）。
+  - 图片 <HopeIcon icon="arrow-left"/> 左上方的 <HopeIcon icon="circle"/> 圆圈表示 <HopeIcon icon="star"/> 星数（SR）。
+  - 图片 <HopeIcon icon="arrow-right"/> 右上方的 <HopeIcon icon="circle"/> 圆圈表示 <HopeIcon icon="ranking-star"/> 评级（Ranking）。
+- **Favorite Mappers**：最喜爱的 <HopeIcon icon="user"/> 谱师分布情况。
+    - 标题右侧指明了玩家的 BP 上，<HopeIcon icon="user"/> 谱师数量总计。
+    - 谱师名称下方依次是各个谱师所制作的谱面的 <HopeIcon icon="hashtag"/> 成绩数量，以及所占 <HopeIcon icon="medal"/> PP（加权后）。这个 PP 越高，说明玩家越能刷这个谱师制作的谱面。
+- **Ranks**：玩家 BP 内 <HopeIcon icon="ranking-star"/> 评级（Ranking）的名称、数量以及所占 <HopeIcon icon="medal"/> PP（加权后，灰字）。
 
 :::
 

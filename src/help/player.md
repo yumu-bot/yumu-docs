@@ -27,7 +27,7 @@ copyright: false
 
 **使用方法**
 
-!yminfo / i (**`:`游戏模式**) (**玩家名称**)
+!yminfo / i (**`:`游戏模式**) (**玩家名**)
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。暂不支持使用 UID 查询。
@@ -69,11 +69,9 @@ copyright: false
 
 **使用方法**
 
-!ymimmapper / im (**玩家名称**)
+!ymimmapper / im (**玩家名**)
 
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-
-**内容解析**
 
 ::: info 备注
 
@@ -110,12 +108,13 @@ copyright: false
 
 ## <HopeIcon icon="chart-simple"/> 5 查询玩家的 PP- !ymppminus (!ppm)
 
-**PP-(PPM)** 是 YumuBot 开发的一套特殊评价系统，来从不同角度量化玩家的实力。
+**PP- (PPM)** 是 YumuBot 参考了 [PP+](https://syrin.me/pp+/) 等系统，开发的一套特殊评价系统，来从不同角度量化玩家的实力。
 
 **使用方法**
 
-!ymppminus / ppm (**`:`游戏模式**) (**玩家名称**)
+!ymppminus / ppm (**vs**) (**`:`游戏模式**) (**玩家名**)
 
+- **<HopeIcon icon="crown"/> vs**：如果输入，则返回自己的 PPM 数值与 <HopeIcon icon="address-card"/> 玩家对比图。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 
@@ -125,15 +124,36 @@ copyright: false
 
 ::: details 内容解析
 
-* **ACC**：准度，更严格的 <HopeIcon icon="bullseye"/> 准确率评价。
-* **PTT**：潜力，与 BP <HopeIcon icon="arrow-up-right-dots"/> 密度有关。越高，说明 BP 间隙越大，打出好成绩的几率也会越高。
-* **STA**：耐力，与 BP <HopeIcon icon="clock"/> 长度有关，越高耐力越高
-* **STB**：稳定，与 BP <HopeIcon icon="ranking-star"/> 评级有关。
-* **PRE**：彩率，与 BP <HopeIcon icon="barcode"/> 彩率有关。
-* **ENG**：肝力，与玩家投入了多少 <HopeIcon icon="person-running"/> 精力（游玩次数）有关。
-* **STH**：强度，与玩家 BP 谱面内的 <HopeIcon icon="arrow-up-right-dots"/> 物件密度有关。越高，说明玩家越能应付高密度的谱面。
-
-* **OVA**：全览。
-* **SAN**：理智， <HopeIcon icon="brain"/> 理智低则可认为其有其他音游基础，当然也可能是小号或 <HopeIcon icon="ban"/> 作弊玩家。
+- **ACC**：准度，更严格的 <HopeIcon icon="bullseye"/> 准确率评价。
+- **PTT**：潜力，与玩家 BP <HopeIcon icon="arrow-up-right-dots"/> 密度有关。越高，说明 BP 间隙越大，打出好成绩的几率也会越高。
+- **STA**：耐力，与玩家 BP <HopeIcon icon="clock"/> 长度有关，越高耐力越高
+- **STB**：稳定，与玩家 BP <HopeIcon icon="ranking-star"/> 评级有关。
+- **PRE**：彩率，与玩家 BP <HopeIcon icon="barcode"/> 彩率有关。
+- **ENG**：肝力，与玩家投入了多少 <HopeIcon icon="person-running"/> 精力（游玩次数）有关。
+- **STH**：强度，与玩家 BP 谱面内的 <HopeIcon icon="arrow-up-right-dots"/> 物件密度有关。越高，说明玩家越能应付高密度的谱面。
+- **OVA**：综合，一般来说 **90** 以上就是正常、均衡的玩家。
+- **SAN**：理智，若 <HopeIcon icon="brain"/> 理智低，则可认为该玩家有其他音游基础，当然也可能是 <HopeIcon icon="triangle-exclamation"/> 小号或 <HopeIcon icon="ban"/> 作弊玩家。
+  - SAN 右上角并不是评级，而是另一套指示方法：
+  - `+` 越多，越说明玩家的账号可能正常。
+  - `-` 越多，越说明玩家的账号可能异常，但仍在可接受范围内。
+  - `!` 越多，越说明玩家的账号可能异常。
+  - `X` 出现。表示此玩家的账号数据基本不可信。
 
 :::
+
+::: tip 提示
+
+目前 PPM 的版本是 v2.4。而且，PPM 依旧严重依赖玩家的 BP 榜单。在不久的将来，不完全依赖 BP 统计数据，而是偏向于分析成绩的 PPM3 将替代此功能。
+
+使用 !pl / !ppmlegacy 可以输出旧版（v2.2）面板。
+
+:::
+
+## ~~<HopeIcon icon="chart-simple"/> 6 查询玩家的 PP+ !ymppplus (!ppp)~~
+
+::: info 备注
+
+PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不可用。
+
+:::
+
