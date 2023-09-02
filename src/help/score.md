@@ -20,11 +20,11 @@ copyright: false
 
 ![成绩指令列表](img/help-score.png)
 
-## <HopeIcon icon="list"/> 1 修改默认游戏模式 !ymmode
+## <HopeIcon icon="list"/> 1 修改默认游戏模式 !ymmode (!sm)
 
 **使用方法**
 
-!ymmode [**游戏模式**]
+!ymmode / !sm [**游戏模式**]
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：必填，需要设定的默认 <HopeIcon icon="gamepad"/> 游戏模式。可输入：
   - osu / o / 0：<HopeIcon icon="circle-dot"/> 主模式，osu!standard，osu!std

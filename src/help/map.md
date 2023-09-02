@@ -21,7 +21,7 @@ copyright: false
 
 ![谱面指令列表](img/help-map.png)
 
-## <HopeIcon icon="map-location-dot"/> 1 查询谱面信息 !ymmap (!m)
+## ~~<HopeIcon icon="map-location-dot"/> 1 查询谱面信息 !ymmap (!m)~~
 
 可以根据成绩的一些参数（<HopeIcon icon="link"/> 连击数、<HopeIcon icon="bullseye"/> 准确率）来查询谱面的信息（<HopeIcon icon="magnifying-glass-chart"/> 四维、<HopeIcon icon="medal"/> PP）。
 
@@ -31,10 +31,9 @@ copyright: false
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：谱面的游戏模式，且只能在转谱上赋予模式。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
-- **<HopeIcon icon="bullseye"/> 准确率**：预期成绩的准确率。
-  - 可以输入 0-100 内的值。
-- **<HopeIcon icon="link"/> 连击数**：预期成绩的连击数。
-  - 可以输入大于 1 的值。
+- **<HopeIcon icon="bullseye"/> 准确率**：预期成绩的准确率。可以输入 0-100 内的值。
+  - 如果输入 0-1 之间的小数，则会乘以 100。
+- **<HopeIcon icon="link"/> 连击数**：预期成绩的连击数。可以输入大于 1 的值。
   - 如果输入 0-1 之间的小数，则表示预期获取谱面最大连击数**多少倍**的连击数。
 - **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 预期成绩内模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
 
@@ -74,3 +73,64 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 繁重功能，查询不出结果请稍后再重试，切勿刷屏查询。
 
 :::
+
+## ~~<HopeIcon icon="magnifying-glass"/> 3 搜索谱面 !ymsearch (!sh)~~
+
+**使用方法**
+
+!ymsearch / sh (**`#`谱面编号**) (**艺术家**`-`**曲名**) (**`[`难度名`]`**) (**`(`谱师`)`**) (**`+`曲风/语种**)
+
+- **<HopeIcon icon="hashtag"/> 谱面编号**：同上。
+- **<HopeIcon icon="users"/> 艺术家**：同上。
+- **<HopeIcon icon="signature"/> 曲名**：同上。
+- **<HopeIcon icon="user-graduate"/> 谱师**：同上。
+- **<HopeIcon icon="language"/> 曲风 / <HopeIcon icon="compact-disc"/> 语种**：需要查询的曲风或语种。
+  - 曲风支持：unspecified、video game、anime、rock、pop、other、novelty、hip hop、electronic、metal、classical、folk、jazz
+  - 语种支持：English、Chinese、French、German、Italian、Japanese、Korean、Spanish、Swedish、Russian、Polish、Instrumental、Unspecified、Other
+
+::: info 备注
+
+暂未开放
+
+:::
+
+## ~~<HopeIcon icon="book-bookmark"/> 4 查询课题 !ymcourse (!c)~~
+
+::: info 备注
+
+暂未开放
+
+:::
+
+## ~~<HopeIcon icon="book-bookmark"/> 5 查询段位单曲准确率 !ymdanacc (!da)~~
+
+通过计算休息段和结束时提供的准确率，得出每段的准确率。
+
+**使用方法**
+
+!ymdanacc / da (**段位谱面名**) (**准确率**)
+
+- **<HopeIcon icon="map-pin"/> 段位谱面名**：需要查询的段位谱面。
+  - 如果记不住段位谱面名，可以留空。Bot 会输出一张列出了所有段位的 <HopeIcon icon="image"/> 图片。
+- **<HopeIcon icon="bullseye"/> 准确率**：休息段和结束时，记录下来的准确率。可以输入 0-100 内的值，按空格分隔。
+  - 如果输入 0-1 之间的小数，则会乘以 100。
+  - 如果某张段位谱面有三个休息段，那么这里需要输入四个值。
+
+::: info 备注
+
+暂未开放
+
+:::
+
+## <HopeIcon icon="book-bookmark"/> 6 查询过审区的谱面列表 !ymqualified (!q)
+
+**使用方法**
+
+!ymdanacc / da (**`:`游戏模式**) (**`#`谱面状态**) (**`*`排序**) (**数量**)
+
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
+- **<HopeIcon icon="file-circle-question"/> 谱面状态**：谱面目前的状态。
+  - 可以输入的参数：graveyard, wip, pending, ranked, approved, qualified, loved，或者 g, w, p, r, a, q, l，默认是 qualified
+- **<HopeIcon icon="arrow-down-a-z"/> 排序**：结果的排序方式。
+  - 可以输入的参数：title, artist, difficulty/star, maprating, plays, ranked/time，或者 t, a, d/s, m, p, r/t
+  - 以上参数后面不加任何符号或字母，加 `+` 号、加字母 `a`、加 `_asc` 都是 <HopeIcon icon="arrow-down-a-z"/> ==升序==。以上参数后面加 `-` 号、加字母 `d`、加 `_desc` 是 <HopeIcon icon="arrow-up-a-z"/> ==降序==。
