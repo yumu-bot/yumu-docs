@@ -60,6 +60,12 @@ copyright: false
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。暂不支持使用 UID 查询。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量**：需要往前偏移几个成绩。输入 1 就是查询最近成绩的前一个成绩。
 
+::: warning 注意
+
+为了与其他 Bot 的绑定指令区分，!pr 是无法唤起 YumuBot 的。
+
+:::
+
 ::: tip 提示
 
 如果默认查询自己的成绩，或是玩家名前后不包含数字，那么偏移量前的 # 号==可以忽略==。
@@ -105,6 +111,14 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
+::: warning 注意
+
+为了与其他 Bot 的绑定指令区分，!re 是无法唤起 YumuBot 的。
+
+但是 !recent 仍旧可能与其他 Bot 冲突，建议在记忆指令时只记短链 !r。
+
+:::
+
 ::: info 备注
 
 暂时不能查询其他玩家在某张谱面上的成绩。
@@ -125,6 +139,12 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
   - 输入 1，就是查询榜上的第一个成绩。
   - 输入 1-10，就是查询榜上的第一到第十个成绩。
 
+::: warning 注意
+
+!bp 仍旧可能与其他 Bot 冲突，建议在记忆指令时只记短链 !b。
+
+:::
+
 ::: tip 提示
 
 如果默认查询自己的成绩，或是玩家名前后不包含数字，那么偏移量或区间前的 # 号==可以忽略==。
@@ -142,6 +162,12 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#_1-修改默认游戏模式-ymmode)
 - **<HopeIcon icon="calendar-days"/> 天数**：可以输入 1-999 内的值。
   - 输入 30 就是查询距今 30 天内，玩家最好成绩榜上新增的成绩。
+
+::: warning 注意
+
+!todaybp 仍旧可能与其他 Bot 冲突，建议在记忆指令时只记短链 !t。
+
+:::
 
 ::: tip 提示
 
@@ -189,6 +215,12 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
     - 标题右侧指明了玩家的 BP 上，<HopeIcon icon="user"/> 谱师数量总计。
     - 谱师名称下方依次是各个谱师所制作的谱面的 <HopeIcon icon="hashtag"/> 成绩数量，以及所占 <HopeIcon icon="medal"/> PP（加权后）。这个 PP 越高，说明玩家越能刷这个谱师制作的谱面。
 - **Ranks**：玩家 BP 内 <HopeIcon icon="ranking-star"/> 评级（Ranking）的名称、数量以及所占 <HopeIcon icon="medal"/> PP（加权后，灰字）。
+
+:::
+
+::: warning 注意
+
+!bpa 仍旧可能与其他 Bot 冲突，建议在记忆指令时只记短链 !ba。
 
 :::
 
