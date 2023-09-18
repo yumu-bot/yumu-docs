@@ -62,15 +62,15 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
   - bid / b / 留空：按谱面编号 (BID) 查询。
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID) 或谱面集编号 (SID)。
 
-::: tip 提示
+::: warning 注意
 
-也可使用 !song 调出功能。
+繁重功能，查询结果将会在 5-10 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
 
 :::
 
-::: warning 注意
+::: tip 提示
 
-繁重功能，查询不出结果请稍后再重试，切勿刷屏查询。
+也可使用 !song 调出功能。
 
 :::
 
@@ -85,8 +85,12 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 - **<HopeIcon icon="signature"/> 曲名**：同上。
 - **<HopeIcon icon="user-graduate"/> 谱师**：同上。
 - **<HopeIcon icon="language"/> 曲风 / <HopeIcon icon="compact-disc"/> 语种**：需要查询的曲风或语种。
-  - 曲风支持：unspecified、video game、anime、rock、pop、other、novelty、hip hop、electronic、metal、classical、folk、jazz
-  - 语种支持：English、Chinese、French、German、Italian、Japanese、Korean、Spanish、Swedish、Russian、Polish、Instrumental、Unspecified、Other
+  - 曲风支持：
+    - unspecified, video game, anime, rock, pop, other, novelty, hip hop, electronic, metal, classical, folk, jazz
+    - u, v, a, r, p, o, n, h, e, m, c, f, j
+  - 语种支持：
+    - English, Chinese, French, German, Italian, Japanese, Korean, Spanish, Swedish, Russian, Polish, Instrumental, Unspecified, Other
+    - en, zh/cn, fr, ge, it, ja, kr, sp, sw, ru, po, in, un, ot
 
 ::: info 备注
 
@@ -102,7 +106,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## ~~<HopeIcon icon="book-bookmark"/> 5 查询段位单曲准确率 !ymdanacc (!da)~~
+## ~~<HopeIcon icon="chart-line"/> 5 查询段位单曲准确率 !ymdanacc (!da)~~
 
 通过计算休息段和结束时提供的准确率，得出每段的准确率。
 
@@ -122,7 +126,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## <HopeIcon icon="book-bookmark"/> 6 查询过审区的谱面列表 !ymqualified (!q)
+## <HopeIcon icon="thumbs-up"/> 6 查询过审区的谱面列表 !ymqualified (!q)
 
 **使用方法**
 
@@ -134,3 +138,33 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 - **<HopeIcon icon="arrow-down-a-z"/> 排序**：结果的排序方式。
   - 可以输入的参数：title, artist, difficulty/star, maprating, plays, ranked/time，或者 t, a, d/s, m, p, r/t
   - 以上参数后面不加任何符号或字母，加 `+` 号、加字母 `a`、加 `_asc` 都是 <HopeIcon icon="arrow-down-a-z"/> ==升序==。以上参数后面加 `-` 号、加字母 `d`、加 `_desc` 是 <HopeIcon icon="arrow-up-a-z"/> ==降序==。
+
+::: warning 注意
+
+繁重功能，查询结果将会在 5-10 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
+
+:::
+
+## <HopeIcon icon="list-ol"/> 7 查询谱面排行榜 !ymleader (!l)
+
+**使用方法**
+
+!ymleader / l (**`:`游戏模式**) [**谱面编号**] (**`#`榜单类型**) (**`+`模组名称**)
+
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
+- **<HopeIcon icon="hashtag"/> 谱面编号**：同上。
+- **<HopeIcon icon="rectangle-list"/> 榜单类型**：全球榜、好友榜等。
+  - 可以输入的参数：global，friend，country，或者g、f、c
+- **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 预期成绩内模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
+
+::: warning 注意
+
+繁重功能，查询结果将会在 5-10 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
+
+:::
+
+::: info 备注
+
+API 暂未开放以上参数的使用，目前只能查询某张谱面的==全球榜==。
+
+:::
