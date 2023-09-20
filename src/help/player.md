@@ -63,7 +63,7 @@ copyright: false
 
 :::
 
-## ~~<HopeIcon icon="compass-drafting"/> 2 查询谱师信息 !ymimmapper (!im)~~
+## <HopeIcon icon="compass-drafting"/> 2 查询谱师信息 !ymimmapper (!im)
 
 可以查询玩家 <HopeIcon icon="map"/> 在制作谱面（作图，Beatmapping）方面的信息。
 
@@ -73,9 +73,33 @@ copyright: false
 
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 
-::: info 备注
+![IMapper 面板](img/bot-im.png)
 
-暂未开放
+**内容解析**
+
+::: details 内容解析
+
+- **左上角**：玩家的 <HopeIcon icon="circle-user"/> 头像、<HopeIcon icon="heading"/> 名称、玩家所属的 <HopeIcon icon="users"/> 组织。
+  - Ranked：玩家制作的 <HopeIcon icon="angles-up"/> 上架谱面数量。
+  - Pending：玩家制作的 <HopeIcon icon="circle-question"/> 待定谱面数量和当前玩家待定谱面的 <HopeIcon icon="file-circle-question"/> 总位置（不会多于此值）。
+  - Guest：玩家制作的 <HopeIcon icon="user-pen"/> 客串（上架）谱面数量。
+- **Most Popular Beatmap**：玩家制作的 <HopeIcon icon="user-check"/> 最受欢迎的前六张谱面。
+- **Genre**：玩家制作的谱面内所有关于 <HopeIcon icon="guitar"/> 曲风的 <HopeIcon icon="tag"/> 标签数量。
+- **Recent Activity**：玩家 <HopeIcon icon="hourglass"/> 最近在作图内的 <HopeIcon icon="person-walking"/> 活动。
+- **Recent Host/Guest**：玩家 <HopeIcon icon="hourglass"/> 最近的上架谱面和 <HopeIcon icon="user-pen"/> 客串（上架）谱面。
+- **右下角**：玩家的其他作图 <HopeIcon icon="chart-simple"/> 统计数据。
+  - Favorite：谱面所有 <HopeIcon icon="heart-circle-plus"/> 收藏数。
+  - Play Count：谱面所有 <HopeIcon icon="circle-play"/> 游玩数。
+  - Comment：玩家 <HopeIcon icon="comment"/> 评论数。
+  - Nominated：玩家 <HopeIcon icon="thumbs-up"/> 提名谱面的数量。
+  - Loved：玩家选入 <HopeIcon icon="heart"/> 社区心选谱面的数量。
+  - Graveyard：玩家制作的 <HopeIcon icon="cross"/> 坟场谱面。
+
+:::
+
+::: warning 注意
+
+繁重功能，查询结果将会在 5-10 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
 
 :::
 
@@ -93,6 +117,12 @@ copyright: false
   - 如果 <HopeIcon icon="circle-question"/> 不输入任何值，则默认随机查询二十个好友。
 - **<HopeIcon icon="at"/> QQ 用户**
   - 可以查询自己是否和对方互相关注（双向）。
+
+::: warning 注意
+
+繁重功能，查询结果将会在 5-10 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
+
+:::
 
 ## <HopeIcon icon="link"/> 4 查询玩家的主页链接 !ymmutual (!mu)
 
@@ -163,7 +193,6 @@ copyright: false
 ```
 
 :::
-
 
 **内容解析**
 
