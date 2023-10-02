@@ -20,7 +20,7 @@ copyright: false
 
 ![成绩指令列表](img/help-score.png)
 
-## <HopeIcon icon="list"/> 1 修改默认游戏模式 !ymmode (!sm)
+## <HopeIcon icon="list"/> 1 修改默认游戏模式 !ymmode (!sm) {id=mode}
 
 **使用方法**
 
@@ -48,7 +48,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="square-check"/> 2 查询玩家最近通过成绩 !ympass (!p)
+## <HopeIcon icon="square-check"/> 2 查询玩家最近通过成绩 !ympass (!p) {id=pass}
 
 这个功能只会查询到有效（通过）的成绩。
 
@@ -81,7 +81,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="square-xmark"/> 3 查询玩家最近成绩 !ymrecent (!r)
+## <HopeIcon icon="square-xmark"/> 3 查询玩家最近成绩 !ymrecent (!r) {id=recent}
 
 这个功能可以查询到失败的成绩。
 
@@ -93,7 +93,7 @@ copyright: false
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量**：同上。
 
-## <HopeIcon icon="square-xmark"/> 4 查询某张谱面上的成绩 !ymscore (!s)
+## <HopeIcon icon="square-xmark"/> 4 查询某张谱面上的成绩 !ymscore (!s) {id=score}
 
 这个功能可以查询到上榜（谱面已上架，且玩家游玩过）的成绩。
 
@@ -125,7 +125,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## <HopeIcon icon="angles-up"/> 5 查询玩家最好成绩 !ymbestperformance (!b)
+## <HopeIcon icon="angles-up"/> 5 查询玩家最好成绩 !ymbestperformance (!b) {id=bestperformance}
 
 这个功能可以查询到玩家最好成绩榜（BP）上的成绩。
 
@@ -151,7 +151,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## <HopeIcon icon="angles-up"/> 6 查询今日最好成绩 !ymtodaybp (!t)
+## <HopeIcon icon="angles-up"/> 6 查询今日最好成绩 !ymtodaybp (!t) {id=todaybp}
 
 这个功能可以查询到玩家今天（或直到距今天多少天前）最好成绩榜（BP）上新增的成绩。
 
@@ -181,7 +181,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## <HopeIcon icon="chart-pie"/> 7 分析最好成绩 !ymbpanalysis (!ba)
+## <HopeIcon icon="chart-pie"/> 7 分析最好成绩 !ymbpanalysis (!ba) {id=bpanalysis}
 
 这个功能可以分析玩家的最好成绩榜，从而判断玩家目前的状态，以及玩家的偏好或技巧。
 

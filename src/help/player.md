@@ -21,7 +21,7 @@ copyright: false
 
 ![玩家指令列表](img/help-player.png)
 
-## <HopeIcon icon="circle-info"/> 1 查询玩家信息 !yminfo (!i)
+## <HopeIcon icon="circle-info"/> 1 查询玩家信息 !yminfo (!i) {id=info}
 
 可以查询玩家在不同模式上的游玩信息。
 
@@ -63,7 +63,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="compass-drafting"/> 2 查询谱师信息 !ymimmapper (!im)
+## <HopeIcon icon="compass-drafting"/> 2 查询谱师信息 !ymimmapper (!im) {id=immapper}
 
 可以查询玩家 <HopeIcon icon="map"/> 在制作谱面（作图，Beatmapping）方面的信息。
 
@@ -103,7 +103,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="user-group"/> 3 查询玩家的好友列表 !ymfriend (!f)
+## <HopeIcon icon="user-group"/> 3 查询玩家的好友列表 !ymfriend (!f) {id=friend}
 
 可以查询玩家所添加（关注）的好友（不能看到双向）。
 
@@ -124,7 +124,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="link"/> 4 查询玩家的主页链接 !ymmutual (!mu)
+## <HopeIcon icon="link"/> 4 查询玩家的主页链接 !ymmutual (!mu) {id=mutual}
 
 可以查询玩家所添加（关注）的好友（不能看到双向）。
 
@@ -136,7 +136,7 @@ copyright: false
 - **<HopeIcon icon="at"/> QQ 用户**
   - 可以查询对方的主页链接。
 
-## <HopeIcon icon="chart-simple"/> 5 查询玩家的 PP- !ymppminus (!ppm)
+## <HopeIcon icon="chart-simple"/> 5 查询玩家的 PP- !ymppminus (!ppm) {id=ppminus}
 
 **PP- (PPM)** 是 YumuBot 参考了 [PP+](https://syrin.me/pp+/) 等系统，开发的一套特殊评价系统，来从不同角度量化玩家的实力。
 
@@ -223,7 +223,7 @@ copyright: false
 
 :::
 
-## ~~<HopeIcon icon="chart-simple"/> 6 查询玩家的 PP+ !ymppplus (!ppp)~~
+## ~~<HopeIcon icon="chart-simple"/> 6 查询玩家的 PP+ !ymppplus (!ppp)~~ {id=ppplus}
 
 ::: info 备注
 

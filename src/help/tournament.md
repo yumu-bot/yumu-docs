@@ -22,7 +22,7 @@ copyright: false
 
 ![比赛指令列表](img/help-tournament.png)
 
-## ~~<HopeIcon icon="house-chimney-user"/> 1 查询比赛信息 !ymmatch (!ma)~~
+## ~~<HopeIcon icon="house-chimney-user"/> 1 查询比赛信息 !ymmatch (!ma)~~ {id=match}
 
 ::: info 备注
 
@@ -30,7 +30,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="scale-balanced"/> 2 查询比赛斗力（评分） !ymrating (!ra)
+## <HopeIcon icon="scale-balanced"/> 2 查询比赛斗力（评分） !ymrating (!ra) {id=rating}
 
 通过分析比赛所有对局，来给玩家赋予一个斗力（表现评分）。
 
@@ -101,7 +101,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="house-chimney-user"/> 3 查看比赛房间信息 !ymmonitornow (!mn)
+## <HopeIcon icon="house-chimney-user"/> 3 查看比赛房间信息 !ymmonitornow (!mn) {id=monitornow}
 
 输出一张比赛房间内的情况图。
 

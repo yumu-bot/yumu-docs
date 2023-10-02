@@ -21,7 +21,7 @@ copyright: false
 
 ![谱面指令列表](img/help-map.png)
 
-## ~~<HopeIcon icon="map-location-dot"/> 1 查询谱面信息 !ymmap (!m)~~
+## ~~<HopeIcon icon="map-location-dot"/> 1 查询谱面信息 !ymmap (!m)~~ {id=map}
 
 可以根据成绩的一些参数（<HopeIcon icon="link"/> 连击数、<HopeIcon icon="bullseye"/> 准确率）来查询谱面的信息（<HopeIcon icon="magnifying-glass-chart"/> 四维、<HopeIcon icon="medal"/> PP）。
 
@@ -49,7 +49,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## <HopeIcon icon="headphones"/> 2 试听谱面 !ymaudio (!a)
+## <HopeIcon icon="headphones"/> 2 试听谱面 !ymaudio (!a) {id=audio}
 
 试听 10 秒预览。
 
@@ -74,7 +74,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## ~~<HopeIcon icon="magnifying-glass"/> 3 搜索谱面 !ymsearch (!sh)~~
+## ~~<HopeIcon icon="magnifying-glass"/> 3 搜索谱面 !ymsearch (!sh)~~ {id=search}
 
 **使用方法**
 
@@ -98,7 +98,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## ~~<HopeIcon icon="book-bookmark"/> 4 查询课题 !ymcourse (!c)~~
+## ~~<HopeIcon icon="book-bookmark"/> 4 查询课题 !ymcourse (!c)~~ {id=course}
 
 ::: info 备注
 
@@ -106,7 +106,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## ~~<HopeIcon icon="chart-line"/> 5 查询段位单曲准确率 !ymdanacc (!da)~~
+## ~~<HopeIcon icon="chart-line"/> 5 查询段位单曲准确率 !ymdanacc (!da)~~ {id=danacc}
 
 通过计算休息段和结束时提供的准确率，得出每段的准确率。
 
@@ -126,7 +126,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## <HopeIcon icon="thumbs-up"/> 6 查询过审区的谱面列表 !ymqualified (!q)
+## <HopeIcon icon="thumbs-up"/> 6 查询过审区的谱面列表 !ymqualified (!q) {id=qualified}
 
 **使用方法**
 
@@ -145,7 +145,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## <HopeIcon icon="list-ol"/> 7 查询谱面排行榜 !ymleader (!l)
+## <HopeIcon icon="list-ol"/> 7 查询谱面排行榜 !ymleader (!l) {id=leader}
 
 **使用方法**
 

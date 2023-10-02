@@ -16,7 +16,7 @@ copyright: false
 ---
 # 内部指令
 
-## <HopeIcon icon="list"/> 1 查询指令列表 !ymhelp (!h)
+## <HopeIcon icon="list"/> 1 查询指令列表 !ymhelp (!h) {id=help}
 
 通过 QQ 群聊，查询机器人基础指令，以及以下所有模块的指令。
 
@@ -36,7 +36,7 @@ copyright: false
   - fun / f：娱乐指令
   - aid / a：辅助指令
 
-## <HopeIcon icon="server"/> 2 查询服务状态 !ymping (!pi)
+## <HopeIcon icon="server"/> 2 查询服务状态 !ymping (!pi) {id=ping}
 
 如果 Bot 在线，则会立即回复一张含 pong! 的图片。
 
@@ -52,7 +52,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="network-wired"/> 3 绑定 osu! 玩家 !ymbind (!bi)
+## <HopeIcon icon="network-wired"/> 3 绑定 osu! 玩家 !ymbind (!bi) {id=bind}
 
 如果用户想要使用 YumuBot 的功能，则必须至少绑定一个 osu! 玩家账号。
 
@@ -102,7 +102,7 @@ op4->e
 
 :::
 
-## <HopeIcon icon="ban"/> 4 封禁或解封玩家 !ymban (!bq / !bu / !bg)
+## <HopeIcon icon="ban"/> 4 封禁或解封玩家 !ymban (!bq / !bu / !bg) {id=ban}
 
 ::: info 备注
 
@@ -122,7 +122,7 @@ op4->e
 
 :::
 
-## <HopeIcon icon="sliders"/> 5 模块开关 !ymswitch (!sw)
+## <HopeIcon icon="sliders"/> 5 模块开关 !ymswitch (!sw) {id=switch}
 
 **使用方法**
 
@@ -140,7 +140,7 @@ op4->e
 
 :::
 
-## ~~<HopeIcon icon="desktop"/> 6 刷屏限制开关 !ymantispam (!as)~~
+## ~~<HopeIcon icon="desktop"/> 6 刷屏限制开关 !ymantispam (!as)~~ {id=antispam}
 
 ::: info 备注
 
