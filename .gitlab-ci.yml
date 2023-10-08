@@ -11,5 +11,7 @@ stages:
 job-updae:
   stage: update
   needs: []
+  only:
+   - main
   script:
     - cd ~/code/yumu-docs && git pull && npm run docs:build
