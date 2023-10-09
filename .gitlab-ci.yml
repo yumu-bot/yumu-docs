@@ -1,14 +1,17 @@
-image: node:10.22.0
-pages:
- cache:
-   paths:
-   - node_modules/
+default:
+  tags:
+    - master
+  
+variables:
+    GIT_STRATEGY: none
 
- script:
- - yarn install # npm install
- - yarn docs:build # npm run docs:build
- artifacts:
-   paths:
-   - public
- only:
- - master
+stages:
+  - update
+
+job-updae:
+  stage: update
+  needs: []
+  only:
+   - main
+  script:
+    - cd ~/code/yumu-docs && git pull && npm run docs:build
