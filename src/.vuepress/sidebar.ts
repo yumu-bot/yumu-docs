@@ -3,13 +3,14 @@ import { sidebar } from "vuepress-theme-hope";
 export default sidebar({
   "/": [
     "",
-    {
-      text: "案例",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
-    },
+    // 开发时若需要使用demo，请临时将配置项注释解开，提交代码时把注释加回来
+    // {
+    //   text: "案例",
+    //   icon: "laptop-code",
+    //   prefix: "demo/",
+    //   link: "demo/",
+    //   children: "structure",
+    // },
     {
       text: "帮助",
       icon: "book",
@@ -32,6 +33,6 @@ export default sidebar({
       link: "about/",
       children: "structure",
     },
-    "slides",
+    // "slides",
   ],
 });

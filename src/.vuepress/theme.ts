@@ -1,7 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { componentsPlugin } from "vuepress-plugin-components";
-import navbar from "./navbar.js";
-import sidebar from "./sidebar.js";
+import navbar from "./navbar";
+import sidebar from "./sidebar";
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",

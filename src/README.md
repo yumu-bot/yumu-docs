@@ -18,9 +18,6 @@ actions:
   - text: 小提示
     link: ./tips/
 
-  - text: 其他的东西
-    link: ./demo/
-
   - text: 关于
     link: ./about/
 copyright: false
