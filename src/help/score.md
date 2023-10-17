@@ -18,7 +18,7 @@ copyright: false
 ---
 # 成绩指令
 
-![成绩指令列表](img/help-score.png)
+![成绩指令列表](https://yumemuzi.s-ul.eu/yumu/Kx38Aw86)
 
 ## <HopeIcon icon="list"/> 1 修改默认游戏模式 !ymmode (!sm) {id=mode}
 
@@ -192,7 +192,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#_1-修改默认游戏模式-ymmode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 
-![BA 面板](img/bot-ba.png)
+![BA 面板](https://yumemuzi.s-ul.eu/yumu/8YT8nqlz)
 
 **内容解析**
 

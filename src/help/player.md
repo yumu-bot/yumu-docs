@@ -19,7 +19,7 @@ copyright: false
 
 # 玩家指令
 
-![玩家指令列表](img/help-player.png)
+![玩家指令列表](https://yumemuzi.s-ul.eu/yumu/FUgH2LL9)
 
 ## <HopeIcon icon="circle-info"/> 1 查询玩家信息 !yminfo (!i) {id=info}
 
@@ -32,7 +32,7 @@ copyright: false
 - **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。暂不支持使用 UID 查询。
 
-![Info 面板](img/bot-info.png)
+![Info 面板](https://yumemuzi.s-ul.eu/yumu/oapdIlKJ)
 
 **内容解析**
 
@@ -73,7 +73,7 @@ copyright: false
 
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 
-![IMapper 面板](img/bot-im.png)
+![IMapper 面板](https://yumemuzi.s-ul.eu/yumu/40a0Nk8I)
 
 **内容解析**
 
@@ -148,7 +148,7 @@ copyright: false
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 
-![PPM 面板](img/bot-ppm.png)
+![PPM 面板](https://yumemuzi.s-ul.eu/yumu/H5eNsjzW)
 
 ::: chart PPM
 

@@ -19,7 +19,7 @@ copyright: false
 
 # 谱面指令
 
-![谱面指令列表](img/help-map.png)
+![谱面指令列表](https://yumemuzi.s-ul.eu/yumu/EE3gCB5l)
 
 ## ~~<HopeIcon icon="map-location-dot"/> 1 查询谱面信息 !ymmap (!m)~~ {id=map}
 

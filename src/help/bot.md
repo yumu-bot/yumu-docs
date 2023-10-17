@@ -20,7 +20,7 @@ copyright: false
 
 通过 QQ 群聊，查询机器人基础指令，以及以下所有模块的指令。
 
-![帮助文档](img/help-default.png)
+![帮助文档](https://yumemuzi.s-ul.eu/yumu/HLgcWpG8)
 
 **使用方法**
 
@@ -40,7 +40,7 @@ copyright: false
 
 如果 Bot 在线，则会立即回复一张含 pong! 的图片。
 
-![Bot 回复](img/bot-ping.png)
+![Bot 回复](https://yumemuzi.s-ul.eu/yumu/8Goqv2Bm)
 
 ::: tip 提示
 
@@ -60,7 +60,7 @@ copyright: false
 
 !ymbind / bi
 
-![Bot 绑定](img/bot-bind.png)
+![Bot 绑定](https://yumemuzi.s-ul.eu/yumu/c3DP4FOB)
 
 ```flow:preset
 

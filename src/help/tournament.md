@@ -20,7 +20,7 @@ copyright: false
 
 # 比赛指令
 
-![比赛指令列表](img/help-tournament.png)
+![比赛指令列表](https://yumemuzi.s-ul.eu/yumu/zCUiDQia)
 
 ## ~~<HopeIcon icon="house-chimney-user"/> 1 查询比赛信息 !ymmatch (!ma)~~ {id=match}
 
@@ -41,7 +41,7 @@ copyright: false
 - **<HopeIcon icon="hashtag"/> 比赛编号**：必填，需要查询的比赛编号 (MATCHID)。
   - 获取方法：进入房间，点击 #multiplayer 下，BanchoBot 发送的第一条消息中的蓝色 here。之后，在弹出的网站内找到网站链接末尾的数字，即比赛编号 (MATCHID)。
 
-![获取比赛编号](img/tip-getmatchid.png)
+![获取比赛编号](https://yumemuzi.s-ul.eu/yumu/zSFydj9w)
 
 - **<HopeIcon icon="forward"/> 跳过开头**：需要跳过的开头对局数量。这适用于比赛含有**热手**等不需要统计玩家表现的开头对局。
     - 如不填写，默认为 0。想要输入后侧的参数时，也可输入 0 来占位。
@@ -52,7 +52,7 @@ copyright: false
 - **<HopeIcon icon="slash"/> r**：如果填入 r，则表示忽略重复的对局，只保留靠后的那一场。
     - 如不填写，默认统计重复的对局。
 
-![rating](img/bot-rating.png)
+![rating](https://yumemuzi.s-ul.eu/yumu/RjDOFPvP)
 
 **内容解析**
 
