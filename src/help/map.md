@@ -151,11 +151,11 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 !ymleader / l (**`:`游戏模式**) [**谱面编号**] (**`#`榜单类型**) (**`+`模组名称**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
+- ~~**<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)~~
 - **<HopeIcon icon="hashtag"/> 谱面编号**：同上。
-- **<HopeIcon icon="rectangle-list"/> 榜单类型**：全球榜、好友榜等。
-  - 可以输入的参数：global，friend，country，或者g、f、c
-- **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 预期成绩内模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
+- ~~**<HopeIcon icon="rectangle-list"/> 榜单类型**：全球榜、好友榜等。~~
+  - ~~可以输入的参数：global，friend，country，或者g、f、c~~
+- ~~**<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 预期成绩内模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。~~
 
 ::: warning 注意
 
@@ -165,6 +165,6 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: info 备注
 
-API 暂未开放以上参数的使用，目前只能查询某张谱面的==全球榜==。
+API 暂未开放以上大部分参数的使用权限。目前只能查询某张谱面的==全球榜== (!yml bid)。
 
 :::

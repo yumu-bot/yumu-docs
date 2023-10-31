@@ -48,7 +48,12 @@ copyright: false
 
 有时候，Bot 响应缓慢不一定是 Bot 服务器的问题，也可能是 ppy 服务器炸了。
 
-如果您还是想弄懂问题到底出在哪，可以访问 <HopeIcon icon="link"/> [ppy 服务器状态检测网站](https://status.ppy.sh/)（需要科学上网）。
+如果您还是想弄懂问题到底出在哪，可以访问:
+
+- <HopeIcon icon="link"/> [ppy 服务器状态检测网站](https://status.ppy.sh/)（需要科学上网）。
+- <HopeIcon icon="link"/> [==YumuBot 服务器状态检测网站（试运行）==](https://panel.365246692.xyz/status/public)
+
+![YumuBot 服务器状态检测网站](https://yumemuzi.s-ul.eu/yumu/n6sNerrk)
 
 :::
 
@@ -90,7 +95,9 @@ op4->e
 
 基础绑定方法是 !ymbind，然后点击链接，在浏览器登录、授权、从而完成绑定（如上图）。
 
-!ymbind + <HopeIcon icon="address-card"/> 玩家名也可绑定，但是==无法使用绝大多数功能==。
+不推荐使用 !ymbind + <HopeIcon icon="address-card"/> 玩家名的绑定方法，因为绝大多数功能在没有 OAuth 2.0 授权前都==无法使用==。
+
+如果您实在是只想绑定玩家名，那么必须正确回答绑定的问题。
 
 :::
 
@@ -98,7 +105,11 @@ op4->e
 
 为了与其他 Bot 的绑定指令区分，!bind 是无法唤起 YumuBot 的。
 
-只有管理员可以使用 !unbind / !unbind @User 解绑。如果玩家想解绑，请 <HopeIcon icon="link"/> [==联系开发者==](../about/dev.md)。
+只有管理员可以使用 !unbind / !unbind @User 解绑。
+
+如果玩家想解绑，请 <HopeIcon icon="link"/> [==联系开发者==](../about/dev.md)，或者可以去 <HopeIcon icon="link"/> [==个人主页/账户设置下的#开放授权页面==](https://osu.ppy.sh/home/account/edit)，撤销 YuriMumu 的访问权限。
+
+![撤销访问权限](https://yumemuzi.s-ul.eu/yumu/hKyqGQwk)
 
 :::
 
@@ -118,7 +129,7 @@ op4->e
 
 ::: danger 警告
 
-一般来说，YumuBot 是免费，开放且包容的。但如果您滥用功能、攻击 Bot 及开发者，那么开发者将有权收回您使用 Bot 的一切权利。
+一般来说，YumuBot 是免费，开放且包容的。但如果您滥用功能、言语攻击辱骂 Bot 及开发者，那么开发者将有权收回您使用 Bot 的一切权利。
 
 :::
 
