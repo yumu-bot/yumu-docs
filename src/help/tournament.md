@@ -22,7 +22,7 @@ copyright: false
 
 ![比赛指令列表](https://yumemuzi.s-ul.eu/yumu/zCUiDQia)
 
-## ~~<HopeIcon icon="house-chimney-user"/> 1 查询比赛信息 !ymmatch (!ma)~~ {id=match}
+## ~~<HopeIcon icon="elevator"/> 1 查询比赛信息 !ymmatch (!ma)~~ {id=match}
 
 ::: info 备注
 
@@ -52,7 +52,7 @@ copyright: false
 - **<HopeIcon icon="slash"/> r**：如果填入 r，则表示忽略重复的对局，只保留靠后的那一场。
     - 如不填写，默认统计重复的对局。
 
-![rating](https://yumemuzi.s-ul.eu/yumu/RjDOFPvP)
+![比赛斗力面板，指令：!ra 110482088 1](https://yumemuzi.s-ul.eu/yumu/RjDOFPvP)
 
 **内容解析**
 
@@ -65,7 +65,7 @@ copyright: false
 - **玩家个人信息卡片**：
   - 卡片左侧是玩家的 <HopeIcon icon="palette"/> 队伍颜色和 <HopeIcon icon="circle-user"/> 头像。
   - 卡片中间靠左依次是玩家的 <HopeIcon icon="heading"/> 昵称、<HopeIcon icon="person-rays"/> 比赛总分（总输出）、<HopeIcon icon="chess-king"/> 胜负和胜率、<HopeIcon icon="user-plus"/> 玩家评分排名和 <HopeIcon icon="wave-square"/> RWS。
-    - RWS 指 <HopeIcon icon="wave-square"/> 平均胜利分配，即为了所属队伍的**胜利**做出了多少贡献。有时候玩家评分很高，但不一定很有用。
+    - RWS 指 <HopeIcon icon="wave-square"/> 平均胜利分配，即为了所属队伍的**胜利**做出了多少贡献。有时候玩家评分很高，但不一定很有用。想要了解更多，请参考 <HopeIcon icon="link"/> [这里](https://baijiahao.baidu.com/s?id=1724882889457381886&wfr=spider&for=pc)。
   - 卡片中间靠右是 <HopeIcon icon="tags"/> 玩家类型和 <HopeIcon icon="sun"/> 玩家评分。
     - 玩家类型：Yumu Rating v1.2 推出的新功能，旨在更加细化地去区分玩家在比赛中所扮演的角色。目前已有 11 种大类，每种大类还有 3 种小类。
     - 玩家评分：只需要记住：==平均分是 **1** 分，毫无参与感的玩家是 **0** 分。==
@@ -95,12 +95,6 @@ copyright: false
 
 :::
 
-::: tip 提示
-
-使用 !ral / !ralegacy 可以输出旧版（v3.4）面板。
-
-:::
-
 ## <HopeIcon icon="house-chimney-user"/> 3 查看比赛房间信息 !ymmonitornow (!mn) {id=monitornow}
 
 输出一张比赛房间内的情况图。
@@ -122,4 +116,21 @@ copyright: false
 此功能的参数和 ra 完全一致。记住一个即可。
 
 :::
+
+## <HopeIcon icon="chalkboard-user"/> 4 查看比赛对局信息 !ymmatchround (!ro) {id=round}
+
+输出一张比赛房间内的某场对局图。
+
+**使用方法**
+
+!ymmatchround /!ro [**比赛编号**] (**对局位置**) (**关键字**)
+
+- **<HopeIcon icon="hashtag"/> 比赛编号**：同上。
+- **<HopeIcon icon="location-dot"/> 对局位置**：需要查询的对局场次位置。
+  - 可以输入一个整数。输入 2 就是从开始算起第二局。
+- **<HopeIcon icon="key"/> 关键字**：如果不知道具体的对局位置，可以忽略，并填写关键字的字段。
+  - 关键字查询范围：谱面的歌曲名称（罗马音）、艺术家名称（罗马音）、谱师名称、难度名称。
+
+![对局信息面板，指令：!ro 59438351 back to marie](https://yumemuzi.s-ul.eu/yumu/TYkc5KSn)
+
 

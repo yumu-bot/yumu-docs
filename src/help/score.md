@@ -2,7 +2,7 @@
 title: 成绩指令
 icon: gamepad
 order: 4
-date: 2023-08-30
+date: 2023-11-01
 category:
   - 指令
 tag:
@@ -40,25 +40,26 @@ copyright: false
 
 ::: tip 提示
 
-如果事先设定了默认 <HopeIcon icon="gamepad"/> 游戏模式，那么在之后，使用需要输入游戏模式参数的功能的情况下，可以不用通过输入 `:` + <HopeIcon icon="gamepad"/> 游戏模式的方式，来设定游戏模式参数。
+如果==事先设定了==默认 <HopeIcon icon="gamepad"/> 游戏模式，那么在之后，如果玩家想要使用需要输入游戏模式参数的功能，不需要通过输入 `:` + <HopeIcon icon="gamepad"/> 游戏模式的方式来设定参数。Bot 会==自动为您补齐==。
 
-同样地，在这里设定的默认 <HopeIcon icon="gamepad"/> 游戏模式，可以与玩家的主页游戏模式，或者玩家在其他 Bot 下设定的默认游戏模式不同。
-
-这在使用多种 Bot 查询成绩的时候尤其有效：比如仅在本 Bot 下查询接水果成绩，在其他 Bot 下查询主模式成绩等。
+同样地，在这里设定的默认 <HopeIcon icon="gamepad"/> 游戏模式，可以与玩家的主页游戏模式，或者玩家在其他 Bot 下设定的默认游戏模式不同。 这在使用多种 Bot 查询成绩的时候尤其有效：比如仅在本 Bot 下查询接水果成绩，在其他 Bot 下查询主模式成绩等。
 
 :::
 
-## <HopeIcon icon="square-check"/> 2 查询玩家最近通过成绩 !ympass (!p) {id=pass}
+## <HopeIcon icon="square-check"/> 2 查询最近通过成绩 !ympass (!p) {id=pass}
 
 这个功能只会查询到有效（通过）的成绩。
 
 **使用方法**
 
-!ympass / p (**`:`游戏模式**) (**玩家名**) (**`#`偏移量**)
+!ympass / p (**`:`游戏模式**) (**玩家名**) (**`#`偏移量或区间**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#_1-修改默认游戏模式-ymmode)
-- **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。暂不支持使用 UID 查询。
-- **<HopeIcon icon="ruler-horizontal"/> 偏移量**：需要往前偏移几个成绩。输入 1 就是查询最近成绩的前一个成绩。
+- **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
+- **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
+  - 暂不支持使用 UID 查询。
+- **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
+  - 可以输入 1~100 之间的整数，输入 2 就是查询最近成绩之前的那一个成绩。
+  - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
 
 ::: warning 注意
 
@@ -68,41 +69,51 @@ copyright: false
 
 ::: tip 提示
 
-如果默认查询自己的成绩，或是玩家名前后不包含数字，那么偏移量前的 # 号==可以忽略==。
+如果不输入玩家名称（查询自己的成绩），或是玩家名不在 1-100 这个区间内，那么偏移量前的 # 号==可以忽略==。
 
 示例：
 
 * !p SIyuyuko #3，合法，查询玩家 SIyuyuko 往前数第三个通过成绩。
 * !p SIyuyuko 3，合法，效果同上。
-* !p 970 #3，合法，查询玩家 970 往前数第三个通过成绩。
-* ==!p 970 3，非法，字段 970 会被匹配到偏移量上。==
+* !p 123 123 #3，合法，查询玩家 123 123 往前数第三个通过成绩。
+* !p 123 123，非法，后面的字段 123 会被匹配到偏移量上，但是由于偏移量超过了阈值，所以 Bot 会尝试将它视作玩家名称。
+* ==!p 12 12，非法，后面的字段 12 会被匹配到偏移量上，此时会报错。==
 
-大多数带 # 号的参数都有这种性质。请用户注意，在方便输入的同时，也要尽量避免出现非法输入。
+大多数带 # 号的参数都有这种性质。请用户注意，在省略符号以便于方便输入的同时，也要尽量避免出现非法输入。
 
 :::
 
-## <HopeIcon icon="square-xmark"/> 3 查询玩家最近成绩 !ymrecent (!r) {id=recent}
+## <HopeIcon icon="square-xmark"/> 3 查询最近成绩 !ymrecent (!r) {id=recent}
 
 这个功能可以查询到失败的成绩。
 
 **使用方法**
 
-!ymrecent / r (**`:`游戏模式**) (**玩家名**) (**`#`偏移量**)
+!ymrecent / r (**`:`游戏模式**) (**玩家名**) (**`#`偏移量或区间**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#_1-修改默认游戏模式-ymmode)
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-- **<HopeIcon icon="ruler-horizontal"/> 偏移量**：同上。
+- **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：同上。
 
-## <HopeIcon icon="square-xmark"/> 4 查询某张谱面上的成绩 !ymscore (!s) {id=score}
+::: warning 注意
 
-这个功能可以查询到上榜（谱面已上架，且玩家游玩过）的成绩。
+为了与其他 Bot 的绑定指令区分，!re 是无法唤起 YumuBot 的。
+
+!recent 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，Bot 不会提出报错信息（退避）。建议玩家只使用短命令 !r。
+
+:::
+
+## <HopeIcon icon="square-xmark"/> 4 查询谱面成绩 !ymscore (!s) {id=score}
+
+这个功能可以查询到上榜（谱面含有在线榜单，并且玩家游玩过）的成绩。
 
 **使用方法**
 
-!ymscore / s (**`:`游戏模式**) [**谱面编号**] (**`+`模组名称**)
+!ymscore / s (**`:`游戏模式**) [**谱面编号**] (**玩家名**) (**`+`模组名称**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#_1-修改默认游戏模式-ymmode)
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
 - **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
 
 ::: details 可输入的 <HopeIcon icon="music"/> 模组名称
@@ -113,19 +124,11 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: warning 注意
 
-为了与其他 Bot 的绑定指令区分，!re 是无法唤起 YumuBot 的。
-
-但是 !recent 仍旧可能与其他 Bot 冲突，建议在记忆指令时只记短链 !r。
+!score 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，Bot 不会提出报错信息（退避）。建议玩家只使用短命令 !s。
 
 :::
 
-::: info 备注
-
-暂时不能查询其他玩家在某张谱面上的成绩。
-
-:::
-
-## <HopeIcon icon="angles-up"/> 5 查询玩家最好成绩 !ymbestperformance (!b) {id=bestperformance}
+## <HopeIcon icon="angles-up"/> 5 查询最好成绩 !ymbestperformance (!b) {id=bestperformance}
 
 这个功能可以查询到玩家最好成绩榜（BP）上的成绩。
 
@@ -133,21 +136,21 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 !ymbp / b (**`:`游戏模式**) (**玩家名**) (**`#`偏移量或区间**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#_1-修改默认游戏模式-ymmode)
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-- **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：可以输入 1-100 内的单个值，也可以输入 1-100 内的区间（x-y）。
-  - 输入 1，就是查询榜上的第一个成绩。
-  - 输入 1-10，就是查询榜上的第一到第十个成绩。
+- **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
+  - 可以输入 1~100 之间的整数，输入 2 就是查询第二个最好成绩。
+  - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
 
 ::: warning 注意
 
-!bp 仍旧可能与其他 Bot 冲突，建议在记忆指令时只记短链 !b。
+!bp 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，Bot 不会提出报错信息（退避）。建议玩家只使用短命令 !b。
 
 :::
 
 ::: tip 提示
 
-如果默认查询自己的成绩，或是玩家名前后不包含数字，那么偏移量或区间前的 # 号==可以忽略==。
+如果不输入玩家名称（查询自己的成绩），或是玩家名不在 1-100 这个区间内，那么偏移量前的 # 号==可以忽略==。
 
 :::
 
@@ -157,15 +160,15 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 **使用方法**
 
-!ymtbp / t (**`:`游戏模式**) (**`#`天数**)
+!ymtodaybp / t (**`:`游戏模式**) (**`#`天数**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#_1-修改默认游戏模式-ymmode)
-- **<HopeIcon icon="calendar-days"/> 天数**：可以输入 1-999 内的值。
-  - 输入 30 就是查询距今 30 天内，玩家最好成绩榜上新增的成绩。
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
+- **<HopeIcon icon="calendar-days"/> 天数**：查询距今多少天内，玩家最好成绩榜上新增的成绩。
+  - 可以输入 1~999 之间的整数。输入 30 就是距今 30 天内。
 
 ::: warning 注意
 
-!todaybp 仍旧可能与其他 Bot 冲突，建议在记忆指令时只记短链 !t。
+!todaybp 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，Bot 不会提出报错信息（退避）。建议玩家只使用短命令 !t。
 
 :::
 
@@ -177,7 +180,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: info 备注
 
-暂时不能查询其他玩家新增的成绩。
+暂时不能查询其他玩家短时间内获得的最好成绩。
 
 :::
 
@@ -189,7 +192,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 !ymbpa / ba (**`:`游戏模式**) (**玩家名**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#_1-修改默认游戏模式-ymmode)
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 
 ![BA 面板](https://yumemuzi.s-ul.eu/yumu/8YT8nqlz)
@@ -220,13 +223,13 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: warning 注意
 
-!bpa 仍旧可能与其他 Bot 冲突，建议在记忆指令时只记短链 !ba。
+!bpa 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，Bot 不会提出报错信息（退避）。建议玩家只使用短命令 !ba。
 
 :::
 
 ::: tip 提示
 
-这个功能还有个文字版本，可以通过输入 !ymbpht / !ymbpht-i 调出。
+这个功能还有个文字版本，可以通过输入 !uuba / !uuba-i 调出。
 
 并且，据说输入某个老师和学生深入交流的游戏英文名，也可以调出此功能哦？
 

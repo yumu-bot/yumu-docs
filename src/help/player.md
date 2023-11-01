@@ -2,7 +2,7 @@
 title: 玩家指令
 icon: user
 order: 5
-date: 2023-08-30
+date: 2023-11-01
 category:
   - 指令
 tag:
@@ -29,8 +29,8 @@ copyright: false
 
 !yminfo / i (**`:`游戏模式**) (**玩家名**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
-- **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。
+- **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[游戏模式](./score.md#mode)
+- **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
   - 暂不支持使用 <HopeIcon icon="slash"/> UID 查询。
 
@@ -147,7 +147,7 @@ copyright: false
 !ymppminus / ppm (**vs**) (**`:`游戏模式**) (**玩家名**)
 
 - **<HopeIcon icon="crown"/> vs**：如果输入，则返回自己的 PPM 数值与 <HopeIcon icon="address-card"/> 玩家对比图。
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 
 ![PPM 面板](https://yumemuzi.s-ul.eu/yumu/H5eNsjzW)
@@ -220,8 +220,6 @@ copyright: false
 ::: tip 提示
 
 目前 PPM 的版本是 v2.4。而且，PPM 依旧严重依赖玩家的 BP 榜单。在不久的将来，不完全依赖 BP 统计数据，而是偏向于分析成绩的 PPM3 将替代此功能。
-
-使用 !pl / !ppmlegacy 可以输出旧版（v2.2）面板。
 
 :::
 

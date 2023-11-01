@@ -2,7 +2,7 @@
 title: 内部指令
 icon: terminal
 order: 3
-date: 2023-08-29
+date: 2023-11-01
 category:
   - 指令
 tag:
@@ -105,9 +105,9 @@ op4->e
 
 为了与其他 Bot 的绑定指令区分，!bind 是无法唤起 YumuBot 的。
 
-只有管理员可以使用 !unbind / !unbind @User 解绑。
+普通玩家可以使用 ==!unbind== 解除自己的绑定，只有管理员可以使用 !unbind <HopeIcon icon="at"/> QQ 用户的方式解除其他人的绑定。
 
-如果玩家想解绑，请 <HopeIcon icon="link"/> [==联系开发者==](../about/dev.md)，或者可以去 <HopeIcon icon="link"/> [==个人主页/账户设置下的#开放授权页面==](https://osu.ppy.sh/home/account/edit)，撤销 YuriMumu 的访问权限。
+在之前，如果普通玩家想解绑，需要 <HopeIcon icon="link"/> [==联系开发者==](../about/dev.md)，或是去 <HopeIcon icon="link"/> [==个人主页/账户设置下的#开放授权页面==](https://osu.ppy.sh/home/account/edit)，撤销 YuriMumu 的访问权限。
 
 ![撤销访问权限](https://yumemuzi.s-ul.eu/yumu/hKyqGQwk)
 

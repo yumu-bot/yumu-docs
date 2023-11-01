@@ -29,7 +29,7 @@ copyright: false
 
 !ymmap / m (**`:`游戏模式**) [**谱面编号**] (**准确率`%`**) (**连击数`x`**) (**`+`模组名称**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：谱面的游戏模式，且只能在转谱上赋予模式。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
+- **<HopeIcon icon="gamepad"/> 游戏模式**：谱面的游戏模式，且只能在转谱上赋予模式。请参阅：[游戏模式](./score.md#mode)
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
 - **<HopeIcon icon="bullseye"/> 准确率**：预期成绩的准确率。可以输入 0-100 内的值。
   - 如果输入 0-1 之间的小数，则会乘以 100。
@@ -126,18 +126,22 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## <HopeIcon icon="thumbs-up"/> 6 查询过审区的谱面列表 !ymqualified (!q) {id=qualified}
+## <HopeIcon icon="thumbs-up"/> 6 查询过审的谱面列表 !ymqualified (!q) {id=qualified}
 
 **使用方法**
 
-!ymdanacc / da (**`:`游戏模式**) (**`#`谱面状态**) (**`*`排序**) (**数量**)
+!ymqualified / q (**`:`游戏模式**) (**`#`谱面状态**) (**`*`排序**) (**数量**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
 - **<HopeIcon icon="file-circle-question"/> 谱面状态**：谱面目前的状态。
-  - 可以输入的参数：graveyard, wip, pending, ranked, approved, qualified, loved，或者 g, w, p, r, a, q, l，默认是 qualified
+  - 可以输入的参数：graveyard, wip, pending, ranked, approved, qualified, loved，或者 g, w, p, r, a, q, l，
+  - 如果留空，默认是 qualified。
 - **<HopeIcon icon="arrow-down-a-z"/> 排序**：结果的排序方式。
-  - 可以输入的参数：title, artist, difficulty/star, maprating, plays, ranked/time，或者 t, a, d/s, m, p, r/t
+  - 可以输入的参数：
+    - title, artist, difficulty/star, maprating, plays, ranked/time，或者 t, a, d/s, m, p, r/t
   - 以上参数后面不加任何符号或字母，加 `+` 号、加字母 `a`、加 `_asc` 都是 <HopeIcon icon="arrow-down-a-z"/> ==升序==。以上参数后面加 `-` 号、加字母 `d`、加 `_desc` 是 <HopeIcon icon="arrow-up-a-z"/> ==降序==。
+    - 常用参数：rd / ranked_desc：按上架时间降序，刚上架的谱面会排在最上面。
+  - 如果留空，默认是 ranked_asc：按上架时间升序，此时，刚提名的谱面会排在最上面。
 
 ::: warning 注意
 
@@ -151,7 +155,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 !ymleader / l (**`:`游戏模式**) [**谱面编号**] (**`#`榜单类型**) (**`+`模组名称**)
 
-- ~~**<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#_1-修改默认游戏模式-ymmode)~~
+- ~~**<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)~~
 - **<HopeIcon icon="hashtag"/> 谱面编号**：同上。
 - ~~**<HopeIcon icon="rectangle-list"/> 榜单类型**：全球榜、好友榜等。~~
   - ~~可以输入的参数：global，friend，country，或者g、f、c~~

@@ -2,7 +2,7 @@
 title: 指令列表
 icon: play
 order: 2
-date: 2023-08-29
+date: 2023-11-02
 category:
   - 指令
 footer: Yumu Docs - 指令列表
@@ -20,7 +20,7 @@ copyright: false
 - **H / help**
 - **I / infomation**
 - J
-- K
+- **K / kita**
 - **L / leaderboard**
 - M / map
 - N
@@ -29,7 +29,7 @@ copyright: false
 - **Q / qualified**
 - **R / recent**
 - **S / score**
-- T / tournament
+- **T / todaybp**
 - U
 - V / versus
 - W / wiki [长期更新]
@@ -39,19 +39,25 @@ copyright: false
 
 双缩写
 
+- AR / calcar
 - AS / antispam
 - **BA / bpanalysis (bpht)**
 - BG / bangroup
 - **BI / bind**
 - BQ / banqq
 - BU / banuser
+- CS / calccs
 - DW / draw
+- HP / calchp
+- **IM / immapper**
 - MA / addpool
 - MO / monitor
 - **MN / monitornow**
 - MP / mappool
 - **MU / mutual**
-- MR / mapper
+- **OA / oldavatar**
+- OD / calcod
+- **OR / overrating**
 - **PI / ping**
 - **RA / murating**
 - SB / setbanner
@@ -62,14 +68,9 @@ copyright: false
 - SP / setpanel
 - SU / super
 - **SW / switch**
-- TD / today
 - **TR / trans**
 - UM / uploadmatch
 - WC / wordcloud
 - WT / weather
-- **PPM / ppm/ppm/ppmvs**
-- PPP / ppp/ppp/pppvs
-
-没有缩写的功能
-
-- **roll**
+- **PM / ppm/ppm/ppmvs**
+- PP / ppp/ppp/pppvs
