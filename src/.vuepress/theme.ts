@@ -76,7 +76,7 @@ export default hopeTheme({
       playground: {
         presets: ["ts", "vue"],
       },
-      revealJs: true,
+      // revealJs: true,
       stylize: [
         {
           matcher: "Recommended",

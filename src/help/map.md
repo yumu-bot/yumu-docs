@@ -18,6 +18,7 @@ copyright: false
 ---
 
 # 谱面指令
+
 ![谱面指令列表](https://yumemuzi.s-ul.eu/yumu/EE3gCB5l)
 
 ## ~~<HopeIcon icon="map-location-dot"/> 1 查询谱面信息 !ymmap (!m)~~ {id=map}
@@ -72,15 +73,6 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 也可使用 !song 调出功能。
 
 :::
-
-<div class="audio-player" >
-<div class="bar">
-<input class="input-bar" v-model.trim="bid" placeholder="请输入谱面bid以试听" required>
-<button class="input-bar" @click="bid=''">清空</button>
-<button class="input-bar" @click="bid=defaultVal">还原</button>
-</div>
-<AudioPlayer :src=url+bid width="97.8%" @click="checkValue()"/>
-</div>
 
 ## ~~<HopeIcon icon="magnifying-glass"/> 3 搜索谱面 !ymsearch (!sh)~~ {id=search}
 
@@ -180,39 +172,3 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 API 暂未开放以上大部分参数的使用权限。目前只能查询某张谱面的==全球榜== (!yml bid)。
 
 :::
-
-<script setup>
-import {ref} from 'vue'
-import 'element-plus/es/components/message/style/css'
-import 'element-plus/es/components/input/style/css'
-import {ElMessage,ElInput} from 'element-plus'
-let bid=ref('3667014');
-let defaultVal=ref('3667014');//默认试听谱面
-let url=ref('https://sp.365246692.xyz/api/file/map/song/')
-function checkValue(){
-  if(!bid.value){
-    ElMessage({
-    showClose: true,
-    message: '谱面id不能为空',
-    type: 'warning',
-  });
-  }
-}
-</script>
-<style scoped>
-.audio-player{
-  display:flex;
-  flex-direction:column;
-}
-.input-bar{
-  font-size: inherit;
-  font-family: inherit;
-  border-radius: 0.5rem;
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.15);
-}
-
-.bar{
-  display:flex;
-  column-gap:20px;
-}
-</style>
