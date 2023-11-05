@@ -16,5 +16,4 @@ job-updae:
   script:
     - cd ~/code/yumu-docs 
     - git pull 
-    - echo $CORS_KEY > key
-#    - npm i && npm run docs:build
+    - npm i && npm run docs:build
