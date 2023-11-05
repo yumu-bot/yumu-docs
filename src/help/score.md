@@ -52,8 +52,12 @@ copyright: false
 
 **使用方法**
 
-!ympass / p (**`:`游戏模式**) (**玩家名**) (**`#`偏移量或区间**)
+!ympass / p (**s**) (**`:`游戏模式**) (**玩家名**) (**`#`偏移量或区间**)
 
+- **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
+  - 如果不输入任何参数，也能获取最近 20 个通过成绩（等价于 !p 1-20）。
+  - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别。
+  - 如果使用了 !ympass 或者 !pass，则后面需要加 `es`（毕竟英文复数就是这样），!p 后面只需要加 `s`。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
   - 暂不支持使用 UID 查询。
@@ -89,8 +93,11 @@ copyright: false
 
 **使用方法**
 
-!ymrecent / r (**`:`游戏模式**) (**玩家名**) (**`#`偏移量或区间**)
+!ymrecent / r (**s**) (**`:`游戏模式**) (**玩家名**) (**`#`偏移量或区间**)
 
+- **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
+  - 如果不输入任何参数，也能获取最近 20 个成绩（等价于 !r 1-20）。
+  - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：同上。
@@ -134,8 +141,11 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 **使用方法**
 
-!ymbp / b (**`:`游戏模式**) (**玩家名**) (**`#`偏移量或区间**)
+!ymbp / b (**s**) (**`:`游戏模式**) (**玩家名**) (**`#`偏移量或区间**)
 
+- **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
+  - 如果不输入任何参数，也能获取前 20 个最好成绩（等价于 !b 1-20）。
+  - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
@@ -215,8 +225,8 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
   - 图片 <HopeIcon icon="arrow-left"/> 左上方的 <HopeIcon icon="circle"/> 圆圈表示 <HopeIcon icon="star"/> 星数（SR）。
   - 图片 <HopeIcon icon="arrow-right"/> 右上方的 <HopeIcon icon="circle"/> 圆圈表示 <HopeIcon icon="ranking-star"/> 评级（Ranking）。
 - **Favorite Mappers**：最喜爱的 <HopeIcon icon="user"/> 谱师分布情况。
-    - 标题右侧指明了玩家的 BP 上，<HopeIcon icon="user"/> 谱师数量总计。
-    - 谱师名称下方依次是各个谱师所制作的谱面的 <HopeIcon icon="hashtag"/> 成绩数量，以及所占 <HopeIcon icon="medal"/> PP（加权后）。这个 PP 越高，说明玩家越能刷这个谱师制作的谱面。
+  - 标题右侧指明了玩家的 BP 上，<HopeIcon icon="user"/> 谱师数量总计。
+  - 谱师名称下方依次是各个谱师所制作的谱面的 <HopeIcon icon="hashtag"/> 成绩数量，以及所占 <HopeIcon icon="medal"/> PP（加权后）。这个 PP 越高，说明玩家越能刷这个谱师制作的谱面。
 - **Ranks**：玩家 BP 内 <HopeIcon icon="ranking-star"/> 评级（Ranking）的名称、数量以及所占 <HopeIcon icon="medal"/> PP（加权后，灰字）。
 
 :::
