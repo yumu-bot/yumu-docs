@@ -24,4 +24,4 @@ copyright: false
 
 src/.vuepress/public/assets/image/audioCover.jpg
 
-<AudioPlayer src="https://sp.365246692.xyz/api/file/map/song/3667014?key=%VITE_CORS_KEY%" title="ginkiha - イクシャ・ポリスタキア（戦闘）"/>
+<AudioPlayer src="https://sp.365246692.xyz/api/file/map/song/3667014" title="ginkiha - イクシャ・ポリスタキア（戦闘）"/>
