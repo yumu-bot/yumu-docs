@@ -52,7 +52,10 @@ export default hopeTheme({
       categoryId: "DIC_kwDOKOF_as4CZA6x",
     },
 
-    // All features are enabled for demo, only preserve features you need here
+    // md增加插件配置项，开启额外配置项需要手动安装对应依赖
+    // beta244增加feature:components: add optional pkg check
+    // 手动安装(包管理器以npm为例): npm i 依赖名
+    // 依赖名务必准确，否则主题效果不生效
     mdEnhance: {
       align: true,
       attrs: true,
@@ -66,14 +69,14 @@ export default hopeTheme({
       imgLazyload: true,
       imgSize: true,
       include: true,
-      katex: true,
+      // katex: true,
       mark: true,
-      mermaid: true,
+      // mermaid: true,
       card: true,
       playground: {
         presets: ["ts", "vue"],
       },
-      revealjs: ["highlight", "math", "search", "notes", "zoom"],
+      // revealJs: true,
       stylize: [
         {
           matcher: "Recommended",

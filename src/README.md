@@ -21,5 +21,5 @@ actions:
   - text: 关于
     link: ./about/
 copyright: false
-footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2023-present Mr.Hope
+footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | © 2021-2023 Yumubot, All Rights Reserved.
 ---
