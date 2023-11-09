@@ -56,7 +56,7 @@ copyright: false
 
 - **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
   - 如果不输入任何参数，也能获取最近 20 个通过成绩（等价于 !p 1-20）。
-  - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别。
+  - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别（==!ps 100 = !p 1-100 = !ps 1-100==）。
   - 如果使用了 !ympass 或者 !pass，则后面需要加 `es`（毕竟英文复数就是这样），!p 后面只需要加 `s`。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
@@ -87,6 +87,12 @@ copyright: false
 
 :::
 
+::: tip 提示
+
+使用 !uup 可以获取文字版消息。
+
+:::
+
 ## <HopeIcon icon="square-xmark"/> 3 查询最近成绩 !ymrecent (!r) {id=recent}
 
 这个功能可以查询到失败的成绩。
@@ -97,7 +103,7 @@ copyright: false
 
 - **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
   - 如果不输入任何参数，也能获取最近 20 个成绩（等价于 !r 1-20）。
-  - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别。
+  - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别（==!rs 100 = !r 1-100 = !rs 1-100==）。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：同上。
@@ -107,6 +113,12 @@ copyright: false
 为了与其他 Bot 的绑定指令区分，!re 是无法唤起 YumuBot 的。
 
 !recent 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，Bot 不会提出报错信息（退避）。建议玩家只使用短命令 !r。
+
+:::
+
+::: tip 提示
+
+使用 !uur 可以获取文字版消息。
 
 :::
 
@@ -145,7 +157,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 - **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
   - 如果不输入任何参数，也能获取前 20 个最好成绩（等价于 !b 1-20）。
-  - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别。
+  - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别（==!bs 100 = !b 1-100 = !bs 1-100==）。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
@@ -239,7 +251,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: tip 提示
 
-这个功能还有个文字版本，可以通过输入 !uuba / !uuba-i 调出。
+使用 !uuba / !uba (-i) 可以获取文字版消息。
 
 并且，据说输入某个老师和学生深入交流的游戏英文名，也可以调出此功能哦？
 

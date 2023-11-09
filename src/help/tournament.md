@@ -95,6 +95,12 @@ copyright: false
 
 :::
 
+::: tip 提示
+
+使用 !ura 可以获取文字版消息。
+
+:::
+
 ## <HopeIcon icon="house-chimney-user"/> 3 查看比赛房间信息 !ymmonitornow (!mn) {id=monitornow}
 
 输出一张比赛房间内的情况图。
