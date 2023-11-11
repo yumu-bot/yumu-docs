@@ -1,6 +1,6 @@
 # 注册
 
-\> 本文更新于2023年11月11日，若想得知最新或最完整的标准，请参阅：[注册·wiki](https://osu.ppy.sh/wiki/zh/Registration)
+>  本文更新于2023年11月11日，若想得知最新或最完整的标准，请参阅：[注册·wiki](https://osu.ppy.sh/wiki/zh/Registration)
 
 - 警告：拥有多个账户违反osu!规则。
 
@@ -10,3 +10,4 @@
     - 电子邮件地址。
     - 密码。
 3. 完成后，点击`Create my account!`将自动登录。
+
