@@ -40,17 +40,16 @@ copyright: false
 
 - **<HopeIcon icon="hashtag"/> 比赛编号**：必填，需要查询的比赛编号 (MATCHID)。
   - 获取方法：进入房间，点击 #multiplayer 下，BanchoBot 发送的第一条消息中的蓝色 here。之后，在弹出的网站内找到网站链接末尾的数字，即比赛编号 (MATCHID)。
-
-![获取比赛编号](https://yumemuzi.s-ul.eu/yumu/zSFydj9w)
-
 - **<HopeIcon icon="forward"/> 跳过开头**：需要跳过的开头对局数量。这适用于比赛含有**热手**等不需要统计玩家表现的开头对局。
-    - 如不填写，默认为 0。想要输入后侧的参数时，也可输入 0 来占位。
-- **<HopeIcon icon="rotate-left"/> 忽略结尾**：需要忽略的结尾对局数量。这适用于比赛含有 **TB 表演对局**等不需要统计玩家表现的结尾对局。
+    - 如不填写，默认为 0。想要输入忽略结尾的参数时，也可输入 0 来占位。
+- **<HopeIcon icon="rotate-left"/> 忽略结尾**：需要忽略的结尾对局数量。这适用于比赛含有**决胜局表演或娱乐局**等不需要统计玩家表现的结尾对局。
     - 如不填写，默认为 0。
 - **<HopeIcon icon="person-falling"/> f**：如果填入 f，则表示忽略玩家的失败成绩。
     - 如不填写，默认统计玩家的失败成绩。
 - **<HopeIcon icon="slash"/> r**：如果填入 r，则表示忽略重复的对局，只保留靠后的那一场。
     - 如不填写，默认统计重复的对局。
+
+![获取比赛编号](https://yumemuzi.s-ul.eu/yumu/zSFydj9w)
 
 ![比赛斗力面板，指令：!ra 110482088 1](https://yumemuzi.s-ul.eu/yumu/RjDOFPvP)
 
@@ -101,7 +100,45 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="house-chimney-user"/> 3 查看比赛房间信息 !ymmonitornow (!mn) {id=monitornow}
+## <HopeIcon icon="scale-balanced"/> 3 查询系列比赛斗力（评分） !ymseries (!sa) {id=series}
+
+通过分析一系列比赛的所有对局，来给玩家赋予一个斗力（表现评分）。
+
+**使用方法**
+
+!ymseries / sa [[**比赛编号**] (**跳过开头**) (**忽略结尾**)]... (**f**) (**r**)
+
+- **<HopeIcon icon="hashtag"/> 比赛编号**：同上，必填，需要查询的比赛编号 (MATCHID)。
+- **<HopeIcon icon="forward"/> 跳过开头**：同上，选填，需要跳过的开头对局数量。
+  - 如不填写，默认为 0。想要输入忽略结尾的参数时，也可输入 0 来占位。
+- **<HopeIcon icon="rotate-left"/> 忽略结尾**：同上，选填，需要忽略的结尾对局数量。
+  - 如不填写，默认为 0。
+- **<HopeIcon icon="person-falling"/> f**：如果填入 f，则表示忽略玩家的失败成绩。
+  - 如不填写，默认统计玩家的失败成绩。
+- **<HopeIcon icon="slash"/> r**：如果填入 r，则表示忽略重复的对局，只保留靠后的那一场。
+  - 如不填写，默认统计重复的对局。
+
+::: tip 提示
+
+需要按组输入 <HopeIcon icon="hashtag"/> 比赛编号、<HopeIcon icon="forward"/> 跳过开头和 <HopeIcon icon="rotate-left"/> 忽略结尾参数。当然，也可以不输入（默认为 0）。
+
+举例：
+
+- !sa 114514 0 0 1919810 0 1
+
+合法，效果等同于 !ra 114514 0 0 + !ra 1919810 0 1 合起来统计的比赛斗力（评分）。
+
+- !sa 114514 1919810 0 1 7355608 1 2147483647 2 r
+
+照样合法，等同于 !ra 114514 0 0 r + !ra 1919810 0 1 r + !ra 7355608 1 0 r + !ra 2147483647 2 0 r。
+
+f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比赛==中。
+
+使用 !usa 可以获取文字版消息。但不推荐（因为会刷屏）。
+
+:::
+
+## <HopeIcon icon="house-chimney-user"/> 4 查看比赛房间信息 !ymmonitornow (!mn) {id=monitornow}
 
 输出一张比赛房间内的情况图。
 
@@ -123,7 +160,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="chalkboard-user"/> 4 查看比赛对局信息 !ymmatchround (!ro) {id=round}
+## <HopeIcon icon="chalkboard-user"/> 5 查看比赛对局信息 !ymmatchround (!ro) {id=round}
 
 输出一张比赛房间内的某场对局图。
 
