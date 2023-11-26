@@ -33,7 +33,9 @@ copyright: false
 
 ::: tip 提示
 
-直接右键复制图片，即可粘贴到 PS 中，快速制作出面基合照。
+在电脑上使用鼠标右键复制图片，即可使用 `ctrl` + `v` 粘贴到 PS 中，快速制作出面基合照。
+
+![面基合照](https://yumemuzi.s-ul.eu/osu/7LhKYNtK)
 
 :::
 

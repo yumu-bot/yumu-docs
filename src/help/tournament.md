@@ -69,14 +69,33 @@ copyright: false
     - 玩家类型：Yumu Rating v1.2 推出的新功能，旨在更加细化地去区分玩家在比赛中所扮演的角色。目前已有 11 种大类，每种大类还有 3 种小类。
     - 玩家评分：只需要记住：==平均分是 **1** 分，毫无参与感的玩家是 **0** 分。==
 
+:::
+
+::: details 玩家类型详解
+
+在 MRA v1.2 中，玩家被分为 11 个基础类型。
+
 | 输出/评分 | 高 | 中 | 低 |
 |:-:|:-:|:-:|:-:|
 | 高 | <span style="color:#FF9800">⬤</span> 大哥 | <span style="color:#0068B7">⬤</span> 打工 | <span style="color:#9922EE">⬤</span> 抗压 |
 | 中 | <span style="color:#22AC38">⬤</span> 主力 | <span style="color:#BDBDBD">⬤</span> 普通 | <span style="color:#E4007F">⬤</span> 背锅 |
 | 低 | <span style="color:#92D050">⬤</span> 专精 | <span style="color:#00A0E9">⬤</span> 客串 | <span style="color:#EB6877">⬤</span> 小弟 |
 
-输出很高、评分很高的大哥即 <span style="color:#FFF100">⬤</span> 大爹，输出很低、评分很低的小弟即 <span style="color:#D32F2F">⬤</span> 炮灰。
+输出最靠前、评分最靠前的 <span style="color:#FF9800">⬤</span> 大哥即 <span style="color:#FFF100">⬤</span> 大爹，输出最靠后、评分最靠后的 <span style="color:#EB6877">⬤</span> 小弟即 <span style="color:#D32F2F">⬤</span> 炮灰。
 
+- <span style="color:#FFF100">⬤</span> 大爹：爹。
+- <span style="color:#FF9800">⬤</span> 大哥：评分高，输出高。不管输赢与否，已经把自己的实力完全发挥出来了。是队伍的主心骨。
+- <span style="color:#22AC38">⬤</span> 主力：评分高，输出中。上场相比于大哥稍微低了点，但在大部分对局中，仍旧能够撑起场面。
+- <span style="color:#92D050">⬤</span> 专精：评分高，输出低。能在自己擅长的谱面上发挥较好的玩家。他们会给对手打一个措手不及。
+- <span style="color:#0068B7">⬤</span> 打工：评分中，输出高。发挥尚可的全能玩家，通常他们会去填补阵容中的空缺位置。
+- <span style="color:#BDBDBD">⬤</span> 普通：评分中，输出中。一般这类玩家就代表了这一场比赛的平均水平。如果最后的
+- <span style="color:#00A0E9">⬤</span> 客串：评分中，输出低。偶尔上场的玩家，至少打出来的分数达到了平均分。
+- <span style="color:#9922EE">⬤</span> 抗压：评分低，输出高。非常罕见的类型。可以说，他们是真正的“全面型玩家”，但什么都会等于什么都打不好。
+- <span style="color:#E4007F">⬤</span> 背锅：评分低，输出中。赢了和他们没关系，输了都怪他们。
+- <span style="color:#EB6877">⬤</span> 小弟：评分低，输出低。不属于这个分段的玩家。
+- <span style="color:#D32F2F">⬤</span> 炮灰：菜。
+
+在 MRA v3.4 中，根据贡献 (RWS)，玩家被更加细致地分为 33 个扩展类型，力求给玩家最精准的评价。
 
 | 玩家类型/RWS | 贡献高 | 贡献中 | 贡献低 |
 |:-:|:-:|:-:|:-:|
@@ -100,14 +119,25 @@ copyright: false
 
 :::
 
+::: warning 注意
+
+使用 !cra 可以获取逗号分隔文件 (csv)，可以被 Excel 系列软件读取。
+
+使用 !crx 可以获取另一个格式的逗号分隔文件 (csv)。
+
+只有管理员或群主可以使用此功能。
+
+:::
+
 ## <HopeIcon icon="scale-balanced"/> 3 查询系列比赛斗力（评分） !ymseries (!sa) {id=series}
 
 通过分析一系列比赛的所有对局，来给玩家赋予一个斗力（表现评分）。
 
 **使用方法**
 
-!ymseries / sa [[**比赛编号**] (**跳过开头**) (**忽略结尾**)]... (**f**) (**r**)
+!ymseries / sa (`#`**比赛名称**`#`) [[**比赛编号**] (**跳过开头**) (**忽略结尾**)]... (**f**) (**r**)
 
+- **<HopeIcon icon="address-card"/> 比赛名称**：选填，这个名字将展现在左上角的卡片中。不填默认显示第一场比赛的名称。
 - **<HopeIcon icon="hashtag"/> 比赛编号**：同上，必填，需要查询的比赛编号 (MATCHID)。
 - **<HopeIcon icon="forward"/> 跳过开头**：同上，选填，需要跳过的开头对局数量。
   - 如不填写，默认为 0。想要输入忽略结尾的参数时，也可输入 0 来占位。
@@ -135,6 +165,14 @@ copyright: false
 f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比赛==中。
 
 使用 !usa 可以获取文字版消息。但不推荐（因为会刷屏）。
+
+:::
+
+::: warning 注意
+
+使用 !csa 可以获取逗号分隔的文件 (csv)，可以被 Excel 系列软件读取。
+
+只有管理员或群主可以使用此功能。
 
 :::
 
