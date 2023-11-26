@@ -83,14 +83,14 @@ copyright: false
 
 输出最靠前、评分最靠前的 <span style="color:#FF9800">⬤</span> 大哥即 <span style="color:#FFF100">⬤</span> 大爹，输出最靠后、评分最靠后的 <span style="color:#EB6877">⬤</span> 小弟即 <span style="color:#D32F2F">⬤</span> 炮灰。
 
-- <span style="color:#FFF100">⬤</span> 大爹：爹。
+- <span style="color:#FFF100">⬤</span> 大爹：强。
 - <span style="color:#FF9800">⬤</span> 大哥：评分高，输出高。不管输赢与否，已经把自己的实力完全发挥出来了。是队伍的主心骨。
 - <span style="color:#22AC38">⬤</span> 主力：评分高，输出中。上场相比于大哥稍微低了点，但在大部分对局中，仍旧能够撑起场面。
-- <span style="color:#92D050">⬤</span> 专精：评分高，输出低。能在自己擅长的谱面上发挥较好的玩家。他们会给对手打一个措手不及。
-- <span style="color:#0068B7">⬤</span> 打工：评分中，输出高。发挥尚可的全能玩家，通常他们会去填补阵容中的空缺位置。
-- <span style="color:#BDBDBD">⬤</span> 普通：评分中，输出中。一般这类玩家就代表了这一场比赛的平均水平。如果最后的
+- <span style="color:#92D050">⬤</span> 专精：评分高，输出低。能在自己擅长的谱面上发挥较好的玩家，能够打对手一个措手不及，拿下关键对局。
+- <span style="color:#0068B7">⬤</span> 打工：评分中，输出高。发挥尚可的全能玩家，通常会去填补阵容中的空缺位置。
+- <span style="color:#BDBDBD">⬤</span> 普通：评分中，输出中。代表了这一场比赛的平均水平。如果最后他们的总评分约等于 1.0，那就是纯正的比赛质检员了。
 - <span style="color:#00A0E9">⬤</span> 客串：评分中，输出低。偶尔上场的玩家，至少打出来的分数达到了平均分。
-- <span style="color:#9922EE">⬤</span> 抗压：评分低，输出高。非常罕见的类型。可以说，他们是真正的“全面型玩家”，但什么都会等于什么都打不好。
+- <span style="color:#9922EE">⬤</span> 抗压：评分低，输出高。非常罕见的类型。可以说，他们是真正的“全面型玩家”，但什么都会，也可能等于什么都不精通。
 - <span style="color:#E4007F">⬤</span> 背锅：评分低，输出中。赢了和他们没关系，输了都怪他们。
 - <span style="color:#EB6877">⬤</span> 小弟：评分低，输出低。不属于这个分段的玩家。
 - <span style="color:#D32F2F">⬤</span> 炮灰：菜。
