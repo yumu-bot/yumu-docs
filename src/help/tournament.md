@@ -75,24 +75,24 @@ copyright: false
 
 在 MRA v1.2 中，玩家被分为 11 个基础类型。
 
-| 输出/评分 | 高 | 中 | 低 |
+| 总分/均分 | 高 | 中 | 低 |
 |:-:|:-:|:-:|:-:|
 | 高 | <span style="color:#FF9800">⬤</span> 大哥 | <span style="color:#0068B7">⬤</span> 打工 | <span style="color:#9922EE">⬤</span> 抗压 |
 | 中 | <span style="color:#22AC38">⬤</span> 主力 | <span style="color:#BDBDBD">⬤</span> 普通 | <span style="color:#E4007F">⬤</span> 背锅 |
 | 低 | <span style="color:#92D050">⬤</span> 专精 | <span style="color:#00A0E9">⬤</span> 客串 | <span style="color:#EB6877">⬤</span> 小弟 |
 
-输出最靠前、评分最靠前的 <span style="color:#FF9800">⬤</span> 大哥即 <span style="color:#FFF100">⬤</span> 大爹，输出最靠后、评分最靠后的 <span style="color:#EB6877">⬤</span> 小弟即 <span style="color:#D32F2F">⬤</span> 炮灰。
+总分最靠前、均分最靠前的 <span style="color:#FF9800">⬤</span> 大哥即 <span style="color:#FFF100">⬤</span> 大爹，总分最靠后、均分最靠后的 <span style="color:#EB6877">⬤</span> 小弟即 <span style="color:#D32F2F">⬤</span> 炮灰。
 
 - <span style="color:#FFF100">⬤</span> 大爹：强。
-- <span style="color:#FF9800">⬤</span> 大哥：评分高，输出高。不管输赢与否，已经把自己的实力完全发挥出来了。是队伍的主心骨。
-- <span style="color:#22AC38">⬤</span> 主力：评分高，输出中。上场相比于大哥稍微低了点，但在大部分对局中，仍旧能够撑起场面。
-- <span style="color:#92D050">⬤</span> 专精：评分高，输出低。能在自己擅长的谱面上发挥较好的玩家，能够打对手一个措手不及，拿下关键对局。
-- <span style="color:#0068B7">⬤</span> 打工：评分中，输出高。发挥尚可的全能玩家，通常会去填补阵容中的空缺位置。很累，但如果赢下了对局，那就是值得的。否则，等同于打白工。
-- <span style="color:#BDBDBD">⬤</span> 普通：评分中，输出中。代表了这一场比赛的平均水平。如果最后他们的总评分约等于 1.0，那就是纯正的比赛质检员了。
-- <span style="color:#00A0E9">⬤</span> 客串：评分中，输出低。偶尔上场的玩家，至少打出来的分数达到了平均分。
-- <span style="color:#9922EE">⬤</span> 抗压：评分低，输出高。非常罕见的类型。可以说，他们是真正的“全面型玩家”，但什么都会，也可能等于什么都不精通。
-- <span style="color:#E4007F">⬤</span> 背锅：评分低，输出中。赢了和他们没关系，输了都怪他们。
-- <span style="color:#EB6877">⬤</span> 小弟：评分低，输出低。不属于这个分段的玩家，也可能是没发挥出来，手感不好。
+- <span style="color:#FF9800">⬤</span> 大哥：均分高，总分高。不管输赢与否，已经把自己的实力完全发挥出来了。是队伍的主心骨。
+- <span style="color:#22AC38">⬤</span> 主力：均分高，总分中。上场相比于大哥稍微低了点，但在大部分对局中，仍旧能够撑起场面。
+- <span style="color:#92D050">⬤</span> 专精：均分高，总分低。能在自己擅长的谱面上发挥较好的玩家，能够打对手一个措手不及，拿下关键对局。
+- <span style="color:#0068B7">⬤</span> 打工：均分中，总分高。发挥尚可的全能玩家，通常会去填补阵容中的空缺位置。如果赢下了对局，那就是值得的。否则，等同于打白工。
+- <span style="color:#BDBDBD">⬤</span> 普通：均分中，总分中。代表了这一场比赛的平均水平。如果最后他们的总评分约等于 1.0，那就是纯正的比赛质检员了。
+- <span style="color:#00A0E9">⬤</span> 客串：均分中，总分低。偶尔上场的玩家，至少打出来的分数达到了平均分。
+- <span style="color:#9922EE">⬤</span> 抗压：均分低，总分高。非常罕见的类型。可以说，他们是真正的“全面型玩家”，但什么都会，也可能等于什么都不精通。
+- <span style="color:#E4007F">⬤</span> 背锅：均分低，总分中。赢了和他们没关系，输了都怪他们。
+- <span style="color:#EB6877">⬤</span> 小弟：均分低，总分低。不属于这个分段的玩家，也可能是没发挥出来，手感不好。
 - <span style="color:#D32F2F">⬤</span> 炮灰：菜。
 
 在 MRA v3.4 中，根据贡献 (RWS)，玩家被更加细致地分为 33 个扩展类型，力求给玩家最精准的评价。
