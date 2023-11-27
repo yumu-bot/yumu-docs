@@ -66,7 +66,7 @@ copyright: false
   - 卡片中间靠左依次是玩家的 <HopeIcon icon="heading"/> 昵称、<HopeIcon icon="person-rays"/> 比赛总分（总输出）、<HopeIcon icon="chess-king"/> 胜负和胜率、<HopeIcon icon="user-plus"/> 玩家评分排名和 <HopeIcon icon="wave-square"/> RWS。
     - RWS 指 <HopeIcon icon="wave-square"/> 平均胜利分配，即为了所属队伍的**胜利**做出了多少贡献。有时候玩家评分很高，但不一定很有用。想要了解更多，请参考 <HopeIcon icon="link"/> [这里](https://baijiahao.baidu.com/s?id=1724882889457381886&wfr=spider&for=pc)。
   - 卡片中间靠右是 <HopeIcon icon="tags"/> 玩家类型和 <HopeIcon icon="sun"/> 玩家评分。
-    - 玩家类型：Yumu Rating v1.2 推出的新功能，旨在更加细化地去区分玩家在比赛中所扮演的角色。目前已有 11 种大类，每种大类还有 3 种小类。
+    - 玩家类型：见下。
     - 玩家评分：只需要记住：==平均分是 **1** 分，毫无参与感的玩家是 **0** 分。==
 
 :::
