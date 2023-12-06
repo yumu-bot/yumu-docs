@@ -30,24 +30,24 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="scale-balanced"/> 2 查询比赛斗力（评分） !ymrating (!ra) {id=rating}
+## <HopeIcon icon="scale-balanced"/> 2 查询比赛斗力（评分） !ymrating (!mra/ra) {id=rating}
 
 通过分析比赛所有对局，来给玩家赋予一个斗力（表现评分）。
 
 **使用方法**
 
-!ymrating / ra [**比赛编号**] (**跳过开头**) (**忽略结尾**) (**f**) (**r**)
+!ymrating / mra / ra [**比赛编号**] (**跳过开头**) (**忽略结尾**) (**f**) (**r**)
 
 - **<HopeIcon icon="hashtag"/> 比赛编号**：必填，需要查询的比赛编号 (MATCHID)。
   - 获取方法：进入房间，点击 #multiplayer 下，BanchoBot 发送的第一条消息中的蓝色 here。之后，在弹出的网站内找到网站链接末尾的数字，即比赛编号 (MATCHID)。
 - **<HopeIcon icon="forward"/> 跳过开头**：需要跳过的开头对局数量。这适用于比赛含有**热手**等不需要统计玩家表现的开头对局。
-    - 如不填写，默认为 0。想要输入忽略结尾的参数时，也可输入 0 来占位。
+  - 如不填写，默认为 0。想要输入忽略结尾的参数时，也可输入 0 来占位。
 - **<HopeIcon icon="rotate-left"/> 忽略结尾**：需要忽略的结尾对局数量。这适用于比赛含有**决胜局表演或娱乐局**等不需要统计玩家表现的结尾对局。
-    - 如不填写，默认为 0。
-- **<HopeIcon icon="person-falling"/> f**：如果填入 f，则表示忽略玩家的失败成绩。
-    - 如不填写，默认统计玩家的失败成绩。
+  - 如不填写，默认为 0。
+- **<HopeIcon icon="person-falling"/> f**：如果填入 f，则表示统计玩家低于 1 万分的成绩。
+  - 如不填写，默认忽略玩家低于 1 万分的成绩。
 - **<HopeIcon icon="slash"/> r**：如果填入 r，则表示忽略重复的对局，只保留靠后的那一场。
-    - 如不填写，默认统计重复的对局。
+  - 如不填写，默认统计重复的对局。
 
 ![获取比赛编号](https://yumemuzi.s-ul.eu/yumu/zSFydj9w)
 
@@ -125,17 +125,17 @@ copyright: false
 
 使用 !crx/!crs 可以获取另一个格式的逗号分隔文件 (csv)，并且可以输入多场比赛。
 
-只有管理员或群主可以使用此功能。
+只有管理员或群主可以使用这一部分功能。
 
 :::
 
-## <HopeIcon icon="scale-balanced"/> 3 查询系列比赛斗力（评分） !ymseries (!sa) {id=series}
+## <HopeIcon icon="scale-balanced"/> 3 查询系列比赛斗力（评分） !ymseries (!sra/sa) {id=series}
 
 通过分析一系列比赛的所有对局，来给玩家赋予一个斗力（表现评分）。
 
 **使用方法**
 
-!ymseries / sa (`#`**比赛名称**`#`) [[**比赛编号**] (**跳过开头**) (**忽略结尾**)]... (**f**) (**r**)
+!ymseries / sra / sa (`#`**比赛名称**`#`) [[**比赛编号**] (**跳过开头**) (**忽略结尾**)]... (**f**) (**r**)
 
 - **<HopeIcon icon="address-card"/> 比赛名称**：选填，这个名字将展现在左上角的卡片中。不填默认显示第一场比赛的名称。
 - **<HopeIcon icon="hashtag"/> 比赛编号**：同上，必填，需要查询的比赛编号 (MATCHID)。
@@ -143,8 +143,8 @@ copyright: false
   - 如不填写，默认为 0。想要输入忽略结尾的参数时，也可输入 0 来占位。
 - **<HopeIcon icon="rotate-left"/> 忽略结尾**：同上，选填，需要忽略的结尾对局数量。
   - 如不填写，默认为 0。
-- **<HopeIcon icon="person-falling"/> f**：如果填入 f，则表示忽略玩家的失败成绩。
-  - 如不填写，默认统计玩家的失败成绩。
+- **<HopeIcon icon="person-falling"/> f**：如果填入 f，则表示统计玩家低于 1 万分的成绩。
+  - 如不填写，默认忽略玩家低于 1 万分的成绩。
 - **<HopeIcon icon="slash"/> r**：如果填入 r，则表示忽略重复的对局，只保留靠后的那一场。
   - 如不填写，默认统计重复的对局。
 
@@ -172,23 +172,71 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
 
 使用 !csa 可以获取逗号分隔的文件 (csv)，可以被 Excel 系列软件读取。
 
-只有管理员或群主可以使用此功能。
+只有管理员或群主可以使用这一部分功能。
 
 :::
 
-## <HopeIcon icon="house-chimney-user"/> 4 查看比赛房间信息 !ymmonitornow (!mn) {id=monitornow}
+## <HopeIcon icon="headphones"/> 4 监听比赛房间 !ymmatchlisten (!ml) {id=listen}
 
-输出一张比赛房间内的情况图。
+监听比赛房间，并在比赛开始时给出提示，对局结束时输出 [<HopeIcon icon="chalkboard-user"/> 比赛对局信息（MR 功能）](#round)。
 
 **使用方法**
 
-!ymmonitornow / mn [**比赛编号**] (**跳过开头**) (**忽略结尾**) (**f**) (**r**)
+!ymmatchlisten / ml / li [**比赛编号**] (**操作**)
+
+- **<HopeIcon icon="hashtag"/> 比赛编号**：同上。
+- **<HopeIcon icon="hammer"/> 操作**：开始或停止监听房间的操作。
+  - 可输入 start、stop、end、on、off、s、p、e、o、f。
+  - 如不填写，默认开始监听（start）。
+
+![监听面板，指令：!ml 111296587](https://yumemuzi.s-ul.eu/yumu/0QclObqn)
+
+::: warning 注意
+
+监听过程有可能被中断。可能出现的情况有：
+
+- 比赛正常结束：房间关闭。
+  - 因为 30 分钟内没有新对局活动（没打图），所以比赛房间被 Bancho 强行关闭。
+  - 因为房间内所有玩家均已经离开，所以非指令创建的比赛房间被关闭。
+  - 比赛房间的管理员使用 !mp close 关闭了比赛房间。
+- 调用者关闭：您使用了 !ml matchid off 停止监听。
+- 超级管理员关闭：超级管理员使用了 !ml matchid off 停止监听。
+- 服务器重启：YumuBot 服务器需要执行重启服务。
+- 超时：监听总时长超过了 6 小时。
+
+监听中断后，只要比赛还在继续，用户就可以无条件重新启动新一轮的监听。
+
+:::
+
+::: warning 注意
+
+如以上所提到：
+
+为了避免刷屏，单次监听时长最长只有 ==6== 个小时。并且，单人只能同时监听 ==3== 个不同的比赛房间，同一个群聊也只能同时监听 ==3== 个不同的比赛房间。
+
+如果超出限制，Bot 将会提示。
+
+:::
+
+::: danger 警告
+
+由于风控因素，部分结果可能会发送失败。此时还烦请用户前往官网查看对局结果。~~在 Discord 上查询就不会出事情了~~
+
+:::
+
+## <HopeIcon icon="house-chimney-user"/> 5 查看比赛房间全览 !ymmatchnow (!mn) {id=matchnow}
+
+输出一张比赛房间内的全览图。
+
+**使用方法**
+
+!ymmatchnow / mn [**比赛编号**] (**跳过开头**) (**忽略结尾**) (**f**) (**r**)
 
 - **<HopeIcon icon="hashtag"/> 比赛编号**：同上。
 - **<HopeIcon icon="forward"/> 跳过开头**：同上。
 - **<HopeIcon icon="rotate-left"/> 忽略结尾**：同上。
-- **<HopeIcon icon="person-falling"/> f**：如果填入 f，则表示忽略玩家的失败成绩。
-  - 如不填写，默认统计玩家的失败成绩。
+- **<HopeIcon icon="person-falling"/> f**：如果填入 f，则表示统计玩家低于 1 万分的成绩。
+  - 如不填写，默认忽略玩家低于 1 万分的成绩。
 - **<HopeIcon icon="slash"/> r**：如果填入 r，则表示忽略重复的对局，只保留靠后的那一场。
   - 如不填写，默认统计重复的对局。
 
@@ -198,13 +246,13 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
 
 :::
 
-## <HopeIcon icon="chalkboard-user"/> 5 查看比赛对局信息 !ymmatchround (!ro) {id=round}
+## <HopeIcon icon="chalkboard-user"/> 6 查看比赛对局信息 !ymmatchround (!mr/ro) {id=round}
 
 输出一张比赛房间内的某场对局图。
 
 **使用方法**
 
-!ymmatchround / !ro [**比赛编号**] (**对局位置**) (**关键字**)
+!ymmatchround / mr / ro [**比赛编号**] (**对局位置**) (**关键字**)
 
 - **<HopeIcon icon="hashtag"/> 比赛编号**：同上。
 - **<HopeIcon icon="location-dot"/> 对局位置**：需要查询的对局场次位置。
@@ -213,15 +261,15 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
   - 关键字查询范围：谱面的歌曲名称（罗马音）、艺术家名称（罗马音）、谱师名称、难度名称。
   - 如果关键字是很小的数字，则会被匹配进对局位置中。请注意。
 
-![对局信息面板，指令：!ro 59438351 back to marie](https://yumemuzi.s-ul.eu/yumu/TYkc5KSn)
+![对局信息面板，指令：!ro 111296587 dawn of](https://yumemuzi.s-ul.eu/yumu/YElgmvpv)
 
-## <HopeIcon icon="solar-panel"/> 6 展示图池 !ymmappool (!po) {id=pool}
+## <HopeIcon icon="solar-panel"/> 7 展示图池 !ymmappool (!po) {id=pool}
 
 根据输入的模组名称和谱面编号，输出一张可供比赛使用的图池，方便选手查阅。
 
 **使用方法**
 
-!ymmappool / !po (`#`**比赛名称**`#`) [[**模组**] [**谱面编号**]]...
+!ymmappool / po (`#`**比赛名称**`#`) [[**模组**] [**谱面编号**]]...
 
 - **<HopeIcon icon="address-card"/> 比赛名称**：选填，这个名字将展现在左上角的卡片中。
 - **<HopeIcon icon="music"/> 模组**：同上，必填，模组池。
@@ -232,8 +280,28 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
 
 ![图池面板，指令：!po #AMYC S1 R2# NM 2903091 3546768 2326008 2739707 1070127 3170093 HD 1674334 2559128 DT 4120379 3837021 3419522 2455022 FM 3007015 2938842 3417617 TB](https://yumemuzi.s-ul.eu/yumu/nbzwGBWv)
 
+::: tip 提示
+
+需要按组输入 <HopeIcon icon="music"/> 模组、<HopeIcon icon="hashtag"/> 谱面编号。并且，至少需要输入 ==1== 个模组，且==之后==必须至少跟随 ==1== 个谱面编号。
+
+举例：
+
+- !po #AMYC S1 R2# NM 2903091 3546768
+
+合法，此时有 1 个模组池 NM，内有 2 张谱面。
+
+- !po #AMYC S1 R2# NM 2903091 3546768 HD 1674334 HR
+
+不合法，模组池 HR 内没有谱面。
+
+- !po #AMYC S1 R2# 2903091 3546768
+
+不合法，没有输入模组池。
+
+:::
+
 ::: info 备注
 
-功能暂不完整。
+预览版功能，结果暂不完整。
 
 :::
