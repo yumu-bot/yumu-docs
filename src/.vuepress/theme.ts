@@ -7,6 +7,7 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   iconAssets: "fontawesome-with-brands",
+  // https://fontawesome.com/
 
   logo: "/favicon.ico",
 

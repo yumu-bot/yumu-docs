@@ -27,6 +27,14 @@ export default sidebar({
       // children:["botFunction"]
     },
     {
+      text: "wiki",
+      icon: "shapes",
+      prefix: "wiki/",
+      link:"wiki/",
+      children:"structure",
+      // children:["botFunction"]
+    },
+    {
       text: "关于",
       icon: "info",
       prefix: "about/",
