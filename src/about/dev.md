@@ -45,39 +45,41 @@ link: https://osu.ppy.sh/users/6263426
 color: rgba(253, 230, 138, 0.15)
 ```
 <script>
-function domLoading() {
-    return !! document.querySelector(`a[href="https://osu.ppy.sh/users/17064371"]`);
-}
-function domLoaded(){
-    const myCardDom = document.querySelector(`a[href="https://osu.ppy.sh/users/17064371"]`);
-    myCardDom.style.zoom = 0.6;
-    const keyframes = [
-        {transform: 'rotate(0turn)'},
-        {transform: 'rotate(1turn)'},
-    ];
-    const options = {
-        duration: 300,
-        iterations: Infinity,
-    };
-    let animate;
-    myCardDom.addEventListener('mouseenter', () => animate = myCardDom.animate(keyframes, options));
-    myCardDom.addEventListener('mouseleave', () => {
-        myCardDom.style.transform = getComputedStyle(myCardDom).transform;
-        animate.cancel();
-    });
-}
-let max_time = 100;
-function loop() {
-    if (domLoading()) {
-        domLoaded();
-        return;
+if (typeof document !== 'undefined') {
+    function domLoading() {
+        return !! document.querySelector(`a[href="https://osu.ppy.sh/users/17064371"]`);
     }
-    if (max_time > 0) {
-        max_time--;
-        setTimeout(loop, 50);
-    } else {
-        console.log("loading time out");
+    function domLoaded(){
+        const myCardDom = document.querySelector(`a[href="https://osu.ppy.sh/users/17064371"]`);
+        myCardDom.style.zoom = 0.6;
+        const keyframes = [
+            {transform: 'rotate(0turn)'},
+            {transform: 'rotate(1turn)'},
+        ];
+        const options = {
+            duration: 300,
+            iterations: Infinity,
+        };
+        let animate;
+        myCardDom.addEventListener('mouseenter', () => animate = myCardDom.animate(keyframes, options));
+        myCardDom.addEventListener('mouseleave', () => {
+            myCardDom.style.transform = getComputedStyle(myCardDom).transform;
+            animate.cancel();
+        });
     }
+    let max_time = 100;
+    function loop() {
+        if (domLoading()) {
+            domLoaded();
+            return;
+        }
+        if (max_time > 0) {
+            max_time--;
+            setTimeout(loop, 50);
+        } else {
+            console.log("loading time out");
+        }
+    }
+    loop();
 }
-loop();
 </script>
