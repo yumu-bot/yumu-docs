@@ -36,3 +36,11 @@ logo: https://a.ppy.sh/14218879
 link: https://osu.ppy.sh/users/14218879
 color: rgba(253, 230, 138, 0.15)
 ```
+
+```card
+title: Shiratori
+desc: 后端
+logo: https://a.ppy.sh/6263426
+link: https://osu.ppy.sh/users/6263426
+color: rgba(253, 230, 138, 0.15)
+```
