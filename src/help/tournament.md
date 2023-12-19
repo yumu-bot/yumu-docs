@@ -263,13 +263,13 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
 
 ![对局信息面板，指令：!ro 111296587 dawn of](https://yumemuzi.s-ul.eu/yumu/YElgmvpv)
 
-## <HopeIcon icon="solar-panel"/> 7 展示图池 !ymmappool (!po) {id=pool}
+## <HopeIcon icon="tent-arrows-down"/> 7 生成图池 !ymgetpool (!getpool) {id=getpool}
 
-根据输入的模组名称和谱面编号，输出一张可供比赛使用的图池，方便选手查阅。
+根据输入的模组名称和谱面编号，输出一张可供比赛展示的谱面信息集合图（图池），方便选手查阅。
 
 **使用方法**
 
-!ymmappool / po (`#`**比赛名称**`#`) [[**模组**] [**谱面编号**]]...
+!ymgetpool / gp (`#`**比赛名称**`#`) [[**模组**] [**谱面编号**]]...
 
 - **<HopeIcon icon="address-card"/> 比赛名称**：选填，这个名字将展现在左上角的卡片中。
 - **<HopeIcon icon="music"/> 模组**：同上，必填，模组池。
@@ -286,19 +286,37 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
 
 举例：
 
-- !po #AMYC S1 R2# NM 2903091 3546768
+- !gp #AMYC S1 R2# NM 2903091 3546768
 
 合法，此时有 1 个模组池 NM，内有 2 张谱面。
 
-- !po #AMYC S1 R2# NM 2903091 3546768 HD 1674334 HR
+- !gp #AMYC S1 R2# NM 2903091 3546768 HD 1674334 HR
 
 不合法，模组池 HR 内没有谱面。
 
-- !po #AMYC S1 R2# 2903091 3546768
+- !gp #AMYC S1 R2# 2903091 3546768
 
 不合法，没有输入模组池。
 
 :::
+
+::: info 备注
+
+预览版功能，结果暂不完整。
+
+:::
+
+## <HopeIcon icon="tent"/> 8 读取图池 !ymmappool (!po) {id=pool}
+
+根据输入的图池编号，读取==数据库内已经记录好==的图池。
+
+**使用方法**
+
+!ymmappool / po (`id=`**图池编号**) (**图池名称**)
+
+- **<HopeIcon icon="hashtag"/> 图池编号**：选填，图池的编号。
+- **<HopeIcon icon="address-card"/> 图池名称**：选填，图池的名字。如果无法匹配则会返回最接近的结果（？）。
+  - 如果两个参数均留空，Bot 会提供一张包含所有图池的图片。
 
 ::: info 备注
 
