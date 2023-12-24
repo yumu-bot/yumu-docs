@@ -21,7 +21,7 @@ copyright: false
 
 ![谱面指令列表](https://yumemuzi.s-ul.eu/yumu/EE3gCB5l)
 
-## ~~<HopeIcon icon="map-location-dot"/> 1 查询谱面信息 !ymmap (!m)~~ {id=map}
+## <HopeIcon icon="map-location-dot"/> 1 查询谱面信息 !ymmap (!m) {id=map}
 
 可以根据成绩的一些参数（<HopeIcon icon="link"/> 连击数、<HopeIcon icon="bullseye"/> 准确率）来查询谱面的信息（<HopeIcon icon="magnifying-glass-chart"/> 四维、<HopeIcon icon="medal"/> PP）。
 
@@ -33,9 +33,14 @@ copyright: false
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
 - **<HopeIcon icon="bullseye"/> 准确率**：预期成绩的准确率。可以输入 0-100 内的值。
   - 如果输入 0-1 之间的小数，则会乘以 100。
-- **<HopeIcon icon="link"/> 连击数**：预期成绩的连击数。可以输入大于 1 的值。
-  - 如果输入 0-1 之间的小数，则表示预期获取谱面最大连击数**多少倍**的连击数。
+  - 如果输入 100-10000 之间的整数，则会除以 100。
+  - `%` 可以输入在准确率之前。此外，在大多数输入情况下，可以省略。
+- **<HopeIcon icon="link"/> 连击数**：预期成绩的连击数。可以输入大于 1 的整数或 0-1 内的小数。
+  - 如果输入 0-1 之间的小数（不包括 0），则表示预期获取谱面最大连击数**多少倍**的连击数。
+  - `x` 可以输入在连击数之前。此外，在大多数输入情况下，可以省略。
 - **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 预期成绩内模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
+
+![谱面信息面板，指令：!m 2274675 93 x700 +HDDT](https://yumemuzi.s-ul.eu/yumu/AFo4n32L)
 
 ::: details 可输入的 <HopeIcon icon="music"/> 模组名称
 
@@ -43,9 +48,19 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-::: info 备注
+::: tip 提示
 
-暂未开放
+由于正则匹配特性，在==仅输入连击，`x` 符号在后面，并且不输入准确率==时，会出现误匹配。此时应该修改输入方法。
+
+例：!m 114514 0.4x +HDDT
+
+此时 0.4 会被匹配到准确率字段中。结果变成：40% acc + FC。此时应修改输入为：
+
+!m 114514 1 0.4 +HDDT（输入 1 作为准确率的占位符，此时两个符号都可以省略了）
+
+或 !m 114514 x0.4 +HDDT（在前面添加字母 `x` 区分）
+
+此外，如果仅输入准确率，或是既输入准确率又输入连击数，或是均不输入留空；准确率和连击数前后的 `%` 或 `x` 均可省略。
 
 :::
 
