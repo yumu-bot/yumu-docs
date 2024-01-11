@@ -88,13 +88,8 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 - **<HopeIcon icon="icons"/> 种类**：输入编号的种类。
   - sid / s：按谱面集编号 (SID) 查询。
   - bid / b / 留空：按谱面编号 (BID) 查询。
+  - 如果搜索不到对应的谱面，则会尝试修改编号种类查询。
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID) 或谱面集编号 (SID)。
-
-::: warning 注意
-
-繁重功能，查询结果将会在 5-10 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
-
-:::
 
 ::: tip 提示
 

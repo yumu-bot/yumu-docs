@@ -50,8 +50,8 @@ copyright: false
 
 如果您还是想弄懂问题到底出在哪，可以访问:
 
-- <HopeIcon icon="link"/> [ppy 服务器状态检测网站](https://status.ppy.sh/)（需要科学上网）。
-- <HopeIcon icon="link"/> [==YumuBot 服务器状态检测网站（试运行）==](https://panel.365246692.xyz/status/public)
+- <HopeIcon icon="link"/> [==ppy 服务器状态检测网站==](https://status.ppy.sh/)（需要科学上网）。
+- <HopeIcon icon="link"/> [~~YumuBot 服务器状态检测网站（春晚说这个没啥用）~~](https://panel.365246692.xyz/status/public)
 
 ![YumuBot 服务器状态检测网站](https://yumemuzi.s-ul.eu/yumu/n6sNerrk)
 
@@ -105,7 +105,7 @@ op4->e
 
 为了与其他 Bot 的绑定指令区分，!bind 是无法唤起 YumuBot 的。
 
-普通玩家可以使用 ==!unbind== 解除自己的绑定，只有管理员可以使用 !unbind <HopeIcon icon="at"/> QQ 用户的方式解除其他人的绑定。
+普通玩家可以使用 ==!unbind== 解除自己的绑定，只有管理员可以使用 !unbind <HopeIcon icon="at"/> QQ 或者 !unbind qq= <HopeIcon icon="fa-brands fa-qq"/> QQ 的方式解除其他人的绑定。
 
 在之前，如果普通玩家想解绑，需要 <HopeIcon icon="link"/> [==联系开发者==](../about/dev.md)，或是去 <HopeIcon icon="link"/> [==个人主页/账户设置下的#开放授权页面==](https://osu.ppy.sh/home/account/edit)，撤销 YuriMumu 的访问权限。
 
@@ -113,23 +113,40 @@ op4->e
 
 :::
 
-## <HopeIcon icon="ban"/> 4 封禁或解封玩家 !ymban (!bq / !bu / !bg) {id=ban}
+## <HopeIcon icon="ban"/> 4 封禁或解封玩家 !ymsuper (!sp) {id=ban}
 
-::: info 备注
+**使用方法**
 
-功能尚未开发完毕，但已经可以做到差不多的效果。
+!ymsuper / sp [**操作**] (**对象**)
 
-:::
+- **<HopeIcon icon="hammer"/> 操作**：超级管理员的操作。
+  - 合法的操作：
+    - list、l：查询白名单列表
+    - blacklist、k：查询黑名单列表
+    - add、a：添加玩家进白名单 
+    - remove、r：移除玩家出白名单 
+    - ban、n：添加玩家进黑名单 
+    - unban、u：移除玩家出黑名单
+  - 如果不输入，Bot 会提示你。
+- **<HopeIcon icon="street-view"/> 对象**：被操作执行的对象。
+  - 合法的对象：
+    - qq=123456：对象为玩家 <HopeIcon icon="fa-brands fa-qq"/> QQ。
+    - group=114514：对象为 <HopeIcon icon="user-group"/> QQ 群组。
+    - a user name：对象为 <HopeIcon icon="address-card"/> 玩家名。
+    - 如果操作是查看列表（list、blacklist），则无需输入对象。其他操作均需输入对象。
+  - 如果需要输入对象时不输入，Bot 会提示你。
 
 ::: warning 注意
 
-只有超级管理员可以封禁或解封玩家。
+只有超级管理员可以封禁或解封玩家（QQ、群组）。
+
+Bot 将不会回应任何被封禁的玩家（QQ、群组）发出的指令。
 
 :::
 
 ::: danger 警告
 
-一般来说，YumuBot 是免费，开放且包容的。但如果您滥用功能、言语攻击辱骂 Bot 及开发者，那么开发者将有权收回您使用 Bot 的一切权利。
+一般来说，YumuBot 是免费，开放[^open]且包容的。但如果您滥用功能、言语攻击辱骂 Bot 及开发者，那么开发者将有权收回您使用 Bot 的一切权利。
 
 :::
 
@@ -151,10 +168,28 @@ op4->e
 
 :::
 
-## ~~<HopeIcon icon="desktop"/> 6 刷屏限制开关 !ymantispam (!as)~~ {id=antispam}
+## <HopeIcon icon="desktop"/> 6 查询服务调用数量 !ymservicecount (!sc) {id=servicecount}
+
+**使用方法**
+
+!ymservicecount / sc (**时间**)
+
+- **<HopeIcon icon="clock"/> 时间**：设定查询时间段为多久之前到现在。可以输入一个非负整数。单位是小时。
+  - 如果输入 0，将会返回数据库内所有条目。
+  - 不输入默认 24 小时。
+
+::: warning 注意
+
+只有超级管理员可以使用查询服务调用数量。
+
+:::
+
+## ~~<HopeIcon icon="desktop"/> 7 刷屏限制开关 !ymantispam (!as)~~ {id=antispam}
 
 ::: info 备注
 
 暂未开放。
 
 :::
+
+[^open]: YumuBot 的一个副本储存在 GitHub 上，但由于某些原因（比如早期开发在 Git 历史中添加了账户密码等隐私信息），YumuBot 本体暂未能对开发者完全开放。 
