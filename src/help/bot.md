@@ -46,7 +46,7 @@ copyright: false
 
 可以利用此功能来判断 Bot 是否在线。
 
-有时候，Bot 响应缓慢不一定是 Bot 服务器的问题，也可能是 ppy 服务器炸了。
+有时候，Bot 响应缓慢不一定是 Bot 服务器的问题，也可能是 ppy 服务器炸了，也可能是腾讯把发送消息的 Bot QQ 封掉了。
 
 如果您还是想弄懂问题到底出在哪，可以访问:
 
@@ -63,7 +63,7 @@ copyright: false
 
 **使用方法**
 
-!ymbind / bi
+!ymbind / bind / bi (解绑是 !unbind / ub)
 
 ![Bot 绑定](https://yumemuzi.s-ul.eu/yumu/c3DP4FOB)
 
@@ -103,11 +103,11 @@ op4->e
 
 ::: warning 注意
 
-为了与其他 Bot 的绑定指令区分，!bind 是无法唤起 YumuBot 的。
+为了与其他 Bot 的绑定指令区分，!bind 唤起 YumuBot 时，会需要玩家二次确认（玩家看到消息，==再次发送 OK 确认==，才会发送绑定链接）。
 
 普通玩家可以使用 ==!unbind== 解除自己的绑定，只有管理员可以使用 !unbind <HopeIcon icon="at"/> QQ 或者 !unbind qq= <HopeIcon icon="fa-brands fa-qq"/> QQ 的方式解除其他人的绑定。
 
-在之前，如果普通玩家想解绑，需要 <HopeIcon icon="link"/> [==联系开发者==](../about/dev.md)，或是去 <HopeIcon icon="link"/> [==个人主页/账户设置下的#开放授权页面==](https://osu.ppy.sh/home/account/edit)，撤销 YuriMumu 的访问权限。
+在此之前，如果普通玩家想解绑，需要 <HopeIcon icon="link"/> [==联系开发者==](../about/dev.md)，或是去 <HopeIcon icon="link"/> [==个人主页/账户设置下的#开放授权页面==](https://osu.ppy.sh/home/account/edit)，撤销 YuriMumu 的访问权限。
 
 ![撤销访问权限](https://yumemuzi.s-ul.eu/yumu/hKyqGQwk)
 
@@ -121,20 +121,20 @@ op4->e
 
 - **<HopeIcon icon="hammer"/> 操作**：超级管理员的操作。
   - 合法的操作：
-    - list、l：查询白名单列表
+    - whitelist、w、l：查询白名单列表
     - blacklist、k：查询黑名单列表
     - add、a：添加玩家进白名单 
     - remove、r：移除玩家出白名单 
     - ban、n：添加玩家进黑名单 
     - unban、u：移除玩家出黑名单
-  - 如果不输入，Bot 会提示你。
+  - 如果不输入或者输错，Bot 会提示你。
 - **<HopeIcon icon="street-view"/> 对象**：被操作执行的对象。
   - 合法的对象：
     - qq=123456：对象为玩家 <HopeIcon icon="fa-brands fa-qq"/> QQ。
     - group=114514：对象为 <HopeIcon icon="user-group"/> QQ 群组。
-    - a user name：对象为 <HopeIcon icon="address-card"/> 玩家名。
-    - 如果操作是查看列表（list、blacklist），则无需输入对象。其他操作均需输入对象。
-  - 如果需要输入对象时不输入，Bot 会提示你。
+    - a long user name：对象为 <HopeIcon icon="address-card"/> 玩家名。
+    - 如果操作是查看列表（whitelist、blacklist），则无需输入对象。其他操作均需输入对象。
+  - 如果未输入需要输入的对象时，Bot 会提示你。
 
 ::: warning 注意
 

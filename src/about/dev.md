@@ -7,43 +7,61 @@ order: 2
 ---
 ```card
 title: Muziyami
-desc: 项目主负责人
+desc: 项目主负责人、功能设计、产品、运维、测试、前端、后端、美工
 logo: https://a.ppy.sh/7003013
-link: https://qm.qq.com/q/tCTfvB7kgo
-color: rgba(253, 230, 138, 0.15)
+link: https://osu.ppy.sh/users/7003013
+color: rgba(253,230,138,0.15)
 ```
 
 ```card
 title: SIyuyuko
-desc: 前端、网站构建
+desc: 产品、运维、前端、网站前端
 logo: https://a.ppy.sh/9794030
 link: https://osu.ppy.sh/users/9794030
-color: rgba(253, 230, 138, 0.15)
+color: rgba(253,230,138,0.15)
 ```
 
 ```card
 title: -Spring Night-
-desc: 主开发、后端、功能设计
+desc: 主开发、后端、部分功能设计
 logo: https://a.ppy.sh/17064371
 link: https://osu.ppy.sh/users/17064371
-color: rgba(253, 230, 138, 0.15)
+color: rgba(245,177,153,0.15)
 ```
 
 ```card
 title: Truncle
-desc: 后端
+desc: 后端、开发 PPM 逻辑
 logo: https://a.ppy.sh/14218879
 link: https://osu.ppy.sh/users/14218879
-color: rgba(253, 230, 138, 0.15)
+color: rgba(253,230,138,0.15)
 ```
 
 ```card
 title: Shiratori
-desc: 后端
+desc: 后端、Discord 对接
 logo: https://a.ppy.sh/6263426
 link: https://osu.ppy.sh/users/6263426
-color: rgba(253, 230, 138, 0.15)
+color: rgba(253,230,138,0.15)
 ```
+
+```card
+title: n0000000000o
+desc: 维基维护
+logo: https://a.ppy.sh/12215328
+link: https://osu.ppy.sh/users/12215328
+color: rgba(253,230,138,0.15)
+```
+
+```card
+title: Dana Iclucia
+desc: 临时服务器运维
+logo: https://a.ppy.sh/13184288
+link: https://osu.ppy.sh/users/13184288
+color: rgba(193,216,172,0.15)
+```
+
+
 <script>
 if (typeof document !== 'undefined') {
     function domLoading() {
@@ -51,7 +69,7 @@ if (typeof document !== 'undefined') {
     }
     function domLoaded(){
         const myCardDom = document.querySelector(`a[href="https://osu.ppy.sh/users/17064371"]`);
-        myCardDom.style.zoom = 0.6;
+        myCardDom.style.zoom = 1.0;
         const keyframes = [
             {transform: 'rotate(0turn)'},
             {transform: 'rotate(1turn)'},

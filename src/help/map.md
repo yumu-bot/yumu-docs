@@ -27,10 +27,11 @@ copyright: false
 
 **使用方法**
 
-!ymmap / m (**`:`游戏模式**) [**谱面编号**] (**准确率`%`**) (**`x`连击数**) (**`-`失误数**) (**`+`模组名称**)
+!ymmap / m (**`:`游戏模式**) (**谱面编号**) (**准确率`%`**) (**`x`连击数**) (**`-`失误数**) (**`+`模组名称**)
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：谱面的游戏模式，且只能在转谱上赋予模式。请参阅：[游戏模式](./score.md#mode)
-- **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
+- **<HopeIcon icon="hashtag"/> 谱面编号**：需要查询的谱面编号 (BID)。
+  - 不输入，则效果约等于 [==!r==](./score.md#recent)。它会默认查询最近成绩（包括失败）所属的谱面信息，并且将该成绩作为预期成绩计算数据。
 - **<HopeIcon icon="bullseye"/> 准确率**：预期成绩的准确率。可以输入 0-100 内的值。
   - 如果输入 0-1 之间的小数，则会乘以 100。
   - 如果输入 100-10000 之间的整数，则会除以 100。
@@ -55,7 +56,9 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: tip 提示
 
-如果查询的谱面属于 mania 游戏模式，则此时的准确率是用于计算 PP 的准确率（PPACC）。此时，彩 320 才是满权重，黄 300 的权重只有 300/320，以此类推。
+如果查询的谱面属于 <HopeIcon icon="keyboard"/> mania 游戏模式，则此时的准确率是用于计算 PP 的准确率（PPACC）。
+
+此时，彩 320 才是满权重，黄 300 的权重只有 300/320，以此类推。
 
 !p/!r 功能的 PPACC 位于准确率的右上角，可以据此计算。
 
@@ -63,23 +66,23 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: warning 注意
 
-由于正则匹配特性，在==仅输入连击，`x` 符号在后面，并且不输入准确率==，或是==仅输入失误数，`-` 符号在后面，并且不输入准确率或不输入连击==时，会出现误匹配。此时应该修改输入方法。
+由于正则匹配特性，在==仅输入部分参数，但没有带前面用于区分的符号==时，会出现误匹配。此时应该修改输入方法。
 
 例：!m 114514 0.4x 2- +HDDT
 
-此时 0.4 会被匹配到准确率字段中，而 2、HDDT 被抛弃。结果变成：40% acc + FC。此时应修改输入为：
+此时并未指定准确率，所以，0.4 会被匹配到准确率字段中，2、HDDT 被抛弃。结果变成：40% acc + FC。此时应修改输入为：
 
 !m 114514 1 0.4 2 +HDDT（输入 1 作为准确率的占位符，此时两个符号都可以省略了）
 
-或 !m 114514 x0.4 -2 +HDDT（在前面添加字母 `x`、`-` 区分）
+或 !m 114514 x0.4 -2 +HDDT（在前面添加符号 `x`、`-` 来引导正则匹配）
 
-此外，如果仅输入准确率，或是既输入准确率又输入连击数，或是均不输入留空；准确率、连击数、失误数前后的 `%`、`x`、`-` 均可省略。
+除此之外，如果仅输入准确率、仅输入准确率和连击数、参数全部输入时，前后的 `%`、`x`、`-` 才能省略。
 
 :::
 
 ## <HopeIcon icon="headphones"/> 2 试听谱面 !ymaudio (!a) {id=audio}
 
-试听 10 秒预览。
+试听歌曲 10 秒，从谱面的预览点开始播放。
 
 **使用方法**
 
@@ -87,17 +90,22 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 - **<HopeIcon icon="icons"/> 种类**：输入编号的种类。
   - sid / s：按谱面集编号 (SID) 查询。
-  - bid / b / 留空：按谱面编号 (BID) 查询。
+  - bid / b：按谱面编号 (BID) 查询。
   - 如果搜索不到对应的谱面，则会尝试修改编号种类查询。
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID) 或谱面集编号 (SID)。
+  - 如果种类留空，则默认按谱面编号 (BID) 查询。
 
 ::: tip 提示
+
+!a:s 中的冒号可以省略。因此，如果要通过 SID 查询整张谱面的上架流程，只需要输入 !as [SID] 即可。
 
 也可使用 !song 调出功能。
 
 :::
 
-## ~~<HopeIcon icon="magnifying-glass"/> 3 搜索谱面 !ymsearch (!sh)~~ {id=search}
+:::
+
+## ~~<HopeIcon icon="magnifying-glass"/> 3 搜索谱面 !ymsearch (!h)~~ {id=search}
 
 **使用方法**
 
@@ -110,7 +118,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 - **<HopeIcon icon="language"/> 曲风 / <HopeIcon icon="compact-disc"/> 语种**：需要查询的曲风或语种。
   - 曲风支持：
     - unspecified, video game, anime, rock, pop, other, novelty, hip hop, electronic, metal, classical, folk, jazz
-    - u, v, a, r, p, o, n, h, e, m, c, f, j
+    - u, v/g, a, r, p, o, n, h, e, m, c, f, j
   - 语种支持：
     - English, Chinese, French, German, Italian, Japanese, Korean, Spanish, Swedish, Russian, Polish, Instrumental, Unspecified, Other
     - en, zh/cn, fr, ge, it, ja, kr, sp, sw, ru, po, in, un, ot
@@ -121,27 +129,51 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-## ~~<HopeIcon icon="book-bookmark"/> 4 查询课题 !ymcourse (!c)~~ {id=course}
-
-::: info 备注
-
-暂未开放
-
-:::
-
-## ~~<HopeIcon icon="chart-line"/> 5 查询段位单曲准确率 !ymdanacc (!da)~~ {id=danacc}
-
-通过计算休息段和结束时提供的准确率，得出每段的准确率。
+## <HopeIcon icon="angles-up"/> 4 查询谱面上架流程 !ymnomination (!c) {id=nomination}
 
 **使用方法**
 
-!ymdanacc / da (**段位谱面名**) (**准确率**)
+!ymnomination / n (**`:`种类**) [**谱面编号**]
 
-- **<HopeIcon icon="map-pin"/> 段位谱面名**：需要查询的段位谱面。
-  - 如果记不住段位谱面名，可以留空。Bot 会输出一张列出了所有段位的 <HopeIcon icon="image"/> 图片。
-- **<HopeIcon icon="bullseye"/> 准确率**：休息段和结束时，记录下来的准确率。可以输入 0-100 内的值，按空格分隔。
-  - 如果输入 0-1 之间的小数，则会乘以 100。
-  - 如果某张段位谱面有三个休息段，那么这里需要输入四个值。
+- **<HopeIcon icon="icons"/> 种类**：输入编号的种类。
+  - sid / s：按谱面集编号 (SID) 查询。
+  - bid / b：按谱面编号 (BID) 查询。
+  - 如果搜索不到对应的谱面，则会尝试修改编号种类查询。
+- **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID) 或谱面集编号 (SID)。
+  - 如果种类留空，则默认按谱面集编号 (SID) 查询。
+
+![上架流程面板，指令：!n 2016251](https://yumemuzi.s-ul.eu/yumu/m2nBN8Te)
+
+**内容解析**
+
+::: details 内容解析
+
+- **左上角**：玩家的 <HopeIcon icon="circle-user"/> 头像、<HopeIcon icon="heading"/> 名称、玩家所属的 <HopeIcon icon="users"/> 组织。
+  - Diff：这张谱面的谱主难度数量和总计数量。它们的差值即 <HopeIcon icon="user-pen"/> 客串难度数量。
+  - SR：这张谱面的 <HopeIcon icon="star"/> 星数（SR）范围。
+  - Length：这张谱面的 <HopeIcon icon="clock"/> 长度（取 BID 最小的）。
+- **Ranking Progress**：谱面的 <HopeIcon icon="angles-up"/> 上架流程。
+  - 左上角的 <HopeIcon icon="bullhorn"/> Hype 表示推荐数量。其下是 <HopeIcon icon="bullhorn"/> 推荐或 <HopeIcon icon="heart"/> 赞的评论。
+  - 中间的 <HopeIcon icon="thumbs-up"/> Nomination 表示提名数量。其下会根据情况显示提名的谱面审核成员 (BN) 的 <HopeIcon icon="circle-user"/> 头像、<HopeIcon icon="heading"/> 名称以及 UID。图片左上方的 <HopeIcon icon="circle"/> 圆圈表示玩家所属的 <HopeIcon icon="users"/> 组织。
+- **Guest Mappers**：参与谱面制作的 <HopeIcon icon="user-pen"/> 客串谱师信息。
+  - 图片右下方的 <HopeIcon icon="circle"/> 圆圈表示玩家所属的 <HopeIcon icon="users"/> 组织。比如，<span style="color:#A347EA">⬤</span> 等于谱面审核成员 (BN)。
+- **Tags**：谱面的 <HopeIcon icon="tag"/> 标签。
+- **Modding Discussion**：谱面的摸图 <HopeIcon icon="comments"/> 讨论区。
+  - 标题右侧显示了 <HopeIcon icon="circle-question"/> 未解决、<HopeIcon icon="circle-exclamation"/> 问题、<HopeIcon icon="circle"/> 建议、<HopeIcon icon="comments"/> 赞的数量，以及谱面被归入的 <HopeIcon icon="box-open"/> 曲包编号和谱面 <HopeIcon icon="comments"/> 大众评分。
+  - <HopeIcon icon="circle-question"/> 未解决的讨论会置顶，<HopeIcon icon="circle-check"/> 已解决的讨论文本会变暗。
+- **Favorites**：收藏谱面的玩家。
+  - 图片右下方的 <HopeIcon icon="circle"/> 圆圈表示玩家所属的 <HopeIcon icon="users"/> 组织。比如，<span style="color:#A347EA">⬤</span> 等于谱面审核成员 (BN)。
+- **G/L**：<HopeIcon icon="icons"/> 曲风和 <HopeIcon icon="language"/> 语言 (Genre / Language)。
+
+:::
+
+::: tip 提示
+
+!n:b 中的冒号可以省略。因此，如果要通过 BID 查询整张谱面的上架流程，只需要输入 !nb [BID] 即可。
+
+:::
+
+## ~~<HopeIcon icon="book-bookmark"/> 5 查询课题 !ymcourse (!c)~~ {id=course}
 
 ::: info 备注
 
@@ -193,5 +225,25 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 ::: info 备注
 
 API 暂未开放以上大部分参数的使用权限。目前只能查询某张谱面的==全球榜== (!yml bid)。
+
+:::
+
+## ~~<HopeIcon icon="chart-line"/> 8 查询段位单曲准确率 !ymdanacc (!da)~~ {id=danacc}
+
+通过计算休息段和结束时提供的准确率，得出每段的准确率。
+
+**使用方法**
+
+!ymdanacc / da (**段位谱面名**) (**准确率**)
+
+- **<HopeIcon icon="map-pin"/> 段位谱面名**：需要查询的段位谱面。
+  - 如果记不住段位谱面名，可以留空。Bot 会输出一张列出了所有段位的 <HopeIcon icon="image"/> 图片。
+- **<HopeIcon icon="bullseye"/> 准确率**：休息段和结束时，记录下来的准确率。可以输入 0-100 内的值，按空格分隔。
+  - 如果输入 0-1 之间的小数，则会乘以 100。
+  - 如果某张段位谱面有三个休息段，那么这里需要输入四个值。
+
+::: info 备注
+
+暂未开放
 
 :::

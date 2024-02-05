@@ -10,67 +10,60 @@ copyright: false
 ---
 # 指令列表
 
-- [**A / audio (ymsongs)**](./map.md/#audio)
-- [**B / bestperformance**](./score.md/#bestperformance)
-- [C / course](./map.md/#course)
-- D / dice (ymroll)
-- E / elo
-- [**F / friend**](./player.md/#friend)
-- G / gold (start/积分)
-- [**H / help**](./bot.md/#help)
-- [**I / info**](./player.md/#info)
+- [**A：Audio**](./map.md/#audio) / Song
+- [**B：Bestperformance**](./score.md/#bestperformance)
+- [**C：Custom**](./map.md/#course)
+- D：Dice / Roll
+- E：Elo
+- [**F：Friend**](./player.md/#friend)
+- G：Gold / Start / 积分
+- [**H：Help**](./bot.md/#help)
+- [**I：Info**](./player.md/#info)
 - J
-- [**K / kita**](./aid.md/#kita)
-- [**L / leader**](./map.md/#leader)
-- [M / map](./map.md/#map)
-- N
+- [**K：Kita**](./aid.md/#kita)
+- [**L：Leader**](./map.md/#leader)
+- [**M：Map**](./map.md/#map)
+- [**N：Nomination**](./map.md/#nomination)
 - O
-- [**P / passrecent**](./score.md/#pass)
-- [**Q / qualified**](./map.md/#qualified)
-- [**R / recent**](./score.md/#recent)
-- [**S / score**](./score.md/#score)
-- [**T / todaybp**](./score.md/#todaybp)
+- [**P：Passed**](./score.md/#pass)
+- [**Q：Qualified**](./map.md/#qualified)
+- [**R：Recent**](./score.md/#recent)
+- [**S：Score**](./score.md/#score)
+- [**T：Todaybp**](./score.md/#todaybp)
 - U
-- V / versus
-- W / wiki [长期更新](../wiki/)
-- X
-- Y
-- Z / sleep
+- V：Versus
+- [**W：Wiki**](../wiki/)
+- **X：testX**
+- **Y：testY**
+- **Z：Sleep**
 
 双缩写
 
-- AR / calcar
-- AS / antispam
-- [**BA / bpanalysis (bpht)**](./score.md/#bpanalysis)
-- BG / bangroup
-- [**BI / bind**](./bot.md/#bind)
-- BQ / banqq
-- BU / banuser
-- CS / calccs
-- DW / draw
-- HP / calchp
-- [**IM / immapper**](./player.md/#immapper)
-- MA / addpool
-- MO / monitor
-- [**MN / monitornow**](./tournament.md/#matchnow)
-- [MP / mappool](./tournament.md/#pool)
-- [**MU / mutual**](./player.md/#mutual)
-- [**OA / oldavatar**](./aid.md/#oldavater)
-- OD / calcod
-- [**OR / overrating**](./player.md/#overrating)
-- [**PI / ping**](./bot.md/#ping)
-- [**RA / murating**](./tournament.md/#rating)
-- SB / setbanner
-- SC / setcard
-- **SE / setu**
-- SH / search
-- **SM / setmode**
-- SP / setpanel
-- SU / super
-- [**SW / switch**](./bot.md/#switch)
-- **TR / trans**
-- UM / uploadmatch
-- WC / wordcloud
-- WT / weather
-- [**PM / ppm/ppm/ppmvs**](./player.md/#ppminus)
-- [PP / ppp/ppp/pppvs](./player.md/#ppplus)
+- AP：AddPool
+- AR：calcAR
+- AS：AntiSpam
+- [**BA：BpAnalysis (bpht)**](./score.md/#bpanalysis)
+- [**BI：BInd**](./bot.md/#bind)
+- CS：calcCS
+- DW：DraW
+- [**GP：GetPool**](./tournament.md/#getpool)
+- HP：calcHP
+- [**IM：IMmapper**](./player.md/#immapper)
+- [**ML：MatchListen**](./tournament.md/#matchlisten)
+- [**MN：MonitorNow**](./tournament.md/#matchnow)
+- [**MP：MapPool**](./tournament.md/#pool)
+- [**MU：MUtual**](./player.md/#mutual)
+- [**OA：OldAvatar**](./aid.md/#oldavater)
+- OD：calcOD
+- [**OR：OverRating**](./player.md/#overrating)
+- [**PI：PIng**](./bot.md/#ping)
+- [**RA：RAting**](./tournament.md/#rating)
+- **SE：setu**
+- **SM：SetMode**
+- [**SU：SUper**](./bot.md/#ban)
+- [**SW：SWitch**](./bot.md/#switch)
+- [**TR：TRansfer**](./aid.md/#trans)
+- WC：wordcloud
+- WT：weather
+- [**PM：PpM/ppmvs**](./player.md/#ppminus)
+- [PP：PpP/pppvs](./player.md/#ppplus)
