@@ -13,7 +13,7 @@ copyright: false
 - [**A：Audio**](./map.md/#audio) / Song
 - [**B：Bestperformance**](./score.md/#bestperformance)
 - [**C：Custom**](./map.md/#course)
-- D：Dice / Roll
+- [**D：Dice / Roll**](./fun.md/#dice)
 - E：Elo
 - [**F：Friend**](./player.md/#friend)
 - G：Gold / Start / 积分
@@ -25,27 +25,27 @@ copyright: false
 - [**M：Map**](./map.md/#map)
 - [**N：Nomination**](./map.md/#nomination)
 - O
-- [**P：Passed**](./score.md/#pass)
+- [**P：Pass**](./score.md/#pass)
 - [**Q：Qualified**](./map.md/#qualified)
 - [**R：Recent**](./score.md/#recent)
 - [**S：Score**](./score.md/#score)
 - [**T：Todaybp**](./score.md/#todaybp)
 - U
-- V：Versus
-- [**W：Wiki**](../wiki/)
-- **X：testX**
-- **Y：testY**
-- **Z：Sleep**
+- V：~~Versus~~
+- W：~~Wiki~~
+- X
+- Y
+- Z：~~Sleep~~
 
 双缩写
 
-- AP：AddPool
+- ~~AP：AddPool~~
 - AR：calcAR
-- AS：AntiSpam
+- ~~AS：AntiSpam~~
 - [**BA：BpAnalysis (bpht)**](./score.md/#bpanalysis)
 - [**BI：BInd**](./bot.md/#bind)
 - CS：calcCS
-- DW：DraW
+- ~~DW：DraW~~
 - [**GP：GetPool**](./tournament.md/#getpool)
 - HP：calcHP
 - [**IM：IMmapper**](./player.md/#immapper)
@@ -58,12 +58,12 @@ copyright: false
 - [**OR：OverRating**](./player.md/#overrating)
 - [**PI：PIng**](./bot.md/#ping)
 - [**RA：RAting**](./tournament.md/#rating)
-- **SE：setu**
+- **~~SE：SEtu~~**
 - **SM：SetMode**
 - [**SU：SUper**](./bot.md/#ban)
 - [**SW：SWitch**](./bot.md/#switch)
 - [**TR：TRansfer**](./aid.md/#trans)
-- WC：wordcloud
-- WT：weather
+- WC：WordCloud
+- WT：WeaTher
 - [**PM：PpM/ppmvs**](./player.md/#ppminus)
 - [PP：PpP/pppvs](./player.md/#ppplus)

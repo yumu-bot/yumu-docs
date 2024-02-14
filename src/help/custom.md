@@ -17,7 +17,7 @@ copyright: false
 ---
 # 自定指令
 
-## <HopeIcon icon="list"/> 1 自定义横幅和卡片 !ymhelp (!h) {id=help}
+## <HopeIcon icon="pen"/> 1 自定义横幅和卡片 !ymcustom (!c) {id=custom}
 
 **使用方法**
 
