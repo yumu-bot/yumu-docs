@@ -92,6 +92,6 @@ color: rgba(26, 187, 180, 0.15)
 title: 自定指令
 desc: 自定义横幅背景、卡片背景
 logo: ./assets/icon/icon-pen-nib.svg
-link: fun.md
+link: custom.md
 color: rgba(67, 140, 202, 0.15)
 ```
