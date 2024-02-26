@@ -7,7 +7,7 @@ order: 2
 ---
 ```card
 title: Muziyami
-desc: 项目主负责人、功能设计、产品、运维、测试、前端、后端、美工
+desc: 项目主负责人、功能设计、产品、运维、测试、前端、后端、美工</br>联系方式：QQ：1340691940
 logo: https://a.ppy.sh/7003013
 link: https://osu.ppy.sh/users/7003013
 color: rgba(253,230,138,0.15)
@@ -15,7 +15,7 @@ color: rgba(253,230,138,0.15)
 
 ```card
 title: SIyuyuko
-desc: 产品、运维、前端、网站前端
+desc: 产品、运维、前端、网站前端</br>联系方式：QQ：3228981717
 logo: https://a.ppy.sh/9794030
 link: https://osu.ppy.sh/users/9794030
 color: rgba(253,230,138,0.15)
@@ -23,7 +23,7 @@ color: rgba(253,230,138,0.15)
 
 ```card
 title: -Spring Night-
-desc: 主开发、后端、部分功能设计
+desc: 主开发、后端、部分功能设计</br>联系方式：QQ：2480557535
 logo: https://a.ppy.sh/17064371
 link: https://osu.ppy.sh/users/17064371
 color: rgba(245,177,153,0.15)
@@ -31,15 +31,15 @@ color: rgba(245,177,153,0.15)
 
 ```card
 title: Truncle
-desc: 后端、开发 PPM 逻辑
+desc: 后端、开发 PPM 逻辑</br>联系方式：QQ：1968035918
 logo: https://a.ppy.sh/14218879
 link: https://osu.ppy.sh/users/14218879
 color: rgba(253,230,138,0.15)
 ```
 
 ```card
-title: Shiratori
-desc: 后端、Discord 对接
+title: Shiratori (ZhongRen)
+desc: 后端、Discord 对接</br>联系方式：QQ：732713726
 logo: https://a.ppy.sh/6263426
 link: https://osu.ppy.sh/users/6263426
 color: rgba(253,230,138,0.15)
@@ -47,7 +47,7 @@ color: rgba(253,230,138,0.15)
 
 ```card
 title: n0000000000o
-desc: 维基维护
+desc: 维基维护</br>联系方式：QQ：1120180945
 logo: https://a.ppy.sh/12215328
 link: https://osu.ppy.sh/users/12215328
 color: rgba(253,230,138,0.15)
@@ -55,7 +55,7 @@ color: rgba(253,230,138,0.15)
 
 ```card
 title: Dana Iclucia
-desc: 临时服务器运维
+desc: 临时服务器运维</br>联系方式：QQ：2785719748
 logo: https://a.ppy.sh/13184288
 link: https://osu.ppy.sh/users/13184288
 color: rgba(193,216,172,0.15)
