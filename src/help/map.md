@@ -103,8 +103,6 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 :::
 
-:::
-
 ## ~~<HopeIcon icon="magnifying-glass"/> 3 搜索谱面 !ymsearch (!h)~~ {id=search}
 
 **使用方法**

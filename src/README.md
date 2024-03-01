@@ -16,7 +16,7 @@ actions:
     type: primary
   
   - text: 部署分身
-    link: ./wiki/deploy.md
+    link: ./deploy/
     type: primary
     
   - text: 小提示

@@ -19,6 +19,14 @@ export default sidebar({
       children: "structure",
     },
      {
+      text: "部署",
+      icon: "circle-nodes",
+      prefix: "deploy/",
+      link:"deploy/",
+      children:"structure",
+      // children:["botFunction"]
+    },
+     {
       text: "小提示",
       icon: "lightbulb",
       prefix: "tips/",
@@ -27,7 +35,7 @@ export default sidebar({
       // children:["botFunction"]
     },
     {
-      text: "wiki",
+      text: "维基",
       icon: "shapes",
       prefix: "wiki/",
       link:"wiki/",
