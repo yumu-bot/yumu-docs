@@ -14,7 +14,11 @@ actions:
   - text: 使用指南 💡
     link: ./help/
     type: primary
-
+  
+  - text: 部署分身
+    link: ./wiki/deploy.md
+    type: primary
+    
   - text: 小提示
     link: ./tips/
 
