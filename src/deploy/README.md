@@ -36,21 +36,23 @@ Bot 有多号防发送重复消息机制。因此您可以放心大胆地部署�
 
 请使用支持 **OneBot V11** 协议的 QQ 客户端，配置**反向 WebSocket** 协议代理链接为下即可。
 
-<HopeIcon icon="tower-cell"/> ==ws://121.41.63.60:11735/pub/onebotSocket==
+<HopeIcon icon="tower-cell"/> ==**ws://121.41.63.60:11735/pub/onebotSocket**==
 
 - [什么是 WebSocket?](https://baike.baidu.com/item/WebSocket/1953845?fr=ge_ala)
-- [什么是 OneBot V11?](https://www.bilibili.com/read/cv27795799/)
+- [OneBot V11 协议内容](https://github.com/botuniverse/onebot-11)
 
 ## <HopeIcon icon="people-pulling"/> 详细部署 {id=detailed}
 
-本文写于 2024-03-02。请根据您所处日期的实际情况，酌情并灵活地按以下步骤操作。
+本文写于 2024-03-02。因此，下文中部分程序可能会有更新。请根据您所处日期的实际情况，酌情并灵活地按以下步骤操作，并下载==最新版程序==。
 
 首先，请准备一部可使用的 Android 设备，并且 Android 版本必须高于 9。
 
-- 推荐最低配置：
-  - 处理器：骁龙 665；骁龙 810；Helio X27；麒麟 710；苹果 A8X。[手机 CPU 性能天梯图](https://www.mydrivers.com/zhuanti/tianti/01/)
+- 推荐配置：
+  - 处理器：骁龙 665；骁龙 810；Helio X27；麒麟 710 或更佳的处理器。[手机 CPU 性能天梯图](https://www.mydrivers.com/zhuanti/tianti/01/)
   - 内存：4 GB，越大越好
-  - 存储：128 GB，越大越好（因为会在手机内缓存将要发送的图片）
+  - 存储：128 GB，越大越好
+- 最低配置：
+  - 能正常运行以下三个软件。
 
 其次，请在您的 Android 设备上下载 **LSPatch** (v0.6) 和 **OpenShamrock** (v1.0.8)。
 
@@ -115,6 +117,8 @@ Bot 有多号防发送重复消息机制。因此您可以放心大胆地部署�
 
 ::: warning 注意
 
-这种部署分身的方式，本质上是利用框架，在 QQ 内模拟发送图片消息。因此，您必须==定期清理 Shamrock 缓存在 QQ 内的图片==，防止存储空间不足。
+这种部署分身的方式，本质上是利用框架，在 QQ 内模拟发送图片消息。因此，您必须定期==清理== Shamrock 缓存在 QQ 内的图片，防止存储空间不足。
+
+据开发者实测，如果您的账号调用数量一周达到了 1000 次，那么它的存储容量增加趋势大约是每周 8~10 GB。
 
 :::
