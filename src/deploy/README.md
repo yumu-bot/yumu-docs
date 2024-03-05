@@ -38,7 +38,7 @@ Bot 有多号防发送重复消息机制。因此您可以放心大胆地部署�
 
 <HopeIcon icon="tower-cell"/> ==**ws://121.41.63.60:11735/pub/onebotSocket**==
 
-- [什么是 WebSocket?](https://baike.baidu.com/item/WebSocket/1953845?fr=ge_ala)
+- [什么是 WebSocket?](https://baike.baidu.com/item/WebSocket/1953845)
 - [OneBot V11 协议内容](https://github.com/botuniverse/onebot-11)
 
 ## <HopeIcon icon="people-pulling"/> 详细部署 {id=detailed}
@@ -58,7 +58,7 @@ Bot 有多号防发送重复消息机制。因此您可以放心大胆地部署�
 首先，请准备一部可使用、较现代的 Android 设备，并且 Android 版本必须高于 **9**。
 
 - 推荐配置：
-  - 处理器：骁龙 665；骁龙 810；Helio X27；麒麟 710 或更佳的处理器。[手机 CPU 性能天梯图](https://www.mydrivers.com/zhuanti/tianti/01/)
+  - 处理器：手机选择 骁龙 665；骁龙 810；Helio X27；麒麟 710 或更佳的处理器。如果使用虚拟机则考虑分配4核以上[手机 CPU 性能天梯图](https://www.mydrivers.com/zhuanti/tianti/01/)
   - 内存：4 GB，越大越好
   - 存储：128 GB，越大越好
 - 最低配置：
@@ -66,22 +66,26 @@ Bot 有多号防发送重复消息机制。因此您可以放心大胆地部署�
 
 其次，请在您的 Android 设备上下载 **LSPatch** (v0.6) 和 **OpenShamrock** (v1.0.8)。
 
+如果设备支持 root 且安装了其他XP框架(如LSPosed), 则可以跳过 LSPatch 的安装, 直接启用 OpenShamrock 模块, 此时开启自动唤醒 QQ 可以免除保活措施
+
 ::: tip 提示
 
 - LSPatch: https://github.com/LSPosed/LSPatch/releases/tag/v0.6
   - 下载安装 `manager-v0.6-398-release.apk`。
 - OpenShamrock: https://github.com/whitechi73/OpenShamrock/releases/tag/1.0.8
-  - 下载 `Shamrock-v1.0.8.r296.e68a1ff-arm64.zip`，解压出 `.apk` 并安装。
+  - 请根据设备的CPU架构合理选择要下载的 zip 包，解压出 `.apk` 并安装。
 
 :::
 
-然后，使用 LSPatch 修补您手机内的 QQ 应用。
+然后，在设备内使用 LSPatch 修补您设备内的 QQ 应用。
+
+QQ 推荐版本: [9.0.20_64](https://disk.365246692.xyz/d/public/other/Android_9.0.20_64.apk?sign=A0GhRTf6U52T1TovxTDx9H0VOmMAib8rNclStBCaDU4=:1709731237)
 
 ::: tip 提示
 
 * 进入 LSPatch，点击靠下的左数第二个按键：`管理`。
 * 点击右下角的 + 号，选择`新建修补`。
-  * 如果您有 [QQ 安装包](https://im.qq.com/index/#downloadAnchor)，选择`从存储目录中选择（多个）apk`，并找到所需修补的安装包。
+  * 如果您有 QQ 安装包，选择`从存储目录中选择（多个）apk`，并找到所需修补的安装包。
   * 如果您已经安装了 QQ，选择`选择已安装的应用程序`。
 * 等待修补完成。此时 LSPatch 的命令行最下面一行会标出它修补好的 QQ 安装包路径。
 * 进入文件管理器，按照路径找到这个 QQ 安装包。安装。
@@ -90,7 +94,7 @@ Bot 有多号防发送重复消息机制。因此您可以放心大胆地部署�
 
 :::
 
-此时修补和作用域工作已经完成。接下来需要调整 OpenShamrock 内的参数。
+此时修补和作用域工作已经完成。接下来需要设置 OpenShamrock 。
 
 ::: tip 提示
 
@@ -98,12 +102,12 @@ Bot 有多号防发送重复消息机制。因此您可以放心大胆地部署�
 * 往下翻，找到`接口信息 (双击修改)`框内的`被动 WebSocket 地址`，双击，填入以上所述的[==反向 WebSocket 代理链接==](#brief)。
 * 再往下翻，找到`功能设置`框，勾选`被动 WebSocket (OneBot 标准 WebSocket，Shamrock 作为 Client)`。
 * 点击上面四个按钮的第四个，选中会显示 `Lab`。
-* 往下翻，找到`实验功能`框，勾选`自回复测试 (发送 [ping]，机器人发送一个具有调试信息的返回)`。
+* [可选] 往下翻，找到`实验功能`框，勾选`自回复测试 (发送 [ping]，机器人发送一个具有调试信息的返回)`。
 * 再往下翻，找到`安全性设置`框，勾选`防止调用栈检测 (防止 QQ 进行堆栈跟踪检测，需要重新启动 QQ)`。
 
 ::: info 备注
 
-`自回复测试`这个选项能让你通过发送 `Ping`（不带感叹号），来单独测试 Shamrock 和 LSPatch 是否正常运行。
+`自回复测试`这个选项能让你通过发送 `ping`（不带感叹号），来单独测试 Shamrock 是否正常工作。
 
 :::
 
