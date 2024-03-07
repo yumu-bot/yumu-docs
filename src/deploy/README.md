@@ -2,7 +2,7 @@
 title: 部署分身
 icon: circle-nodes
 order: 1
-date: 2024-03-02
+date: 2024-03-08
 category:
   - 部署
 tag:
@@ -43,22 +43,27 @@ Bot 有多号防发送重复消息机制。因此您可以放心大胆地部署�
 
 ## <HopeIcon icon="people-pulling"/> 详细部署 {id=detailed}
 
-本文最后更新于 2024 年 3 月 5 日。因此，在您阅读的时间点时，下文中部分程序可能会有更新。所以请根据您阅读时的实际情况，灵活操作，并下载**最新**程序。
+本文最后更新于 2024 年 3 月 8 日。因此，在您阅读的时间点时，下文中部分程序可能会有更新。所以请根据您阅读时的实际情况，灵活操作，并下载**最新**程序。
 
 以下是开发者正在使用的，基于 [LSPatch](https://github.com/LSPosed/LSPatch/) 框架的方案 [OpenShamrock](https://github.com/whitechi73/OpenShamrock) 的部署方法。风控等级高的账号也可以运行。
 
 ::: info 替代方案
 
-- 基于 [Mirai](https://mirai.mamoe.net/) 的 [go-cqhttp](https://docs.go-cqhttp.org/)：**不推荐**，作者已被腾讯传唤，并停止维护。如果您之前就使用了此解决方案，并且账号依旧可以登录 (未出现 Code 45)，您可以直接在配置文件内，`ws-reverse` 行填入以上所述的[==反向 WebSocket 代理链接==](#brief)，即可完成部署。
-- 基于 HOOK QQNT 的方案 [LiteLoaderQQNT](https://liteloaderqqnt.github.io/) 搭配 [LLOneBot](https://github.com/LLOneBot/LLOneBot)：风控等级高的账号也可以运行。
-- 基于 C# 实现的 QQNT 消息协议库 [Lagrange.Core](https://lagrangedev.github.io/Lagrange.Doc/)：**不稳定**，可能会导致回执问题以及容易掉登录问题。
+- 基于 [Mirai](https://mirai.mamoe.net/) 的 [go-cqhttp](https://docs.go-cqhttp.org/)：
+  - **不推荐**，作者已被腾讯传唤，并停止维护。
+  - 如果您之前就使用了此解决方案，并且账号依旧可以登录 (未出现 Code 45)，您可以直接在配置文件内的 `ws-reverse` 行，填入以上所述的[==反向 WebSocket 代理链接==](#brief)，完成部署。
+- 基于 HOOK QQNT 的方案 [LiteLoaderQQNT](https://liteloaderqqnt.github.io/) 搭配 [LLOneBot](https://github.com/LLOneBot/LLOneBot)：
+  - 风控等级高的账号也可以运行。
+- 基于 C# 实现的 QQNT 消息协议库 [Lagrange.Core](https://lagrangedev.github.io/Lagrange.Doc/)：
+  - **不稳定**，可能会导致回执问题，以及偶发登录状态失效问题。
 
 :::
 
 首先，请准备一部可使用、较现代的 Android 设备，并且 Android 版本必须高于 **9**。
 
 - 推荐配置：
-  - 处理器：手机选择 骁龙 665；骁龙 810；Helio X27；麒麟 710 或更佳的处理器。如果使用虚拟机则考虑分配4核以上[手机 CPU 性能天梯图](https://www.mydrivers.com/zhuanti/tianti/01/)
+  - 处理器：手机选择 骁龙 665；骁龙 810；Helio X27；麒麟 710 或更佳的处理器。[手机 CPU 性能天梯图](https://www.mydrivers.com/zhuanti/tianti/01/)
+  - 如果使用虚拟机，则需要分配 **4** 或更多核心数。
   - 内存：4 GB，越大越好
   - 存储：128 GB，越大越好
 - 最低配置：
@@ -66,20 +71,24 @@ Bot 有多号防发送重复消息机制。因此您可以放心大胆地部署�
 
 其次，请在您的 Android 设备上下载 **LSPatch** (v0.6) 和 **OpenShamrock** (v1.0.8)。
 
-如果设备支持 root 且安装了其他XP框架(如LSPosed), 则可以跳过 LSPatch 的安装, 直接启用 OpenShamrock 模块, 此时开启自动唤醒 QQ 可以免除保活措施
-
 ::: tip 提示
 
 - LSPatch: https://github.com/LSPosed/LSPatch/releases/tag/v0.6
   - 下载安装 `manager-v0.6-398-release.apk`。
 - OpenShamrock: https://github.com/whitechi73/OpenShamrock/releases/tag/1.0.8
-  - 请根据设备的CPU架构合理选择要下载的 zip 包，解压出 `.apk` 并安装。
+  - 请根据设备的 CPU 架构，合理选择要下载的 zip 包，解压出 `.apk` 并安装。
+    - arm64：64 位 ARM 处理器，目前大多数安卓手机是此架构
+    - x86_64: 64 位的平板、模拟器是此架构
+
+::: info 备注
+
+如果设备支持且已被 root (包括解锁 BL (Bootloader Unlock))，并且已经安装了其他基于 [XPosed](https://baike.baidu.com/item/Xposed%E6%A1%86%E6%9E%B6) 的框架 (如 LSPosed), 则可以跳过 LSPatch 的安装, 直接启用 OpenShamrock 模块。
+
+此时，只要开启自动唤醒 QQ，即可免除保活（保持运行）措施。
 
 :::
 
 然后，在设备内使用 LSPatch 修补您设备内的 QQ 应用。
-
-QQ 推荐版本: [9.0.20_64](https://disk.365246692.xyz/d/public/other/Android_9.0.20_64.apk?sign=A0GhRTf6U52T1TovxTDx9H0VOmMAib8rNclStBCaDU4=:1709731237)
 
 ::: tip 提示
 
@@ -92,16 +101,22 @@ QQ 推荐版本: [9.0.20_64](https://disk.365246692.xyz/d/public/other/Android_9
 * 安装好后，在 LSPatch 的管理页，左上角选择应用，找到 QQ。选择，点击`模块作用域`。
 * 在跳出的`选择应用程序`页面中，勾选 Shamrock。按右下角`对勾`确认。
 
+::: info 备注
+
+- QQ 下载地址：
+  - 推荐版本: [9.0.20_64位](https://disk.365246692.xyz/d/public/other/Android_9.0.20_64.apk?sign=A0GhRTf6U52T1TovxTDx9H0VOmMAib8rNclStBCaDU4=:1709731237)
+  - 其他版本：[官网](https://im.qq.com/index/#downloadAnchor)
+
 :::
 
 此时修补和作用域工作已经完成。接下来需要设置 OpenShamrock 。
 
 ::: tip 提示
 
-* 进入 OpenShamrock，无视左上角的字。点击上面四个按钮的第二个，选中会显示`状态`。
+* 进入 OpenShamrock，无视左上角的字。点击上面四个按钮的第**二**个，选中会显示`状态`。
 * 往下翻，找到`接口信息 (双击修改)`框内的`被动 WebSocket 地址`，双击，填入以上所述的[==反向 WebSocket 代理链接==](#brief)。
 * 再往下翻，找到`功能设置`框，勾选`被动 WebSocket (OneBot 标准 WebSocket，Shamrock 作为 Client)`。
-* 点击上面四个按钮的第四个，选中会显示 `Lab`。
+* 点击上面四个按钮的第**四**个，选中会显示 `Lab`。
 * [可选] 往下翻，找到`实验功能`框，勾选`自回复测试 (发送 [ping]，机器人发送一个具有调试信息的返回)`。
 * 再往下翻，找到`安全性设置`框，勾选`防止调用栈检测 (防止 QQ 进行堆栈跟踪检测，需要重新启动 QQ)`。
 
