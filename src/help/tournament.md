@@ -36,16 +36,23 @@ copyright: false
 
 **使用方法**
 
-!ymrating / mra / ra [**比赛编号**] (**跳过开头**) (**忽略结尾**) (**f**) (**r**)
-
+!ymrating / mra / ra [**比赛编号**] (**`e`Easy 倍率**) (**跳过开头**) (**忽略结尾**) (**`[`筛除对局`]`**) (**f**) (**r**)
 - **<HopeIcon icon="hashtag"/> 比赛编号**：必填，需要查询的比赛编号 (MATCHID)。
   - 获取方法：进入房间，点击 #multiplayer 下，BanchoBot 发送的第一条消息中的蓝色 here。之后，在弹出的网站内找到网站链接末尾的数字，即比赛编号 (MATCHID)。
+- **<HopeIcon icon="circle-plus"/> Easy 倍率**：如果您的比赛对于 Easy 模组有分数加成，请填写此字段（开头加 e）。
+  - 允许填写 0~20 内的数字（允许小数）。比如：**e** 1.8。
+  - 如不填写，默认为 1（不修改）。
 - **<HopeIcon icon="forward"/> 跳过开头**：需要跳过的开头对局数量。这适用于比赛含有**热手**等不需要统计玩家表现的开头对局。
   - 如不填写，默认为 0。想要输入忽略结尾的参数时，也可输入 0 来占位。
 - **<HopeIcon icon="rotate-left"/> 忽略结尾**：需要忽略的结尾对局数量。这适用于比赛含有**决胜局表演或娱乐局**等不需要统计玩家表现的结尾对局。
   - 如不填写，默认为 0。
+- **<HopeIcon icon="trash-can"/> 筛除对局**：如果您并不能仅依靠以上两个操作就能实现筛除无用对局的目标，也可以输入要筛除的对局所对应的位置。
+  - 格式为中括号 `[]` 括起来的数组。从 1 开始。
+    - 比如 !ymra matchID [1, 2, 3] = 筛去前三场 = !ymra matchID **3**。
+  - 可与以上两个功能搭配使用。
+    - 比如 !ymra matchID [1, 2, 3] = !ymra matchID **2** [3]。
 - **<HopeIcon icon="person-falling"/> f**：如果填入 f，则表示统计玩家低于 1 万分的成绩。
-  - 如不填写，默认忽略玩家低于 1 万分的成绩。
+  - 如不填写，默认忽略玩家低于 1 万分的成绩（**默认去除房间内的裁判**）。
 - **<HopeIcon icon="slash"/> r**：如果填入 r，则表示忽略重复的对局，只保留靠后的那一场。
   - 如不填写，默认统计重复的对局。
 
@@ -135,14 +142,16 @@ copyright: false
 
 **使用方法**
 
-!ymseries / sra / sa (`#`**比赛名称**`#`) [[**比赛编号**] (**跳过开头**) (**忽略结尾**)]... (**f**) (**r**)
+!ymseries / sra / sa (`#`**比赛名称**`#`) [[**比赛编号**] (**跳过开头**) (**忽略结尾**) (**`[`筛除对局`]`**)]... (**`e`Easy 倍率**) (**f**) (**r**)
 
 - **<HopeIcon icon="address-card"/> 比赛名称**：选填，这个名字将展现在左上角的卡片中。不填默认显示第一场比赛的名称。
 - **<HopeIcon icon="hashtag"/> 比赛编号**：同上，必填，需要查询的比赛编号 (MATCHID)。
+- **<HopeIcon icon="circle-plus"/> Easy 倍率**：同上，选填，如果您的比赛对于 Easy 模组有分数加成，请填写此字段（开头加 e）。
 - **<HopeIcon icon="forward"/> 跳过开头**：同上，选填，需要跳过的开头对局数量。
   - 如不填写，默认为 0。想要输入忽略结尾的参数时，也可输入 0 来占位。
 - **<HopeIcon icon="rotate-left"/> 忽略结尾**：同上，选填，需要忽略的结尾对局数量。
   - 如不填写，默认为 0。
+- **<HopeIcon icon="trash-can"/> 筛除对局**：同上，选填，如果您并不能仅依靠以上两个操作就能实现筛除无用对局的目标，也可以输入要筛除的对局所对应的位置。
 - **<HopeIcon icon="person-falling"/> f**：如果填入 f，则表示统计玩家低于 1 万分的成绩。
   - 如不填写，默认忽略玩家低于 1 万分的成绩。
 - **<HopeIcon icon="slash"/> r**：如果填入 r，则表示忽略重复的对局，只保留靠后的那一场。
@@ -150,7 +159,7 @@ copyright: false
 
 ::: tip 提示
 
-需要按组输入 <HopeIcon icon="hashtag"/> 比赛编号、<HopeIcon icon="forward"/> 跳过开头和 <HopeIcon icon="rotate-left"/> 忽略结尾参数。当然，也可以不输入（默认为 0）。
+需要按组输入 <HopeIcon icon="hashtag"/> 比赛编号、<HopeIcon icon="forward"/> 跳过开头和 <HopeIcon icon="rotate-left"/> 忽略结尾、<HopeIcon icon="trash-can"/> 筛除对局参数。当然，也可以不输入（默认为 0）。
 
 举例：
 

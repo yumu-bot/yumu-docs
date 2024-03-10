@@ -191,7 +191,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: warning 注意
 
-!todaybp 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，Bot 不会提出报错信息（退避）。建议玩家只使用短命令 !t。
+!todaybp 仍旧可能与其他 Bot 冲突。建议玩家只使用短命令 !t。
 
 :::
 
