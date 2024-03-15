@@ -2,7 +2,7 @@
 title: 部署分身
 icon: circle-nodes
 order: 1
-date: 2024-03-08
+date: 2024-03-16
 category:
   - 部署
 tag:
@@ -12,6 +12,18 @@ sticky: false
 star: false
 footer: Yumu Docs - 部署分身
 copyright: false
+---
+
+::: warning 注意
+
+Bot 即将正式上线（使用[**腾讯开放的机器人 API**](https://bot.q.qq.com/wiki)，并且有官方账号）。
+
+届时，您可以通过**群聊设置——管理群——群机器人——搜索——输入雨沐 BOT ID**的方法，添加 Bot 账号进入 QQ 群，并使用相应功能。
+
+此文章即将存档，并替换成添加 Bot 的方案。
+
+:::
+
 ---
 
 由于 Bot 主账号受腾讯严重打压，不能保证良好、及时的服务。现在，您也可以使用自己的 QQ 账号，部署 QQ Bot 分身。
@@ -43,7 +55,7 @@ Bot 有多号防发送重复消息机制。因此您可以放心大胆地部署�
 
 ## <HopeIcon icon="people-pulling"/> 详细部署 {id=detailed}
 
-本文最后更新于 2024 年 3 月 8 日。因此，在您阅读的时间点时，下文中部分程序可能会有更新。所以请根据您阅读时的实际情况，灵活操作，并下载**最新**程序。
+本文最后更新于 2024 年 3 月 16 日。因此，在您阅读的时间点时，下文中部分程序可能会有更新。所以请根据您阅读时的实际情况，灵活操作，并下载**最新**程序。
 
 以下是开发者正在使用的，基于 [LSPatch](https://github.com/LSPosed/LSPatch/) 框架的方案 [OpenShamrock](https://github.com/whitechi73/OpenShamrock) 的部署方法。风控等级高的账号也可以运行。
 
