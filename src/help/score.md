@@ -60,7 +60,8 @@ copyright: false
   - 如果使用了 !ympass 或者 !pass，则后面需要加 `es`（毕竟英文复数就是这样），!p 后面只需要加 `s`。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
-  - 暂不支持使用 UID 查询。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
   - 可以输入 1~100 之间的整数，输入 2 就是查询最近成绩之前的那一个成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
@@ -73,23 +74,24 @@ copyright: false
 
 ::: tip 提示
 
-如果不输入玩家名称（查询自己的成绩），或是玩家名不在 1-100 这个区间内，那么偏移量前的 `#` 号==可以忽略==。
+如果不输入玩家名称（查询自己的成绩），那么偏移量前的 `#` 号可以忽略。
+
+如果查询的玩家名称末尾含有**空格**和小于 100 的**纯数字**的玩家，如 **osuplayer 12**，建议在其后添加偏移参数 (**`#...`**)，便于区分。
 
 示例：
 
-* !p SIyuyuko #3，合法，查询玩家 SIyuyuko 往前数第三个通过成绩。
-* !p SIyuyuko 3，合法，效果同上。
-* !p 123 123 #3，合法，查询玩家 123 123 往前数第三个通过成绩。
-* !p 123 123，非法，后面的字段 123 会被匹配到偏移量上，但是由于偏移量超过了阈值，所以 Bot 会尝试将它视作玩家名称。
-* ==!p 12 12，非法，后面的字段 12 会被匹配到偏移量上，此时会报错。==
+* !p osuplayer 12，查询玩家 osuplayer 往前数第十二个通过成绩。
+* !p osuplayer 12 #12，查询玩家 osuplayer 12 往前数第十二个通过成绩。
 
-大多数带 `#` 号的参数都有这种性质。请用户注意，在省略符号以便于方便输入的同时，也要尽量避免出现非法输入。
+大多数可以忽略 `#` 号的参数都有这种性质。请用户注意，尽量避免获取到不想要的结果。
 
 :::
 
 ::: tip 提示
 
 使用 !uup 可以获取文字版消息。
+
+使用 !pc 可以获取明信片设计。允许使用玩家名、qq= 查询。
 
 :::
 
@@ -106,19 +108,23 @@ copyright: false
   - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别（==!rs 100 = !r 1-100 = !rs 1-100==）。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：同上。
 
 ::: warning 注意
 
 为了与其他 Bot 的绑定指令区分，!re 是无法唤起 YumuBot 的。
 
-!recent 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，Bot 不会提出报错信息（退避）。建议玩家只使用短命令 !r。
+!recent 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，==Bot 不会回应你==。建议玩家只使用短命令 !r。
 
 :::
 
 ::: tip 提示
 
 使用 !uur 可以获取文字版消息。
+
+使用 !rc 可以获取明信片设计。允许使用玩家名、qq= 查询。
 
 :::
 
@@ -133,6 +139,8 @@ copyright: false
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
 - **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
 
 ::: details 可输入的 <HopeIcon icon="music"/> 模组名称
@@ -143,7 +151,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: warning 注意
 
-!score 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，Bot 不会提出报错信息（退避）。建议玩家只使用短命令 !s。
+!score 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，==Bot 不会回应你==。建议玩家只使用短命令 !s。
 
 :::
 
@@ -160,19 +168,23 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
   - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别（==!bs 100 = !b 1-100 = !bs 1-100==）。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
   - 可以输入 1~100 之间的整数，输入 2 就是查询第二个最好成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
 
 ::: warning 注意
 
-!bp 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，Bot 不会提出报错信息（退避）。建议玩家只使用短命令 !b。
+!bp 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，==Bot 不会回应你==。建议玩家只使用短命令 !b。
 
 :::
 
 ::: tip 提示
 
-如果不输入玩家名称（查询自己的成绩），或是玩家名不在 1-100 这个区间内，那么偏移量前的 `#` 号==可以忽略==。
+如果不输入玩家名称（查询自己的成绩），那么偏移量前的 `#` 号可以忽略。
+
+如果查询的玩家名称末尾含有**空格**和小于 100 的**纯数字**的玩家，如 **osuplayer 12**，建议在其后添加偏移参数 (**`#...`**)，便于区分。
 
 :::
 
@@ -186,6 +198,8 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
 - **<HopeIcon icon="calendar-days"/> 天数**：查询距今多少天内，玩家新增的最好成绩。
   - 可以输入 1~999 之间的整数。输入 30 就是距今 30 天内。
 
@@ -197,14 +211,17 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: tip 提示
 
-如果不输入玩家名称（查询自己的信息），则天数前的 `#` 号==可以忽略==。 如果需要查询其他玩家，但其他玩家的名字不含有数字时，则名字前的 `*` 号==可以忽略==。
+如果不输入玩家名称（查询自己的信息），则天数前的 `#` 号可以忽略。
 
-但如果是查询含有数字名（特别是纯数字名）的玩家时，必须在前面添加一个 `*` 号。
+如果查询的其他玩家名称含有以下容易引起混淆的条件时，建议在其后添加天数参数 (**`#...`**)，便于区分。
+
+- 名称为纯数字，且值小于 999 的玩家。如 **970**。
+- 名称末尾含有**空格**和小于 999 的**纯数字**的玩家，如 **osuplayer 123**。
 
 示例：
 
 - !t 970：查询自己 970 天内新增的最好成绩。
-- !t *970 查询一个叫 970 的玩家，在今天内新增的最好成绩。
+- !t 970 #1 查询一个叫 970 的玩家，在今天内新增的最好成绩。
 
 :::
 
@@ -218,6 +235,8 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
 
 ![BA 面板](https://yumemuzi.s-ul.eu/yumu/8YT8nqlz)
 
@@ -253,7 +272,7 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: warning 注意
 
-!bpa 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，Bot 不会提出报错信息（退避）。建议玩家只使用短命令 !ba。
+!bpa 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，==Bot 不会回应你==。建议玩家只使用短命令 !ba。
 
 :::
 

@@ -63,7 +63,18 @@ copyright: false
 
 **使用方法**
 
-!ymbind / bind / bi (解绑是 !unbind / ub)
+!ymbind / bi (**`:f` 操作**) (**`*`玩家名**)
+
+**绑定的时候无需添加任何参数。自我解绑是 !unbind / ub，也不需要带任何参数。**
+
+::: details 使用方法
+
+- **<HopeIcon icon="mug-saucer"/> 操作**：只有最高级管理员才可使用。
+- **<HopeIcon icon="address-card"/> 玩家名**：不推荐使用玩家名绑定。这个参数可以供超级管理员来定向解除绑定关系。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
+
+:::
 
 ![Bot 绑定](https://yumemuzi.s-ul.eu/yumu/c3DP4FOB)
 
@@ -88,14 +99,13 @@ cond2(yes)->op4
 cond2(no)->sub1(right)->op1
 op4->e
 
-
 ```
 
 ::: tip 提示
 
 基础绑定方法是 !ymbind，然后点击链接，在浏览器登录、授权、从而完成绑定（如上图）。
 
-不推荐使用 !ymbind + <HopeIcon icon="address-card"/> 玩家名的绑定方法，因为绝大多数功能在没有 OAuth 2.0 授权前都==无法使用==。
+不推荐使用 !ymbind + <HopeIcon icon="address-card"/> 玩家名的绑定方法。因为绝大多数功能在没有 OAuth 2.0 授权前都==无法使用==。
 
 如果您实在是只想绑定玩家名，那么必须正确回答绑定的问题。
 
@@ -103,9 +113,7 @@ op4->e
 
 ::: warning 注意
 
-为了与其他 Bot 的绑定指令区分，!bind 唤起 YumuBot 时，会需要玩家二次确认（玩家看到消息，==再次发送 OK 确认==，才会发送绑定链接）。
-
-普通玩家可以使用 ==!unbind== 解除自己的绑定，只有管理员可以使用 !unbind <HopeIcon icon="at"/> QQ 或者 !unbind qq= <HopeIcon icon="fa-brands fa-qq"/> QQ 的方式解除其他人的绑定。
+为了与其他 Bot 的绑定指令区分，!bind 唤起 YumuBot 时，会需要玩家二次确认：玩家看到提示，并再次发送 OK 确认，Bot 才会发送有效的绑定链接。
 
 在此之前，如果普通玩家想解绑，需要 <HopeIcon icon="link"/> [==联系开发者==](../about/dev.md)，或是去 <HopeIcon icon="link"/> [==个人主页/账户设置下的#开放授权页面==](https://osu.ppy.sh/home/account/edit)，撤销 YuriMumu 的访问权限。
 
@@ -154,8 +162,10 @@ Bot 将不会回应任何被封禁的玩家（QQ、群组）发出的指令。
 
 **使用方法**
 
-!ymswitch / sw (**功能名**) (**操作**)
+!ymswitch / sw (**`:`群组号**) (**功能名**) (**操作**)
 
+- **<HopeIcon icon="slash"/> 群组号**：需要特定限制的群组号。输入格式也可以为 group=114514，
+  - 一般用于在特定群聊中关闭部分功能，确保不会滥用。
 - **<HopeIcon icon="robot"/> 功能名**：可开关的功能名称。
   - 如果记不住功能名，可以留空。Bot 会输出一张列出了所有功能的 <HopeIcon icon="image"/> 图片。
 - **<HopeIcon icon="up-down-left-right"/> 操作**：开启或关闭。
@@ -181,14 +191,6 @@ Bot 将不会回应任何被封禁的玩家（QQ、群组）发出的指令。
 ::: warning 注意
 
 只有超级管理员可以使用查询服务调用数量。
-
-:::
-
-## ~~<HopeIcon icon="desktop"/> 7 刷屏限制开关 !ymantispam (!as)~~ {id=antispam}
-
-::: info 备注
-
-暂未开放。
 
 :::
 

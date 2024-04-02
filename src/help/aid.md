@@ -27,7 +27,7 @@ copyright: false
 
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
-  - 暂不支持使用 <HopeIcon icon="slash"/> UID 查询。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=114514。
 
 ![旧主页头像面板，指令：!oa 970](https://yumemuzi.s-ul.eu/yumu/MYOkR6U9)
 

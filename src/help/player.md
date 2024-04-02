@@ -61,7 +61,9 @@ copyright: false
 
 ::: tip 提示
 
-使用 !uui 可以获取文字版消息。
+使用 !uui 可以获取文字版消息（仅限自己）。
+
+使用 !ic 可以获取明信片设计。允许使用玩家名、qq= 查询。
 
 :::
 
@@ -132,10 +134,10 @@ copyright: false
 
 **使用方法**
 
-!ymmutual / mu (**玩家名**) (**`@`QQ 用户**)
+!ymmutual / mu (**玩家名**)
 
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-- **<HopeIcon icon="at"/> QQ 用户**
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
   - 可以查询对方的主页链接。
 
 ## <HopeIcon icon="chart-simple"/> 5 查询 PP- !ymppminus (!ppm) {id=ppminus}
