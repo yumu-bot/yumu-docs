@@ -27,12 +27,14 @@ copyright: false
 
 **使用方法**
 
-!yminfo / i (**`:`游戏模式**) (**玩家名**)
+!yminfo / i (**`:`游戏模式**) (**玩家名**) (**`#`天数**)
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[游戏模式](./score.md#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
   - 暂不支持使用 <HopeIcon icon="slash"/> UID 查询。
+- **<HopeIcon icon="calendar-days"/> 天数**：查询距今数天前的数据，并和现在比较。
+  - 即使不输入，也会默认和 1 天前的自己比较。
 
 ![Info 面板](https://yumemuzi.s-ul.eu/yumu/oapdIlKJ)
 
