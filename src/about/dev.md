@@ -7,7 +7,7 @@ order: 2
 ---
 ```card
 title: Muziyami
-desc: 项目主负责人、功能设计、产品、运维、测试、前端、后端、美工</br>联系方式：QQ：1340691940
+desc: 项目主负责人、功能设计、算法设计、产品、运维、测试、前端、后端、美工</br>联系方式：QQ：1340691940
 logo: https://a.ppy.sh/7003013
 link: https://osu.ppy.sh/users/7003013
 color: rgba(253,230,138,0.15)

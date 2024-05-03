@@ -152,30 +152,63 @@ EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
   - Length：这张谱面的 <HopeIcon icon="clock"/> 长度（取 BID 最小的）。
 - **Ranking Progress**：谱面的 <HopeIcon icon="angles-up"/> 上架流程。
   - 左上角的 <HopeIcon icon="bullhorn"/> Hype 表示推荐数量。其下是 <HopeIcon icon="bullhorn"/> 推荐或 <HopeIcon icon="heart"/> 赞的评论。
-  - 中间的 <HopeIcon icon="thumbs-up"/> Nomination 表示提名数量。其下会根据情况显示提名的谱面审核成员 (BN) 的 <HopeIcon icon="circle-user"/> 头像、<HopeIcon icon="heading"/> 名称以及 UID。图片左上方的 <HopeIcon icon="circle"/> 圆圈表示玩家所属的 <HopeIcon icon="users"/> 组织。
+  - 中间的 <HopeIcon icon="thumbs-up"/> Nomination 表示提名数量。其下会根据情况显示提名的谱面审核成员 (BN) 的 <HopeIcon icon="circle-user"/> 头像、<HopeIcon icon="heading"/> 名称以及 UID。
+  - 头像左上方的 <HopeIcon icon="circle"/> 圆圈表示玩家所属的 <HopeIcon icon="users"/> 组织。比如，<span style="color:#A347EA">⬤</span> 表明了该玩家是谱面审核成员 (BN)。
 - **Guest Mappers**：参与谱面制作的 <HopeIcon icon="user-pen"/> 客串谱师信息。
-  - 图片右下方的 <HopeIcon icon="circle"/> 圆圈表示玩家所属的 <HopeIcon icon="users"/> 组织。比如，<span style="color:#A347EA">⬤</span> 等于谱面审核成员 (BN)。
+  - 图片右下方的 <HopeIcon icon="circle"/> 圆圈表示玩家所属的 <HopeIcon icon="users"/> 组织。
 - **Tags**：谱面的 <HopeIcon icon="tag"/> 标签。
 - **Modding Discussion**：谱面的摸图 <HopeIcon icon="comments"/> 讨论区。
   - 标题右侧显示了 <HopeIcon icon="circle-question"/> 未解决、<HopeIcon icon="circle-exclamation"/> 问题、<HopeIcon icon="circle"/> 建议、<HopeIcon icon="comments"/> 赞的数量，以及谱面被归入的 <HopeIcon icon="box-open"/> 曲包编号和谱面 <HopeIcon icon="comments"/> 大众评分。
   - <HopeIcon icon="circle-question"/> 未解决的讨论会置顶，<HopeIcon icon="circle-check"/> 已解决的讨论文本会变暗。
 - **Favorites**：收藏谱面的玩家。
-  - 图片右下方的 <HopeIcon icon="circle"/> 圆圈表示玩家所属的 <HopeIcon icon="users"/> 组织。比如，<span style="color:#A347EA">⬤</span> 等于谱面审核成员 (BN)。
+  - 图片右下方的 <HopeIcon icon="circle"/> 圆圈表示玩家所属的 <HopeIcon icon="users"/> 组织。
 - **G/L**：<HopeIcon icon="icons"/> 曲风和 <HopeIcon icon="language"/> 语言 (Genre / Language)。
 
 :::
 
 ::: tip 提示
 
-!n:b 中的冒号可以省略。因此，如果要通过 BID 查询整张谱面的上架流程，只需要输入 !nb [BID] 即可。
+!n:b 中的冒号可以省略。因此，如果要通过 BID 查询整张谱面的上架流程，只需要输入 !nb [BID]。
 
 :::
 
-## ~~<HopeIcon icon="book-bookmark"/> 5 查询课题 !ymcourse (!c)~~ {id=course}
+## <HopeIcon icon="book-bookmark"/> 5 查询谱面 Minus 星数 !ymmapminus (!mm) {id=mapminus}
 
-::: info 备注
+::: tip 提示
 
-暂未开放
+Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一套指标，来区分谱面的各项参数和难度，真正实现星数自由。
+
+==目前仅开放 Mania 游戏模式的谱面查询！其他游戏模式正在制作中。敬请期待。==
+
+:::
+
+**使用方法**
+
+!ymmapminus / mm (**`:`游戏模式**) [**谱面编号**]
+
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
+- **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
+
+![谱面 Minus 面板，指令：!mm 3469854。~~使用即可进入天空之城~~](https://yumemuzi.s-ul.eu/yumu/TXgTLWhA)
+
+::: details 内容解析：Mania
+
+- RC：Rice，米参数主要指明了谱面内，以**单点音符**为主的排列的数量和密度。
+  - 子指标：S：Stream，切换参数。J：Jack，叠键参数。
+- LN：Long Note，面参数主要指明了谱面内，以**长按音符**为主的排列的数量和密度。
+  - 子指标：R：Release，放手（长键音符尾）参数。E：Shield，盾参数。V：Reverse Shield，反盾参数。
+- CO：Coordinate，协调参数主要指明了谱面内，需要玩家**灵活使用多指**的排列的数量和密度。
+  - 子指标：B：Bracket，裤衩参数。H：Hand Lock，锁手参数。O：Overlap，重叠参数。
+- ST：Stamina，耐力参数主要指明了谱面内，需要玩家**长时间处理**的物件数量和密度。
+  - 子指标：C：Rice Density，米密度参数。D：LN Density，面密度参数。G：Length，谱面长度。
+- SP：Speed，速度参数主要指明了谱面内，需要玩家**快速处理**的物件数量和密度。
+  - 子指标：K：Speed Jack，速叠参数。I：Trill，交互参数。U：Burst：爆发参数。
+- PR：Precision，彩率参数主要指明了谱面内，玩家**较难抓彩率**的排列的数量和密度。
+  - 子指标：G：Grace，滑键（歪的拍）参数。Y：Delayed Tail，延迟面尾参数。
+- OV：Overall，总难度。
+  - 公式：OV = (0.5 × RC + 0.5 × LN + CO + ST + SP + PR + 0.5 × PR) / 4
+- ~~SV：S. Variation，彩率参数主要指明了谱面内，**物件可视时间**的变化和极值~~。
+  - 子指标暂未完善。彩率参数并不会计入总难度内。
 
 :::
 
@@ -226,7 +259,15 @@ API 暂未开放以上大部分参数的使用权限。目前只能查询某张�
 
 :::
 
-## ~~<HopeIcon icon="chart-line"/> 8 查询段位单曲准确率 !ymdanacc (!da)~~ {id=danacc}
+## ~~<HopeIcon icon="book-bookmark"/> 8 查询课题 !ymcourse (!c)~~ {id=course}
+
+::: info 备注
+
+暂未开放
+
+:::
+
+## ~~<HopeIcon icon="chart-line"/> 9 查询段位单曲准确率 !ymdanacc (!da)~~ {id=danacc}
 
 通过计算休息段和结束时提供的准确率，得出每段的准确率。
 

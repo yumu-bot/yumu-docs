@@ -22,6 +22,16 @@ link: command.md
 color: rgba(200, 200, 200, 0.15)
 ```
 
+**最近更新**
+
+```card
+title: 获取谱面 Minus
+desc: Map Minus 3 - Mania
+logo: ./assets/icon/icon-plus.svg
+link: ./map.md#mapminus
+color: rgba(89, 80, 158, 0.15)
+```
+
 **指令分类**
 
 ```card
