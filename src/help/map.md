@@ -191,7 +191,7 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 
 ![谱面 Minus 面板，指令：!mm 3469854。~~使用即可进入天空之城~~](https://yumemuzi.s-ul.eu/yumu/TXgTLWhA)
 
-![谱面 Minus 常见形状与分类对应图](https://yumemuzi.s-ul.eu/yumu/aLDwO6oI)
+![谱面 Minus 常见形状与分类对应图](https://yumemuzi.s-ul.eu/yumu/POu2BdCk)
 
 ::: details 内容解析：Mania
 
