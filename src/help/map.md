@@ -191,26 +191,58 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 
 ![谱面 Minus 面板，指令：!mm 3469854。~~使用即可进入天空之城~~](https://yumemuzi.s-ul.eu/yumu/TXgTLWhA)
 
-![谱面 Minus 常见形状与分类对应图](https://yumemuzi.s-ul.eu/yumu/POu2BdCk)
-
 ::: details 内容解析：Mania
 
-- RC：Rice，米参数主要指明了谱面内，以**单点音符**为主的排列的数量和密度。
+- <span style="color:#22AC38">⬤</span> RC：Rice，米参数主要指明了谱面内，以**单点音符**为主的排列的数量和密度。
   - 子指标：S：Stream，切换参数。J：Jack，叠键参数。
-- LN：Long Note，面参数主要指明了谱面内，以**长按音符**为主的排列的数量和密度。
+- <span style="color:#00A0E9">⬤</span> LN：Long Note，面参数主要指明了谱面内，以**长按音符**为主的排列的数量和密度。
   - 子指标：R：Release，放手（长键音符尾）参数。E：Shield，盾参数。V：Reverse Shield，反盾参数。
-- CO：Coordinate，协调参数主要指明了谱面内，需要玩家**灵活使用多指**的排列的数量和密度。
+- <span style="color:#FFF100">⬤</span> CO：Coordinate，协调参数主要指明了谱面内，需要玩家**灵活使用多指**的排列的数量和密度。
   - 子指标：B：Bracket，裤衩参数。H：Hand Lock，锁手参数。O：Overlap，重叠参数。
-- ST：Stamina，耐力参数主要指明了谱面内，需要玩家**长时间处理**的物件数量和密度。
+- <span style="color:#FF9800">⬤</span> ST：Stamina，耐力参数主要指明了谱面内，需要玩家**长时间处理**的物件数量和密度。
   - 子指标：C：Rice Density，米密度参数。D：LN Density，面密度参数。G：Length，谱面长度。
-- SP：Speed，速度参数主要指明了谱面内，需要玩家**快速处理**的物件数量和密度。
+  - 只要善用~~和解~~暂停，高耐力的谱面也不会太难。
+- <span style="color:#D32F2F">⬤</span> SP：Speed，速度参数主要指明了谱面内，需要玩家**快速处理**的物件数量和密度。
   - 子指标：K：Speed Jack，速叠参数。I：Trill，交互参数。U：Burst：爆发参数。
-- PR：Precision，彩率参数主要指明了谱面内，玩家**较难抓彩率**的排列的数量和密度。
+- <span style="color:#E4007F">⬤</span> PR：Precision，彩率参数主要指明了谱面内，玩家**较难抓彩率**的排列的数量和密度。
   - 子指标：G：Grace，滑键（歪的拍）参数。Y：Delayed Tail，延迟面尾参数。
-- OV：Overall，总难度。
-  - 公式：OV = (0.5 × RC + 0.5 × LN + CO + ST + SP + PR + 0.5 × PR) / 4
-- ~~SV：S. Variation，彩率参数主要指明了谱面内，**物件可视时间**的变化和极值~~。
+- <span style="color:#BDBDBD">⬤</span> OV：Overall，总难度。
+  - 公式：OV = (0.6 × RC + 0.6 × LN + 0.8 × CO + 1.2 × ST + 0.8 × SP + 0.2 × PR) / 3.8
+- <span style="color:#9922EE">⬤</span> ~~SV：S. Variation，彩率参数主要指明了谱面内，**物件可视时间**的变化和极值~~。
   - 子指标暂未完善。彩率参数并不会计入总难度内。
+
+:::
+
+::: details 常见形状：Mania
+
+![谱面 Minus 常见形状与分类对应图。<br>以上的每个图像都对应了一张谱面。猜猜在此作为示例的谱面是哪一张吧！](https://yumemuzi.s-ul.eu/yumu/zEzkimts)
+
+- 简单对拍图：<span style="color:#00A0E9">⬤</span> LN 较低，没有 <span style="color:#E4007F">⬤</span> PR，其它参数适中。
+- 现代综合图：<span style="color:#00A0E9">⬤</span> LN 稍高，<span style="color:#22AC38">⬤</span> RC 稍低，其它参数适中。
+  - 越现代，<span style="color:#00A0E9">⬤</span> LN 的值越高。
+- 面条图：<span style="color:#00A0E9">⬤</span> LN、<span style="color:#E4007F">⬤</span> PR 较高，<span style="color:#22AC38">⬤</span> RC 较低，其他参数适中。
+- 协调图：<span style="color:#FFF100">⬤</span> CO 非常高，<span style="color:#00A0E9">⬤</span> LN 较高，其它参数较低。
+  - 大多数 mania 中文歌均为此形状。
+- 放手图：<span style="color:#00A0E9">⬤</span> LN、<span style="color:#E4007F">⬤</span> PR 较高，<span style="color:#FFF100">⬤</span> CO、<span style="color:#FF9800">⬤</span> ST 适中，<span style="color:#22AC38">⬤</span> RC、<span style="color:#D32F2F">⬤</span> SP 较低。
+  - 即 release 图。
+- 高难放手图：<span style="color:#00A0E9">⬤</span> LN、<span style="color:#E4007F">⬤</span> PR 非常高，<span style="color:#22AC38">⬤</span> RC 非常低，其它参数适中。
+- 速切图：<span style="color:#E4007F">⬤</span> PR 非常高，<span style="color:#00A0E9">⬤</span> LN 较低，其它参数适中。
+  - 即 grace 图。
+- 不规则面尾图：<span style="color:#00A0E9">⬤</span> LN 较高，<span style="color:#22AC38">⬤</span> RC、<span style="color:#FFF100">⬤</span> CO 较低，其它参数适中。
+- 叠键图：<span style="color:#00A0E9">⬤</span> LN、<span style="color:#E4007F">⬤</span> PR 非常低，<span style="color:#FFF100">⬤</span> CO 低，<span style="color:#D32F2F">⬤</span> SP 非常高。
+- 纯抖图：<span style="color:#22AC38">⬤</span> RC、<span style="color:#FF9800">⬤</span> ST、<span style="color:#D32F2F">⬤</span> SP 非常高，<span style="color:#FFF100">⬤</span> CO 低，没有 <span style="color:#00A0E9">⬤</span> LN、<span style="color:#E4007F">⬤</span> PR。
+  - 即 vibro 图。
+- 撑星图：<span style="color:#00A0E9">⬤</span> LN、<span style="color:#E4007F">⬤</span> PR 非常高，其他参数适中。
+  - 它的图形与面条图非常像。因此，大多数撑星图与面条图脱不开关系。
+- 压星图：<span style="color:#00A0E9">⬤</span> LN、<span style="color:#FFF100">⬤</span> CO 非常低，其他参数非常高。
+  - 这种图也多为技巧 (tech) 图。
+- 塞爆图：<span style="color:#FF9800">⬤</span> ST、<span style="color:#E4007F">⬤</span> PR、<span style="color:#22AC38">⬤</span> RC 非常高，<span style="color:#D32F2F">⬤</span> SP 较高，<span style="color:#FFF100">⬤</span> CO 较低，<span style="color:#00A0E9">⬤</span> LN 非常低。
+  - 即 dump 图。
+- 耐力图：<span style="color:#FF9800">⬤</span> ST、<span style="color:#D32F2F">⬤</span> SP 非常高，<span style="color:#00A0E9">⬤</span> LN 较低，其他参数适中。
+  - 以 JumpStream 为主的图。
+- 水图：PR 非常高，<span style="color:#D32F2F">⬤</span> SP 较高，<span style="color:#00A0E9">⬤</span> LN、<span style="color:#FFF100">⬤</span> CO 较低，其他参数适中。
+  - 大多数水图的特点是：只有一小段难，并且这一小段多是对拍、速切，或是可以当对拍打的速切。
+- 单轨图：<span style="color:#D32F2F">⬤</span> SP 非常高，没有 <span style="color:#FFF100">⬤</span> CO 和 <span style="color:#E4007F">⬤</span> PR。
 
 :::
 
