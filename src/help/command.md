@@ -10,10 +10,10 @@ copyright: false
 ---
 # 指令列表
 
-- [**A：Audio**](./map.md/#audio) / Song
-- [**B：Bestperformance**](./score.md/#bestperformance)
+- [**A：Audio**](./map.md/#audio) *(song)*
+- [**B：Bestperformance**](./score.md/#bestperformance) *(bp)*
 - [**C：Custom**](./map.md/#course)
-- [**D：Dice / Roll**](./fun.md/#dice)
+- [**D：Dice**](./fun.md/#dice) *(roll)*
 - E：Elo
 - [**F：Friend**](./player.md/#friend)
 - G：Gold / Start / 积分
@@ -21,7 +21,7 @@ copyright: false
 - [**I：Info**](./player.md/#info)
 - J
 - [**K：Kita**](./aid.md/#kita)
-- [**L：Leader**](./map.md/#leader)
+- [**L：Leader**](./map.md/#leader) *(list)*
 - [**M：Map**](./map.md/#map)
 - [**N：Nomination**](./map.md/#nomination)
 - O
@@ -42,7 +42,7 @@ copyright: false
 - ~~AP：AddPool~~
 - AR：calcAR
 - ~~AS：AntiSpam~~
-- [**BA：BpAnalysis (bpht)**](./score.md/#bpanalysis)
+- [**BA：BpAnalysis**](./score.md/#bpanalysis) *(bpht)*
 - [**BI：BInd**](./bot.md/#bind)
 - CS：calcCS
 - ~~DW：DraW~~
@@ -50,20 +50,24 @@ copyright: false
 - HP：calcHP
 - [**IM：IMmapper**](./player.md/#immapper)
 - [**ML：MatchListen**](./tournament.md/#matchlisten)
-- [**MN：MonitorNow**](./tournament.md/#matchnow)
+- [**MN：MatchNow**](./tournament.md/#matchnow)
 - [**MP：MapPool**](./tournament.md/#pool)
 - [**MU：MUtual**](./player.md/#mutual)
-- [**OA：OldAvatar**](./aid.md/#oldavater)
+- [**OA：OldAvatar**](./aid.md/#oldavater) *(osuavatar)*
 - OD：calcOD
 - [**OR：OverRating**](./player.md/#overrating)
+- [**PA：PerformanceplusmAp**](./player.md/#ppplus)
+- [**PC：PerformanceplusmapCompare**](./player.md/#ppplus)
 - [**PI：PIng**](./bot.md/#ping)
-- [**RA：RAting**](./tournament.md/#rating)
-- **~~SE：SEtu~~**
-- **SM：SetMode**
+- [**PM：PerformanceMinus**](./player.md/#ppminus)
+- [**PP：PerformancePlus**](./player.md/#ppplus)
+- [**PV：PerformanceminusVs**](./player.md/#ppminus)
+- [**PX：PerformanceplusVs**](./player.md/#ppplus)
+- [**RA：RAting**](./tournament.md/#rating) *(mra)*
+- ~~SE：SEtu~~
+- [**SM：SetMode**](./score.md#mode)
 - [**SU：SUper**](./bot.md/#ban)
 - [**SW：SWitch**](./bot.md/#switch)
 - [**TR：TRansfer**](./aid.md/#trans)
 - WC：WordCloud
 - WT：WeaTher
-- [**PM：PpM/ppmvs**](./player.md/#ppminus)
-- [PP：PpP/pppvs](./player.md/#ppplus)
