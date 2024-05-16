@@ -45,14 +45,9 @@ copyright: false
   - `-` 作为区分符，可以输入在失误数之前。此外，在大多数输入情况下，可以省略。
   - 不输入默认为 0 失误。
 - **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 预期成绩内模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
+  - 可输入的 <HopeIcon icon="music"/> 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ![谱面信息面板，指令：!m 2274675 93 x700 +HDDT](https://yumemuzi.s-ul.eu/yumu/AFo4n32L)
-
-::: details 可输入的 <HopeIcon icon="music"/> 模组名称
-
-EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
-
-:::
 
 ::: tip 提示
 
@@ -188,6 +183,8 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
+- **<HopeIcon icon="music"/> 模组名称**：模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
+  - 因为 MM 的难度计算暂时仅和谱面速度 (Clock Rate) 相关，所以目前能改变 MM 计算的模组仅有：DT、NC、HT。
 
 ![谱面 Minus 面板，指令：!mm 3469854。~~使用即可进入天空之城~~](https://yumemuzi.s-ul.eu/yumu/TXgTLWhA)
 
@@ -280,6 +277,7 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 - ~~**<HopeIcon icon="rectangle-list"/> 榜单类型**：全球榜、好友榜等。~~
   - ~~可以输入的参数：global，friend，country，或者g、f、c~~
 - ~~**<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 预期成绩内模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。~~
+  ~~- 可输入的 <HopeIcon icon="music"/> 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR~~
 
 ::: warning 注意
 

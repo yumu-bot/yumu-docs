@@ -142,12 +142,7 @@ copyright: false
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
 - **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
-
-::: details 可输入的 <HopeIcon icon="music"/> 模组名称
-
-EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
-
-:::
+  - 可输入的 <HopeIcon icon="music"/> 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
 ::: warning 注意
 
