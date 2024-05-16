@@ -207,7 +207,7 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 - <span style="color:#E4007F">⬤</span> PR：Precision，彩率参数主要指明了谱面内，玩家**较难抓彩率**的排列的数量和密度。
   - 子指标：G：Grace，滑键（歪的拍）参数。Y：Delayed Tail，延迟面尾参数。
 - <span style="color:#BDBDBD">⬤</span> OV：Overall，总难度。
-  - 公式：OV = 0.8 × ((0.6 × RC + 0.8 × LN + 0.8 × CO + 1.4 × ST + 0.6 × SP + 0.2 × PR) / 3.8) + 0.2 × 其上**第二大**的值
+  - 公式：OV = 0.6 × ((0.6 × RC + 0.8 × LN + 0.8 × CO + 1.4 × ST + 0.6 × SP + 0.2 × PR) / 3.8) + 0.4 × 其上**第二大**的值
 - <span style="color:#9922EE">⬤</span> ~~SV：S. Variation，彩率参数主要指明了谱面内，**物件可视时间**的变化和极值~~。
   - 子指标暂未完善。彩率参数并不会计入总难度内。
 
