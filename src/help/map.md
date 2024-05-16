@@ -179,12 +179,16 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 
 **使用方法**
 
-!ymmapminus / mm (**`:`游戏模式**) [**谱面编号**]
+!ymmapminus / mm (**`:`游戏模式**) [**谱面编号**] (**`+`模组名称**) (**`x`倍速**)
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
 - **<HopeIcon icon="music"/> 模组名称**：模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
   - 因为 MM 的难度计算暂时仅和谱面速度 (Clock Rate) 相关，所以目前能改变 MM 计算的模组仅有：DT、NC、HT。
+- **<HopeIcon icon="forward-fast"/> 倍速**：如果你想自定义倍速并用来计算，可以在此输入。
+  - 支持的倍速范围为：0.1x ~ 5x。
+  - 前面的 `x` 可以忽略。 
+  - 输入倍速后，星级并不会变动（暂无法计算），但是 MM 参数会变动。
 
 ![谱面 Minus 面板，指令：!mm 3469854。~~使用即可进入天空之城~~](https://yumemuzi.s-ul.eu/yumu/TXgTLWhA)
 
