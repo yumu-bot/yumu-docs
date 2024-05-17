@@ -144,15 +144,17 @@ copyright: false
 
 ## <HopeIcon icon="chart-simple"/> 5 查询 PP- !ymppminus (!ppm) {id=ppminus}
 
-**PP- (PPM)** 是 YumuBot 参考了 [PP+](https://syrin.me/pp+/) 等系统，开发的一套特殊评价系统，来从不同角度量化玩家的实力。
+**PP-** 是 YumuBot 参考了 [PP+](https://syrin.me/pp+/) 等系统，开发的一套特殊评价系统，来从不同角度量化玩家的实力。
 
 **使用方法**
 
-!ymppminus / ppm (**vs**) (**`:`游戏模式**) (**玩家名**)
+!ymppminus / pm (**vs**) (**`:`游戏模式**) (**玩家名**)
 
-- **<HopeIcon icon="crown"/> vs**：如果输入，则返回自己的 PPM 数值与 <HopeIcon icon="address-card"/> 玩家对比图。
+- **<HopeIcon icon="crown"/> vs**：如果输入 **vs**，则返回自己的 PP- 数值与其他 <HopeIcon icon="address-card"/> 玩家的对比图。
+  - 也可以输入短链 **PV** 来标记此人为你需要对比的对象，亦或是输入两个人互相对比。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 不输入默认查询自己的 PP- 信息。
 
 ![PPM 面板](https://yumemuzi.s-ul.eu/yumu/H5eNsjzW)
 
@@ -227,11 +229,25 @@ copyright: false
 
 :::
 
-## ~~<HopeIcon icon="chart-simple"/> 6 查询 PP+ !ymppplus (!ppp)~~ {id=ppplus}
+## <HopeIcon icon="chart-simple"/> 6 查询 PP+ !ymppplus (!ppp) {id=ppplus}
+
+**使用方法**
+
+!ymppplus / pp (**vs**) (**`:`游戏模式**) (**玩家名**)
+
+- **<HopeIcon icon="crown"/> vs**：如果输入 **vs**，则返回自己的 PP+ 数值与其他 <HopeIcon icon="address-card"/> 玩家的对比图。
+  - 也可以输入短链 **PX** 来标记此人为你需要对比的对象，亦或是输入两个人互相对比。
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 不输入默认查询自己的 PP+ 信息。
 
 ::: info 备注
 
-PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不可用。
+~~PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不可用。~~
+
+但是 Syrin 把他移植进了 Lazer 里！并且可以通过 Docker 获取运行。
+
+现在此功能已经可以使用。参数稍后更新。
 
 :::
 
