@@ -208,9 +208,9 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 - <span style="color:#E4007F">⬤</span> PR：Precision，彩率参数主要指明了谱面内，玩家**较难抓彩率**的排列的数量和密度。
   - 子指标：G：Grace，滑键（歪的拍）参数。Y：Delayed Tail，延迟面尾参数。
 - <span style="color:#BDBDBD">⬤</span> OV：Overall，总难度。
-  - 公式：OV = 0.6 × ((0.6 × RC + 0.8 × LN + 0.8 × CO + 1.4 × ST + 0.6 × SP + 0.2 × PR) / 3.8) + 0.4 × 其上**第二大**的值
-- <span style="color:#9922EE">⬤</span> ~~SV：S. Variation，彩率参数主要指明了谱面内，**物件可视时间**的变化和极值~~。
-  - 子指标暂未完善。彩率参数并不会计入总难度内。
+  - 公式：OV = 0.6 × ((0.8 × RC + 0.8 × LN + 0.8 × CO + 1.2 × ST + 0.6 × SP + 0.4 × PR) / 3.6) + 0.4 × 其上**第二大**的值
+- <span style="color:#9922EE">⬤</span> ~~SV：S. Variation，变速参数主要指明了谱面内，**物件可视时间**的变化和极值~~。
+  - 子指标暂未完善。即使完成，变速参数也不会计入总难度内。~~毕竟可以背~~
 
 :::
 
@@ -244,6 +244,16 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 - 水图：PR 非常高，<span style="color:#D32F2F">⬤</span> SP 较高，<span style="color:#00A0E9">⬤</span> LN、<span style="color:#FFF100">⬤</span> CO 较低，其他参数适中。
   - 大多数水图的特点是：只有一小段难，并且这一小段多是对拍、速切，或是可以当对拍打的速切。
 - 单轨图：<span style="color:#D32F2F">⬤</span> SP 非常高，没有 <span style="color:#FFF100">⬤</span> CO 和 <span style="color:#E4007F">⬤</span> PR。
+
+:::
+
+::: details 反馈：Mania
+
+- 目前算法的缺点：
+  - 无法准确地计算出 7Key 的轻切/裤衩/BMS 风格谱面的难度。因为这个算法不会将隔了一个轨道的物件算进该物件的难度内。比如这张谱面：[ハム - 香りのやる気スイッチ！(Cut Ver.)](https://osu.ppy.sh/beatmapsets/1338910#mania/2773920)（至少笔者认为这图很难）。
+  - 无法准确区分部分大水图（即使它很好刷）。因为这个算法并未考虑谱面的手性（左右手配合），而只是简单地计算物件之间的关系。比如这张谱面：[Team Grimoire - C18H27NO3(extend) ([Shana Lesus]) [4K Capsaicin]](https://osu.ppy.sh/beatmapsets/303998#mania/689769)（难点只有很小一段，并且玩家容易打出高分）。
+  - 对高星图的计算不够收敛。这个算法即使使用了指数函数来尽可能压低高星图，但依旧可能会出现**单参数超过谱面总星数 10 倍甚至 9 倍**的情况（但或许这个就是算法的特点吧。比较容易看出谱面的特色）。
+- 如果您发现了该算法还有什么比较离谱的地方，或是某一张谱面出了非常离谱的值，欢迎将这张谱面或建议反馈给[==开发者==](../about/dev.md)。
 
 :::
 
