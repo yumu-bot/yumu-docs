@@ -11,7 +11,7 @@ copyright: false
 # 指令列表
 
 - [**A：Audio**](./map.md/#audio) *(song)*
-- [**B：Bestperformance**](./score.md/#bestperformance) *(bp)*
+- [**B：Best_performance**](./score.md/#bestperformance) *(bp)*
 - [**C：Custom**](./map.md/#course)
 - [**D：Dice**](./fun.md/#dice) *(roll)*
 - E：Elo
@@ -29,7 +29,7 @@ copyright: false
 - [**Q：Qualified**](./map.md/#qualified)
 - [**R：Recent**](./score.md/#recent)
 - [**S：Score**](./score.md/#score)
-- [**T：Todaybp**](./score.md/#todaybp)
+- [**T：Today_bp**](./score.md/#todaybp)
 - U
 - V：~~Versus~~
 - W：~~Wiki~~
@@ -39,35 +39,36 @@ copyright: false
 
 双缩写
 
-- ~~AP：AddPool~~
-- AR：calcAR
-- ~~AS：AntiSpam~~
-- [**BA：BpAnalysis**](./score.md/#bpanalysis) *(bpht)*
+- ~~AP：Add_Pool~~
+- AR：calc_AR
+- ~~AS：Anti_Spam~~
+- [**BA：Bp_Analysis**](./score.md/#bpanalysis) *(bpht)* *(bp_head_tail)*
 - [**BI：BInd**](./bot.md/#bind)
 - CS：calcCS
 - ~~DW：DraW~~
-- [**GP：GetPool**](./tournament.md/#getpool)
+- [**GP：Get_Pool**](./tournament.md/#getpool)
 - HP：calcHP
-- [**IM：IMmapper**](./player.md/#immapper)
-- [**ML：MatchListen**](./tournament.md/#matchlisten)
-- [**MN：MatchNow**](./tournament.md/#matchnow)
-- [**MP：MapPool**](./tournament.md/#pool)
+- [**IC：Info_Card**](./player.md/#info)
+- [**IM：Im_Mapper**](./player.md/#immapper)
+- [**ML：Match_Listen**](./tournament.md/#matchlisten)
+- [**MN：Match_Now**](./tournament.md/#matchnow)
+- [**MP：Map_Pool**](./tournament.md/#pool)
 - [**MU：MUtual**](./player.md/#mutual)
-- [**OA：OldAvatar**](./aid.md/#oldavater) *(osuavatar)*
+- [**OA：Old_Avatar**](./aid.md/#oldavater) *(osu_avatar)*
 - OD：calcOD
-- [**OR：OverRating**](./player.md/#overrating)
-- [**PA：PerformanceplusmAp**](./player.md/#ppplus)
-- [**PC：PerformanceplusmapCompare**](./player.md/#ppplus)
+- [**OR：Over_Rating**](./player.md/#overrating)
+- [**PA：Performance_plus_mAp**](./player.md/#ppplus)
+- [**PC：Pass_Card**](./score.md/#pass)
 - [**PI：PIng**](./bot.md/#ping)
-- [**PM：PerformanceMinus**](./player.md/#ppminus)
-- [**PP：PerformancePlus**](./player.md/#ppplus)
-- [**PV：PerformanceminusVs**](./player.md/#ppminus)
-- [**PX：PerformanceplusVs**](./player.md/#ppplus)
+- [**PM：Performance_Minus**](./player.md/#ppminus)
+- [**PP：Performance_Plus**](./player.md/#ppplus)
+- [**PV：Performance_minus_Vs**](./player.md/#ppminus)
+- [**PX：Performance_plus_vs**](./player.md/#ppplus)
 - [**RA：RAting**](./tournament.md/#rating) *(mra)*
-- ~~SE：SEtu~~
-- [**SM：SetMode**](./score.md#mode)
+- ~~SE：SE_tu~~
+- [**SM：Set_Mode**](./score.md#mode)
 - [**SU：SUper**](./bot.md/#ban)
 - [**SW：SWitch**](./bot.md/#switch)
 - [**TR：TRansfer**](./aid.md/#trans)
-- WC：WordCloud
+- WC：Word_Cloud
 - WT：WeaTher
