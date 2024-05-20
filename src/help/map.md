@@ -200,15 +200,15 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
   - 子指标：R：Release，放手（长键音符尾）参数。E：Shield，盾参数。V：Reverse Shield，反盾参数。
 - <span style="color:#FFF100">⬤</span> CO：Coordinate，协调参数主要指明了谱面内，需要玩家**灵活使用多指**的排列的数量和密度。
   - 子指标：B：Bracket，裤衩参数。H：Hand Lock，锁手参数。O：Overlap，重叠参数。
-- <span style="color:#FF9800">⬤</span> ST：Stamina，耐力参数主要指明了谱面内，需要玩家**长时间处理**的物件数量和密度。
-  - 子指标：C：Rice Density，米密度参数。D：LN Density，面密度参数。G：Length，谱面长度。
-  - 只要善用~~和解~~暂停，高耐力的谱面也不会太难。
+- <span style="color:#FF9800">⬤</span> PR：Precision，彩率参数主要指明了谱面内，玩家**较难抓彩率**的排列的数量和密度。
+  - 子指标：G：Grace，滑键（歪的拍）参数。Y：Delayed Tail，延迟面尾参数。
 - <span style="color:#D32F2F">⬤</span> SP：Speed，速度参数主要指明了谱面内，需要玩家**快速处理**的物件数量和密度。
   - 子指标：K：Speed Jack，速叠参数。I：Trill，交互参数。U：Burst：爆发参数。
-- <span style="color:#E4007F">⬤</span> PR：Precision，彩率参数主要指明了谱面内，玩家**较难抓彩率**的排列的数量和密度。
-  - 子指标：G：Grace，滑键（歪的拍）参数。Y：Delayed Tail，延迟面尾参数。
+- <span style="color:#E4007F">⬤</span> ST：Stamina，耐力参数主要指明了谱面内，需要玩家**长时间处理**的物件数量和密度。
+  - 子指标：C：Rice Density，米密度参数。D：LN Density，面密度参数。G：Length，谱面长度。
+  - 只要善用~~和解~~暂停，高耐力的谱面也不会太难。
 - <span style="color:#BDBDBD">⬤</span> OV：Overall，总难度。
-  - 公式：OV = 0.6 × ((0.8 × RC + 0.8 × LN + 0.8 × CO + 1.2 × ST + 0.6 × SP + 0.4 × PR) / 3.6) + 0.4 × 其上**第二大**的值
+  - 公式：OV = 0.6 × ((0.8 × RC + 0.8 × LN + 0.8 × CO + 0.4 × PR + 0.6 × SP + 1.2 × ST) / 3.6) + 0.4 × 其上**第二大**的值
 - <span style="color:#9922EE">⬤</span> ~~SV：S. Variation，变速参数主要指明了谱面内，**物件可视时间**的变化和极值~~。
   - 子指标暂未完善。即使完成，变速参数也不会计入总难度内。~~毕竟可以背~~
 
@@ -216,44 +216,45 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 
 ::: details 常见形状：Mania
 
-![谱面 Minus 常见形状与分类对应图。<br>以上的每个图像都对应了一张谱面。猜猜在此作为示例的谱面是哪一张吧！](https://yumemuzi.s-ul.eu/yumu/zEzkimts)
+![谱面 Minus 常见形状与分类对应图<br>以上的每个图像都对应了一张谱面。猜猜在此作为示例的谱面是哪一张吧！](https://yumemuzi.s-ul.eu/yumu/uLYbqfJj)
 
-- 简单对拍图：<span style="color:#00A0E9">⬤</span> LN 较低，没有 <span style="color:#E4007F">⬤</span> PR，其它参数适中。
-- 现代综合图：<span style="color:#00A0E9">⬤</span> LN 稍高，<span style="color:#22AC38">⬤</span> RC 稍低，其它参数适中。
-  - 越现代，<span style="color:#00A0E9">⬤</span> LN 的值越高。
-- 面条图：<span style="color:#00A0E9">⬤</span> LN、<span style="color:#E4007F">⬤</span> PR 较高，<span style="color:#22AC38">⬤</span> RC 较低，其他参数适中。
-- 协调图：<span style="color:#FFF100">⬤</span> CO 非常高，<span style="color:#00A0E9">⬤</span> LN 较高，其它参数较低。
-  - 大多数 mania 中文歌均为此形状。
-- 放手图：<span style="color:#00A0E9">⬤</span> LN、<span style="color:#E4007F">⬤</span> PR 较高，<span style="color:#FFF100">⬤</span> CO、<span style="color:#FF9800">⬤</span> ST 适中，<span style="color:#22AC38">⬤</span> RC、<span style="color:#D32F2F">⬤</span> SP 较低。
-  - 即 release 图。
-- 高难放手图：<span style="color:#00A0E9">⬤</span> LN、<span style="color:#E4007F">⬤</span> PR 非常高，<span style="color:#22AC38">⬤</span> RC 非常低，其它参数适中。
-- 速切图：<span style="color:#E4007F">⬤</span> PR 非常高，<span style="color:#00A0E9">⬤</span> LN 较低，其它参数适中。
-  - 即 grace 图。
-- 不规则面尾图：<span style="color:#00A0E9">⬤</span> LN 较高，<span style="color:#22AC38">⬤</span> RC、<span style="color:#FFF100">⬤</span> CO 较低，其它参数适中。
-- 叠键图：<span style="color:#00A0E9">⬤</span> LN、<span style="color:#E4007F">⬤</span> PR 非常低，<span style="color:#FFF100">⬤</span> CO 低，<span style="color:#D32F2F">⬤</span> SP 非常高。
-- 纯抖图：<span style="color:#22AC38">⬤</span> RC、<span style="color:#FF9800">⬤</span> ST、<span style="color:#D32F2F">⬤</span> SP 非常高，<span style="color:#FFF100">⬤</span> CO 低，没有 <span style="color:#00A0E9">⬤</span> LN、<span style="color:#E4007F">⬤</span> PR。
-  - 即 vibro 图。
-- 撑星图：<span style="color:#00A0E9">⬤</span> LN、<span style="color:#E4007F">⬤</span> PR 非常高，其他参数适中。
-  - 它的图形与面条图非常像。因此，大多数撑星图与面条图脱不开关系。
-- 压星图：<span style="color:#00A0E9">⬤</span> LN、<span style="color:#FFF100">⬤</span> CO 非常低，其他参数非常高。
-  - 这种图也多为技巧 (tech) 图。
-- 塞爆图：<span style="color:#FF9800">⬤</span> ST、<span style="color:#E4007F">⬤</span> PR、<span style="color:#22AC38">⬤</span> RC 非常高，<span style="color:#D32F2F">⬤</span> SP 较高，<span style="color:#FFF100">⬤</span> CO 较低，<span style="color:#00A0E9">⬤</span> LN 非常低。
-  - 即 dump 图。
-- 耐力图：<span style="color:#FF9800">⬤</span> ST、<span style="color:#D32F2F">⬤</span> SP 非常高，<span style="color:#00A0E9">⬤</span> LN 较低，其他参数适中。
-  - 以 JumpStream 为主的图。
-- 水图：PR 非常高，<span style="color:#D32F2F">⬤</span> SP 较高，<span style="color:#00A0E9">⬤</span> LN、<span style="color:#FFF100">⬤</span> CO 较低，其他参数适中。
-  - 大多数水图的特点是：只有一小段难，并且这一小段多是对拍、速切，或是可以当对拍打的速切。
-- 单轨图：<span style="color:#D32F2F">⬤</span> SP 非常高，没有 <span style="color:#FFF100">⬤</span> CO 和 <span style="color:#E4007F">⬤</span> PR。
+以下表格列出了这些谱面类型的特征值以及倾向。✔️代表非常明显，➖代表适中，✖️代表比较不明显，❌代表无。
+
+| 谱面类型 | <span style="color:#22AC38">⬤</span> RC | <span style="color:#00A0E9">⬤</span> LN | <span style="color:#FFF100">⬤</span> CO | <span style="color:#FF9800">⬤</span> PR | <span style="color:#D32F2F">⬤</span> SP | <span style="color:#E4007F">⬤</span> ST |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 简单对拍 (trill)[^easytrill] | ➖ | ➖ | ➖ | ❌ | ➖ | ➖ |
+| 困难对拍 (trill) | ✔️ | ➖ | ✖️ | ➖ | ✔️ | ✔️ |
+| 叠 (jack) | ✔️ | ❌ | ✖️ | ✖️ | ✔️ | ➖ |
+| 纯抖 (vibro) | ✔️ | ❌ | ✖️ | ❌ | ✔️ | ✔️ |
+| 速切 (grace) | ➖ | ➖ | ➖ | ➖ | ✔️ | ✔️ |
+| 耐力米 (jumpstream) | ➖ | ✖️ | ✖️ | ➖ | ✔️ | ✔️ |
+| 简单放手 (release) | ✖️ | ➖ | ✔️ | ✖️ | ✖️ | ✖️ |
+| 困难放手 (release) | ✖️ | ✔️ | ✔️ | ✔️ | ➖ | ✔️ |
+| 协调 (coordinate) | ✖️ | ✔️ | ✔️ | ✖️ | ✖️ | ➖ |
+| 短面 | ✖️ | ✔️ | ➖ | ✔️ | ➖ | ➖ |
+| 不规则面 | ✖️ | ✔️ | ✖️ | ➖ | ✖️ | ➖ |
+| 单轨 | ➖ | ✖️ | ❌ | ❌ | ✔️ | ✖️ |
+| 撑星 (多为 co + release)[^over] | ➖ | ✔️ | ➖ | ✔️ | ➖ | ✔️ |
+| 压星 (多为 tech) | ✔️ | ➖ | ✖️ | ✔️ | ✔️ | ✔️ |
+| 塞爆 (dump) | ✔️ | ❌ | ✖️ | ➖ | ✔️ | ✔️ |
+| 经典风格 | ➖ | ✖️ | ✖️ | ➖ | ➖ | ➖ |
+| 现代综合[^lnabuse] | ✖️ | ✔️ | ✔️ | ✖️ | ✖️ | ➖ |
+| 狙[^awmrone] | 👌 | 👌 | 👌 | 👌 | 👌 | 👌 |
 
 :::
 
 ::: details 反馈：Mania
 
 - 目前算法的缺点：
-  - 无法准确地计算出 7Key 的轻切/裤衩/BMS 风格谱面的难度。因为这个算法不会将隔了一个轨道的物件算进该物件的难度内。比如这张谱面：[ハム - 香りのやる気スイッチ！(Cut Ver.) (ExNeko) [[7K] Another]](https://osu.ppy.sh/beatmapsets/1338910#mania/2773920)（至少笔者认为这图很难）。
-  - 无法准确区分部分大水图（即使它很好刷）。因为这个算法并未考虑谱面的手性（左右手配合），而只是简单地计算物件之间的关系。比如这张谱面：[Team Grimoire - C18H27NO3(extend) ([Shana Lesus]) [4K Capsaicin]](https://osu.ppy.sh/beatmapsets/303998#mania/689769)（难点只有很小一段，并且玩家容易打出高分）。
-  - 对高星图的计算不够收敛。这个算法即使使用了指数函数来尽可能压低高星图，但依旧可能会出现**单参数超过谱面总星数 10 倍甚至 9 倍**的情况（但或许这个就是算法的特点吧。比较容易看出谱面的特色）。
-- 如果您发现了该算法还有什么比较离谱的地方，或是某一张谱面出了非常离谱的值，欢迎将这张谱面或建议反馈给[==开发者==](../about/dev.md)。
+  - **无法准确地计算出 7Key 的轻切、裤衩、BMS 风格谱面的难度。**因为这个算法不会将隔了一个轨道的物件算进该物件的难度内。
+    - 比如这张谱面：[ハム - 香りのやる気スイッチ！(Cut Ver.) (ExNeko) [[7K] Another]](https://osu.ppy.sh/beatmapsets/1338910#mania/2773920)
+    - 至少笔者认为这图很难。
+  - **无法准确区分部分大水图（即使它很好刷）。**因为这个算法并未考虑谱面的手性（左右手配合），而只是简单地计算物件之间的关系。
+    - 比如这张谱面：[Team Grimoire - C18H27NO3(extend) ([Shana Lesus]) [4K Capsaicin]](https://osu.ppy.sh/beatmapsets/303998#mania/689769)
+    - 难点只有很小一段，并且玩家容易打出高分。
+  - **对高星图的计算不够收敛。**这个算法即使使用了指数函数来尽可能压低高星图，但依旧可能会出现单参数超过谱面总星数 10 倍甚至 9 倍的情况。
+    - 但或许这个就是算法的特点吧。比较容易看出谱面的特色。
+- 如果您发现了该算法还有某些比较离谱的地方，或是某一张谱面算出了非常离谱的值，欢迎将这张谱面或建议反馈给[**开发者**](../about/dev.md)。
 
 :::
 
@@ -332,3 +333,10 @@ API 暂未开放以上大部分参数的使用权限。目前只能查询某张�
 暂未开放
 
 :::
+
+## <HopeIcon icon="note-sticky"/> 备注
+
+[^easytrill]: 最初级的 PP 图。
+[^over]: 即使撑星图仅仅只有三个维度很高，ppy 算法依旧会将其视为非常困难的图。
+[^lnabuse]: 图越现代，LN 越多。
+[^awmrone]: 👌👌👌👌👌👌
