@@ -31,8 +31,9 @@ copyright: false
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[游戏模式](./score.md#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
-  - 暂不支持使用 <HopeIcon icon="slash"/> UID 查询。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
 - **<HopeIcon icon="calendar-days"/> 天数**：查询距今数天前的数据，并和现在比较。
   - 即使不输入，也会默认和 1 天前的自己比较。
 
@@ -139,7 +140,7 @@ copyright: false
 !ymmutual / mu (**玩家名**)
 
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
   - 可以查询对方的主页链接。
 
 ## <HopeIcon icon="chart-simple"/> 5 查询 PP- !ymppminus (!ppm) {id=ppminus}
@@ -231,6 +232,8 @@ copyright: false
 
 ## <HopeIcon icon="chart-simple"/> 6 查询 PP+ !ymppplus (!ppp) {id=ppplus}
 
+PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不可用。 但是 Syrin 把他移植进了 Lazer 里！并且可以通过 Docker 获取运行。
+
 **使用方法**
 
 !ymppplus / pp (**vs**) (**`:`游戏模式**) (**玩家名**)
@@ -241,13 +244,19 @@ copyright: false
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 不输入默认查询自己的 PP+ 信息。
 
-::: info 备注
+**内容解析**
 
-~~PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不可用。~~
+::: details 内容解析
 
-但是 Syrin 把他移植进了 Lazer 里！并且可以通过 Docker 获取运行。
+在玩家 PP+ 内，能够看到 6 项参数的一个评级。这是 C8N16O32 设计的新人进阶群指数表（2.6 本地化）系统。
 
-现在此功能已经可以使用。参数稍后更新。
+根据 PP+ 的参数，玩家分别可以获得以下三种评级：
+
+- 综合指数：0 - 100%
+- 进阶指数：罗马数字 I - X（1-10）
+- EX
+
+评级越接近 EX，说明玩家的这项指标越厉害。
 
 :::
 

@@ -26,8 +26,9 @@ copyright: false
 !ymoldavatar / oa (**玩家名**)
 
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
-  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=114514。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
 
 ![旧主页头像面板，指令：!oa 970](https://yumemuzi.s-ul.eu/yumu/MYOkR6U9)
 

@@ -60,8 +60,9 @@ copyright: false
   - 如果使用了 !ympass 或者 !pass，则后面需要加 `es`（毕竟英文复数就是这样），!p 后面只需要加 `s`。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：需要设定的默认游戏模式。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
   - 可以输入 1~100 之间的整数，输入 2 就是查询最近成绩之前的那一个成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
@@ -108,8 +109,9 @@ copyright: false
   - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别（==!rs 100 = !r 1-100 = !rs 1-100==）。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：同上。
 
 ::: warning 注意
@@ -139,8 +141,9 @@ copyright: false
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
 - **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
   - 可输入的 <HopeIcon icon="music"/> 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
@@ -163,8 +166,9 @@ copyright: false
   - 此时，只需要输入偏移量。但是如果输入的是区间，那么加或不加 `s` 没什么区别（==!bs 100 = !b 1-100 = !bs 1-100==）。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
   - 可以输入 1~100 之间的整数，输入 2 就是查询第二个最好成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
@@ -193,8 +197,9 @@ copyright: false
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
 - **<HopeIcon icon="calendar-days"/> 天数**：查询距今多少天内，玩家新增的最好成绩。
   - 可以输入 1~999 之间的整数。输入 30 就是距今 30 天内。
 
@@ -230,8 +235,9 @@ copyright: false
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
 
 ![BA 面板](https://yumemuzi.s-ul.eu/yumu/8YT8nqlz)
 
@@ -273,8 +279,36 @@ copyright: false
 
 ::: tip 提示
 
-使用 !uuba / !uba (-i) 可以获取文字版消息。
+使用 !ua (!uai) 可以获取文字版消息。
 
 并且，据说输入某个老师和学生深入交流的游戏英文名，也可以调出此功能哦？
+
+:::
+
+## <HopeIcon icon="hammer"/> 8 修补最好成绩 !ymbpfix (!bf) {id=bpfix}
+
+这个功能可以分析玩家的最好成绩榜，抽出玩家的不完美 (choke) 成绩，并预测当这些成绩被修补成全连 (full combo) 后，玩家能获得多少表现分。
+
+**使用方法**
+
+!ymbpf / bf (**`:`游戏模式**) (**玩家名**)
+
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+
+::: warning 注意
+
+繁重功能，如果您是第一次查询，结果将会在 ==30-60== 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
+
+:::
+
+::: tip 提示
+
+这个功能对于太鼓和键盘模式玩家用处不大，因为失误数量对最好成绩榜的影响，远远不如准确率 (accuracy) 的高低。
+
+同样地，这个功能对于刷 SS 的玩家用处也不大，因为最好成绩榜无需修补。
 
 :::

@@ -71,8 +71,9 @@ copyright: false
 
 - **<HopeIcon icon="mug-saucer"/> 操作**：只有最高级管理员才可使用。
 - **<HopeIcon icon="address-card"/> 玩家名**：不推荐使用玩家名绑定。这个参数可以供超级管理员来定向解除绑定关系。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=123456789。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@user。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
 
 :::
 
