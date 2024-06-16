@@ -131,7 +131,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="link"/> 4 查询主页链接 !ymmutual (!mu) {id=mutual}
+## <HopeIcon icon="link"/> 4 获取主页链接 !ymmutual (!mu) {id=mutual}
 
 可以查询玩家所添加（关注）的好友（不能看到双向）。
 

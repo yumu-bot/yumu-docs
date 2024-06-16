@@ -193,7 +193,7 @@ copyright: false
 
 **使用方法**
 
-!ymtodaybp / t (**`:`游戏模式**) (**`*`玩家名**) (**`#`天数**)
+!ymtodaybp / t (**`:`游戏模式**) (**玩家名**) (**`#`天数**)
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。

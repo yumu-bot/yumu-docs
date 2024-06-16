@@ -57,7 +57,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="network-wired"/> 3 绑定 osu! 玩家 !ymbind (!bi) {id=bind}
+## <HopeIcon icon="network-wired"/> 3 绑定玩家账号 !ymbind (!bi) {id=bind}
 
 如果用户想要使用 YumuBot 的功能，则必须至少绑定一个 osu! 玩家账号。
 
@@ -134,7 +134,7 @@ op4->e
     - blacklist、k：查询黑名单列表
     - add、a：添加玩家进白名单 
     - remove、r：移除玩家出白名单 
-    - ban、n：添加玩家进黑名单 
+    - ban、b：添加玩家进黑名单 
     - unban、u：移除玩家出黑名单
   - 如果不输入或者输错，Bot 会提示你。
 - **<HopeIcon icon="street-view"/> 对象**：被操作执行的对象。

@@ -229,7 +229,7 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
 
 :::
 
-## <HopeIcon icon="house-chimney-user"/> 5 查看比赛房间全览 !ymmatchnow (!mn) {id=matchnow}
+## <HopeIcon icon="house-chimney-user"/> 5 获取比赛结果 !ymmatchnow (!mn) {id=matchnow}
 
 输出一张比赛房间内的全览图。
 
@@ -251,7 +251,7 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
 
 :::
 
-## <HopeIcon icon="chalkboard-user"/> 6 查看比赛对局信息 !ymmatchround (!mr/ro) {id=round}
+## <HopeIcon icon="chalkboard-user"/> 6 查看对局信息 !ymmatchround (!mr/ro) {id=round}
 
 输出一张比赛房间内的某场对局图。
 
@@ -268,7 +268,7 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
 
 ![对局信息面板，指令：!ro 111296587 dawn of](https://yumemuzi.s-ul.eu/yumu/YElgmvpv)
 
-## <HopeIcon icon="tent-arrows-down"/> 7 生成图池 !ymgetpool (!getpool) {id=getpool}
+## <HopeIcon icon="tent-arrows-down"/> 7 生成图池图片 !ymgetpool (!getpool) {id=getpool}
 
 根据输入的模组名称和谱面编号，输出一张可供比赛展示的谱面信息集合图（图池），方便选手查阅。
 

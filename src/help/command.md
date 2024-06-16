@@ -10,65 +10,64 @@ copyright: false
 ---
 # 指令列表
 
-- [**A：Audio**](./map.md/#audio) *(song)*
-- [**B：Best_performance**](./score.md/#bestperformance) *(bp)*
-- [**C：Custom**](./map.md/#course)
-- [**D：Dice**](./fun.md/#dice) *(roll)*
-- E：Elo
-- [**F：Friend**](./player.md/#friend)
-- G：Gold / Start / 积分
-- [**H：Help**](./bot.md/#help)
-- [**I：Info**](./player.md/#info)
-- J
-- [**K：Kita**](./aid.md/#kita)
-- [**L：Leader**](./map.md/#leader) *(list)*
-- [**M：Map**](./map.md/#map)
-- [**N：Nomination**](./map.md/#nomination)
-- O
-- [**P：Pass**](./score.md/#pass)
-- [**Q：Qualified**](./map.md/#qualified)
-- [**R：Recent**](./score.md/#recent)
-- [**S：Score**](./score.md/#score)
-- [**T：Today_bp**](./score.md/#todaybp)
-- U
-- V：~~Versus~~
-- W：~~Wiki~~
-- X
-- Y
-- Z：~~Sleep~~
+以下的功能，均可在简称或英文名前**添加感叹号**，直接调用。
 
-双缩写
+语法内，中括号 `[]` 为必填（也给你加粗显示了），小括号 `()` 为选填。由 \` 括起来的符号，最好是全填写上。
 
-- ~~AP：Add_Pool~~
-- AR：calc_AR
-- ~~AS：Anti_Spam~~
-- [**BA：Bp_Analysis**](./score.md/#bpanalysis) *(bpht)* *(bp_head_tail)*
-- [**BI：BInd**](./bot.md/#bind)
-- CS：calcCS
-- ~~DW：DraW~~
-- [**GP：Get_Pool**](./tournament.md/#getpool)
-- HP：calcHP
-- [**IC：Info_Card**](./player.md/#info)
-- [**IM：Im_Mapper**](./player.md/#immapper)
-- [**ML：Match_Listen**](./tournament.md/#matchlisten)
-- [**MN：Match_Now**](./tournament.md/#matchnow)
-- [**MP：Map_Pool**](./tournament.md/#pool)
-- [**MU：MUtual**](./player.md/#mutual)
-- [**OA：Old_Avatar**](./aid.md/#oldavater) *(osu_avatar)*
-- OD：calcOD
-- [**OR：Over_Rating**](./player.md/#overrating)
-- [**PA：Performance_plus_mAp**](./player.md/#ppplus)
-- [**PC：Pass_Card**](./score.md/#pass)
-- [**PI：PIng**](./bot.md/#ping)
-- [**PM：Performance_Minus**](./player.md/#ppminus)
-- [**PP：Performance_Plus**](./player.md/#ppplus)
-- [**PV：Performance_minus_Vs**](./player.md/#ppminus)
-- [**PX：Performance_plus_vs**](./player.md/#ppplus)
-- [**RA：RAting**](./tournament.md/#rating) *(mra)*
-- ~~SE：SE_tu~~
-- [**SM：Set_Mode**](./score.md#mode)
-- [**SU：SUper**](./bot.md/#ban)
-- [**SW：SWitch**](./bot.md/#switch)
-- [**TR：TRansfer**](./aid.md/#trans)
-- WC：Word_Cloud
-- WT：WeaTher
+备注里会填写这个功能的更多介绍，或是另一种常用的指令：比如 !audio 功能，也可以使用 !song 调用。
+
+点击英文名可进入对应功能的详细介绍。
+
+| 功能简称 | 语法 | 功能英文名 | 功能中文名 | 备注 |
+| :-: | :-- | :-- | :-- | :-- |
+| A | !a(`s`) **[bid/sid]** | [Audio](./map.md/#audio) | 试听谱面 | *即 Song。*<br />!as 按谱面集 ID (**SID**) 查询。 |
+| B | !b(`s`) (`:`mode) (user) (`#`num) | [Best Performance](./score.md/#bestperformance) | 查询最好成绩 | *!bs 使用多成绩模式。*<br />**mode**：游戏模式<br />**user**：玩家名，`qq=`qq号，`uid=`玩家 ID<br />**num**：也可输入 `-` 分隔的区间 |
+| C | !c (`:`operate) (type) | [Custom](./custom.md) | 自定义 | *可自定义横幅或卡片。*<br />**operate**：操作，比如添加和删除 add/delete<br />**type**：种类，现支持 banner/card |
+| D | !d (num) (decision) | [Dice](./fun.md/#dice) | 扔骰子 | *即 Roll。*<br />**decision**：想做的决定，比如去不去玩 |
+| E | - | - | - | - |
+| F | !f (num) | [Friend](./player.md/#friend) | 查询好友列表 | **num**：也可输入 `-` 分隔的区间 |
+| G | - | - | - | - |
+| H | !h (category) | [Help](./bot.md/#help) | 获取帮助文档 | *当然不如这里列的全。*<br />**category**：功能的分类，bspmtcfa |
+| I | !i (`:`mode) (user) (`#`day) | [Information](./player.md/#info) | 查询玩家信息 | **day**：可与过去几天的信息作比较 |
+| J | - | - | - | - |
+| K | - | - | - | - |
+| L | !l (`:`mode) **[bid]** | [Leader](./map.md/#leader) | 查询谱面排行 | *list，mod 暂无法查询* |
+| M | !m (`:`mode) **[bid]** (acc`%`) (`x`combo) (`-`miss) (`+`mod) | [Map](./map.md/#map) | 查询谱面信息 | **acc**：准确率<br />**combo**：连击数，或连击占比 (0-1)<br />**miss**：失误数<br />**mod**：模组名称 |
+| N | !n(`b`) **[sid]** | [Nomination](./map.md/#nomination) | 查询上架流程 | *!nb 按谱面 ID (**BID**) 查询。* |
+| O | - | - | - | - |
+| P | !p (`:`mode) (user) (`#`num) | [Pass](./score.md/#pass) | 查询通过成绩 | *!ps 使用多成绩模式。*<br />**num**：也可输入 `-` 分隔的区间 |
+| Q | !q (`:`mode) (`#`status)  (`*`sort) (num) | [Qualified](./map.md/#qualified) | 查询过审列表 | **status**：谱面状态。gwpraql，默认 q<br />**sort**：排序方式，ta(ds)mp(rt) + (asc/desc) |
+| R | !r (`:`mode) (user) (`#`num) | [Recent](./score.md/#recent) | 查询最近成绩 | *!rs 使用多成绩模式。*<br />**num**：也可输入 `-` 分隔的区间 |
+| S | !s (`:`mode) **[bid]** (user) (`+`mod) | [Score](./score.md/#score) | 查询谱面成绩 | **mod**：模组名称 |
+| T | !t (`:`mode) (user) (`#`num) | [Today BP](./score.md/#todaybp) | 查询今日最好成绩 | **num**：也可输入 `-` 分隔的区间 |
+| U | - | - | - | - |
+| V | - | - | - | - |
+| W | - | - | - | - |
+| X | - | - | - | - |
+| Y | - | - | - | - |
+| Z | - | - | - | - |
+|  |  |  |  |  |
+| BA | !ba (`:`mode) (user) | [BP Analysis](./score.md/#bpanalysis) | 分析最好成绩 | *之前也叫 bpht (bp head tail)。* |
+| BF | !bf (`:`mode) (user) | [BP Fix](./score.md/#bpfix) | 修补最好成绩 |  |
+| BI | !bi | [Bind](./bot.md/#bind) | 绑定玩家账号 | *绑定时不用输入玩家名。解绑时请使用 !ub，也不用输入玩家名。* |
+| GP | !gp (`:`mode) (`#`name`#`) [[mod] [bids]] | [Get Pool](./tournament.md/#getpool) | 生成图池图片 | **mod bids**：请**按组输入**模组和谱面 ID，比如：NM 123 456 789。 |
+| IC | !ic (`:`mode) (user) | [Info Card](./player.md/#info) | 查询迷你信息 | *Information 功能的明信片设计。* |
+| IM | !im (user) | [I'm Mapper](./player.md/#immapper) | 查询谱师信息 | - |
+| ML | !ml **[mid]** (operate) | [Match Listen](./tournament.md/#matchlisten) | 监听比赛房间 | **mid**：比赛房间号<br />**operate**：操作，比如开始和停止 start/stop |
+| MN | !mn **[mid]** (`e`easy) (skip) (ignore) (`[`filter`]`) (`f`) (`r`) | [Match Now](****) | 获取比赛结果 | *与 **RA** 功能的参数相同。* |
+| MU | !mu (user) | [Mutual](./player.md/#mutual) | 获取主页链接 | *暂时不能看见双向好友。* |
+| OA | !oa (user) | [Old Avatar](./aid.md/#oldavater) | 获取旧版头像 | - |
+| OR | !or **[star]** | [Over Rating](./aid.html#overrating) | 计算超星禁言 | **star**：星数 |
+| PA | !pa **[bid]** (bid2) | [Performance Plus Map](./player.md/#ppplus) | 对比谱面 PP+ | - |
+| PC | !pc (`:`mode) (user) | [Pass Card](./score.md/#pass) | 查询迷你成绩 | *Pass 功能的明信片设计。* |
+| PI | !pi | [Ping](./bot.md/#ping) | 查询服务状态 | *也可通过 yumu? 调用。* |
+| PM | !pm (`:`mode) (user) | [Performance Minus](./player.md/#ppminus) | 查询 PP- | - |
+| PP | !pp (`:`mode) (user) | [Performance Plus](./player.md/#ppplus) | 查询 PP+ | - |
+| PV | !pv (`:`mode) (user) | [Performance Minus Vs](./player.md/#ppminus) | 对比 PP- | *也可通过 !pmvs 调用。* |
+| PX | !px (`:`mode) (user) | [Performance Plus Vs](./player.md/#ppplus) | 对比 PP+ | *也可通过 !ppvs 调用。* |
+| RA | !ra **[mid]** (`e`easy) (skip) (ignore) (`[`filter`]`) (`f`) (`r`) | [Rating](./tournament.md/#rating) | 查询比赛评分 | *即查询木斗力。也可通过 !mra 调用。*<br />**mid**：比赛房间号<br />**easy**：Easy 模组倍率，支持 0-20<br />**skip**：跳过开头场次<br />**ignore**：忽略结尾场次<br />**filter**：剔除特定场次<br />**f**：统计低分成绩<br />**r**：忽略重复对局 |
+| SC | !sc (time) | [Service Count](./bot.html#servicecount) | 查询服务调用 | *仅管理员使用*<br />**time**：可输入小时或天数，比如 7h 和 2d。默认 1d |
+| SM | !sm (mode) | [Set Mode](./score.md#mode) | 修改默认游戏模式 | **mode**：游戏模式：<br />0，osu，o：主模式<br />1，taiko，t：太鼓模式<br />2，catch，c：接水果模式<br />3，mania，m：下落模式 |
+| SP | !sp (operate) (user) | [Super](./bot.md/#ban) | 封禁解封玩家 | *仅管理员使用*<br />**operate**：操作，wkarbu<br />w：白<br />b：黑<br />a：入白<br />r：出白<br />b：入黑<br />u：出黑 |
+| SW | !sw | [Switch](./bot.md/#switch) | 切换服务开关 | *仅管理员使用* |
+| TR | !tr | [Transfer](./aid.md/#trans) | 计算音符调值 | *根据十二平分律计算* |

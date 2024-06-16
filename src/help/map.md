@@ -27,11 +27,11 @@ copyright: false
 
 **使用方法**
 
-!ymmap / m (**`:`游戏模式**) (**谱面编号**) (**准确率`%`**) (**`x`连击数**) (**`-`失误数**) (**`+`模组名称**)
+!ymmap / m (**`:`游戏模式**) [**谱面编号**] (**准确率`%`**) (**`x`连击数**) (**`-`失误数**) (**`+`模组名称**)
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：谱面的游戏模式，且只能在转谱上赋予模式。请参阅：[游戏模式](./score.md#mode)
-- **<HopeIcon icon="hashtag"/> 谱面编号**：需要查询的谱面编号 (BID)。
-  - 不输入，则效果约等于 [==!r==](./score.md#recent)。它会默认查询最近成绩（包括失败）所属的谱面信息，并且将该成绩作为预期成绩计算数据。
+- **<HopeIcon icon="hashtag"/> 谱面编号**：必填。需要查询的谱面编号 (BID)。
+  - 如果不填写，则 Bot 不会提示你（退避）。
 - **<HopeIcon icon="bullseye"/> 准确率**：预期成绩的准确率。可以输入 0-100 内的值。
   - 如果输入 0-1 之间的小数，则会乘以 100。
   - 如果输入 100-10000 之间的整数，则会除以 100。
@@ -98,7 +98,7 @@ copyright: false
 
 :::
 
-## ~~<HopeIcon icon="magnifying-glass"/> 3 搜索谱面 !ymsearch (!h)~~ {id=search}
+## ~~<HopeIcon icon="magnifying-glass"/> 3 搜索谱面 !ymsearch (!sh)~~ {id=search}
 
 **使用方法**
 
@@ -122,7 +122,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="angles-up"/> 4 查询谱面上架流程 !ymnomination (!c) {id=nomination}
+## <HopeIcon icon="angles-up"/> 4 查询上架流程 !ymnomination (!c) {id=nomination}
 
 **使用方法**
 
@@ -258,7 +258,7 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 
 :::
 
-## <HopeIcon icon="thumbs-up"/> 6 查询过审的谱面列表 !ymqualified (!q) {id=qualified}
+## <HopeIcon icon="thumbs-up"/> 6 查询过审列表 !ymqualified (!q) {id=qualified}
 
 **使用方法**
 
@@ -281,7 +281,7 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 
 :::
 
-## <HopeIcon icon="list-ol"/> 7 查询谱面排行榜 !ymleader (!l) {id=leader}
+## <HopeIcon icon="list-ol"/> 7 查询谱面排行 !ymleader (!l) {id=leader}
 
 **使用方法**
 
@@ -314,7 +314,7 @@ API 暂未开放以上大部分参数的使用权限。目前只能查询某张�
 
 :::
 
-## ~~<HopeIcon icon="chart-line"/> 9 查询段位单曲准确率 !ymdanacc (!da)~~ {id=danacc}
+## ~~<HopeIcon icon="chart-line"/> 9 查询段位单曲 !ymdanacc (!da)~~ {id=danacc}
 
 通过计算休息段和结束时提供的准确率，得出每段的准确率。
 

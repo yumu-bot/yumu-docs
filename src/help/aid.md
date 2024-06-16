@@ -17,7 +17,7 @@ footer: Yumu Docs - 辅助指令
 copyright: false
 ---
 
-## <HopeIcon icon="id-badge"/> 1 获取旧主页头像 !ymoldavatar (!oa) {id=oldavatar}
+## <HopeIcon icon="id-badge"/> 1 获取旧版头像 !ymoldavatar (!oa) {id=oldavatar}
 
 这个功能可以生成旧版主页风格的截图，含有玩家头像和玩家名称，方便玩家在面基 P 图的时候使用（遮挡住面部）。
 
@@ -40,7 +40,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="star-half-stroke"/> 2 计算超星 !ymoverrating (!or) {id=overrating}
+## <HopeIcon icon="star-half-stroke"/> 2 计算超星禁言 !ymoverrating (!or) {id=overrating}
 
 这个功能可以根据新人群的规定查询发出对应难度的成绩之后，应该被禁言多久。
 
@@ -51,7 +51,7 @@ copyright: false
 - **<HopeIcon icon="star"/> 星数**：必填，需要计算的星数。
   - 规则：成绩 5.70 星以上视作超星，每高 0.01 星禁言 10 分钟。
 
-## <HopeIcon icon="music"/> 3 计算转调 !ymtrans (!tr) {id=trans}
+## <HopeIcon icon="music"/> 3 计算音符调值 !ymtrans (!tr) {id=trans}
 
 这个功能将参考十二平均律，根据输入的音符调值，计算出以它为基音的 <HopeIcon icon="link"/> [自然大调](https://baike.baidu.com/item/%E8%87%AA%E7%84%B6%E5%A4%A7%E8%B0%83/2948231)内的其他音符的调值。方便玩家在制作音效的时候，根据音高使用对应的音频文件。
 

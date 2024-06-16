@@ -10,6 +10,7 @@ sticky: false
 star: false
 copyright: false
 ---
+
 # 目录
 
 单击卡片 <HopeIcon icon="credit-card"/><HopeIcon icon="arrow-pointer"/> 即可进入对应文章。
@@ -25,8 +26,16 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
-title: 获取谱面 Minus
-desc: Map Minus 3 - Mania
+title: 修补最好成绩
+desc: BP Fix // BF
+logo: ./assets/icon/icon-plus.svg
+link: ./score.md#bpfix
+color: rgba(89, 80, 158, 0.15)
+```
+
+```card
+title: 获取谱面 Minus (仅限 Mania)
+desc: Map Minus 3 // MM
 logo: ./assets/icon/icon-plus.svg
 link: ./map.md#mapminus
 color: rgba(89, 80, 158, 0.15)
