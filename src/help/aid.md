@@ -68,7 +68,7 @@ copyright: false
 
 ![计算 D 大调，指令：!ymtrans D4](https://yumemuzi.s-ul.eu/yumu/53SnO4x4)
 
-## <HopeIcon icon="hippo"/> 4 查询喜多杯谱面展览图 !ymkita (!k) {id=kita}
+## <HopeIcon icon="hippo"/> 4 查询喜多杯谱面展览图 !ymkita (!kt) {id=kita}
 
 这个功能是定制功能，可以根据输入的谱面来渲染出一张符合喜多杯的谱面介绍图。
 

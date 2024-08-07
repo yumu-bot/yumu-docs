@@ -26,18 +26,18 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
-title: 修补最好成绩
-desc: BP Fix // BF
+title: 获取玩家 ID
+desc: Get ID // gi
 logo: ./assets/icon/icon-plus.svg
-link: ./score.md#bpfix
+link: ./player.md#getid
 color: rgba(89, 80, 158, 0.15)
 ```
 
 ```card
-title: 获取谱面 Minus (仅限 Mania)
-desc: Map Minus 3 // MM
+title: 获取玩家名称
+desc: Get Name // gn
 logo: ./assets/icon/icon-plus.svg
-link: ./map.md#mapminus
+link: ./player.md#getname
 color: rgba(89, 80, 158, 0.15)
 ```
 

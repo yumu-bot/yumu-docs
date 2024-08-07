@@ -50,13 +50,16 @@ copyright: false
 | BA | !ba (`:`mode) (user) | [BP Analysis](./score.md/#bpanalysis) | 分析最好成绩 | *之前也叫 bpht (bp head tail)。* |
 | BF | !bf (`:`mode) (user) | [BP Fix](./score.md/#bpfix) | 修补最好成绩 |  |
 | BI | !bi | [Bind](./bot.md/#bind) | 绑定玩家账号 | *绑定时不用输入玩家名。解绑时请使用 !ub，也不用输入玩家名。* |
+| GI | !gi (users) | [Get ID](./player.md/#getid) | 获取玩家 ID | *仅管理员或群主使用。* |
+| GN | !gn (ids) | [Get Name](./player.md/#getname) | 获取玩家名称 | *仅管理员或群主使用。* |
 | GP | !gp (`:`mode) (`#`name`#`) [[mod] [bids]] | [Get Pool](./tournament.md/#getpool) | 生成图池图片 | **mod bids**：请**按组输入**模组和谱面 ID，比如：NM 123 456 789。 |
 | IC | !ic (`:`mode) (user) | [Info Card](./player.md/#info) | 查询迷你信息 | *Information 功能的明信片设计。* |
 | IM | !im (user) | [I'm Mapper](./player.md/#immapper) | 查询谱师信息 | - |
+| KT | !kt (bid) (round) (`+`mod) | [Kita](./aid.md/#kita) | 查询喜多杯谱面展览图 | - |
 | ML | !ml **[mid]** (operate) | [Match Listen](./tournament.md/#matchlisten) | 监听比赛房间 | **mid**：比赛房间号<br />**operate**：操作，比如开始和停止 start/stop |
 | MN | !mn **[mid]** (`e`easy) (skip) (ignore) (`[`filter`]`) (`f`) (`r`) | [Match Now](****) | 获取比赛结果 | *与 **RA** 功能的参数相同。* |
 | MU | !mu (user) | [Mutual](./player.md/#mutual) | 获取主页链接 | *暂时不能看见双向好友。* |
-| OA | !oa (user) | [Old Avatar](./aid.md/#oldavater) | 获取旧版头像 | - |
+| OA | !oa (users) | [Old Avatar](./aid.md/#oldavater) | 获取旧版头像 | - |
 | OR | !or **[star]** | [Over Rating](./aid.html#overrating) | 计算超星禁言 | **star**：星数 |
 | PA | !pa **[bid]** (bid2) | [Performance Plus Map](./player.md/#ppplus) | 对比谱面 PP+ | - |
 | PC | !pc (`:`mode) (user) | [Pass Card](./score.md/#pass) | 查询迷你成绩 | *Pass 功能的明信片设计。* |

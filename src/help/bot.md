@@ -132,9 +132,9 @@ op4->e
   - 合法的操作：
     - whitelist、w、l：查询白名单列表
     - blacklist、k：查询黑名单列表
-    - add、a：添加玩家进白名单 
-    - remove、r：移除玩家出白名单 
-    - ban、b：添加玩家进黑名单 
+    - add、a：添加玩家进白名单
+    - remove、r：移除玩家出白名单
+    - ban、b：添加玩家进黑名单
     - unban、u：移除玩家出黑名单
   - 如果不输入或者输错，Bot 会提示你。
 - **<HopeIcon icon="street-view"/> 对象**：被操作执行的对象。

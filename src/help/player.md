@@ -260,3 +260,34 @@ PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不�
 
 :::
 
+## <HopeIcon icon="id-badge"/> 7 获取玩家 ID !ymgetid (!gi) {id=getid}
+
+**使用方法**
+
+!ymgetid / gi [**玩家名**...]
+
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 至少输入一个玩家。
+  - 不同玩家名之间，需要使用逗号或冒号分隔开。
+
+::: warning 注意
+
+为防止滥用，只有群聊的群主或管理员可以使用此功能。
+
+:::
+
+## <HopeIcon icon="users"/> 8 获取玩家名称 !ymgetname (!gn) {id=getname}
+
+**使用方法**
+
+!ymgetid / gi [**玩家 ID**...]
+
+- **<HopeIcon icon="address-book"/> 玩家 ID**：同上。
+  - 至少输入一个玩家。
+  - 不同玩家 ID 之间，需要使用逗号或冒号分隔开。
+
+::: warning 注意
+
+为防止滥用，只有群聊的群主或管理员可以使用此功能。
+
+:::
