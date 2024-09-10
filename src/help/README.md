@@ -24,6 +24,13 @@ color: rgba(200, 200, 200, 0.15)
 ```
 
 **最近更新**
+```card
+title: 查寻符合条件的bp
+desc: Query BP // bq
+logo: ./assets/icon/icon-plus.svg
+link: ./score.md#querybp
+color: rgba(89, 80, 158, 0.15)
+```
 
 ```card
 title: 获取玩家 ID

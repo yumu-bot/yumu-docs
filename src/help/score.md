@@ -312,3 +312,61 @@ copyright: false
 同样地，这个功能对于刷 SS 的玩家用处也不大，因为最好成绩榜无需修补。
 
 :::
+
+## <HopeIcon icon="chart-pie"/> 9 查寻符合指定条件的bp (!bq) {id=querybp}
+
+这个功能可以使用类似 osu 游戏内的查寻语法, 例如 `bpm>160` `ar>9` 等, 注意并非完全一致, 具体支持的语法请参考附带表格 
+
+**使用方法**
+
+!bq (**查询字符串**)
+
+- **查寻字符串**： 查寻字符串由一个或多个条件(`[key][operator][value]`)组成, 条件之间以空格分隔, 其中 `key` 可以重复, 结果为所有条件取交集, 例如 `bpm>160 ar>9 ar<=10 rank>a`.
+
+::: warning 注意
+
+对于字符串的操作, `=` 意义为包含, `!=` 意义为不包含.
+
+对于 rank 操作, 其中 `ss` 使用 `x` 表示, 例如 `rank=xh` 表示查询所有 ss, mod 为 hd/fl 的成绩.
+
+对于mod操作, `=` 意义为严格相等, `!=` 意义为不包含, `>` 意义为包含.
+
+:::
+
+::: tip 关于查寻字符串
+
+key 为严格匹配, 不可以使用大写以及输入不在列表内的 key, 否则会导致报错!
+
+operator 前后不可以有空格, 而且**仅支持英文半角**输入, 仅支持输入 `=` `!=` `>` `>=` `<` `<=`, 
+另外不同 key 支持的 operator 不同, 请参考附带表格.
+
+value 如果要输入字符串, 请使用**英文半角双引号**包裹, 例如 `name="Freedom Dive"`.
+
+:::
+
+可使用的查寻:
+
+| key    | operator       | value type | example                | note           |
+|--------|----------------|------------|------------------------|----------------|
+| mapper | `=`, `!=`      | string     | `mapper="log off now"` |                |
+| name   | `=`, `!=`      | string     | `name="Paranoid Lost"` |                |
+| artist | `=`, `!=`      | string     | `artist="Halozy"`      |                |
+| star   | `all`          | double     | `star>=5.7`            |                |
+| score  | `all`          | int        | `score>=100000`        |                |
+| index  | `all`          | int        | `index<5`              | start form 0   |
+| ar     | `all`          | double     | `ar>=9`                | range of 0-11  |
+| od     | `all`          | double     | `od>=9`                | range of 0-11  |
+| cs     | `all`          | double     | `star>4`               | range of 0-11  |
+| hp     | `all`          | double     | `hp<5`                 | range of 0-11  |
+| rank   | `all`          | rank       | `rank>=a`              |                |
+| mod    | `=`, `!=`, `>` | string     | `mod>hr`               |                |
+| acc    | `all`          | double     | `acc>=99`              | range of 1-100 |
+| bpm    | `all`          | double     | `bpm>=160`             |                |
+| combo  | `all`          | int        | `combo>=2000`          |                |
+| length | `all`          | int        | `length>=300`          | seconds        |
+| miss   | `all`          | int        | `miss<3`               |                |
+
+- 上方表格的`operator` 为 `all` 则表示支持 `=`, `!=`, `>`, `>=`, `<`, `<=` 六种操作符.
+- rank: [`d`, `c`, `b`, `a`, `s`, `x`, `sh`, `xh`]
+
+<span style="color: var(--code-bg-color);"> 特定的查寻条件, 会触发隐藏的查寻彩蛋哦 </span>
