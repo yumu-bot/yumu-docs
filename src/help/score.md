@@ -225,13 +225,38 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="chart-pie"/> 7 分析最好成绩 !ymbpanalysis (!ba) {id=bpanalysis}
+## <HopeIcon icon="filter"/> 7 按条件查询最好成绩 !ymbpquery (!bq) {id=bpquery}
+
+这个功能可以通过特定条件，筛选出符合条件的最好成绩。
+
+**使用方法**
+
+!ymbpquery / bq (**`:`游戏模式**) [**查询条件**]
+
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
+- **<HopeIcon icon="filter"/> 查询条件**：输入格式为：条件 + 关系式 + 查询内容。中间不要留空格。
+  - 可输入的条件种类有：谱师 `mapper`，歌曲名 `name`，艺术家名 `artist`，星数 `star`，分数 `score`，谱面四维 `ar`、`cs`、`od`、`hp`，编号 `index`，评级 `rank`，精确度 `accuracy`，曲速 `bpm`，连击 `combo`，长度 `length`，失误 `miss`，模组 `mod`。
+    - 可以输入的四维范围：`ar`、`od`：0-11，`cs`、`hp`：0-10
+    - 可以输入的评级 `rank`：x、xh、s、sh、s、a、b、c、d
+  - 可输入的关系式有：等于 `=`，小于 `<`，大于 `>`，小于等于 `<=`，大于等于 `>=`，不等于 `!=`
+  - 如果查询内容包含空格，请使用英文半角引号 `"` 包括起来，例如 `name="Freedom Dive"`。
+  - 如果查询内容不是数字，则关系式只能输入等于和不等于。
+
+::: tip 提示
+
+暂时不支持输入其他玩家的名称来查询。
+
+特定的查询内容，会触发隐藏彩蛋。
+
+:::
+
+## <HopeIcon icon="chart-pie"/> 8 分析最好成绩 !ymbpanalysis (!ba) {id=bpanalysis}
 
 这个功能可以分析玩家的最好成绩榜，从而判断玩家目前的状态，以及玩家的偏好或技巧。
 
 **使用方法**
 
-!ymbpa / ba (**`:`游戏模式**) (**玩家名**)
+!ymbpanalysis / ba (**`:`游戏模式**) (**玩家名**)
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
@@ -285,7 +310,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="hammer"/> 8 修补最好成绩 !ymbpfix (!bf) {id=bpfix}
+## <HopeIcon icon="hammer"/> 9 修补最好成绩 !ymbpfix (!bf) {id=bpfix}
 
 这个功能可以分析玩家的最好成绩榜，抽出玩家的不完美 (choke) 成绩，并预测当这些成绩被修补成全连 (full combo) 后，玩家能获得多少表现分。
 
@@ -312,61 +337,3 @@ copyright: false
 同样地，这个功能对于刷 SS 的玩家用处也不大，因为最好成绩榜无需修补。
 
 :::
-
-## <HopeIcon icon="chart-pie"/> 9 查寻符合指定条件的bp (!bq) {id=querybp}
-
-这个功能可以使用类似 osu 游戏内的查寻语法, 例如 `bpm>160` `ar>9` 等, 注意并非完全一致, 具体支持的语法请参考附带表格 
-
-**使用方法**
-
-!bq (**查询字符串**)
-
-- **查寻字符串**： 查寻字符串由一个或多个条件(`[key][operator][value]`)组成, 条件之间以空格分隔, 其中 `key` 可以重复, 结果为所有条件取交集, 例如 `bpm>160 ar>9 ar<=10 rank>a`.
-
-::: warning 注意
-
-对于字符串的操作, `=` 意义为包含, `!=` 意义为不包含.
-
-对于 rank 操作, 其中 `ss` 使用 `x` 表示, 例如 `rank=xh` 表示查询所有 ss, mod 为 hd/fl 的成绩.
-
-对于mod操作, `=` 意义为严格相等, `!=` 意义为不包含, `>` 意义为包含.
-
-:::
-
-::: tip 关于查寻字符串
-
-key 为严格匹配, 不可以使用大写以及输入不在列表内的 key, 否则会导致报错!
-
-operator 前后不可以有空格, 而且**仅支持英文半角**输入, 仅支持输入 `=` `!=` `>` `>=` `<` `<=`, 
-另外不同 key 支持的 operator 不同, 请参考附带表格.
-
-value 如果要输入字符串, 请使用**英文半角双引号**包裹, 例如 `name="Freedom Dive"`.
-
-:::
-
-可使用的查寻:
-
-| key    | operator       | value type | example                | note           |
-|--------|----------------|------------|------------------------|----------------|
-| mapper | `=`, `!=`      | string     | `mapper="log off now"` |                |
-| name   | `=`, `!=`      | string     | `name="Paranoid Lost"` |                |
-| artist | `=`, `!=`      | string     | `artist="Halozy"`      |                |
-| star   | `all`          | double     | `star>=5.7`            |                |
-| score  | `all`          | int        | `score>=100000`        |                |
-| index  | `all`          | int        | `index<5`              | start form 0   |
-| ar     | `all`          | double     | `ar>=9`                | range of 0-11  |
-| od     | `all`          | double     | `od>=9`                | range of 0-11  |
-| cs     | `all`          | double     | `star>4`               | range of 0-11  |
-| hp     | `all`          | double     | `hp<5`                 | range of 0-11  |
-| rank   | `all`          | rank       | `rank>=a`              |                |
-| mod    | `=`, `!=`, `>` | string     | `mod>hr`               |                |
-| acc    | `all`          | double     | `acc>=99`              | range of 1-100 |
-| bpm    | `all`          | double     | `bpm>=160`             |                |
-| combo  | `all`          | int        | `combo>=2000`          |                |
-| length | `all`          | int        | `length>=300`          | seconds        |
-| miss   | `all`          | int        | `miss<3`               |                |
-
-- 上方表格的`operator` 为 `all` 则表示支持 `=`, `!=`, `>`, `>=`, `<`, `<=` 六种操作符.
-- rank: [`d`, `c`, `b`, `a`, `s`, `x`, `sh`, `xh`]
-
-<span style="color: var(--code-bg-color);"> 特定的查寻条件, 会触发隐藏的查寻彩蛋哦 </span>

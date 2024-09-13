@@ -306,7 +306,7 @@ API 暂未开放以上大部分参数的使用权限。目前只能查询某张�
 
 :::
 
-## ~~<HopeIcon icon="book-bookmark"/> 8 查询课题 !ymcourse (!c)~~ {id=course}
+## ~~<HopeIcon icon="book-bookmark"/> 8 查询课题 !ymcourse (!co)~~ {id=course}
 
 ::: info 备注
 
@@ -331,6 +331,26 @@ API 暂未开放以上大部分参数的使用权限。目前只能查询某张�
 ::: info 备注
 
 暂未开放
+
+:::
+
+## <HopeIcon icon="file-arrow-up"/> 9 刷新谱面文件 !ymrefreshfile (!rf) {id=refreshfile}
+
+部分机器人缓存的谱面文件可能因为部分不可控原因，导致用于计算 PP 或是星数的谱面文件不完整或已过时。此时可以使用此命令来快速更新谱面文件到官网最新的版本。
+
+**使用方法**
+
+!ymrefreshfile / rf [**谱面编号**]
+
+- **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要更新的谱面编号 (BID)。
+
+![将过时的谱面更新至服务器最新的版本](https://yumemuzi.s-ul.eu/yumu/MKFWV5p3)
+
+::: tip 提示
+
+在以上例子中，因为谱面经历了从过审状态被下架，重新上架的这一套流程，所以导致服务器存储的谱面文件已过时。使用指令更新后，即可获得与官网一致的结果。
+
+如果机器人本地存有同一张谱面内的其他难度，也会将其更新为官网最新版本。
 
 :::
 

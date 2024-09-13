@@ -24,27 +24,20 @@ color: rgba(200, 200, 200, 0.15)
 ```
 
 **最近更新**
+
 ```card
-title: 查寻符合条件的bp
-desc: Query BP // bq
+title: 按条件查询最好成绩
+desc: BP Query // bq
 logo: ./assets/icon/icon-plus.svg
-link: ./score.md#querybp
+link: ./score.md#bpquery
 color: rgba(89, 80, 158, 0.15)
 ```
 
 ```card
-title: 获取玩家 ID
-desc: Get ID // gi
+title: 刷新谱面缓存
+desc: Refresh File // rf
 logo: ./assets/icon/icon-plus.svg
-link: ./player.md#getid
-color: rgba(89, 80, 158, 0.15)
-```
-
-```card
-title: 获取玩家名称
-desc: Get Name // gn
-logo: ./assets/icon/icon-plus.svg
-link: ./player.md#getname
+link: ./map.md#refreshfile
 color: rgba(89, 80, 158, 0.15)
 ```
 
