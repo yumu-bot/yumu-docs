@@ -235,7 +235,7 @@ copyright: false
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="filter"/> 查询条件**：输入格式为：条件 + 关系式 + 查询内容。中间不要留空格。
-  - 可输入的条件种类有：谱师 `mapper`，歌曲名 `name`，艺术家名 `artist`，星数 `star`，分数 `score`，谱面四维 `ar`、`cs`、`od`、`hp`，编号 `index`，评级 `rank`，精确度 `accuracy`，曲速 `bpm`，连击 `combo`，长度 `length`，失误 `miss`，模组 `mod`。
+  - 可输入的条件种类有：谱师 `mapper`，歌曲名 `name`，艺术家名 `artist`，星数 `star`，分数 `score`，谱面四维 `ar`、`cs`、`od`、`hp`，编号 `index`，评级 `rank`，精确度 `accuracy`，曲速 `bpm`，连击 `combo`，长度 `length`，失误 `miss`，模组 `mod`，彩率(仅mania) `rate`。
     - 可以输入的四维范围：`ar`、`od`：0-11，`cs`、`hp`：0-10
     - 可以输入的评级 `rank`：x、xh、s、sh、s、a、b、c、d
   - 可输入的关系式有：等于 `=`，小于 `<`，大于 `>`，小于等于 `<=`，大于等于 `>=`，不等于 `!=`
