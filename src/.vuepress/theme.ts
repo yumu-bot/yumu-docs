@@ -11,15 +11,17 @@ export default hopeTheme({
 
   logo: "/favicon.ico",
 
-  repo: "http://git.365246692.xyz/bot/yumu-docs",
+  repo: "https://github.com/yumu-bot/yumu-docs",
+
+  // old repo:http://git.365246692.xyz/bot/yumu-docs
   
-  repoLabel: "GitLab",
+  repoLabel: "GitHub",
   
   repoDisplay: true,
 
-  editLinkPattern: ":repo/-/blob/:branch/:path",
+  editLinkPattern: ":repo/blob/:branch/:path",
   
-  docsRepo: "http://git.365246692.xyz/bot/yumu-docs",
+  docsRepo: "https://github.com/yumu-bot/yumu-docs",
 
   docsDir: "src",
   // navbar
@@ -40,7 +42,7 @@ export default hopeTheme({
 
   // page meta
   metaLocales: {
-    editLink: "在 Git 上编辑此页",
+    editLink: "在 GitHub 上编辑此页",
   },
 
   plugins: {
