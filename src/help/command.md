@@ -43,7 +43,7 @@ copyright: false
 | U | - | - | - | - |
 | V | - | - | - | - |
 | W | - | - | - | - |
-| X | - | - | - | - |
+| X | !x (user) (`#`num) | [Maimai Best](./maimai.md/#bestperformance) | 查询舞萌最好成绩 | *使用了水鱼查分器的数据。* |
 | Y | - | - | - | - |
 | Z | - | - | - | - |
 |  |  |  |  |  |

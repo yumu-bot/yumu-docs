@@ -15,7 +15,7 @@ actions:
     link: ./help/
     type: primary
   
-  - text: 部署分身
+  - text: 添加至群聊
     link: ./deploy/
     type: primary
     

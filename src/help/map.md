@@ -334,7 +334,7 @@ API 暂未开放以上大部分参数的使用权限。目前只能查询某张�
 
 :::
 
-## <HopeIcon icon="file-arrow-up"/> 9 刷新谱面文件 !ymrefreshfile (!rf) {id=refreshfile}
+## <HopeIcon icon="file-arrow-up"/> 10 刷新谱面文件 !ymrefreshfile (!rf) {id=refreshfile}
 
 部分机器人缓存的谱面文件可能因为部分不可控原因，导致用于计算 PP 或是星数的谱面文件不完整或已过时。此时可以使用此命令来快速更新谱面文件到官网最新的版本。
 
