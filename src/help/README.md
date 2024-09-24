@@ -26,8 +26,15 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
+title: 按版本查询舞萌成绩
+desc: maimai best // mv
+logo: ./assets/icon/icon-plus.svg
+link: ./maimai.md#version
+color: rgba(89, 80, 158, 0.15)
+```
+```card
 title: 查询舞萌最好成绩
-desc: maimai best // x
+desc: maimai best // mb // x
 logo: ./assets/icon/icon-plus.svg
 link: ./maimai.md#bestperformance
 color: rgba(89, 80, 158, 0.15)
