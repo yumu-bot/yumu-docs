@@ -65,9 +65,44 @@ copyright: false
 - **<HopeIcon icon="coins"/> 版本号**：可输入版本号的英文全称，以及两字母简称、三字母简称、小版本号（不带前面的 `v`）。
   - 举例：想要查询 `maimai でらっくす Splash PLUS` 版本的成绩，可以输入：`splashplus`、`splash plus`、`spl+`、`splash+`、`spp`、`1.1`、`1.10`。
   - 如果不输入任何参数，即可获取玩家在国服最新版本内的最好成绩（目前国服版本位于 `maimai でらっくす BUDDiES`）。
-  - 其他版本号的缩写格式类似。
+  - 其他版本号的缩写格式类似。请参见下表：**版本号对应表**。
   - 可输入多个版本（建议最多 5 个）。
   - 版本号之间可通过逗号 `,`、冒号 `:`、或号 `|` 分隔开。
+
+::: details 版本号对应表
+
+查询的字段可输入版本简称，版本号，或是版本全称中（除了初代）剔除掉 maimai 之后，剩下的字段。
+
+| 版本全称 | 版本简称 | 版本号 |
+| :-: | :-: | :-: |
+| maimai | mi, mai | 0.1 |
+| maimai PLUS | pl, pls, mi+, mai+ | 0.11 |
+| maimai GreeN | gr, gre, grn | 0.2 |
+| maimai GreeN PLUS | gr+, gre+, grn+ | 0.21 |
+| maimai ORANGE | or, org | 0.3 |
+| maimai ORANGE PLUS | or+, org+ | 0.31 |
+| maimai PiNK | pk, pnk | 0.4 |
+| maimai PiNK PLUS | pk+, pnk+ | 0.41 |
+| maimai MURASAKi | ms, msk | 0.5 |
+| maimai MURASAKi PLUS | ms+, msk+ | 0.51 |
+| maimai MiLK | mk, mlk | 0.6 |
+| MiLK PLUS | mk+, mlk+ | 0.61 |
+| maimai FiNALE | fn, fnl | 0.7 |
+| ALL FiNALE[^1] | afn, fn+ | 0.71 |
+| maimai でらっくす | dx, dlx | 1.0 |
+| maimai でらっくす PLUS | dx+, dlx+ | 1.01 |
+| maimai でらっくす Splash | sp, spl | 1.1 |
+| maimai でらっくす Splash PLUS | sp+, spl+ | 1.11 |
+| maimai でらっくす UNiVERSE | un, uv, unv | 1.2 |
+| maimai でらっくす UNiVERSE PLUS | un+, uv+, unv+ | 1.21 |
+| maimai でらっくす FESTiVAL | fs, fes | 1.3 |
+| maimai でらっくす FESTiVAL PLUS | fs+, fes+ | 1.31 |
+| maimai でらっくす BUDDiES | bd, bud | 1.4 |
+| maimai でらっくす BUDDiES PLUS[^2] | bd+, bud+ | 1.41 |
+| maimai でらっくす PRiSM[^2] | pr, pri, prs | 1.5 |
+| maimai でらっくす PRiSM PLUS[^2] | pr+, pri+, prs+ | 1.51 |
+
+:::
 
 ::: tip 提示
 
@@ -76,3 +111,8 @@ copyright: false
 如果查询的玩家名称与以上可能出现的版本号缩写同名，如 **splash**，建议在其后添加版本参数 (**`#...`**)，便于区分。
 
 :::
+
+## 备注
+
+[^1]: 这个版本指的是包括 FiNALE 版本之前的所有歌曲。实际上并没有这个版本（或许？）
+[^2]: 目前国服并没有这个版本的歌曲。
