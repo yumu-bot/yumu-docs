@@ -112,18 +112,21 @@ copyright: false
 
 ## <HopeIcon icon="user-group"/> 3 查询好友列表 !ymfriend (!f) {id=friend}
 
-可以查询玩家所添加（关注）的好友（不能看到双向）。
+可以查询玩家所添加（关注）的好友，也可以通过输入玩家名的方式来查询自己是否和对方互相关注（双向好友）。
 
 **使用方法**
 
-!ymfriend / f (**数量或区间**) (**`@`QQ 用户**)
+!ymfriend / f (**数量或区间**) (**玩家名**)
 
 - **<HopeIcon icon="ruler-combined"/> 数量或区间**：可以输入 1-100 内的单个值，也可以输入==差值在 1-100 内==的区间（x-y）。
   - 输入 1，就是随机查询自己的一个好友。
-  - 输入 111-120，就是查询自己好友列表内第一百一十一到第一百二十个好友（<HopeIcon icon="arrow-down-a-z"/> 按首字母排列）。
-  - 如果 <HopeIcon icon="circle-question"/> 不输入任何值，则默认随机查询二十个好友。
-- **<HopeIcon icon="at"/> QQ 用户**
-  - 可以查询自己是否和对方互相关注（双向）。
+  - 输入 111-120，就是查询自己好友列表内第 111 到 120 个好友（<HopeIcon icon="arrow-down-a-z"/> 按首字母排列）。
+  - 如果 <HopeIcon icon="circle-question"/> 不输入任何值，则默认随机查询 20 个好友。
+- **<HopeIcon icon="address-card"/> 玩家名**：可以查询自己是否和对方互相关注（双向好友）。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+  - 只有对方也绑定了机器人，才可得知对方是否关注了你。
 
 ::: warning 注意
 

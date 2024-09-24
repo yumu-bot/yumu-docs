@@ -64,6 +64,7 @@ copyright: false
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 - **<HopeIcon icon="coins"/> 版本号**：可输入版本号的英文全称，以及两字母简称、三字母简称、小版本号（不带前面的 `v`）。
   - 举例：想要查询 `maimai でらっくす Splash PLUS` 版本的成绩，可以输入：`splashplus`、`splash plus`、`spl+`、`splash+`、`spp`、`1.1`、`1.10`。
+  - 如果不输入任何参数，即可获取玩家在国服最新版本内的最好成绩（目前国服版本位于 `maimai でらっくす BUDDiES`）。
   - 其他版本号的缩写格式类似。
   - 可输入多个版本（建议最多 5 个）。
   - 版本号之间可通过逗号 `,`、冒号 `:`、或号 `|` 分隔开。

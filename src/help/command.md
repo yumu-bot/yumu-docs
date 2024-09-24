@@ -25,7 +25,7 @@ copyright: false
 | C | !c (`:`operate) (type) | [Custom](./custom.md) | 自定义 | *可自定义横幅或卡片。*<br />**operate**：操作，比如添加和删除 add/delete<br />**type**：种类，现支持 banner/card |
 | D | !d (num) (decision) | [Dice](./fun.md/#dice) | 扔骰子 | *即 Roll。*<br />**decision**：想做的决定，比如去不去玩 |
 | E | - | - | - | - |
-| F | !f (num) | [Friend](./player.md/#friend) | 查询好友列表 | **num**：也可输入 `-` 分隔的区间 |
+| F | !f (name) (num) | [Friend](./player.md/#friend) | 查询好友列表 | **num**：也可输入 `-` 分隔的区间 |
 | G | - | - | - | - |
 | H | !h (category) | [Help](./bot.md/#help) | 获取帮助文档 | *当然不如这里列的全。*<br />**category**：功能的分类，bspmtcfa |
 | I | !i (`:`mode) (user) (`#`day) | [Information](./player.md/#info) | 查询玩家信息 | **day**：可与过去几天的信息作比较 |
@@ -58,7 +58,8 @@ copyright: false
 | KT | !kt (bid) (round) (`+`mod) | [Kita](./aid.md/#kita) | 查询喜多杯谱面展览图 | - |
 | ML | !ml **[mid]** (operate) | [Match Listen](./tournament.md/#matchlisten) | 监听比赛房间 | **mid**：比赛房间号<br />**operate**：操作，比如开始和停止 start/stop |
 | MN | !mn **[mid]** (`e`easy) (skip) (ignore) (`[`filter`]`) (`f`) (`r`) | [Match Now](****) | 获取比赛结果 | *与 **RA** 功能的参数相同。* |
-| MU | !mu (user) | [Mutual](./player.md/#mutual) | 获取主页链接 | *暂时不能看见双向好友。* |
+| MU | !mu (user) | [Mutual](./player.md/#mutual) | 获取主页链接 |  |
+| MV | !mv (user) (ver) | [Maimai Version](./maimai.md/#version) | 按版本查询舞萌成绩 |  |
 | OA | !oa (users) | [Old Avatar](./aid.md/#oldavater) | 获取旧版头像 | - |
 | OR | !or **[star]** | [Over Rating](./aid.html#overrating) | 计算超星禁言 | **star**：星数 |
 | PA | !pa **[bid]** (bid2) | [Performance Plus Map](./player.md/#ppplus) | 对比谱面 PP+ | - |
