@@ -1,5 +1,5 @@
 ---
-title: 舞萌指令
+title: 舞萌 & 中二指令
 icon: spinner
 order: 10
 date: 2024-09-18
@@ -13,17 +13,17 @@ tag:
   - 舞萌DX
 sticky: false
 star: false
-footer: Yumu Docs - 舞萌指令
+footer: Yumu Docs - 舞萌 & 中二指令
 copyright: false
 ---
 
 ::: tip 提示
 
-本群升级成为舞萌群。
+本群升级成为舞萌 & 中二群。
 
 :::
 
-## <HopeIcon icon="wand-magic-sparkles"/> 1 查询舞萌最好成绩 !ymmaimaibest (!x) {id=bestperformance}
+## <HopeIcon icon="wand-magic-sparkles"/> 1 查询舞萌最好成绩 !ymmaimaibest (!x) {id=maibest}
 
 这个功能可以查询到玩家最好成绩榜（b50）上的成绩。
 
@@ -35,9 +35,9 @@ copyright: false
 
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认使用发送者的 QQ 查询。
   - 这里的玩家名是玩家在[==水鱼官网==](https://www.diving-fish.com/maimaidx/prober/)上的账号名。
-    - 如果玩家的账号名称带有特殊字符或中文，请使用 QQ 查询。
+    - 可以输入特殊字符或中文（如果玩家名内有）。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-    - 如果您查询自己的成绩时显示未绑定，则可以前往水鱼官网，登录，点击右上角的 `编辑个人资料` ，最后在 `绑定 QQ` 段落填写自己的 QQ。
+    - 如果您查询自己的成绩时显示未绑定，则可以前往[==水鱼官网==](https://www.diving-fish.com/maimaidx/prober/)，登录，点击右上角的 `编辑个人资料` ，最后在 `绑定 QQ` 段落填写自己的 QQ。
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@某S氏。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
   - 可以输入 1~50 之间的整数，输入 2 就是查询第二个最好成绩。
@@ -112,7 +112,62 @@ copyright: false
 
 :::
 
+## ~~<HopeIcon icon="magnifying-glass"/> 3 查询舞萌歌曲 !ymmaimaisong (!ms) {id=maisong}~~
+
+这个功能可以按歌曲名或歌曲编号，查询到玩家在特定歌曲内的成绩。
+
+**使用方法**
+
+!ymmaisong / ms (**查询字段 / 歌曲编号**)
+
+- **<HopeIcon icon="address-card"/> 查询字段**：需要查询的歌曲名。
+  - 支持输入日文汉字，以及平假名片假名的罗马音。不支持输入日本汉字的罗马音以及原单词。
+  - 部分特殊符号允许全角以及半角输入。
+  - 比如：需要查询 **幻想のサテライト** 这首歌的信息，
+    - 您可以尝试输入：幻想、サテライト、sateraito。
+    - 不能输入：banshou、satellite。
+- **<HopeIcon icon="hashtag"/> 歌曲编号**：选填，需要查询的歌曲编号 (SongID)。
+  - 只能与查询字段二者选其一输入。
+  - 如果想要查询的字段正好也是 1-6 位的一串数字，请使用英文引号 `"` 将其包裹起来。
+
+::: info 备注
+
+暂未开放
+
+:::
+
+## ~~<HopeIcon icon="keyboard"/> 4 查询水鱼玩家 !ymdivingfish (!df) {id=diving}~~
+
+::: info 备注
+
+暂未开放
+
+:::
+
+## <HopeIcon icon="keyboard"/> 5 查询中二最好成绩 !ymmaimaibest (!y) {id=chubest}
+
+这个功能可以查询到玩家最好成绩榜（b30+r10）上的成绩。
+
+**使用方法**
+
+!ymchunithmbest / cb / y (**玩家名**) (**`#`偏移量或区间**)
+
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+- **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
+  - 可以输入 1~50 之间的整数，输入 2 就是查询第二个最好成绩。
+  - 如果不输入任何参数，即可获取玩家的 30 个最好成绩和 10 个最近成绩（等价于其他同类机器人的 b40 功能）。
+  - 1~30 为你的前 30 个最好成绩 (b30)，31-40 为你最近 10 次的成绩（有算法计算，可重复获取）(r10)。
+  - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
+
+::: tip 提示
+
+如果不输入玩家名称（查询自己的成绩），那么偏移量前的 `#` 号可以忽略。
+
+如果查询的玩家名称末尾含有**空格**和小于 100 的**纯数字**的玩家，如 **chuplayer 12**，建议在其后添加偏移参数 (**`#...`**)，便于区分。
+
+:::
+
 ## 备注
 
-[^1]: 这个版本指的是包括 FiNALE 版本之前的所有歌曲。实际上并没有这个版本（或许？）
+[^1]: 这个版本指的是包括 FiNALE 版本之前的所有歌曲。实际上并没有这个版本。
 [^2]: 目前国服并没有这个版本的歌曲。
