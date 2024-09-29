@@ -58,7 +58,7 @@ copyright: false
 | KT | !kt (bid) (round) (`+`mod) | [Kita](./aid.md/#kita) | 查询喜多杯谱面展览图 | - |
 | ML | !ml **[mid]** (operate) | [Match Listen](./tournament.md/#matchlisten) | 监听比赛房间 | **mid**：比赛房间号<br />**operate**：操作，比如开始和停止 start/stop |
 | MN | !mn **[mid]** (`e`easy) (skip) (ignore) (`[`filter`]`) (`f`) (`r`) | [Match Now](****) | 获取比赛结果 | *与 **RA** 功能的参数相同。* |
-| MS | !ms **[title\|id]** | [Maimai Version](./maimai.md/#maisong) | 查询舞萌歌曲 | *不支持输入日本汉字的罗马音。* |
+| MS | !ms **[title/id]** | [Maimai Version](./maimai.md/#maisong) | 查询舞萌歌曲 | *不支持输入日本汉字的罗马音。* |
 | MU | !mu (user) | [Mutual](./player.md/#mutual) | 获取主页链接 |  |
 | MV | !mv (user) (ver) | [Maimai Version](./maimai.md/#version) | 按版本查询舞萌成绩 | *不输入版本默认当前国服最新版本。* |
 | OA | !oa (users) | [Old Avatar](./aid.md/#oldavater) | 获取旧版头像 | - |
