@@ -26,6 +26,14 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
+title: 查询舞萌歌曲成绩
+desc: maimai score // ms
+logo: ./assets/icon/icon-plus.svg
+link: ./maimai.md#maiscore
+color: rgba(89, 80, 158, 0.15)
+```
+
+```card
 title: 查询中二最好成绩
 desc: chunithm best // cb
 logo: ./assets/icon/icon-plus.svg

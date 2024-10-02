@@ -112,13 +112,13 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="magnifying-glass"/> 3 查询舞萌歌曲 !ymmaimaiscore (!ms) {id=maiscore}
+## <HopeIcon icon="magnifying-glass"/> 3 查询舞萌歌曲成绩 !ymmaimaiscore (!ms) {id=maiscore}
 
 这个功能可以按歌曲名或歌曲编号，查询到玩家在特定歌曲内的成绩（以及歌曲音符信息）。
 
 **使用方法**
 
-!ymmaisong / ms (**查询字段 / 歌曲编号**) (**玩家名**)
+!ymmaimaiscore / ms (**查询字段 / 歌曲编号**) (**玩家名**)
 
 - **<HopeIcon icon="address-card"/> 查询字段**：二选一填，需要查询的歌曲名。
   - 支持输入日文汉字，以及平假名片假名的罗马音。不支持输入日本汉字的罗马音；以及日式英文所对应的原单词。
