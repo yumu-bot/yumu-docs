@@ -140,13 +140,14 @@ copyright: false
 
 :::
 
-## ~~<HopeIcon icon="keyboard"/> 4 查询水鱼玩家 !ymdivingfish (!df)~~ {id=diving}
+## <HopeIcon icon="keyboard"/> 4 查询水鱼玩家 !ymmaimaifind (!mf) {id=maifind}
 
-::: info 备注
+这个功能可以查询到注册了水鱼查分器的玩家名和评分 (Rating)。
 
-暂未开放
+**使用方法**
 
-:::
+!ymchunithmbest / cb / y (**玩家名**)
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
 
 ## <HopeIcon icon="keyboard"/> 5 查询中二最好成绩 !ymmaimaibest (!y) {id=chubest}
 
