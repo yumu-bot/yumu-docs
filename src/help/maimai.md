@@ -11,15 +11,19 @@ tag:
   - SEGA
   - 舞萌
   - 舞萌DX
+  - chunithm
+  - 中二节奏
 sticky: false
 star: false
 footer: Yumu Docs - 舞萌 & 中二指令
 copyright: false
 ---
 
-::: tip 提示
+::: info 备注
 
-本群升级成为舞萌 & 中二群。
+所有玩家数据均由==水鱼 (divingfish)== 提供，部分歌曲数据由==落雪咖啡屋 (Lxns-Network)== 提供。
+
+请参阅：[**divingfish**](https://www.diving-fish.com/maimaidx/prober/#Tutorial)、[**Lxns-Network**](https://maimai.lxns.net/docs)
 
 :::
 
