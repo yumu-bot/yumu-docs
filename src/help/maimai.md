@@ -21,7 +21,7 @@ copyright: false
 
 ::: info 备注
 
-所有玩家数据均由==水鱼 (divingfish)== 提供，部分歌曲数据由==落雪咖啡屋 (Lxns-Network)== 提供。
+所有玩家数据均由==水鱼 (divingfish)== 提供，部分歌曲信息和歌曲外号数据由==落雪咖啡屋 (Lxns-Network)== 提供。
 
 请参阅：[**divingfish**](https://www.diving-fish.com/maimaidx/prober/#Tutorial)、[**Lxns-Network**](https://maimai.lxns.net/docs)
 
@@ -125,10 +125,11 @@ copyright: false
 !ymmaimaiscore / ms (**查询字段 / 歌曲编号**) (**玩家名**)
 
 - **<HopeIcon icon="address-card"/> 查询字段**：二选一填，需要查询的歌曲名。
+  - 支持输入简中社区常用的外号（俗称）。
   - 支持输入日文汉字，以及平假名片假名的罗马音。不支持输入日本汉字的罗马音；以及日式英文所对应的原单词。
   - 部分特殊符号允许全角以及半角输入。
   - 比如：需要查询 **幻想のサテライト** 这首歌的信息，
-    - 您可以尝试输入：幻想、サテライト、sateraito。
+    - 您可以尝试输入：幻想的卫星、幻想、サテライト、sateraito、10319、319。
     - 不能输入：banshou、satellite。
 - **<HopeIcon icon="hashtag"/> 歌曲编号**：二选一填，需要查询的歌曲编号 (SongID)。
   - 只能与查询字段二者选其一输入。
