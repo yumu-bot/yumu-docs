@@ -266,12 +266,13 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
 - **<HopeIcon icon="file-circle-question"/> 谱面状态**：谱面目前的状态。
-  - 可以输入的参数：graveyard, wip, pending, ranked, approved, qualified, loved，或者 g, w, p, r, a, q, l，
+  - 可以输入的参数：graveyard, wip, pending, ranked, approved, qualified, loved。
+  - 或者 g, w, p, r, a, q, l。
   - 如果留空，默认是 qualified。
-- **<HopeIcon icon="arrow-down-a-z"/> 排序**：结果的排序方式。
+- **<HopeIcon icon="arrow-down-a-z"/> 筛选和排序**：结果的筛选和排序方式。
   - 可以输入的参数：
     - title, artist, difficulty/star, maprating, plays, ranked/time，或者 t, a, d/s, m, p, r/t
-  - 以上参数后面不加任何符号或字母，加 `+` 号、加字母 `a`、加 `_asc` 都是 <HopeIcon icon="arrow-down-a-z"/> ==升序==。以上参数后面加 `-` 号、加字母 `d`、加 `_desc` 是 <HopeIcon icon="arrow-up-a-z"/> ==降序==。
+  - 以上参数后面不加任何符号或字母，加 `+` 号、加字母 `a`、加 `_asc` 都是 <HopeIcon icon="arrow-down-a-z"/> ==升序==（小的在上）。以上参数后面加 `-` 号、加字母 `d`、加 `_desc` 是 <HopeIcon icon="arrow-up-a-z"/> ==降序==（大的在上）。
     - 常用参数：rd / ranked_desc：按上架时间降序，刚上架的谱面会排在最上面。
   - 如果留空，默认是 ranked_asc：按上架时间升序，此时，刚提名的谱面会排在最上面。
 

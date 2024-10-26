@@ -116,8 +116,19 @@ copyright: false
 
 **使用方法**
 
-!ymfriend / f (**数量或区间**) (**玩家名**)
+!ymfriend / f (**`:`筛选和排序**) (**数量或区间**) (**玩家名**)
 
+- **<HopeIcon icon="arrow-down-a-z"/> 筛选和排序**：结果的筛选和排序方式。
+  - 可以输入的参数：
+    - pp, acc, playcount, playtime, totalhits, time, uid, country, name, online。
+    - 或者 p, a, t, u, c, pc, pt, h/th, o。
+    - 如果留空，默认随机排序。
+  - 以上参数的默认值或默认排序方向：
+    - online：真（布尔值）
+    - time、uid、country、name：<HopeIcon icon="arrow-down-a-z"/> ==升序==（小、时间短或很久之前的在上）。
+    - pp, acc, playcount, playtime, totalhits：<HopeIcon icon="arrow-up-a-z"/> ==降序==（大、时间长或最近发生的在上）。
+  - 以上参数（除了 online）后加 `+` 号均视作 <HopeIcon icon="arrow-down-a-z"/> ==升序==，加 `-` 号均视作 <HopeIcon icon="arrow-up-a-z"/> ==降序==。
+  - 如果你记不清某个参数的相反排序的方向，也可以直接在后面加一个==数字 2==。
 - **<HopeIcon icon="ruler-combined"/> 数量或区间**：可以输入 1-100 内的单个值，也可以输入==差值在 1-100 内==的区间（x-y）。
   - 输入 1，就是随机查询自己的一个好友。
   - 输入 111-120，就是查询自己好友列表内第 111 到 120 个好友（<HopeIcon icon="arrow-down-a-z"/> 按首字母排列）。

@@ -20,6 +20,21 @@ copyright: false
 
 ![成绩指令列表](https://yumemuzi.s-ul.eu/yumu/Kx38Aw86)
 
+::: info 语法糖
+
+**!bs 30 = !b 1-30**
+**!ps 60 = !p 1-60**
+**!rs 90 = !r 1-90**
+
+~~**!r 0 = !r 1-100**~~
+
+只需要输入一个 **s**，就可以不用输入 **1-**。
+~~只需要输入一个 **0**，就可以不用输入 **1-100**。~~
+
+b，p，r 均遵守此语法。
+
+:::
+
 ## <HopeIcon icon="list"/> 1 修改默认游戏模式 !ymmode (!sm) {id=mode}
 
 **使用方法**
@@ -136,8 +151,10 @@ copyright: false
 
 **使用方法**
 
-!ymscore / s (**`:`游戏模式**) [**谱面编号**] (**玩家名**) (**`+`模组名称**)
+!ymscore / s (**s**) (**`:`游戏模式**) [**谱面编号**] (**玩家名**) (**`+`模组名称**)
 
+- **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
+  - 默认获取谱面所有纳入统计的成绩。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
@@ -146,6 +163,18 @@ copyright: false
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
 - **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
   - 可输入的 <HopeIcon icon="music"/> 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
+
+::: tip 提示
+
+!ss 提供的多成绩，仅限于：
+
+- Lazer 版本从开始统计 PP 以来的所有成绩
+- Stable 版本在 Lazer 统计成绩之前，**不同模组**内的最好成绩
+- Stable 版本在 Lazer 统计成绩之后的**所有**成绩
+
+由于 Stable 统计特性，在 Stable 版本在 Lazer 统计成绩之前（大约 2022 年）之前所有**相同模组**成绩，只会保留**分数最高**的那个。
+
+:::
 
 ::: warning 注意
 
