@@ -86,3 +86,15 @@ copyright: false
 ![喜多杯谱面展览图，指令：!k 3880594 HD1 Grand Finals](https://yumemuzi.s-ul.eu/yumu/1wVDkGka)
 
 
+
+## <HopeIcon icon="id-badge"/> 5 获取osu~~遗照~~头像卡 !oc {id=avatarcard}
+
+这个功能可以生成osu专属卡片, 包含头像, 主页横幅跟用户名。
+
+**使用方法**
+
+!osu card / oc
+
+** 不支持任何参数 **
+
+
