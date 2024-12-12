@@ -38,6 +38,8 @@ copyright: false
 
 ![面基合照](https://yumemuzi.s-ul.eu/osu/7LhKYNtK)
 
+也可以使用 !oc 获取包含主页背景的卡片设计。
+
 :::
 
 ## <HopeIcon icon="star-half-stroke"/> 2 计算超星禁言 !ymoverrating (!or) {id=overrating}
@@ -85,16 +87,5 @@ copyright: false
 
 ![喜多杯谱面展览图，指令：!k 3880594 HD1 Grand Finals](https://yumemuzi.s-ul.eu/yumu/1wVDkGka)
 
-
-
-## <HopeIcon icon="id-badge"/> 5 获取osu~~遗照~~头像卡 !oc {id=avatarcard}
-
-这个功能可以生成osu专属卡片, 包含头像, 主页横幅跟用户名。
-
-**使用方法**
-
-!osu card / oc
-
-** 不支持任何参数 **
 
 
