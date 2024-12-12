@@ -98,31 +98,71 @@ copyright: false
 
 :::
 
-## ~~<HopeIcon icon="magnifying-glass"/> 3 搜索谱面 !ymsearch (!sh)~~ {id=search}
+## <HopeIcon icon="magnifying-glass"/> 3 搜索谱面 !ymsearch (!o) {id=search}
 
 **使用方法**
 
-!ymsearch / sh (**`#`谱面编号**) (**艺术家**`-`**曲名**) (**`[`难度名`]`**) (**`(`谱师`)`**) (**`+`曲风/语种**)
+!ymsearch / o (**`:`游戏模式**) (**`#`谱面状态**) (**艺术家**`-`**曲名**) (**`[`难度名`]`**) (**`(`谱师`)`**) (**`&`曲风**) (**`+`语言**) (**`*`排序**)
 
-- **<HopeIcon icon="hashtag"/> 谱面编号**：同上。
-- **<HopeIcon icon="users"/> 艺术家**：同上。
-- **<HopeIcon icon="signature"/> 曲名**：同上。
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
+- **<HopeIcon icon="file-circle-question"/> 谱面状态**：谱面目前的状态。
+  - 可以输入的参数：graveyard, wip, pending, ranked, approved, qualified, loved, has leaderboard。
+  - 或者 g, w, p, r, a, q, l, h。
+  - 如果留空，默认是 any。
+- **<HopeIcon icon="users"/> 艺术家**：需要查询的艺术家姓名。需要和曲名一起查询，并使用 `-` 分隔开。
+- **<HopeIcon icon="signature"/> 曲名**：需要查询的曲名。
+  - 如果想按 <HopeIcon icon="hashtag"/> 谱面编号查询，只需在这里输入数字即可。
 - **<HopeIcon icon="user-graduate"/> 谱师**：同上。
-- **<HopeIcon icon="language"/> 曲风 / <HopeIcon icon="compact-disc"/> 语种**：需要查询的曲风或语种。
-  - 曲风支持：
-    - unspecified, video game, anime, rock, pop, other, novelty, hip hop, electronic, metal, classical, folk, jazz
-    - u, v/g, a, r, p, o, n, h, e, m, c, f, j
-  - 语种支持：
-    - English, Chinese, French, German, Italian, Japanese, Korean, Spanish, Swedish, Russian, Polish, Instrumental, Unspecified, Other
-    - en, zh/cn, fr, ge, it, ja, kr, sp, sw, ru, po, in, un, ot
+- **<HopeIcon icon="compact-disc"/> 曲风**：需要查询的曲风。
+  - 可以输入的参数：unspecified, video game, anime, rock, pop, other, novelty, hip hop, electronic, metal, classical, folk, jazz。
+  - 或者 u, v/g, a, r, p, o, n, h, e, m, c, f, j。
+  - 如果留空，默认是 any。
+- **<HopeIcon icon="language"/> 语言**：需要查询的语言。
+  - 可以输入的参数：English, Chinese, French, German, Italian, Japanese, Korean, Spanish, Swedish, Russian, Polish, Instrumental, Unspecified, Other
+  - 或者 en, zh/cn, fr, ge, it, ja, kr, sp, sw, ru, po, in, un, ot。
+  - 或者 e, z/c, f, g, i, j, k, s, w, r, p, n, u, o。
+  - 如果留空，默认是 any。
+- **<HopeIcon icon="arrow-down-a-z"/> 排序**：结果的筛选和排序方式。
+  - 可以输入的参数：title, artist, difficulty/star, maprating, plays, ranked/time。
+  - 或者 t, a, d/s, m, p, r/t。
+  - 以上参数后面不加任何符号或字母，加 `+` 号、加字母 `a`、加 `_asc` 都是 <HopeIcon icon="arrow-down-a-z"/> ==升序==（小的在上）。以上参数后面加 `-` 号、加字母 `d`、加 `_desc` 是 <HopeIcon icon="arrow-up-a-z"/> ==降序==（大的在上）。
+    - 常用参数：rd / ranked_desc：按上架时间降序，刚上架的谱面会排在最上面。
+  - 如果留空，默认是 relevance_desc：按相关度降序，此时，与结果最相似的谱面会排在最上面。
 
-::: info 备注
+::: tip 提示
 
-暂未开放
+如果部分字段包含了以上用于区分的字符，比如：Hitogata (TV Size) 这样的标题会被错误分隔成曲名 Hitogata 和谱师 TV Size。 为了避免获取到错误的结果，您可以：
+
+- 什么都不做。如果程序在错误分隔之后没有找到结果，会尝试将字段拼成玩家输入的原样，再次查询。
+- 使用英文半角引号 `"` 将它们尽可能括起来。
 
 :::
 
-## <HopeIcon icon="angles-up"/> 4 查询上架流程 !ymnomination (!c) {id=nomination}
+## <HopeIcon icon="thumbs-up"/> 4 查询过审谱面 !ymqualified (!q) {id=qualified}
+
+**使用方法**
+
+!ymqualified / q (**`:`游戏模式**) (**`#`谱面状态**) (**`*`排序**) (**数量**)
+
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
+- **<HopeIcon icon="file-circle-question"/> 谱面状态**：谱面目前的状态。
+  - 可以输入的参数：graveyard, wip, pending, ranked, approved, qualified, loved。
+  - 或者 g, w, p, r, a, q, l。
+  - 如果留空，默认是 qualified。
+- **<HopeIcon icon="arrow-down-a-z"/> 排序**：结果的筛选和排序方式。
+  - 可以输入的参数：title, artist, difficulty/star, maprating, plays, ranked/time。
+  - 或者 t, a, d/s, m, p, r/t。
+  - 以上参数后面不加任何符号或字母，加 `+` 号、加字母 `a`、加 `_asc` 都是 <HopeIcon icon="arrow-down-a-z"/> ==升序==（小的在上）。以上参数后面加 `-` 号、加字母 `d`、加 `_desc` 是 <HopeIcon icon="arrow-up-a-z"/> ==降序==（大的在上）。
+    - 常用参数：rd / ranked_desc：按上架时间降序，刚上架的谱面会排在最上面。
+  - 如果留空，默认是 ranked_asc：按上架时间升序，此时，刚提名的谱面会排在最上面。
+
+::: warning 注意
+
+繁重功能，查询结果将会在 ==10-20== 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
+
+:::
+
+## <HopeIcon icon="angles-up"/> 5 查询上架流程 !ymnomination (!n) {id=nomination}
 
 **使用方法**
 
@@ -167,7 +207,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="book-bookmark"/> 5 查询谱面 Minus 星数 !ymmapminus (!mm) {id=mapminus}
+## <HopeIcon icon="book-bookmark"/> 6 查询谱面 Minus 星数 !ymmapminus (!mm) {id=mapminus}
 
 ::: tip 提示
 
@@ -184,11 +224,9 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
 - **<HopeIcon icon="music"/> 模组名称**：模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
-  - 因为 MM 的难度计算暂时仅和谱面速度 (Clock Rate) 相关，所以目前能改变 MM 计算的模组仅有：DT、NC、HT。
 - **<HopeIcon icon="forward-fast"/> 倍速**：如果你想自定义倍速并用来计算，可以在此输入。
   - 支持的倍速范围为：0.1x ~ 5x。
-  - 前面的 `x` 可以忽略。 
-  - 输入倍速后，星级并不会变动（暂无法计算），但是 MM 参数会变动。
+  - 前面的 `x` 可以忽略。
 
 ![谱面 Minus 面板，指令：!mm 3469854。~~使用即可进入天空之城~~](https://yumemuzi.s-ul.eu/yumu/TXgTLWhA)
 
@@ -246,64 +284,40 @@ Map Minus 是 PP Minus 3 的分支项目！这个项目旨在使用独立的一�
 ::: details 反馈：Mania
 
 - 目前算法的缺点：
-  - **无法准确地计算出 7Key 的轻切、裤衩、BMS 风格谱面的难度。**因为这个算法不会将隔了一个轨道的物件算进该物件的难度内。
+  - **无法准确地计算出 7Key 的轻切、裤衩、BMS 风格谱面的难度。** 因为这个算法不会将隔了一个轨道的物件算进该物件的难度内。
     - 比如这张谱面：[ハム - 香りのやる気スイッチ！(Cut Ver.) (ExNeko) [[7K] Another]](https://osu.ppy.sh/beatmapsets/1338910#mania/2773920)
     - 至少笔者认为这图很难。
-  - **无法准确区分部分大水图（即使它很好刷）。**因为这个算法并未考虑谱面的手性（左右手配合），而只是简单地计算物件之间的关系。
+  - **无法准确区分部分大水图（即使它很好刷）。** 因为这个算法并未考虑谱面的手性（左右手配合），而只是简单地计算物件之间的关系。
     - 比如这张谱面：[Team Grimoire - C18H27NO3(extend) ([Shana Lesus]) [4K Capsaicin]](https://osu.ppy.sh/beatmapsets/303998#mania/689769)
     - 难点只有很小一段，并且玩家容易打出高分。
-  - **对高星图的计算不够收敛。**这个算法即使使用了指数函数来尽可能压低高星图，但依旧可能会出现单参数超过谱面总星数 10 倍甚至 9 倍的情况。
+  - **对高星图的计算不够收敛。** 这个算法即使使用了指数函数来尽可能压低高星图，但依旧可能会出现单参数超过谱面总星数 10 倍甚至 9 倍的情况。
     - 但或许这个就是算法的特点吧。比较容易看出谱面的特色。
 - 如果您发现了该算法还有某些比较离谱的地方，或是某一张谱面算出了非常离谱的值，欢迎将这张谱面或建议反馈给[**开发者**](../about/dev.md)。
 
 :::
 
-## <HopeIcon icon="thumbs-up"/> 6 查询过审列表 !ymqualified (!q) {id=qualified}
+## <HopeIcon icon="list-ol"/> 7 查询谱面排行 !ymleader (!l) {id=leader}
 
-**使用方法**
+::: info 备注
 
-!ymqualified / q (**`:`游戏模式**) (**`#`谱面状态**) (**`*`排序**) (**数量**)
-
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
-- **<HopeIcon icon="file-circle-question"/> 谱面状态**：谱面目前的状态。
-  - 可以输入的参数：graveyard, wip, pending, ranked, approved, qualified, loved。
-  - 或者 g, w, p, r, a, q, l。
-  - 如果留空，默认是 qualified。
-- **<HopeIcon icon="arrow-down-a-z"/> 筛选和排序**：结果的筛选和排序方式。
-  - 可以输入的参数：
-    - title, artist, difficulty/star, maprating, plays, ranked/time，或者 t, a, d/s, m, p, r/t
-  - 以上参数后面不加任何符号或字母，加 `+` 号、加字母 `a`、加 `_asc` 都是 <HopeIcon icon="arrow-down-a-z"/> ==升序==（小的在上）。以上参数后面加 `-` 号、加字母 `d`、加 `_desc` 是 <HopeIcon icon="arrow-up-a-z"/> ==降序==（大的在上）。
-    - 常用参数：rd / ranked_desc：按上架时间降序，刚上架的谱面会排在最上面。
-  - 如果留空，默认是 ranked_asc：按上架时间升序，此时，刚提名的谱面会排在最上面。
-
-::: warning 注意
-
-繁重功能，查询结果将会在 ==10-20== 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
+API 暂未开放以下大部分参数的使用权限。目前只能查询某张谱面的==全球榜== (!yml bid)。
 
 :::
 
-## <HopeIcon icon="list-ol"/> 7 查询谱面排行 !ymleader (!l) {id=leader}
-
 **使用方法**
 
-!ymleader / l (**`:`游戏模式**) [**谱面编号**] (**`#`榜单类型**) (**`+`模组名称**)
+!ymleader / l (**`:`游戏模式**) [**谱面编号**] ~~(**`#`榜单类型**) (**`+`模组名称**)~~
 
 - ~~**<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)~~
 - **<HopeIcon icon="hashtag"/> 谱面编号**：同上。
 - ~~**<HopeIcon icon="rectangle-list"/> 榜单类型**：全球榜、好友榜等。~~
   - ~~可以输入的参数：global，friend，country，或者g、f、c~~
 - ~~**<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 预期成绩内模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。~~
-  ~~- 可输入的 <HopeIcon icon="music"/> 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR~~
+  - ~~可输入的 <HopeIcon icon="music"/> 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR~~
 
 ::: warning 注意
 
 繁重功能，查询结果将会在 ==10-20== 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
-
-:::
-
-::: info 备注
-
-API 暂未开放以上大部分参数的使用权限。目前只能查询某张谱面的==全球榜== (!yml bid)。
 
 :::
 
@@ -335,7 +349,46 @@ API 暂未开放以上大部分参数的使用权限。目前只能查询某张�
 
 :::
 
-## <HopeIcon icon="file-arrow-up"/> 10 刷新谱面文件 !ymrefreshfile (!rf) {id=refreshfile}
+## <HopeIcon icon="file-arrow-up"/> 10 获取谱面完整背景 !ymgetbackground (!rf) {id=getbg}
+
+通过镜像站，获取谱面难度的背景。
+
+**使用方法**
+
+!ymgetbackground / gb [**谱面编号**]
+
+- **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要获取背景的谱面编号 (BID)。
+
+::: tip 提示
+
+如果想要大批量获取背景，最好还是使用 !gc 功能。
+
+:::
+
+## <HopeIcon icon="file-arrow-up"/> 11 获取谱面背景 !ymgetcover (!rf) {id=getcover}
+
+获取 ppy API 提供的谱面背景。这个背景可以用于绘制表格，或者其他。
+
+效果等同于获取 **https://assets.ppy.sh/beatmaps/{SID}/covers/cover.jpg**
+
+**使用方法**
+
+!ymgetcover / gc [**谱面集编号**]
+
+- **<HopeIcon icon="image"/> 类别**：需要获取的背景类别。
+  - 可以输入的类别：cover, cover@2x, list, list@2x, card, card@2x, silmcover, silmcover@2x, raw。
+  - 或 c, c2, l, l2, d, d2, s, s2, r。
+  - 如不填写，默认 cover。
+- **<HopeIcon icon="hashtag"/> 谱面集编号**：必填，需要获取背景的谱面集编号 (SID)。
+  - 可以按逗号分隔，来同时查询多张谱面的背景。
+
+::: tip 提示
+
+raw 类型并非谱面难度当前的背景，而是谱面集的背景。因此，如果谱面难度的背景与谱面集的背景不一致时，想要获取它们，需要分别使用 !gb (sid) 和 !gc:r (sid) 获取。
+
+:::
+
+## <HopeIcon icon="file-arrow-up"/> 12 刷新谱面文件 !ymrefreshfile (!rf) {id=refreshfile}
 
 部分机器人缓存的谱面文件可能因为部分不可控原因，导致用于计算 PP 或是星数的谱面文件不完整或已过时。此时可以使用此命令来快速更新谱面文件到官网最新的版本。
 

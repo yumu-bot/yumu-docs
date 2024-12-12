@@ -22,7 +22,7 @@ copyright: false
 
 ![比赛指令列表](https://yumemuzi.s-ul.eu/yumu/zCUiDQia)
 
-## ~~<HopeIcon icon="elevator"/> 1 查询比赛信息 !ymmatch (!ma)~~ {id=match}
+## <HopeIcon icon="elevator"/> ~~1 查询比赛信息 !ymmatch (!ma)~~ {id=match}
 
 ::: info 备注
 
