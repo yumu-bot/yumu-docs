@@ -7,7 +7,7 @@ order: 2
 ---
 ```card
 title: Muziyami
-desc: 项目主负责人、功能设计、算法设计、产品、运维、测试、前端、后端、美工</br>联系方式：QQ：1340691940
+desc: 项目主负责人、功能设计、算法设计、美术设计、产品、运维、测试、前端、后端、百科维护</br>联系方式：QQ：1340691940
 logo: https://a.ppy.sh/7003013
 link: https://osu.ppy.sh/users/7003013
 color: rgba(253,230,138,0.15)
@@ -15,7 +15,7 @@ color: rgba(253,230,138,0.15)
 
 ```card
 title: SIyuyuko
-desc: 产品、运维、前端、网站前端</br>联系方式：QQ：3228981717
+desc: 产品、运维、网站前端</br>联系方式：QQ：3228981717
 logo: https://a.ppy.sh/9794030
 link: https://osu.ppy.sh/users/9794030
 color: rgba(253,230,138,0.15)
@@ -23,7 +23,7 @@ color: rgba(253,230,138,0.15)
 
 ```card
 title: -Spring Night-
-desc: 主开发、后端、部分功能设计</br>联系方式：QQ：2480557535
+desc: 主开发、后端、运维、部分功能设计</br>联系方式：QQ：2480557535
 logo: https://a.ppy.sh/17064371
 link: https://osu.ppy.sh/users/17064371
 color: rgba(245,177,153,0.15)
@@ -47,7 +47,7 @@ color: rgba(253,230,138,0.15)
 
 ```card
 title: n0000000000o
-desc: 维基维护</br>联系方式：QQ：1120180945
+desc: 百科维护</br>联系方式：QQ：1120180945
 logo: https://a.ppy.sh/12215328
 link: https://osu.ppy.sh/users/12215328
 color: rgba(253,230,138,0.15)

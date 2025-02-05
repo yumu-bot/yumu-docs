@@ -26,11 +26,11 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
-title: 搜索谱面
-desc: search // o
+title: 筛选舞萌谱面
+desc: maifind
 logo: ./assets/icon/icon-plus.svg
-link: ./map.md#search
-color: rgba(89, 80, 158, 0.15)
+link: ./maimai.md#maifind
+color: rgba(200, 200, 200, 0.15)
 ```
 
 **指令分类**
@@ -100,9 +100,17 @@ color: rgba(26, 187, 180, 0.15)
 ```
 
 ```card
+title: 舞萌 & 中二指令
+desc: 查询成绩、筛选谱面
+logo: ./assets/icon/icon-spinner.svg
+link: maimai.md
+color: rgba(67, 140, 202, 0.15)
+```
+
+```card
 title: 自定指令
 desc: 自定义横幅背景、卡片背景
 logo: ./assets/icon/icon-pen-nib.svg
 link: custom.md
-color: rgba(67, 140, 202, 0.15)
+color: rgba(89, 80, 158, 0.15)
 ```

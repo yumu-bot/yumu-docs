@@ -77,34 +77,34 @@ copyright: false
 
 查询的字段可输入版本简称，版本号，或是版本全称中（除了初代）剔除掉 maimai 之后，剩下的字段。
 
-| 版本全称 | 版本简称 | 版本号 |
-| :-: | :-: | :-: |
-| maimai | mi, mai | 0.1 |
-| maimai PLUS | pl, pls, mi+, mai+ | 0.11 |
-| maimai GreeN | gr, gre, grn | 0.2 |
-| maimai GreeN PLUS | gr+, gre+, grn+ | 0.21 |
-| maimai ORANGE | or, org | 0.3 |
-| maimai ORANGE PLUS | or+, org+ | 0.31 |
-| maimai PiNK | pk, pnk | 0.4 |
-| maimai PiNK PLUS | pk+, pnk+ | 0.41 |
-| maimai MURASAKi | ms, msk | 0.5 |
-| maimai MURASAKi PLUS | ms+, msk+ | 0.51 |
-| maimai MiLK | mk, mlk | 0.6 |
-| MiLK PLUS | mk+, mlk+ | 0.61 |
-| maimai FiNALE | fn, fnl | 0.7 |
-| ALL FiNALE[^1] | afn, fn+ | 0.71 |
-| maimai でらっくす | dx, dlx | 1.0 |
-| maimai でらっくす PLUS | dx+, dlx+ | 1.01 |
-| maimai でらっくす Splash | sp, spl | 1.1 |
-| maimai でらっくす Splash PLUS | sp+, spl+ | 1.11 |
-| maimai でらっくす UNiVERSE | un, uv, unv | 1.2 |
-| maimai でらっくす UNiVERSE PLUS | un+, uv+, unv+ | 1.21 |
-| maimai でらっくす FESTiVAL | fs, fes | 1.3 |
-| maimai でらっくす FESTiVAL PLUS | fs+, fes+ | 1.31 |
-| maimai でらっくす BUDDiES | bd, bud | 1.4 |
-| maimai でらっくす BUDDiES PLUS[^2] | bd+, bud+ | 1.41 |
-| maimai でらっくす PRiSM[^2] | pr, pri, prs | 1.5 |
-| maimai でらっくす PRiSM PLUS[^2] | pr+, pri+, prs+ | 1.51 |
+| 版本全称 | 代号 | 简称 | 编号 |
+| :-: | :-: | :-: | :-: |
+| maimai |  | mi, mai | 0.1 |
+| maimai PLUS | 真 | pl, pls, mi+, mai+ | 0.11 |
+| maimai GreeN | 超 | gr, gre, grn | 0.2 |
+| maimai GreeN PLUS | 檄 | gr+, gre+, grn+ | 0.21 |
+| maimai ORANGE | 橙 | or, org | 0.3 |
+| maimai ORANGE PLUS | 暁 | or+, org+ | 0.31 |
+| maimai PiNK | 桃 | pk, pnk | 0.4 |
+| maimai PiNK PLUS | 櫻 | pk+, pnk+ | 0.41 |
+| maimai MURASAKi | 紫 | ms, msk | 0.5 |
+| maimai MURASAKi PLUS | 堇 | ms+, msk+ | 0.51 |
+| maimai MiLK | 白 | mk, mlk | 0.6 |
+| MiLK PLUS | 雪 | mk+, mlk+ | 0.61 |
+| maimai FiNALE | 輝 | fn, fnl | 0.7 |
+| ALL FiNALE[^1] | 舞 | afn, fn+ | 0.71 |
+| maimai でらっくす | 熊 | dx, dlx | 1.0 |
+| maimai でらっくす PLUS | 華 | dx+, dlx+ | 1.01 |
+| maimai でらっくす Splash | 爽 | sp, spl | 1.1 |
+| maimai でらっくす Splash PLUS | 煌 | sp+, spl+ | 1.11 |
+| maimai でらっくす UNiVERSE | 星 | un, uv, unv | 1.2 |
+| maimai でらっくす UNiVERSE PLUS | 宙 | un+, uv+, unv+ | 1.21 |
+| maimai でらっくす FESTiVAL | 祭 | fs, fes | 1.3 |
+| maimai でらっくす FESTiVAL PLUS | 祝 | fs+, fes+ | 1.31 |
+| maimai でらっくす BUDDiES | 双 | bd, bud | 1.4 |
+| maimai でらっくす BUDDiES PLUS[^2] | 宴 | bd+, bud+ | 1.41 |
+| maimai でらっくす PRiSM[^2] |  | pr, pri, prs | 1.5 |
+| maimai でらっくす PRiSM PLUS[^2] |  | pr+, pri+, prs+ | 1.51 |
 
 :::
 
@@ -145,14 +145,29 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="keyboard"/> 4 查询水鱼玩家 !ymmaimaifind (!mf) {id=maifind}
+## <HopeIcon icon="folder-tree"/> 4 筛选舞萌谱面 !ymmaimaifind (!mf) {id=maifind}
 
-这个功能可以查询到注册了水鱼查分器的玩家名和评分 (Rating)。
+这个功能可以按版本和难度筛选谱面。
 
 **使用方法**
 
-!ymmaimaifind / mf (**玩家名**)
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+!ymmaimaifind / mf (`:`**难度**) (**定数或区间**) (`#`**版本号**) (`*`**DX 分数**)
+
+- **<HopeIcon icon="arrows-to-dot"/> 难度**：谱面难度。
+  - 可以输入 0-5，或是难度的全称、中文名称、三字母简称、二字母简称、首字母。
+    - 如：筛选 EXPERT 谱面，可以输入：2、exp、expert、e、红、专家。
+    - 只能输入一种难度。
+- **<HopeIcon icon="ruler-horizontal"/> 定数或区间**：需要限定的谱面定数。
+  - 如果输入单一的整数或是带加号的整数，则按模糊定级处理。
+    - 13: 13.0（包含）-13.6（不包含），13+: 13.6（包含）-14.0（不包含）
+  - 如果输入比较符号，则按以下的逻辑处理。
+    - <13: 0.0（包含）-13.0（不包含），>=14: 14.0（包含）-15.0（包含）
+  - 如果输入区间，则按以下的逻辑处理。
+    - 13-14.7: 13.0（包含）-14.7（包含）
+  - 可以同时输入多个定数或区间。
+- **<HopeIcon icon="coins"/> 版本号**：同上。
+- **<HopeIcon icon="star-half-stroke"/> DX 分数**：需要限定的 DX 分数区间。
+  - 将按照输入的分数至输入的分数 +1000 的范围查询。
 
 ## <HopeIcon icon="keyboard"/> 5 查询中二最好成绩 !ymmaimaibest (!y) {id=chubest}
 
@@ -176,6 +191,15 @@ copyright: false
 如果查询的玩家名称末尾含有**空格**和小于 100 的**纯数字**的玩家，如 **chuplayer 12**，建议在其后添加偏移参数 (**`#...`**)，便于区分。
 
 :::
+
+## <HopeIcon icon="magnifying-glass"/> 6 查询水鱼玩家 !ymmaimaicouple (!mc) {id=maicouple}
+
+这个功能可以查询到注册了水鱼查分器的玩家名和评分 (Rating)。
+
+**使用方法**
+
+!ymmaimaicouple / mc (**玩家名**)
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
 
 ## 备注
 
