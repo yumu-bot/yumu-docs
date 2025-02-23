@@ -275,7 +275,20 @@ PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不�
 
 :::
 
-## <HopeIcon icon="id-badge"/> 7 获取玩家 ID !ymgetid (!gi) {id=getid}
+## <HopeIcon icon="people-group"/> 7 获取战队 !ymteam (!tm) {id=team}
+
+可以查询玩家所属的战队。
+
+**使用方法**
+
+!ymteam / tm (**玩家名**) (`#`**战队编号**)
+
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 不输入默认查询自己所属的战队信息。
+- **<HopeIcon icon="address-card"/> 战队编号**：战队的编号。
+  - 如果查询不到对应的战队编号，会转而将其视为玩家名来查询该玩家所属的战队。
+
+## <HopeIcon icon="id-badge"/> 8 获取玩家 ID !ymgetid (!gi) {id=getid}
 
 **使用方法**
 
@@ -291,7 +304,7 @@ PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不�
 
 :::
 
-## <HopeIcon icon="users"/> 8 获取玩家名称 !ymgetname (!gn) {id=getname}
+## <HopeIcon icon="users"/> 9 获取玩家名称 !ymgetname (!gn) {id=getname}
 
 **使用方法**
 

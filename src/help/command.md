@@ -2,7 +2,7 @@
 title: 指令列表
 icon: play
 order: 2
-date: 2023-11-02
+date: 2025-02-23
 category:
   - 指令
 footer: Yumu Docs - 指令列表
@@ -70,12 +70,14 @@ copyright: false
 | PC | !pc (`:`mode) (user) | [Pass Card](./score.md/#pass) | 查询迷你成绩 | *Pass 功能的明信片设计。* |
 | PI | !pi | [Ping](./bot.md/#ping) | 查询服务状态 | *也可通过 yumu? 调用。* |
 | PM | !pm (`:`mode) (user) | [Performance Minus](./player.md/#ppminus) | 查询 PP- | - |
-| PP | !pp (`:`mode) (user) | [Performance Plus](./player.md/#ppplus) | 查询 PP+ | - |
+| PP | !pp (`:`mode) (user) | [Performance Plus](./player.md/#ppplus) | ~~查询 PP+~~ | - |
 | PV | !pv (`:`mode) (user) | [Performance Minus Vs](./player.md/#ppminus) | 对比 PP- | *也可通过 !pmvs 调用。* |
 | PX | !px (`:`mode) (user) | [Performance Plus Vs](./player.md/#ppplus) | 对比 PP+ | *也可通过 !ppvs 调用。* |
 | RA | !ra **[mid]** (`e`easy) (skip) (ignore) (`[`filter`]`) (`f`) (`r`) | [Rating](./tournament.md/#rating) | 查询比赛评分 | *即查询木斗力。也可通过 !mra 调用。*<br />**mid**：比赛房间号<br />**easy**：Easy 模组倍率，支持 0-20<br />**skip**：跳过开头场次<br />**ignore**：忽略结尾场次<br />**filter**：剔除特定场次<br />**f**：统计低分成绩<br />**r**：忽略重复对局 |
 | SC | !sc (time) | [Service Count](./bot.html#servicecount) | 查询服务调用 | *仅管理员使用*<br />**time**：可输入小时或天数，比如 7h 和 2d。默认 1d |
 | SM | !sm (mode) | [Set Mode](./score.md#mode) | 修改默认游戏模式 | **mode**：游戏模式：<br />0，osu，o：主模式<br />1，taiko，t：太鼓模式<br />2，catch，c：接水果模式<br />3，mania，m：下落模式 |
 | SP | !sp (operate) (user) | [Super](./bot.md/#ban) | 封禁解封玩家 | *仅管理员使用*<br />**operate**：操作，wkarbu<br />w：白<br />b：黑<br />a：入白<br />r：出白<br />b：入黑<br />u：出黑 |
-| SW | !sw | [Switch](./bot.md/#switch) | 切换服务开关 | *仅管理员使用* |
+| SW | !sw (functions) | [Switch](./bot.md/#switch) | 切换服务开关 | *仅管理员使用* |
+| TK | !tk (user) | [Take](./aid.md/#take) | 查询玩家名可用 |  |
+| TM | !tm (user) (`#`tid) | [Team](./olayer.md/#team) | 查询战队 |  |
 | TR | !tr | [Transfer](./aid.md/#trans) | 计算音符调值 | *根据十二平分律计算* |

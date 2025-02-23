@@ -26,10 +26,18 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
-title: 筛选舞萌谱面
-desc: maifind
+title: 查询战队
+desc: team
 logo: ./assets/icon/icon-plus.svg
-link: ./maimai.md#maifind
+link: ./player.md#team
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
+title: 查询玩家名可用状态
+desc: take
+logo: ./assets/icon/icon-plus.svg
+link: ./aid.md#take
 color: rgba(200, 200, 200, 0.15)
 ```
 
