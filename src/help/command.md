@@ -18,20 +18,20 @@ copyright: false
 
 点击英文名可进入对应功能的详细介绍。
 
-| 功能简称 | 语法 | 功能英文名 | 功能中文名 | 备注 |
+| 简称 | 语法 | 功能英文名 | 功能中文名 | 备注 |
 | :-: | :-- | :-- | :-- | :-- |
-| A | !a(`s`) **[bid/sid]** | [Audio](./map.md/#audio) | 试听谱面 | *即 Song。*<br />!as 按谱面集 ID (**SID**) 查询。 |
-| B | !b(`s`) (`:`mode) (user) (`#`num) | [Best Performance](./score.md/#bestperformance) | 查询最好成绩 | *!bs 使用多成绩模式。*<br />**mode**：游戏模式<br />**user**：玩家名，`qq=`qq号，`uid=`玩家 ID<br />**num**：也可输入 `-` 分隔的区间 |
+| A | !a(`s`) **[bid]** | [Audio](./map.md/#audio) | 试听谱面 | *即 Song。*<br />!as 按谱面集 ID (**SID**) 查询。 |
+| B | !b(`s`) (`:`mode) (user) (filter) (`#`num) | [Best Performance](./score.md/#bestperformance) | 查询最好成绩 | *!bs 使用多成绩模式。*<br />**mode**：游戏模式<br />**user**：玩家名，`qq=`qq号，`uid=`玩家 ID<br />**filter**：筛选条件<br />**num**：也可输入 `-` 分隔的区间 |
 | C | !c (`:`operate) (type) | [Custom](./custom.md) | 自定义 | *可自定义横幅或卡片。*<br />**operate**：操作，比如添加和删除 add/delete<br />**type**：种类，现支持 banner/card |
 | D | !d (num) (decision) | [Dice](./fun.md/#dice) | 扔骰子 | *即 Roll。*<br />**decision**：想做的决定，比如去不去玩 |
 | E | - | - | - | - |
 | F | !f (name) (num) | [Friend](./player.md/#friend) | 查询好友列表 | **num**：也可输入 `-` 分隔的区间 |
 | G | - | - | - | - |
-| H | !h (category) | [Help](./bot.md/#help) | 获取帮助文档 | *当然不如这里列的全。*<br />**category**：功能的分类，bspmtcfa |
+| H | !h (category) | [Help](./bot.md/#help) | 获取帮助文档 | **category**：功能所属的类别 |
 | I | !i (`:`mode) (user) (`#`day) | [Information](./player.md/#info) | 查询玩家信息 | **day**：可与过去几天的信息作比较 |
 | J | - | - | - | - |
-| K | - | - | - | - |
-| L | !l (`:`mode) **[bid]** | [Leader](./map.md/#leader) | 查询谱面排行 | *list，mod 暂无法查询* |
+| K | !k (user) | [Skill](./map.md/#skill) | 分析玩家技巧 | 测试中 |
+| L | !l (`:`mode) **[bid]** | [Leader](./map.md/#leader) | 查询谱面排行 | - |
 | M | !m (`:`mode) **[bid]** (acc`%`) (`x`combo) (`-`miss) (`+`mod) | [Map](./map.md/#map) | 查询谱面信息 | **acc**：准确率<br />**combo**：连击数，或连击占比 (0-1)<br />**miss**：失误数<br />**mod**：模组名称 |
 | N | !n(`b`) **[sid]** | [Nomination](./map.md/#nomination) | 查询上架流程 | *!nb 按谱面 ID (**BID**) 查询。* |
 | O | !o (`:`mode) (`#`status) (beatmap) (`*`sort) | [Search](./score.md/#pass) | 搜索谱面 | **beatmap**：格式：artist - title (creator) [difficulty] |
@@ -48,9 +48,10 @@ copyright: false
 | Z | - | - | - | - |
 |  |  |  |  |  |
 | BA | !ba (`:`mode) (user) | [BP Analysis](./score.md/#bpanalysis) | 分析最好成绩 | *之前也叫 bpht (bp head tail)。* |
-| BF | !bf (`:`mode) (user) | [BP Fix](./score.md/#bpfix) | 修补最好成绩 |  |
+| BF | !bf (`:`mode) (user) | [BP Fix](./score.md/#bpfix) | 修补最好成绩 | - |
 | BI | !bi | [Bind](./bot.md/#bind) | 绑定玩家账号 | *绑定时不用输入玩家名。解绑时请使用 !ub，也不用输入玩家名。* |
-| GB | !gb (sid) | [Get Background](./map.md/#getbg) | 获取谱面完整背景 | - |
+| CK | !ck (user) | [Check](./bot.md/#check) | 检查绑定状态 | *仅管理员使用* |
+| GB | !gb (bid) | [Get Background](./map.md/#getbg) | 获取谱面完整背景 | - |
 | GC | !gc (`:`type) (sid) | [Get Cover](./map.md/#getcover) | 获取谱面背景 | **type**：封面类别。cover、list、card、silmcover、raw |
 | GI | !gi (users) | [Get ID](./player.md/#getid) | 获取玩家 ID | *仅管理员或群主使用。* |
 | GN | !gn (ids) | [Get Name](./player.md/#getname) | 获取玩家名称 | *仅管理员或群主使用。* |
@@ -61,7 +62,7 @@ copyright: false
 | ML | !ml **[mid]** (operate) | [Match Listen](./tournament.md/#matchlisten) | 监听比赛房间 | **mid**：比赛房间号<br />**operate**：操作，比如开始和停止 start/stop |
 | MN | !mn **[mid]** (`e`easy) (skip) (ignore) (`[`filter`]`) (`f`) (`r`) | [Match Now](****) | 获取比赛结果 | *与 **RA** 功能的参数相同。* |
 | MS | !ms **[title/id]** | [Maimai Version](./maimai.md/#maisong) | 查询舞萌歌曲 | *不支持输入日本汉字的罗马音。* |
-| MU | !mu (user) | [Mutual](./player.md/#mutual) | 获取主页链接 |  |
+| MU | !mu (user) | [Mutual](./player.md/#mutual) | 获取主页链接 | - |
 | MV | !mv (user) (ver) | [Maimai Version](./maimai.md/#version) | 按版本查询舞萌成绩 | *不输入版本默认当前国服最新版本。* |
 | OA | !oa (users) | [Old Avatar](./aid.md/#oldavater) | 获取旧版头像 | - |
 | OC | !oc (users) | [Osu Avatar Card](./aid.md/#oldavater) | 获取卡片头像 | *春晚设计。* |
@@ -78,6 +79,6 @@ copyright: false
 | SM | !sm (mode) | [Set Mode](./score.md#mode) | 修改默认游戏模式 | **mode**：游戏模式：<br />0，osu，o：主模式<br />1，taiko，t：太鼓模式<br />2，catch，c：接水果模式<br />3，mania，m：下落模式 |
 | SP | !sp (operate) (user) | [Super](./bot.md/#ban) | 封禁解封玩家 | *仅管理员使用*<br />**operate**：操作，wkarbu<br />w：白<br />b：黑<br />a：入白<br />r：出白<br />b：入黑<br />u：出黑 |
 | SW | !sw (functions) | [Switch](./bot.md/#switch) | 切换服务开关 | *仅管理员使用* |
-| TK | !tk (user) | [Take](./aid.md/#take) | 查询玩家名可用 |  |
-| TM | !tm (user) (`#`tid) | [Team](./olayer.md/#team) | 查询战队 |  |
+| TK | !tk (user) | [Take](./aid.md/#take) | 查询玩家名状态 | - |
+| TM | !tm (user) (`#`tid) | [Team](./olayer.md/#team) | 查询战队 | - |
 | TR | !tr | [Transfer](./aid.md/#trans) | 计算音符调值 | *根据十二平分律计算* |

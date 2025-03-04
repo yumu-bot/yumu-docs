@@ -191,7 +191,24 @@ Bot 将不会回应任何被封禁的玩家（QQ、群组）发出的指令。
 
 ::: warning 注意
 
-只有超级管理员可以使用查询服务调用数量。
+只有超级管理员可以查询服务调用数量。
+
+:::
+
+## <HopeIcon icon="user-clock"/> 7 查询绑定信息 !ymcheck (!ck) {id=check}
+
+**使用方法**
+
+!ymcheck / ck (**玩家名**)
+
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。不输入时默认查询自己。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+
+::: warning 注意
+
+只有超级管理员可以查询绑定信息。
 
 :::
 

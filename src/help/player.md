@@ -158,7 +158,27 @@ copyright: false
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
   - 可以查询对方的主页链接。
 
-## <HopeIcon icon="chart-simple"/> 5 查询 PP- !ymppminus (!ppm) {id=ppminus}
+## <HopeIcon icon="chart-simple"/> 5 查询玩家技巧 !ymskill (!k) {id=skill}
+
+::: tip 提示
+
+**SKill** 是 YumuBot 继 PP- 功能后新开发的一套评判系统！它通过分析玩家的最好成绩，来尽可能客观地评价玩家的（刷 PP 的）实力。
+
+目前系统正在测试中，并仅开放 osu!mania 模式查询。
+
+:::
+
+**使用方法**
+
+!ymskill / k (**vs**) (**`:`游戏模式**) (**玩家名**)
+
+- **<HopeIcon icon="crown"/> vs**：如果输入 **vs**，则返回自己与其他 <HopeIcon icon="address-card"/> 玩家技巧的对比图。
+  - 也可以输入短链 **KV** 来标记此人为你需要对比的对象，亦或是输入两个玩家（`:` 分号分隔），让他们互相对比。
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 不输入默认查询自己的技巧信息。
+
+## <HopeIcon icon="chart-simple"/> 6 查询 PP- !ymppminus (!ppm) {id=ppminus}
 
 **PP-** 是 YumuBot 参考了 [PP+](https://syrin.me/pp+/) 等系统，开发的一套特殊评价系统，来从不同角度量化玩家的实力。
 
@@ -166,8 +186,8 @@ copyright: false
 
 !ymppminus / pm (**vs**) (**`:`游戏模式**) (**玩家名**)
 
-- **<HopeIcon icon="crown"/> vs**：如果输入 **vs**，则返回自己的 PP- 数值与其他 <HopeIcon icon="address-card"/> 玩家的对比图。
-  - 也可以输入短链 **PV** 来标记此人为你需要对比的对象，亦或是输入两个人互相对比。
+- **<HopeIcon icon="crown"/> vs**：如果输入 **vs**，则返回自己与其他 <HopeIcon icon="address-card"/> 玩家的 PP- 对比图。
+  - 也可以输入短链 **PV** 来标记此人为你需要对比的对象，亦或是输入两个玩家（`:` 分号分隔），让他们互相对比。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 不输入默认查询自己的 PP- 信息。
@@ -239,42 +259,6 @@ copyright: false
 
 :::
 
-::: tip 提示
-
-目前 PPM 的版本是 v2.4。而且，PPM 依旧严重依赖玩家的 BP 榜单。在不久的将来，不完全依赖 BP 统计数据，而是偏向于分析成绩的 PPM3 将替代此功能。
-
-:::
-
-## <HopeIcon icon="chart-simple"/> 6 查询 PP+ !ymppplus (!ppp) {id=ppplus}
-
-PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不可用。 但是 Syrin 把他移植进了 Lazer 里！并且可以通过 Docker 获取运行。
-
-**使用方法**
-
-!ymppplus / pp (**vs**) (**`:`游戏模式**) (**玩家名**)
-
-- **<HopeIcon icon="crown"/> vs**：如果输入 **vs**，则返回自己的 PP+ 数值与其他 <HopeIcon icon="address-card"/> 玩家的对比图。
-  - 也可以输入短链 **PX** 来标记此人为你需要对比的对象，亦或是输入两个人互相对比。
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 不输入默认查询自己的 PP+ 信息。
-
-**内容解析**
-
-::: details 内容解析
-
-在玩家 PP+ 内，能够看到 6 项参数的一个评级。这是 C8N16O32 设计的新人进阶群指数表（2.6 本地化）系统。
-
-根据 PP+ 的参数，玩家分别可以获得以下三种评级：
-
-- 综合指数：0 - 100%
-- 进阶指数：罗马数字 I - X（1-10）
-- EX
-
-评级越接近 EX，说明玩家的这项指标越厉害。
-
-:::
-
 ## <HopeIcon icon="people-group"/> 7 获取战队 !ymteam (!tm) {id=team}
 
 可以查询玩家所属的战队。
@@ -317,5 +301,35 @@ PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不�
 ::: warning 注意
 
 为防止滥用，只有群聊的群主或管理员可以使用此功能。
+
+:::
+
+## <HopeIcon icon="chart-simple"/> 10 查询 PP+ !ymppplus (!ppp) {id=ppplus}
+
+PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不可用。 但是 Syrin 把他移植进了 Lazer 里！并且可以通过 Docker 获取运行。
+
+**使用方法**
+
+!ymppplus / pp (**vs**) (**`:`游戏模式**) (**玩家名**)
+
+- **<HopeIcon icon="crown"/> vs**：如果输入 **vs**，则返回自己的 PP+ 数值与其他 <HopeIcon icon="address-card"/> 玩家的对比图。
+  - 也可以输入短链 **PX** 来标记此人为你需要对比的对象，亦或是输入两个人互相对比。
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 不输入默认查询自己的 PP+ 信息。
+
+**内容解析**
+
+::: details 内容解析
+
+在玩家 PP+ 内，能够看到 6 项参数的一个评级。这是 C8N16O32 设计的新人进阶群指数表（2.6 本地化）系统。
+
+根据 PP+ 的参数，玩家分别可以获得以下三种评级：
+
+- 综合指数：0 - 100%
+- 进阶指数：罗马数字 I - X（1-10）
+- EX
+
+评级越接近 EX，说明玩家的这项指标越厉害。
 
 :::
