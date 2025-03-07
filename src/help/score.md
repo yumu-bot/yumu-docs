@@ -3,8 +3,7 @@ title: 成绩指令
 icon: gamepad
 order: 4
 date: 2023-11-01
-category:
-  - 指令
+category: 指令
 tag:
   - 指令
   - osu!
@@ -16,20 +15,19 @@ star: false
 footer: Yumu Docs - 成绩指令
 copyright: false
 ---
-# 成绩指令
 
-![成绩指令列表](https://yumemuzi.s-ul.eu/yumu/Kx38Aw86)
+# 成绩指令
 
 ::: info 语法糖
 
-**!bs 30 = !b 1-30**
-**!ps 60 = !p 1-60**
-**!rs 90 = !r 1-90**
+<img src="https://yumemuzi.s-ul.eu/yumu/cSjXyfYJ" width="300" alt="玩 osu! 的几个好处"/>
 
-~~**!r 0 = !r 1-100**~~
+**!bs 30 = !b 1-30 = 最好的 30 个成绩，并非第 30 个成绩**。
+
+**!r 0 = !r 1-100 = 最近 100 个成绩，并非第 0 个成绩**。
 
 只需要输入一个 **s**，就可以不用输入 **1-**。
-~~只需要输入一个 **0**，就可以不用输入 **1-100**。~~
+只需要输入一个 **0**，就可以不用输入 **1-100**。
 
 b，p，r 均遵守此语法。
 

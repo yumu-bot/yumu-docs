@@ -3,8 +3,7 @@ title: 部署分身
 icon: circle-nodes
 order: 2
 date: 2024-03-16
-category:
-  - 部署
+category: 部署
 tag:
   - 部署
   - Bot

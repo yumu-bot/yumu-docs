@@ -3,8 +3,7 @@ title: 自定指令
 icon: pen-nib
 order: 11
 date: 2024-02-05
-category:
-  - 指令
+category: 指令
 tag:
   - 指令
   - 自定义

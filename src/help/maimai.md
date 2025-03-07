@@ -3,8 +3,7 @@ title: 舞萌 & 中二指令
 icon: spinner
 order: 10
 date: 2024-09-18
-category:
-  - 指令
+category: 指令
 tag:
   - 指令
   - maimai

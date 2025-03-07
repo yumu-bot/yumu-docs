@@ -3,8 +3,7 @@ title: 比赛指令
 icon: handshake-simple
 order: 7
 date: 2023-08-30
-category:
-  - 指令
+category: 指令
 tag:
   - 指令
   - osu!

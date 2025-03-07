@@ -3,8 +3,7 @@ title: 玩家指令
 icon: user
 order: 5
 date: 2023-11-01
-category:
-  - 指令
+category: 指令
 tag:
   - 指令
   - osu!
@@ -18,8 +17,6 @@ copyright: false
 ---
 
 # 玩家指令
-
-![玩家指令列表](https://yumemuzi.s-ul.eu/yumu/FUgH2LL9)
 
 ## <HopeIcon icon="circle-info"/> 1 查询玩家信息 !yminfo (!i) {id=info}
 

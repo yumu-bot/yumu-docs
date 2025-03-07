@@ -3,8 +3,7 @@ title: 内部指令
 icon: terminal
 order: 3
 date: 2023-11-01
-category:
-  - 指令
+category: 指令
 tag:
   - 指令
   - Bot

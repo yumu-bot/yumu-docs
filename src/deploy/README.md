@@ -3,8 +3,7 @@ title: 添加至群聊
 icon: circle-nodes
 order: 1
 date: 2024-09-18
-category:
-  - 部署
+category: 部署
 tag:
   - 部署
   - 添加

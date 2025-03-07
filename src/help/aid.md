@@ -3,8 +3,7 @@ title: 辅助指令
 icon: wheelchair
 order: 10
 date: 2025-02-23
-category:
-  - 指令
+category: 指令
 tag:
   - 指令
   - osu!

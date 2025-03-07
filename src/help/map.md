@@ -3,8 +3,7 @@ title: 谱面指令
 icon: map
 order: 6
 date: 2023-09-02
-category:
-  - 指令
+category: 指令
 tag:
   - 指令
   - osu!

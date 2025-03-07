@@ -3,8 +3,7 @@ title: 聊天指令
 icon: comments
 order: 8
 date: 2023-08-30
-category:
-  - 指令
+category: 指令
 tag:
   - 指令
   - osu!

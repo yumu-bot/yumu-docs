@@ -3,8 +3,7 @@ title: 指令列表
 icon: play
 order: 2
 date: 2025-02-23
-category:
-  - 指令
+category: 指令
 footer: Yumu Docs - 指令列表
 copyright: false
 ---

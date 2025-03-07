@@ -3,8 +3,7 @@ title: 娱乐指令
 icon: paw
 order: 9
 date: 2024-02-19
-category:
-  - 指令
+category: 指令
 tag:
   - 指令
   - osu!

@@ -3,8 +3,7 @@ title: 关于
 index: false
 icon: info
 link: true
-category:
-  - 关于
+category: 关于
 footer: Yumu Docs - 关于
 copyright: false
 ---

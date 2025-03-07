@@ -3,8 +3,7 @@ title: 帮助
 index: false
 icon: book
 date: 2023-08-30
-category:
-  - 功能介绍
+category: 功能介绍
 footer: Yumu Docs - 帮助
 sticky: false
 star: false
