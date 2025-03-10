@@ -137,12 +137,6 @@ copyright: false
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
   - 如果你并未关注对方，此时，只有在对方也绑定了机器人之后，才可得知对方是否关注了你。
 
-::: warning 注意
-
-繁重功能，查询结果将会在 ==10-20== 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
-
-:::
-
 ## <HopeIcon icon="link"/> 4 获取主页链接 !ymmutual (!mu) {id=mutual}
 
 可以查询玩家所添加（关注）的好友（不能看到双向）。
@@ -159,9 +153,11 @@ copyright: false
 
 ::: tip 提示
 
-**SKill** 是 YumuBot 继 PP- 功能后新开发的一套评判系统！它通过分析玩家的最好成绩，来尽可能客观地评价玩家的（刷 PP 的）实力。
+**SKill** 是 YumuBot 继 PP- 功能后新开发的一套评判系统！它通过分析玩家的最好成绩榜，来尽可能客观地评价玩家的（刷 PP 的）实力。
 
-目前系统正在测试中，并仅开放 osu!mania 模式查询。
+==目前仅开放 Mania 游戏模式的技巧查询！其他游戏模式正在制作中。敬请期待。==
+
+参见：[**Skill 内容解析：Mania**](./map.md#mapminus)
 
 :::
 
@@ -169,11 +165,18 @@ copyright: false
 
 !ymskill / k (**vs**) (**`:`游戏模式**) (**玩家名**)
 
-- **<HopeIcon icon="crown"/> vs**：如果输入 **vs**，则返回自己与其他 <HopeIcon icon="address-card"/> 玩家技巧的对比图。
-  - 也可以输入短链 **KV** 来标记此人为你需要对比的对象，亦或是输入两个玩家（`:` 分号分隔），让他们互相对比。
+- **<HopeIcon icon="crown"/> vs**：如果输入 **vs**，则可以比较自己与其他 <HopeIcon icon="address-card"/> 玩家的技巧。
+  - 也可以输入短链 **KV** 来标记此人为你需要对比的对象，亦或是输入两个玩家（`:` 分号分隔），比较两人的技巧。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
+  - **目前这个参数无效。**
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 不输入默认查询自己的技巧信息。
+
+::: warning 注意
+
+繁重功能，查询结果将会在 ==10-20== 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
+
+:::
 
 ## <HopeIcon icon="chart-simple"/> 6 查询 PP- !ymppminus (!ppm) {id=ppminus}
 
@@ -183,8 +186,8 @@ copyright: false
 
 !ymppminus / pm (**vs**) (**`:`游戏模式**) (**玩家名**)
 
-- **<HopeIcon icon="crown"/> vs**：如果输入 **vs**，则返回自己与其他 <HopeIcon icon="address-card"/> 玩家的 PP- 对比图。
-  - 也可以输入短链 **PV** 来标记此人为你需要对比的对象，亦或是输入两个玩家（`:` 分号分隔），让他们互相对比。
+- **<HopeIcon icon="crown"/> vs**：如果输入 **vs**，则可以比较自己与其他 <HopeIcon icon="address-card"/> 玩家的 PPM。
+  - 也可以输入短链 **PV** 来标记此人为你需要对比的对象，亦或是输入两个玩家（`:` 分号分隔），比较两人的 PPM。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 不输入默认查询自己的 PP- 信息。
@@ -268,6 +271,12 @@ copyright: false
   - 不输入默认查询自己所属的战队信息。
 - **<HopeIcon icon="address-card"/> 战队编号**：战队的编号。
   - 如果查询不到对应的战队编号，会转而将其视为玩家名来查询该玩家所属的战队。
+
+::: tip 提示
+
+预览版功能。功能目前尚未完善，如果有 bug，请及时反馈。
+
+:::
 
 ## <HopeIcon icon="id-badge"/> 8 获取玩家 ID !ymgetid (!gi) {id=getid}
 
