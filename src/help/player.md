@@ -278,7 +278,18 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="id-badge"/> 8 获取玩家 ID !ymgetid (!gi) {id=getid}
+## <HopeIcon icon="people-group"/> 8 获取主页奖牌 !ymbadge (!bd) {id=badge}
+
+可以查询玩家目前拥有的全部主页奖牌。
+
+**使用方法**
+
+!ymbadge / bd (**玩家名**)
+
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 不输入默认展示自己的主页奖牌。
+
+## <HopeIcon icon="id-badge"/> 9 获取玩家 ID !ymgetid (!gi) {id=getid}
 
 **使用方法**
 
@@ -294,7 +305,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="users"/> 9 获取玩家名称 !ymgetname (!gn) {id=getname}
+## <HopeIcon icon="users"/> 10 获取玩家名称 !ymgetname (!gn) {id=getname}
 
 **使用方法**
 
@@ -310,9 +321,9 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="chart-simple"/> 10 查询 PP+ !ymppplus (!ppp) {id=ppplus}
+## <HopeIcon icon="chart-simple"/> 11 查询 PP+ !ymppplus (!ppp) {id=ppplus}
 
-PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不可用。 但是 Syrin 把他移植进了 Lazer 里！并且可以通过 Docker 获取运行。
+~~PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不可用。但是 Syrin 把他移植进了 Lazer 里！并且可以通过 Docker 获取运行。~~
 
 **使用方法**
 

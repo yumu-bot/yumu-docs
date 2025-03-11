@@ -25,6 +25,14 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
+title: 查询主页奖牌
+desc: badge
+logo: ./assets/icon/icon-plus.svg
+link: ./player.md#badge
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
 title: 查询战队
 desc: team
 logo: ./assets/icon/icon-plus.svg
