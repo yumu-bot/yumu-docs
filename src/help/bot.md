@@ -2,7 +2,7 @@
 title: 内部指令
 icon: terminal
 order: 3
-date: 2023-11-01
+date: 2025-03-17
 category: 指令
 tag:
   - 指令
@@ -18,8 +18,6 @@ copyright: false
 ## <HopeIcon icon="list"/> 1 查询指令列表 !ymhelp (!h) {id=help}
 
 通过 QQ 群聊，查询机器人基础指令，以及以下所有模块的指令。
-
-![帮助文档](https://yumemuzi.s-ul.eu/yumu/HLgcWpG8)
 
 **使用方法**
 
@@ -105,15 +103,15 @@ op4->e
 
 基础绑定方法是 !ymbind，然后点击链接，在浏览器登录、授权、从而完成绑定（如上图）。
 
-不推荐使用 !ymbind + <HopeIcon icon="address-card"/> 玩家名的绑定方法。因为绝大多数功能在没有 OAuth 2.0 授权前都==无法使用==。
-
-如果您实在是只想绑定玩家名，那么必须正确回答绑定的问题。
+不推荐使用 !ymbind + <HopeIcon icon="address-card"/> 玩家名的绑定方法。因为有**部分功能**在没有 OAuth 2.0 授权前，无法正常使用。
 
 :::
 
 ::: warning 注意
 
-为了与其他 Bot 的绑定指令区分，!bind 唤起 YumuBot 时，会需要玩家二次确认：玩家看到提示，并再次发送 OK 确认，Bot 才会发送有效的绑定链接。
+为了与其他 Bot 的绑定指令区分，!bind 唤起 YumuBot 时，会需要玩家二次确认： 
+
+玩家看到提示，并再次发送 OK 确认，Bot 才会发送有效的绑定链接。
 
 在此之前，如果普通玩家想解绑，需要 <HopeIcon icon="link"/> [==联系开发者==](../about/dev.md)，或是去 <HopeIcon icon="link"/> [==个人主页/账户设置下的#开放授权页面==](https://osu.ppy.sh/home/account/edit)，撤销 YuriMumu 的访问权限。
 
@@ -211,4 +209,4 @@ Bot 将不会回应任何被封禁的玩家（QQ、群组）发出的指令。
 
 :::
 
-[^open]: YumuBot 的一个副本储存在 GitHub 上，但由于某些原因（比如早期开发在 Git 历史中添加了账户密码等隐私信息），YumuBot 本体暂未能对开发者完全开放。 
+[^open]: [YumuBot 储存在 GitHub 上的仓库](https://github.com/yumu-bot)

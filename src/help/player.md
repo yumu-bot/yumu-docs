@@ -2,7 +2,7 @@
 title: 玩家指令
 icon: user
 order: 5
-date: 2023-11-01
+date: 2025-03-17
 category: 指令
 tag:
   - 指令
@@ -34,7 +34,7 @@ copyright: false
 - **<HopeIcon icon="calendar-days"/> 天数**：查询距今数天前的数据，并和现在比较。
   - 即使不输入，也会默认和 1 天前的自己比较。
 
-![Info 面板](https://yumemuzi.s-ul.eu/yumu/oapdIlKJ)
+![玩家信息面板，指令：!i mrekk](https://yumemuzi.s-ul.eu/yumu/NdXXqppQ)
 
 **内容解析**
 
@@ -77,7 +77,7 @@ copyright: false
 
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 
-![IMapper 面板](https://yumemuzi.s-ul.eu/yumu/40a0Nk8I)
+![谱师信息面板，指令：!im AIR](https://yumemuzi.s-ul.eu/yumu/40a0Nk8I)
 
 **内容解析**
 
@@ -113,24 +113,26 @@ copyright: false
 
 **使用方法**
 
-!ymfriend / f (**`:`筛选和排序**) (**数量或区间**) (**玩家名**)
+!ymfriend / f (**`:`筛选和排序**) (**数量或区间**|**玩家名**)
 
 - **<HopeIcon icon="arrow-down-a-z"/> 筛选和排序**：结果的筛选和排序方式。
   - 可以输入的参数：表现分、准确率、游戏次数、游戏时间、总击打数、入坑时间、玩家编号、国家、姓名、在线状态、单向关注：
     - pp, acc, playcount, playtime, totalhits, time, uid, country, name, online, mutual。
     - 或者 p, a, pc, pt, h, t, u, c, o, m。
-    - 如果留空，默认随机排序。
+    - 如果留空（并且未输入数量或区间），默认随机排序。
   - 以上参数的默认值或默认排序方向：
     - online：真（布尔值）
+      - 比如：输入 `!f:online` ，即可查询当前所有在线好友。
     - mutual：假（布尔值）
+      - 比如：输入 `!f:mutual` ，即可查询所有单向好友。
     - time、uid、country、name：<HopeIcon icon="arrow-down-a-z"/> ==升序==（小、时间短或很久之前的在上）。
     - pp, acc, playcount, playtime, totalhits：<HopeIcon icon="arrow-up-a-z"/> ==降序==（大、时间长或最近发生的在上）。
-  - 以上参数（除了 online）后加 `+` 号均视作 <HopeIcon icon="arrow-down-a-z"/> ==升序==，加 `-` 号均视作 <HopeIcon icon="arrow-up-a-z"/> ==降序==。
+  - 以上参数（除了布尔值）后加 `+` 号均视作 <HopeIcon icon="arrow-down-a-z"/> ==升序==，加 `-` 号均视作 <HopeIcon icon="arrow-up-a-z"/> ==降序==。
   - 如果你记不清某个参数的相反排序的方向，也可以直接在后面加一个==数字 2==。
 - **<HopeIcon icon="ruler-combined"/> 数量或区间**：可以输入 1-100 内的单个值，也可以输入==差值小于 100== 的区间（|x-y|）。
-  - 输入 1，就是随机查询自己的一个好友。
-  - 输入 111-120，就是查询自己好友列表内第 111 到 120 个好友（<HopeIcon icon="arrow-down-a-z"/> 按首字母排列）。
-  - 如果 <HopeIcon icon="circle-question"/> 不输入任何值，则默认随机查询 12 个好友。
+  - 输入 1，就是查询自己的好友列表内第 1 个好友。（<HopeIcon icon="arrow-down-a-z"/> 按首字母升序排列）
+  - 输入 111-120，就是查询自己好友列表内第 111 到 120 个好友。
+  - 如果 <HopeIcon icon="circle-question"/> 不输入任何值，则默认随机查询 20 个好友。
 - **<HopeIcon icon="address-card"/> 玩家名**：可以查询自己是否和对方互相关注（双向好友）。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
@@ -139,15 +141,14 @@ copyright: false
 
 ## <HopeIcon icon="link"/> 4 获取主页链接 !ymmutual (!mu) {id=mutual}
 
-可以查询玩家所添加（关注）的好友（不能看到双向）。
+可以获取自己（或对方）的主页链接。
 
 **使用方法**
 
 !ymmutual / mu (**玩家名**)
 
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
-  - 可以查询对方的主页链接。
+  - 不输入默认获取自己的主页链接。
 
 ## <HopeIcon icon="chart-simple"/> 5 查询玩家技巧 !ymskill (!k) {id=skill}
 
@@ -194,50 +195,6 @@ copyright: false
 
 ![PPM 面板](https://yumemuzi.s-ul.eu/yumu/H5eNsjzW)
 
-::: chart PPM
-
-```json
-{
-  "type": "radar",
-  "data": {
-    "labels": ["PTT", "STA", "STB", "EFT", "STH", "ACC"],
-    "datasets": [
-      {
-        "label": "我的 PPM 数据",
-        "data": [65, 59, 90, 81, 56, 55],
-        "fill": true,
-        "backgroundColor": "rgba(54, 162, 235, 0.2)",
-        "borderColor": "rgb(54, 162, 235)",
-        "pointBackgroundColor": "rgb(54, 162, 235)",
-        "pointBorderColor": "#fff",
-        "pointHoverBackgroundColor": "#fff",
-        "pointHoverBorderColor": "rgb(54, 162, 235)"
-      },
-      {
-        "label": "对方的 PPM 数据",
-        "data": [28, 48, 40, 19, 96, 27],
-        "fill": true,
-        "backgroundColor": "rgba(255, 99, 132, 0.2)",
-        "borderColor": "rgb(255, 99, 132)",
-        "pointBackgroundColor": "rgb(255, 99, 132)",
-        "pointBorderColor": "#fff",
-        "pointHoverBackgroundColor": "#fff",
-        "pointHoverBorderColor": "rgb(255, 99, 132)"
-      }
-    ]
-  },
-  "options": {
-    "elements": {
-      "line": {
-        "borderWidth": 3
-      }
-    }
-  }
-}
-```
-
-:::
-
 **内容解析**
 
 ::: details 内容解析
@@ -259,9 +216,9 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="people-group"/> 7 获取战队 !ymteam (!tm) {id=team}
+## <HopeIcon icon="people-group"/> 7 获取战队信息 !ymteam (!tm) {id=team}
 
-可以查询玩家所属的战队。
+可以查询玩家所属战队的信息。
 
 **使用方法**
 
@@ -271,6 +228,8 @@ copyright: false
   - 不输入默认查询自己所属的战队信息。
 - **<HopeIcon icon="address-card"/> 战队编号**：战队的编号。
   - 如果查询不到对应的战队编号，会转而将其视为玩家名来查询该玩家所属的战队。
+
+![战队信息面板，指令：!team #1](https://yumemuzi.s-ul.eu/yumu/bl3yU8gB)
 
 ::: tip 提示
 
@@ -288,6 +247,8 @@ copyright: false
 
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 不输入默认展示自己的主页奖牌。
+
+![主页奖牌面板，指令：!bd chocomint](https://yumemuzi.s-ul.eu/yumu/ZTbK1eYN)
 
 ## <HopeIcon icon="id-badge"/> 9 获取玩家 ID !ymgetid (!gi) {id=getid}
 

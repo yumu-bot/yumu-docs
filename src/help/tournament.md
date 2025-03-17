@@ -2,7 +2,7 @@
 title: 比赛指令
 icon: handshake-simple
 order: 7
-date: 2023-08-30
+date: 2025-03-17
 category: 指令
 tag:
   - 指令
@@ -18,8 +18,6 @@ copyright: false
 ---
 
 # 比赛指令
-
-![比赛指令列表](https://yumemuzi.s-ul.eu/yumu/zCUiDQia)
 
 ## <HopeIcon icon="elevator"/> ~~1 查询比赛信息 !ymmatch (!ma)~~ {id=match}
 
@@ -57,7 +55,7 @@ copyright: false
 
 ![获取比赛编号](https://yumemuzi.s-ul.eu/yumu/zSFydj9w)
 
-![比赛斗力面板，指令：!ra 110482088 1](https://yumemuzi.s-ul.eu/yumu/RjDOFPvP)
+![比赛斗力面板，指令：!ra 117474455](https://yumemuzi.s-ul.eu/yumu/eHNaxGxX)
 
 **内容解析**
 
@@ -70,7 +68,8 @@ copyright: false
 - **玩家个人信息卡片**：
   - 卡片左侧是玩家的 <HopeIcon icon="palette"/> 队伍颜色和 <HopeIcon icon="circle-user"/> 头像。
   - 卡片中间靠左依次是玩家的 <HopeIcon icon="heading"/> 昵称、<HopeIcon icon="person-rays"/> 比赛总分（总输出）、<HopeIcon icon="chess-king"/> 胜负和胜率、<HopeIcon icon="user-plus"/> 玩家评分排名和 <HopeIcon icon="wave-square"/> RWS。
-    - RWS 指 <HopeIcon icon="wave-square"/> 平均胜利分配，即为了所属队伍的**胜利**做出了多少贡献。有时候玩家评分很高，但不一定很有用。想要了解更多，请参考 <HopeIcon icon="link"/> [这里](https://baijiahao.baidu.com/s?id=1724882889457381886&wfr=spider&for=pc)。
+    - RWS 指 <HopeIcon icon="wave-square"/> 平均胜利分配（(average) Rounds Win Share），即为了所属队伍的**胜利**做出了多少贡献。有时候玩家评分很高，但不一定很有用。
+    - 想要了解更多，请参考 <HopeIcon icon="link"/> [这篇文章](https://baijiahao.baidu.com/s?id=1724882889457381886&wfr=spider&for=pc)。
   - 卡片中间靠右是 <HopeIcon icon="tags"/> 玩家类型和 <HopeIcon icon="sun"/> 玩家评分。
     - 玩家类型：见下。
     - 玩家评分：只需要记住：==平均分是 **1** 分，毫无参与感的玩家是 **0** 分。==
@@ -265,7 +264,7 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
   - 关键字查询范围：谱面的歌曲名称（罗马音）、艺术家名称（罗马音）、谱师名称、难度名称。
   - 如果关键字是很小的数字，则会被匹配进对局位置中。请注意。
 
-![对局信息面板，指令：!ro 111296587 dawn of](https://yumemuzi.s-ul.eu/yumu/YElgmvpv)
+![对局信息面板，指令：!mr 59438351 back to](https://yumemuzi.s-ul.eu/yumu/FODuMtPO)
 
 ## <HopeIcon icon="tent-arrows-down"/> 7 生成图池图片 !ymgetpool (!getpool) {id=getpool}
 

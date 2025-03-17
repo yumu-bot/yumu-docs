@@ -2,7 +2,7 @@
 title: 帮助
 index: false
 icon: book
-date: 2023-08-30
+date: 2025-03-17
 category: 功能介绍
 footer: Yumu Docs - 帮助
 sticky: false
@@ -33,7 +33,7 @@ color: rgba(200, 200, 200, 0.15)
 ```
 
 ```card
-title: 查询战队
+title: 查询战队信息
 desc: team
 logo: ./assets/icon/icon-plus.svg
 link: ./player.md#team

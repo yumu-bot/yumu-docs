@@ -2,7 +2,7 @@
 title: 成绩指令
 icon: gamepad
 order: 4
-date: 2023-11-01
+date: 2025-03-17
 category: 指令
 tag:
   - 指令
@@ -131,7 +131,7 @@ b，p，r 均遵守此语法。
 
 为了与其他 Bot 的绑定指令区分，!re 是无法唤起 YumuBot 的。
 
-!recent 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，==Bot 不会回应你==。建议玩家只使用短命令 !r。
+!recent 仍旧可能与其他 Bot 冲突，此时，如果玩家的绑定状态失效或者从未绑定，==Bot 不会回应你==。建议玩家只使用短命令 !r。
 
 :::
 
@@ -176,7 +176,7 @@ b，p，r 均遵守此语法。
 
 ::: warning 注意
 
-!score 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，==Bot 不会回应你==。建议玩家只使用短命令 !s。
+!score 仍旧可能与其他 Bot 冲突，此时，如果玩家的绑定状态失效或者从未绑定，==Bot 不会回应你==。建议玩家只使用短命令 !s。
 
 :::
 
@@ -244,7 +244,7 @@ b，p，r 均遵守此语法。
 
 ::: warning 注意
 
-!bp 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，==Bot 不会回应你==。建议玩家只使用短命令 !b。
+!bp 仍旧可能与其他 Bot 冲突，此时，如果玩家的绑定状态失效或者从未绑定，==Bot 不会回应你==。建议玩家只使用短命令 !b。
 
 :::
 
@@ -294,15 +294,7 @@ b，p，r 均遵守此语法。
 
 :::
 
-## <HopeIcon icon="filter"/> ~~7 按条件查询最好成绩 !ymbpquery (!bq)~~ {id=bpquery}
-
-::: tip 提示
-
-功能已合并到 !b。[请参阅：查询最好成绩](#bestperformance)
-
-:::
-
-## <HopeIcon icon="chart-pie"/> 8 分析最好成绩 !ymbpanalysis (!ba) {id=bpanalysis}
+## <HopeIcon icon="chart-pie"/> 7 分析最好成绩 !ymbpanalysis (!ba) {id=bpanalysis}
 
 这个功能可以分析玩家的最好成绩榜，从而判断玩家目前的状态，以及玩家的偏好或技巧。
 
@@ -316,7 +308,7 @@ b，p，r 均遵守此语法。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
 
-![BA 面板](https://yumemuzi.s-ul.eu/yumu/8YT8nqlz)
+![分析最好成绩面板，指令：!ba:2 nene sakura](https://yumemuzi.s-ul.eu/yumu/4ZAavzi5)
 
 **内容解析**
 
@@ -344,7 +336,7 @@ b，p，r 均遵守此语法。
 
 ::: warning 注意
 
-!bpa 仍旧可能与其他 Bot 冲突，此时，如果玩家掉绑或者从未绑定，==Bot 不会回应你==。建议玩家只使用短命令 !ba。
+!bpa 仍旧可能与其他 Bot 冲突，此时，如果玩家的绑定状态失效或者从未绑定，==Bot 不会回应你==。建议玩家只使用短命令 !ba。
 
 :::
 
@@ -358,7 +350,7 @@ b，p，r 均遵守此语法。
 
 :::
 
-## <HopeIcon icon="hammer"/> 9 修补最好成绩 !ymbpfix (!bf) {id=bpfix}
+## <HopeIcon icon="hammer"/> 8 修补最好成绩 !ymbpfix (!bf) {id=bpfix}
 
 这个功能可以分析玩家的最好成绩榜，抽出玩家的不完美 (choke) 成绩，并预测当这些成绩被修补成全连 (full combo) 后，玩家能获得多少表现分。
 

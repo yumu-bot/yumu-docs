@@ -2,7 +2,7 @@
 title: 谱面指令
 icon: map
 order: 6
-date: 2023-09-02
+date: 2025-03-17
 category: 指令
 tag:
   - 指令
@@ -17,8 +17,6 @@ copyright: false
 ---
 
 # 谱面指令
-
-![谱面指令列表](https://yumemuzi.s-ul.eu/yumu/EE3gCB5l)
 
 ## <HopeIcon icon="map-location-dot"/> 1 查询谱面信息 !ymmap (!m) {id=map}
 
@@ -46,7 +44,7 @@ copyright: false
 - **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 预期成绩内模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
   - 可输入的 <HopeIcon icon="music"/> 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
-![谱面信息面板，指令：!m 2274675 93 x700 +HDDT](https://yumemuzi.s-ul.eu/yumu/AFo4n32L)
+![谱面信息面板，指令：!m 3667014 98% 0.9x +HD](https://yumemuzi.s-ul.eu/yumu/zSsTDPQJ)
 
 ::: tip 提示
 
@@ -220,12 +218,12 @@ Map Minus 是 Skill 的基础项目！这个项目旨在使用独立的一套指
     - 如果单点音符附近的轨道短时间内没有任何音符，并且附近轨道的这段时间之后存在音符，则会记录它的切换难度。
     - 如果单点音符后存在任何音符，则会记录它的叠键难度。
 - <span style="color:#00A0E9">⬤</span> LN：Long Note，面参数主要指明了谱面内，以**长按音符**为主的排列的数量和密度。
-  - 参数主要受谱面内的**放手** `Stream` 难度、**盾** `Shield` 难度、**反盾** `Reverse Shield` 难度影响。
+  - 参数主要受谱面内的**放手** `Release` 难度、**盾** `Shield` 难度、**反盾** `Reverse Shield` 难度影响。
     - 放手和切换算法类似，但是被记录的对象是长按音符尾。
     - 如果长按音符后紧接着单点音符，则会记录它的盾难度。
     - 如果单点音符后紧接着长按音符，则会记录它的反盾难度（这和叠很像）。
 - <span style="color:#FFF100">⬤</span> CO：Coordinate，协调参数主要指明了谱面内，需要玩家**灵活使用多指**的排列的数量和密度。
-  - 参数主要受谱面内的**裤衩** `Stream` 难度、**锁手** `Hand Lock` 难度、**重叠** `Overlap` 难度影响。
+  - 参数主要受谱面内的**裤衩** `Bracket` 难度、**锁手** `Hand Lock` 难度、**重叠** `Overlap` 难度影响。
     - 如果任意音符处于非两侧的轨道，并且左右轨道的短时间内没有任何音符，并且左右轨道的这段时间之后存在音符，则会记录它的裤衩难度。
     - 如果任意音符附近的轨道有持续按压的长按音符，则会记录它的锁手难度。
     - 如果长按音符与附近的轨道的长按音符头尾并不相接，并在时间上相互重叠，则会记录它的重叠难度。
@@ -329,6 +327,14 @@ API 暂未开放以下大部分参数的使用权限。目前只能查询某张�
 ::: tip 提示
 
 如果想要大批量获取背景，最好还是使用 !gc 功能。
+
+:::
+
+::: warning 注意
+
+只有在机器人直接支持的 QQ 号下可以使用这个功能（因为服务是跑在服务器内网的），也就是 1563653406 这个 QQ 下。
+
+其他反代理 QQ 无法使用此功能。
 
 :::
 
