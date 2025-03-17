@@ -9,7 +9,7 @@ bgImageStyle:
   background-attachment: fixed
 heroText: Yumu Docs
 heroFullScreen: true
-tagline: 雨沐 Bot 帮助文档
+tagline: 雨沐 Bot 帮助文档 v0.5.2
 actions:
   - text: 使用指南 💡
     link: ./help/
