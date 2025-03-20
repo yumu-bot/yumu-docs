@@ -33,33 +33,50 @@ b，p，r 均遵守此语法。
 
 :::
 
-## <HopeIcon icon="list"/> 1 修改默认游戏模式 !ymmode (!sm) {id=mode}
+## <HopeIcon icon="list"/> 1 绑定游戏模式 !ymmode (!sm) {id=mode}
+
+如果玩家==绑定==了 <HopeIcon icon="gamepad"/> 游戏模式，那么在之后，玩家想要使用包含游戏模式参数的功能时，不需要通过输入 `:` + <HopeIcon icon="gamepad"/> 游戏模式的方式来设定参数。机器人会==自动为您补齐==。
 
 **使用方法**
 
-!ymmode / !sm [**游戏模式**]
+!ymmode / !sm / !mo (**游戏模式**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：必填，需要设定的默认 <HopeIcon icon="gamepad"/> 游戏模式。可输入：
+- **<HopeIcon icon="gamepad"/> 游戏模式**：选填，需要绑定的 <HopeIcon icon="gamepad"/> 游戏模式。可输入：
   - osu / o / 0：<HopeIcon icon="circle-dot"/> 主模式，osu!standard，osu!std
   - taiko / t / 1：<HopeIcon icon="drum"/> 太鼓模式，osu!taiko
   - catch / fruits / c / 2：<HopeIcon icon="apple-whole"/> 接水果模式，osu!catch
   - mania / m / 3：<HopeIcon icon="keyboard"/> 下落模式，键盘模式，osu!mania
-
-::: warning 注意
-
-强烈建议除了主模式（osu!standard）之外的玩家，在绑定的时候就设定好自己的默认 <HopeIcon icon="gamepad"/> 游戏模式！这能免去很多麻烦。
-
-:::
+  - 如果不输入，则会移除玩家绑定的游戏模式。此时其他功能会尝试获取玩家主页的默认游戏模式。
 
 ::: tip 提示
 
-如果==事先设定了==默认 <HopeIcon icon="gamepad"/> 游戏模式，那么在之后，如果玩家想要使用需要输入游戏模式参数的功能，不需要通过输入 `:` + <HopeIcon icon="gamepad"/> 游戏模式的方式来设定参数。Bot 会==自动为您补齐==。
+在这里绑定的 <HopeIcon icon="gamepad"/> 游戏模式，可以与玩家主页的默认游戏模式，或者玩家在其他机器人内绑定的游戏模式不同。
 
-同样地，在这里设定的默认 <HopeIcon icon="gamepad"/> 游戏模式，可以与玩家的主页游戏模式，或者玩家在其他 Bot 下设定的默认游戏模式不同。 这在使用多种 Bot 查询成绩的时候尤其有效：比如仅在本 Bot 下查询接水果成绩，在其他 Bot 下查询主模式成绩等。
+这在同时使用多种机器人查询成绩时尤其有用。比如仅在本机器人下查询接水果模式成绩，在其他机器人下查询主模式成绩等。
 
 :::
 
-## <HopeIcon icon="square-check"/> 2 查询最近通过成绩 !ympass (!p) {id=pass}
+
+## <HopeIcon icon="list-check"/> 2 绑定群聊游戏模式 !ymgroupmode (!gm) {id=groupmode}
+
+如果群聊==绑定==了 <HopeIcon icon="gamepad"/> 游戏模式，那么在之后，玩家想要使用包含游戏模式参数的功能时，不需要通过输入 `:` + <HopeIcon icon="gamepad"/> 游戏模式的方式来设定参数。机器人会==自动为您补齐==。
+
+**使用方法**
+
+!ymsetgroupmode / !gm (**游戏模式**)
+
+- **<HopeIcon icon="gamepad"/> 游戏模式**：选填，需要绑定的 <HopeIcon icon="gamepad"/> 游戏模式。同上。
+  - 如果不输入，则会移除群聊绑定的游戏模式。此时其他功能会尝试获取玩家绑定的游戏模式，或是玩家主页的默认游戏模式。
+
+::: warning 注意
+
+为防止滥用，只有群聊的群主或管理员可以使用此功能。
+
+群聊绑定的游戏模式会优先于玩家绑定的游戏模式生效。所以这个功能，应该仅用于需要控制玩家讨论游戏模式的群聊中。
+
+:::
+
+## <HopeIcon icon="square-check"/> 3 查询最近通过成绩 !ympass (!p) {id=pass}
 
 这个功能只会查询到有效（通过）的成绩。
 
@@ -109,7 +126,7 @@ b，p，r 均遵守此语法。
 
 :::
 
-## <HopeIcon icon="square-xmark"/> 3 查询最近成绩 !ymrecent (!r) {id=recent}
+## <HopeIcon icon="square-xmark"/> 4 查询最近成绩 !ymrecent (!r) {id=recent}
 
 这个功能可以查询到失败的成绩。
 
@@ -143,7 +160,7 @@ b，p，r 均遵守此语法。
 
 :::
 
-## <HopeIcon icon="square-xmark"/> 4 查询谱面成绩 !ymscore (!s) {id=score}
+## <HopeIcon icon="square-xmark"/> 5 查询谱面成绩 !ymscore (!s) {id=score}
 
 这个功能可以查询到上榜（谱面含有在线榜单，并且玩家游玩过）的成绩。
 
@@ -180,7 +197,7 @@ b，p，r 均遵守此语法。
 
 :::
 
-## <HopeIcon icon="angles-up"/> 5 查询最好成绩 !ymbestperformance (!b) {id=bestperformance}
+## <HopeIcon icon="angles-up"/> 6 查询最好成绩 !ymbestperformance (!b) {id=bestperformance}
 
 这个功能可以查询到玩家最好成绩榜（BP）上的成绩。
 
@@ -257,7 +274,7 @@ b，p，r 均遵守此语法。
 
 :::
 
-## <HopeIcon icon="angles-up"/> 6 查询今日最好成绩 !ymtodaybp (!t) {id=todaybp}
+## <HopeIcon icon="angles-up"/> 7 查询今日最好成绩 !ymtodaybp (!t) {id=todaybp}
 
 这个功能可以查询到玩家今天（或直到距今天多少天前）最好成绩榜（BP）上新增的成绩。
 
@@ -295,7 +312,7 @@ b，p，r 均遵守此语法。
 
 :::
 
-## <HopeIcon icon="chart-pie"/> 7 分析最好成绩 !ymbpanalysis (!ba) {id=bpanalysis}
+## <HopeIcon icon="chart-pie"/> 8 分析最好成绩 !ymbpanalysis (!ba) {id=bpanalysis}
 
 这个功能可以分析玩家的最好成绩榜，从而判断玩家目前的状态，以及玩家的偏好或技巧。
 
@@ -351,7 +368,7 @@ b，p，r 均遵守此语法。
 
 :::
 
-## <HopeIcon icon="hammer"/> 8 修补最好成绩 !ymbpfix (!bf) {id=bpfix}
+## <HopeIcon icon="hammer"/> 9 修补最好成绩 !ymbpfix (!bf) {id=bpfix}
 
 这个功能可以分析玩家的最好成绩榜，抽出玩家的不完美 (choke) 成绩，并预测当这些成绩被修补成全连 (full combo) 后，玩家能获得多少表现分。
 
