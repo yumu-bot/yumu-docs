@@ -221,6 +221,7 @@ b，p，r 均遵守此语法。
     - 歌曲名 `title`/`name`/`t`
     - 艺术家名 `artist`/`a`
     - 难度名 `difficulty`/`d`
+    - 标签 `tag`/`g`
     - 星数 `star`/`sr`/`r`
     - 谱面编号 `beatmapid`/`bi`/`id`/`i`
     - 谱面集编号 `beatmapsetid`/`si`

@@ -130,7 +130,7 @@ copyright: false
 
 - **<HopeIcon icon="address-card"/> 查询字段**：二选一填，需要查询的歌曲名。
   - 支持输入简中社区常用的外号（俗称）。	
-    - 外号库来自于[这里](https://maimai.lxns.net/alias/vote)。
+    - 外号库来自[这里](https://maimai.lxns.net/alias/vote)。
   - 支持输入日文汉字，以及平假名片假名的罗马字。
   - **不支持**输入日本汉字的罗马字；以及日式英文所对应的原单词。
   - 部分特殊符号允许全角以及半角输入。
