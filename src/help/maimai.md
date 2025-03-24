@@ -173,7 +173,7 @@ copyright: false
   - 可以同时输入多个定数或区间。
 - **<HopeIcon icon="coins"/> 版本号**：同上。
 - **<HopeIcon icon="star-half-stroke"/> DX 分数**：需要限定的 DX 分数区间。
-  - 将按照输入的分数至输入的分数 +1000 的范围查询。
+  - 将按照输入的分数至输入的分数 +100 的范围查询。如：1000 则查询 1000（包含）-1100（不包含）
 
 ![筛选舞萌谱面面板，指令：!mf:u](https://yumemuzi.s-ul.eu/yumu/ZhvQ9LcJ)
 
