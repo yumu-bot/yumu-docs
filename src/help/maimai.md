@@ -217,14 +217,15 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="magnifying-glass"/> 6 查询水鱼玩家 !ymmaimaicouple (!mc) {id=maicouple}
+## <HopeIcon icon="magnifying-glass"/> 6 查询水鱼玩家 !ymmaimaiseek (!mk) {id=maiseek}
 
-这个功能可以搜索注册了水鱼查分器的玩家，并输出可能的玩家名和评分 (Rating)。
+这个功能可以搜索注册了水鱼查分器的玩家，并输出可能的玩家名和玩家评级 (DX Rating)。
 
 **使用方法**
 
-!ymmaimaicouple / mc (**玩家名**)
+!ymmaimaiseek / mk (**玩家名|玩家评分**)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
+- **<HopeIcon icon="address-card"/> 玩家评级**：如果输入的是数字，则会返回评级绝对值最接近的 15 个玩家。
 
 ## 备注
 
