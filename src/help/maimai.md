@@ -126,8 +126,11 @@ copyright: false
 
 **使用方法**
 
-!ymmaimaiscore / ms (**查询字段 / 歌曲编号**) (**玩家名**)
+!ymmaimaiscore / ms (**种类**) (**查询字段 / 歌曲编号**) (**玩家名**)
 
+- **<HopeIcon icon="rainbow"/> 种类**：允许按歌曲种类查询。
+  - 支持输入标准（SD、standard）、豪华（DX、deluxe）
+  - 留空默认按歌曲支持的种类查询。如果有多个种类，则按查询玩家曾经留下的，最高 DX 评分成绩所属的歌曲种类查询。
 - **<HopeIcon icon="address-card"/> 查询字段**：二选一填，需要查询的歌曲名。
   - 支持输入简中社区常用的外号（俗称）。	
     - 外号库来自[这里](https://maimai.lxns.net/alias/vote)。
@@ -142,14 +145,6 @@ copyright: false
   - 如果想要查询的字段正好也是 1-6 位的一串数字，请使用英文引号 `"` 将其包裹起来。
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-
-::: info 备注
-
-暂时无法通过输入玩家名来查询别人在某首歌内的成绩。
-
-暂时无法查询同时含有标准（SD）和豪华（DX）版本歌曲的标准歌曲成绩（只能查 DX）。
-
-:::
 
 ## <HopeIcon icon="folder-tree"/> 4 筛选舞萌谱面 !ymmaimaifind (!mf) {id=maifind}
 
