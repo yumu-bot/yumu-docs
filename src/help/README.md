@@ -25,6 +25,14 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
+title: PPM4
+desc: ppminus
+logo: ./assets/icon/icon-plus.svg
+link: ./player.md#ppminus
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
 title: 绑定群聊游戏模式
 desc: groupmode
 logo: ./assets/icon/icon-plus.svg
