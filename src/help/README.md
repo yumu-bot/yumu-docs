@@ -25,6 +25,14 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
+title: 查询客串谱师
+desc: guestdiff
+logo: ./assets/icon/icon-plus.svg
+link: ./player.md#guestdiff
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
 title: PPM4
 desc: ppminus
 logo: ./assets/icon/icon-plus.svg
