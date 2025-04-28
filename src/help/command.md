@@ -52,6 +52,7 @@ copyright: false
 | CK | !ck (user) | [Check](./bot.md/#check) | 检查绑定状态 | *仅管理员使用* |
 | GB | !gb (bid) | [Get Background](./map.md/#getbg) | 获取谱面完整背景 | - |
 | GC | !gc (`:`type) (sid) | [Get Cover](./map.md/#getcover) | 获取谱面背景 | **type**：封面类别。cover、list、card、silmcover、raw |
+| GD | !gd (user) (`#`page) | [Guest Diff](./player.md/#guestdiff) | 获取客串谱师 | - |
 | GI | !gi (users) | [Get ID](./player.md/#getid) | 获取玩家 ID | *仅管理员或群主使用。* |
 | GN | !gn (ids) | [Get Name](./player.md/#getname) | 获取玩家名称 | *仅管理员或群主使用。* |
 | GP | !gp (`:`mode) (`#`name`#`) [[mod] [bids]] | [Get Pool](./tournament.md/#getpool) | 生成图池图片 | **mod bids**：请**按组输入**模组和谱面 ID，比如：NM 123 456 789。 |

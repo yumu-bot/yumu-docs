@@ -263,7 +263,7 @@ PPM 4 根据离散数据，来近似推算这部分玩家的正态分布，并�
 
 :::
 
-## <HopeIcon icon="people-group"/> 8 获取主页奖牌 !ymbadge (!bd) {id=badge}
+## <HopeIcon icon="medal"/> 8 获取主页奖牌 !ymbadge (!bd) {id=badge}
 
 可以查询玩家目前拥有的全部主页奖牌。
 
@@ -276,7 +276,22 @@ PPM 4 根据离散数据，来近似推算这部分玩家的正态分布，并�
 
 ![主页奖牌面板，指令：!bd chocomint](https://yumemuzi.s-ul.eu/yumu/ZTbK1eYN)
 
-## <HopeIcon icon="id-badge"/> 9 获取玩家 ID !ymgetid (!gi) {id=getid}
+## <HopeIcon icon="people-carry-box"/> 9 获取客串谱师 !ymguestdiff (!gd) {id=guestdiff}
+
+可以查询玩家目前赠送过客串谱面，以及收到过客串谱面的谱师。
+
+**使用方法**
+
+!ymguestdiff / gd (**玩家名**) (**`#`页数**)
+
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 不输入默认展示自己的客串难度关系。
+- **<HopeIcon icon="file"/> 页数**：当前所在的页面数。
+  - 一页 50 个结果。
+
+![主页奖牌面板，指令：!gd wIntEr7z](https://yumemuzi.s-ul.eu/yumu/arCbhz6f)
+
+## <HopeIcon icon="id-badge"/> 10 获取玩家 ID !ymgetid (!gi) {id=getid}
 
 **使用方法**
 
@@ -292,7 +307,7 @@ PPM 4 根据离散数据，来近似推算这部分玩家的正态分布，并�
 
 :::
 
-## <HopeIcon icon="users"/> 10 获取玩家名称 !ymgetname (!gn) {id=getname}
+## <HopeIcon icon="users"/> 11 获取玩家名称 !ymgetname (!gn) {id=getname}
 
 **使用方法**
 
@@ -308,7 +323,7 @@ PPM 4 根据离散数据，来近似推算这部分玩家的正态分布，并�
 
 :::
 
-## <HopeIcon icon="chart-simple"/> 11 查询 PP+ !ymppplus (!ppp) {id=ppplus}
+## <HopeIcon icon="chart-simple"/> 12 查询 PP+ !ymppplus (!ppp) {id=ppplus}
 
 ~~PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已停止维护，功能暂不可用。但是 Syrin 把他移植进了 Lazer 里！并且可以通过 Docker 获取运行。~~
 
