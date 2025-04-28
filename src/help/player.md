@@ -289,7 +289,7 @@ PPM 4 根据离散数据，来近似推算这部分玩家的正态分布，并�
 - **<HopeIcon icon="file"/> 页数**：当前所在的页面数。
   - 一页 50 个结果。
 
-![主页奖牌面板，指令：!gd wIntEr7z](https://yumemuzi.s-ul.eu/yumu/arCbhz6f)
+![客串谱师面板，指令：!gd wIntEr7z](https://yumemuzi.s-ul.eu/yumu/arCbhz6f)
 
 ## <HopeIcon icon="id-badge"/> 10 获取玩家 ID !ymgetid (!gi) {id=getid}
 
