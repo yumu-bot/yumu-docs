@@ -271,18 +271,18 @@ API 暂未开放以下大部分参数的使用权限。目前只能查询某张�
 
 **使用方法**
 
-!ymleader / l (**`:`游戏模式**) [**谱面编号**] ~~(**`#`榜单类型**) (**`+`模组名称**)~~
+!ymleader / l (**`:`种类**) [**谱面编号**] (**`#`偏移量或区间**)
 
-- ~~**<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)~~
-- **<HopeIcon icon="hashtag"/> 谱面编号**：同上。
-- ~~**<HopeIcon icon="rectangle-list"/> 榜单类型**：全球榜、好友榜等。~~
-  - ~~可以输入的参数：global，friend，country，或者g、f、c~~
-- ~~**<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 预期成绩内模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。~~
-  - ~~可输入的 <HopeIcon icon="music"/> 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR~~
+- **<HopeIcon icon="icons"/> 种类**：输入编号的种类。
+  - sid / s：按谱面集编号 (SID) 查询。
+  - bid / b：按谱面编号 (BID) 查询。
+- **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
+  - 可以输入 1~50 之间的整数，输入 2，就是查询排行榜上第二个成绩。
+  - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
 
-::: warning 注意
+::: tip 提示
 
-繁重功能，查询结果将会在 ==10-20== 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
+可以通过 !ll / !legacyleader 查询稳定版（Stable）的排行榜。
 
 :::
 
