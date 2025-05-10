@@ -37,7 +37,7 @@ copyright: false
 | P | !p(`s`) (`:`mode) (user) (`#`num) | [Pass](./score.md/#pass) | 查询通过成绩 | **num**：也可输入 `-` 分隔的区间 |
 | Q | !q (`:`mode) (`#`status) (`*`sort) (num) | [Qualified](./map.md/#qualified) | 查询过审谱面 | **status**：谱面状态。gwpraql，默认 q<br />**sort**：排序方式，ta(ds)mp(rt) + (asc/desc) |
 | R | !r(`s`) (`:`mode) (user) (`#`num) | [Recent](./score.md/#recent) | 查询最近成绩 | **num**：也可输入 `-` 分隔的区间 |
-| S | !s(`s`) (`:`mode) **[bid]** (user) (`+`mod) | [Score](./score.md/#score) | 查询谱面成绩 | **mod**：模组名称 |
+| S | !s(`s`) (`:`mode) (bid) (user) (`+`mod) | [Score](./score.md/#score) | 查询谱面成绩 | **mod**：模组名称 |
 | T | !t (`:`mode) (user) (`#`num) | [Today BP](./score.md/#todaybp) | 查询今日最好成绩 | **num**：也可输入 `-` 分隔的区间 |
 | U | - | - | - | - |
 | V | - | - | - | - |

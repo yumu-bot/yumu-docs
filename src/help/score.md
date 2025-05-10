@@ -170,12 +170,13 @@ b，p，r 均遵守此语法。
 
 **使用方法**
 
-!ymscore / s (**s**) (**`:`游戏模式**) [**谱面编号**] (**玩家名**) (**`+`模组名称**)
+!ymscore / s (**s**) (**`:`游戏模式**) (**谱面编号**) (**玩家名**) (**`+`模组名称**)
 
 - **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
   - 默认获取谱面所有纳入统计的成绩。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
-- **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要查询的谱面编号 (BID)。
+- **<HopeIcon icon="hashtag"/> 谱面编号**：需要查询的谱面编号 (BID)。
+  - 如果不输入编号，则默认获取玩家最近成绩的谱面，从而获取到玩家在谱面内的 pp 最高成绩（类似于 !r)。
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
