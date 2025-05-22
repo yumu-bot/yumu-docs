@@ -82,7 +82,7 @@ b，p，r 均遵守此语法。
 
 **使用方法**
 
-!ympass / p (**s**) (**`:`游戏模式**) (**玩家名**) (**`#`偏移量或区间**)
+!ympass / p (**s**) (**`:`游戏模式**) (**玩家名**) (**查询条件**) (**`#`偏移量或区间**)
 
 - **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
   - 如果不输入任何参数，也能获取最近 20 个通过成绩（等价于 !p 1-20）。
@@ -93,6 +93,7 @@ b，p，r 均遵守此语法。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+- **<HopeIcon icon="filter"/> 查询条件**：输入格式为：==条件 + 运算符 + 查询内容==，比如 mapper=fia。请参阅：[<HopeIcon icon="filter"/> 查询条件](#bestperformance)。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
   - 可以输入 1~100 之间的整数，输入 2，就是查询最近的通过成绩的前一个通过成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
@@ -133,7 +134,7 @@ b，p，r 均遵守此语法。
 
 **使用方法**
 
-!ymrecent / r (**s**) (**`:`游戏模式**) (**玩家名**) (**`#`偏移量或区间**)
+!ymrecent / r (**s**) (**`:`游戏模式**) (**玩家名**) (**查询条件**) (**`#`偏移量或区间**)
 
 - **<HopeIcon icon="s"/> 多成绩**：如果这里添加了字母 `s`，Bot 会识别为多成绩模式。
   - 如果不输入任何参数，也能获取最近 20 个成绩（等价于 !r 1-20）。
@@ -143,6 +144,7 @@ b，p，r 均遵守此语法。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+- **<HopeIcon icon="filter"/> 查询条件**：输入格式为：==条件 + 运算符 + 查询内容==，比如 mapper=fia。请参阅：[<HopeIcon icon="filter"/> 查询条件](#bestperformance)。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
   - 可以输入 1~100 之间的整数，输入 2，就是查询最近成绩的前一个成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
@@ -219,8 +221,6 @@ b，p，r 均遵守此语法。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
 - **<HopeIcon icon="filter"/> 查询条件**：输入格式为：==条件 + 运算符 + 查询内容==，比如 mapper=fia。
-  - 条件、运算符、查询内容之间，**==不要留空格==**，并且请删去查询内容中可能含有的空格。
-    - 相应地，被查询内容也会移除所有空格。这与 BQ 功能的逻辑完全不一样。请注意。
   - 可输入的条件种类有：
     - 谱师 `mapper`/`gder`/`u`
     - 歌曲名 `title`/`name`/`t`
