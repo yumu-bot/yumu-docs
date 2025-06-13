@@ -33,7 +33,7 @@ copyright: false
 | L | !l (`:`mode) **[bid]** | [Leader](./map.md/#leader) | 查询谱面排行 | - |
 | M | !m (`:`mode) **[bid]** (acc`%`) (`x`combo) (`-`miss) (`+`mod) | [Map](./map.md/#map) | 查询谱面信息 | **acc**：准确率<br />**combo**：连击数，或连击占比 (0-1)<br />**miss**：失误数<br />**mod**：模组名称 |
 | N | !n(`b`) **[sid]** | [Nomination](./map.md/#nomination) | 查询上架流程 | *!nb 按谱面 ID (**BID**) 查询。* |
-| O | !o (`:`mode) (`#`status) (beatmap) (`*`sort) | [Search](./score.md/#pass) | 搜索谱面 | **beatmap**：格式：artist - title (creator) [difficulty] |
+| O | !o (`:`mode) (`#`status) (beatmap) (`*`sort) | [Search](./map.md/#search) | 搜索谱面 | **beatmap**：格式：artist - title (creator) [difficulty] |
 | P | !p(`s`) (`:`mode) (user) (filter) (`#`num) | [Pass](./score.md/#pass) | 查询通过成绩 | **num**：也可输入 `-` 分隔的区间 |
 | Q | !q (`:`mode) (`#`status) (`*`sort) (num) | [Qualified](./map.md/#qualified) | 查询过审谱面 | **status**：谱面状态。gwpraql，默认 q<br />**sort**：排序方式，ta(ds)mp(rt) + (asc/desc) |
 | R | !r(`s`) (`:`mode) (user) (filter) (`#`num) | [Recent](./score.md/#recent) | 查询最近成绩 | **num**：也可输入 `-` 分隔的区间 |
