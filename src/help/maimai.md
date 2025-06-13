@@ -189,7 +189,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="keyboard"/> 5 查询舞萌全连或完美成绩 !ymmaifilter (!xc/!xp) {id=maifilter}
+## <HopeIcon icon="thumbs-up"/> 5 查询舞萌全连或完美成绩 !ymmaifilter (!xc/!xp) {id=maifilter}
 
 这个功能可以查询到玩家全连或是完美的成绩。
 
