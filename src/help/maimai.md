@@ -79,7 +79,7 @@ copyright: false
 
 查询的字段可输入版本简称，版本号，或是版本全称中（除了初代）剔除掉 maimai 之后，剩下的字段。
 
-目前国服版本位于 `maimai でらっくす BUDDiES`，日服版本位于 `maimai でらっくす PRiSM PLUS`。
+目前国服版本位于 `maimai でらっくす PRiSM` (`舞萌DX 2025`)，日服版本位于 `maimai でらっくす PRiSM PLUS`。
 
 | 版本全称 | 代号 | 简称 | 版本号 |
 | :-: | :-: | :-: | :-: |
@@ -97,18 +97,18 @@ copyright: false
 | MiLK PLUS | 雪 | mk+, mlk+ | 0.65 |
 | maimai FiNALE | 輝 | fn, fnl | 0.7 |
 | ALL FiNALE[^2] | 舞 | afn, fn+ | 0.75 |
-| maimai でらっくす | 熊 | dx, dlx | 1.0 |
-| maimai でらっくす PLUS | 華 | dx+, dlx+ | 1.05 |
-| maimai でらっくす Splash | 爽 | sp, spl | 1.1 |
-| maimai でらっくす Splash PLUS | 煌 | sp+, spl+ | 1.15 |
-| maimai でらっくす UNiVERSE | 星 | un, uv, unv | 1.2 |
-| maimai でらっくす UNiVERSE PLUS | 宙 | un+, uv+, unv+ | 1.25 |
-| maimai でらっくす FESTiVAL | 祭 | fs, fes | 1.3 |
-| maimai でらっくす FESTiVAL PLUS | 祝 | fs+, fes+ | 1.35 |
-| maimai でらっくす BUDDiES | 双 | bd, bud | 1.4 |
+| maimai でらっくす | 熊 | dx, dlx, 2020 | 1.0 |
+| maimai でらっくす PLUS[^3] | 華 | dx+, dlx+ | 1.05 |
+| maimai でらっくす Splash | 爽 | sp, spl, 2021 | 1.1 |
+| maimai でらっくす Splash PLUS[^3] | 煌 | sp+, spl+ | 1.15 |
+| maimai でらっくす UNiVERSE | 星 | un, uv, unv, 2022 | 1.2 |
+| maimai でらっくす UNiVERSE PLUS[^3] | 宙 | un+, uv+, unv+ | 1.25 |
+| maimai でらっくす FESTiVAL | 祭 | fs, fes, 2023 | 1.3 |
+| maimai でらっくす FESTiVAL PLUS[^3] | 祝 | fs+, fes+ | 1.35 |
+| maimai でらっくす BUDDiES | 双 | bd, bud, 2024 | 1.4 |
 | maimai でらっくす BUDDiES PLUS[^3] | 宴 | bd+, bud+ | 1.45 |
-| maimai でらっくす PRiSM[^3] | 鏡 | pr, pri, prs | 1.5 |
-| maimai でらっくす PRiSM PLUS[^3] |  | pr+, pri+, prs+ | 1.55 |
+| maimai でらっくす PRiSM | 鏡 | pr, pri, prs, 2025 | 1.5 |
+| maimai でらっくす PRiSM PLUS[^4] |  | pr+, pri+, prs+ | 1.55 |
 
 :::
 
@@ -225,5 +225,6 @@ copyright: false
 ## 备注
 
 [^1]: 实际上，最初始的版本和 `maimai PLUS` 版本同归属于`真`代。但是为了区分曲库，这里使用`初`作为版本代号。
-[^2]: 这个版本指的是包括 FiNALE 版本之前的所有歌曲。实际上并不指代特定的游戏框体。
-[^3]: 目前国服并没有这个版本的歌曲。
+[^2]: 这个版本指的是包括 `FiNALE` 版本之前的所有歌曲。实际上并不指代特定的游戏框体。
+[^3]: 当前国服的命名规则是”舞萌DX“+推出的年份，因此在按版本查询成绩的方法中，无法查询到这几个 PLUS 版本的成绩（都囊括在非 PLUS 版本中了）
+[^4]: 目前国服并没有这个版本的歌曲。
