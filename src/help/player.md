@@ -287,7 +287,7 @@ PPM 4 根据离散数据，来近似推算这部分玩家的正态分布，并�
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 不输入默认展示自己的客串难度关系。
 - **<HopeIcon icon="file"/> 页数**：当前所在的页面数。
-  - 一页 50 个结果。
+  - 不输入默认第一页。一页 50 个结果。
 
 ![客串谱师面板，指令：!gd wIntEr7z](https://yumemuzi.s-ul.eu/yumu/arCbhz6f)
 

@@ -25,6 +25,14 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
+title: 查询舞萌全连或完美成绩
+desc: maiap / maifc
+logo: ./assets/icon/icon-plus.svg
+link: ./maimai.md#maifilter
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
 title: 查询客串谱师
 desc: guestdiff
 logo: ./assets/icon/icon-plus.svg
@@ -45,30 +53,6 @@ title: 绑定群聊游戏模式
 desc: groupmode
 logo: ./assets/icon/icon-plus.svg
 link: ./score.md#groupmode
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: 查询主页奖牌
-desc: badge
-logo: ./assets/icon/icon-plus.svg
-link: ./player.md#badge
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: 查询战队信息
-desc: team
-logo: ./assets/icon/icon-plus.svg
-link: ./player.md#team
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: 查询玩家名可用状态
-desc: take
-logo: ./assets/icon/icon-plus.svg
-link: ./aid.md#take
 color: rgba(200, 200, 200, 0.15)
 ```
 

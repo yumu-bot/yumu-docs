@@ -189,7 +189,19 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="keyboard"/> 5 查询中二最好成绩 !ymmaimaibest (!y) {id=chubest}
+## <HopeIcon icon="keyboard"/> 5 查询舞萌全连或完美成绩 !ymmaifilter (!xc/!xp) {id=maifilter}
+
+这个功能可以查询到玩家全连或是完美的成绩。
+
+**使用方法**
+
+!ymmaimaifullcombo (!maifc / !xc) / !ymmaimaiallperfect (!maiap / !xp) / (**玩家名**) (**`#`页数**)
+
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+- **<HopeIcon icon="file"/> 页数**：当前所在的页面数。
+  - 不输入默认第一页。一页 50 个结果。
+
+## <HopeIcon icon="keyboard"/> 6 查询中二最好成绩 !ymmaimaibest (!y) {id=chubest}
 
 这个功能可以查询到玩家最好成绩榜（b30+r10）上的成绩。
 
@@ -212,7 +224,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="magnifying-glass"/> 6 查询水鱼玩家 !ymmaimaiseek (!mk) {id=maiseek}
+## <HopeIcon icon="magnifying-glass"/> 7 查询水鱼玩家 !ymmaimaiseek (!mk) {id=maiseek}
 
 这个功能可以搜索注册了水鱼查分器的玩家，并输出可能的玩家名和玩家评级 (DX Rating)。
 
