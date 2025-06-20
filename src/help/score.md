@@ -54,6 +54,8 @@ b，p，r 均遵守此语法。
 
 这在同时使用多种机器人查询成绩时尤其有用。比如仅在本机器人下查询接水果模式成绩，在其他机器人下查询主模式成绩等。
 
+但是，这个绑定的游戏模式会被以下群聊游戏模式所覆盖（如果有）。如果在部分限定玩家讨论游戏模式的群聊中，您发现自己的绑定模式未生效，则可能是因为这个群聊已经设定了群聊游戏模式。
+
 :::
 
 
@@ -72,7 +74,20 @@ b，p，r 均遵守此语法。
 
 为防止滥用，只有群聊的群主或管理员可以使用此功能。
 
-群聊绑定的游戏模式会优先于玩家绑定的游戏模式生效。所以这个功能，应该仅用于需要控制玩家讨论游戏模式的群聊中。
+::: 
+
+::: warning 注意
+
+群聊绑定的游戏模式，会优先于玩家绑定的游戏模式生效。所以这个功能，应该仅用于需要控制玩家讨论游戏模式的群聊中。
+
+游戏模式的获取先后顺序：
+
+==群聊游戏模式 > 玩家绑定的游戏模式 > 玩家主页上的默认游戏模式 (通常是 osu!standard)==
+
+比如，一个玩家的主页游戏模式为 osu!standard，并且自己绑定的游戏模式为 osu!taiko。那么他在一个设定默认模式为 osu!mania 的群聊内查询时，会返回以下结果：
+
+- 不带游戏模式参数（`:`）查询：会返回 osu!mania 模式内的结果，无视玩家自己绑定的游戏模式。
+- 带游戏模式参数（`:`）查询：会返回这个参数对应的模式内的结果。
 
 :::
 
@@ -92,7 +107,7 @@ b，p，r 均遵守此语法。
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
 - **<HopeIcon icon="filter"/> 查询条件**：输入格式为：==条件 + 运算符 + 查询内容==，比如 mapper=fia。请参阅：[<HopeIcon icon="filter"/> 查询条件](#bestperformance)。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
   - 可以输入 1~100 之间的整数，输入 2，就是查询最近的通过成绩的前一个通过成绩。
@@ -143,7 +158,7 @@ b，p，r 均遵守此语法。
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
 - **<HopeIcon icon="filter"/> 查询条件**：输入格式为：==条件 + 运算符 + 查询内容==，比如 mapper=fia。请参阅：[<HopeIcon icon="filter"/> 查询条件](#bestperformance)。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从新到老排序中的第几个或是某几个成绩。
   - 可以输入 1~100 之间的整数，输入 2，就是查询最近成绩的前一个成绩。
@@ -166,7 +181,7 @@ b，p，r 均遵守此语法。
 
 :::
 
-## <HopeIcon icon="square-xmark"/> 5 查询谱面成绩 !ymscore (!s) {id=score}
+## <HopeIcon icon="pager"/> 5 查询谱面成绩 !ymscore (!s) {id=score}
 
 这个功能可以查询到上榜（谱面含有在线榜单，并且玩家游玩过）的成绩。
 
@@ -182,7 +197,7 @@ b，p，r 均遵守此语法。
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
 - **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
   - 可输入的 <HopeIcon icon="music"/> 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
 
@@ -204,7 +219,7 @@ b，p，r 均遵守此语法。
 
 :::
 
-## <HopeIcon icon="angles-up"/> 6 查询最好成绩 !ymbestperformance (!b) {id=bestperformance}
+## <HopeIcon icon="rainbow"/> 6 查询最好成绩 !ymbestperformance (!b) {id=bestperformance}
 
 这个功能可以查询到玩家最好成绩榜（BP）上的成绩。
 
@@ -219,7 +234,7 @@ b，p，r 均遵守此语法。
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
 - **<HopeIcon icon="filter"/> 查询条件**：输入格式为：==条件 + 运算符 + 查询内容==，比如 mapper=fia。
   - 可输入的条件种类有：
     - 谱师 `mapper`/`gder`/`u`
@@ -281,7 +296,7 @@ b，p，r 均遵守此语法。
 
 :::
 
-## <HopeIcon icon="angles-up"/> 7 查询今日最好成绩 !ymtodaybp (!t) {id=todaybp}
+## <HopeIcon icon="podcast"/> 7 查询今日最好成绩 !ymtodaybp (!t) {id=todaybp}
 
 这个功能可以查询到玩家今天（或直到距今天多少天前）最好成绩榜（BP）上新增的成绩。
 
@@ -293,7 +308,7 @@ b，p，r 均遵守此语法。
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
 - **<HopeIcon icon="calendar-days"/> 天数**：查询距今多少天内，玩家新增的最好成绩。
   - 可以输入 1~999 之间的整数。输入 30 就是距今 30 天内。
 
@@ -331,7 +346,7 @@ b，p，r 均遵守此语法。
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
 
 ![分析最好成绩面板，指令：!ba:2 nene sakura](https://yumemuzi.s-ul.eu/yumu/4ZAavzi5)
 
@@ -387,13 +402,7 @@ b，p，r 均遵守此语法。
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
-
-::: warning 注意
-
-繁重功能，如果您是第一次查询，结果将会在 ==15-30== 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
-
-:::
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
 
 ::: tip 提示
 

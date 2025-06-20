@@ -137,3 +137,11 @@ logo: ./assets/icon/icon-pen-nib.svg
 link: custom.md
 color: rgba(89, 80, 158, 0.15)
 ```
+
+```card
+title: 私服指令
+desc: 支持偏偏要上班
+logo: ./assets/icon/icon-ungroup.svg
+link: privateserver.md
+color: rgba(158, 135, 142, 0.15)
+```

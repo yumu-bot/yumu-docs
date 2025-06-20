@@ -30,7 +30,7 @@ copyright: false
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
 - **<HopeIcon icon="calendar-days"/> 天数**：查询距今数天前的数据，并和现在比较。
   - 即使不输入，也会默认和 1 天前的自己比较。
 
@@ -101,12 +101,6 @@ copyright: false
 
 :::
 
-::: warning 注意
-
-繁重功能，查询结果将会在 ==10-20== 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
-
-:::
-
 ## <HopeIcon icon="user-group"/> 3 查询好友列表 !ymfriend (!f) {id=friend}
 
 可以查询玩家所添加（关注）的好友，也可以通过输入玩家名的方式来查询自己是否和对方互相关注（双向好友）。
@@ -136,7 +130,7 @@ copyright: false
 - **<HopeIcon icon="address-card"/> 玩家名**：可以查询自己是否和对方互相关注（双向好友）。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@tadokoro kouji。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
   - 如果你并未关注对方，此时，只有在对方也绑定了机器人之后，才可得知对方是否关注了你。
 
 ## <HopeIcon icon="link"/> 4 获取主页链接 !ymmutual (!mu) {id=mutual}
@@ -172,12 +166,6 @@ copyright: false
   - **目前这个参数无效。**
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 不输入默认查询自己的技巧信息。
-
-::: warning 注意
-
-繁重功能，查询结果将会在 ==10-20== 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
-
-:::
 
 ## <HopeIcon icon="chart-simple"/> 6 查询 PP- !ymppminus (!ppm) {id=ppminus}
 

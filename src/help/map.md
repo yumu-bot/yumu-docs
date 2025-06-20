@@ -137,12 +137,6 @@ copyright: false
     - 常用参数：rd / ranked_desc：按上架时间降序，刚上架的谱面会排在最上面。
   - 如果留空，默认是 ranked_asc：按上架时间升序，此时，刚提名的谱面会排在最上面。
 
-::: warning 注意
-
-繁重功能，查询结果将会在 ==10-20== 秒内返回。如果 Bot 消息发送失败，请稍后再重试，切勿刷屏查询。
-
-:::
-
 ## <HopeIcon icon="angles-up"/> 5 查询上架流程 !ymnomination (!n) {id=nomination}
 
 **使用方法**
