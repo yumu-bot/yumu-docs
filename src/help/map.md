@@ -255,28 +255,31 @@ Map Minus 是 Skill 的基础项目！这个项目旨在使用独立的一套指
 
 :::
 
-## <HopeIcon icon="list-ol"/> 7 查询谱面排行 !ymleader (!l) {id=leader}
-
-::: info 备注
-
-API 暂未开放以下大部分参数的使用权限。目前只能查询某张谱面的==全球榜== (!yml bid)。
-
-:::
+## <HopeIcon icon="list-ol"/> 7 查询谱面排行榜 !ymleader (!l) {id=leader}
 
 **使用方法**
 
-!ymleader / l (**`:`种类**) [**谱面编号**] (**`#`偏移量或区间**)
+!ymleader / l (**l**) (**`:`游戏模式**) (**谱面编号**) (**`#`偏移量或区间**) (**`*`榜单类型**) (**`+`模组**)
 
-- **<HopeIcon icon="icons"/> 种类**：输入编号的种类。
-  - sid / s：按谱面集编号 (SID) 查询。
-  - bid / b：按谱面编号 (BID) 查询。
+- **<HopeIcon icon="l"/> 稳定版排行榜**：如果这里填入了一个 **l**，即可查看仅含稳定版客户端成绩的榜单。
+- **<HopeIcon icon="gamepad"/> 游戏模式**：选填，需要在转谱中指定的 <HopeIcon icon="gamepad"/> 游戏模式。
+  - 仅限 osu!standard 切换转谱排行榜时使用。
+- **<HopeIcon icon="hashtag"/> 谱面编号**：选填。需要查询的谱面编号 (BID)。
+  - 如果不输入编号，则默认获取玩家最近成绩的谱面，从而获取这张谱面上的排行榜。
 - **<HopeIcon icon="ruler-horizontal"/> 偏移量或区间**：需要查询从头到尾排序中的第几个或是某几个成绩。
   - 可以输入 1~50 之间的整数，输入 2，就是查询排行榜上第二个成绩。
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
+  - 不输入等效于 1-50。
+- **<HopeIcon icon="icons"/> 排行榜类型**：可选择全球榜、国家/地区榜、好友榜。
+  - 可以输入 global、country、friend、g、c、f。
+  - 不输入默认查询全球排行榜。
+- **<HopeIcon icon="music"/> 模组名称**：模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
 
 ::: tip 提示
 
-可以通过 !ll / !legacyleader 查询稳定版（Stable）的排行榜。
+如果要指定模组，则需要您使用链接绑定。
+
+如果要指定榜单类型，则需要您使用链接绑定，并且同时是 osu!supporter。
 
 :::
 
