@@ -25,12 +25,18 @@ copyright: false
 !ymoldavatar / oa (**玩家名**)
 
 - **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
+  - 可以按逗号分隔，一次性输入多个玩家名。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
-  - 可以按逗号分隔，一次性输入多个玩家名。
 
 ![旧主页头像面板，指令：!oa 970](https://yumemuzi.s-ul.eu/yumu/MYOkR6U9)
+
+::: tip 提示
+
+由于腾讯官方机器人对发送的图片数量有限制，因此无法在官方机器人下使用 !oa + 多个玩家名的形式获取多张图片。
+
+:::
 
 ::: tip 提示
 
