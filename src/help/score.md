@@ -242,7 +242,7 @@ b，p，r 均遵守此语法。
   - 可输入的条件种类有：
     - 谱师 `mapper`/`gder`/`u`
     - 歌曲名 `title`/`name`/`t`
-    - 艺术家名 `artist`/`a`
+    - 歌手名 `artist`/`a`
     - 难度名 `difficulty`/`d`
     - 标签 `tag`/`g`
     - 星数 `star`/`sr`/`r`
