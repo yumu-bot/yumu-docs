@@ -79,36 +79,38 @@ copyright: false
 
 查询的字段可输入版本简称，版本号，或是版本全称中（除了初代）剔除掉 maimai 之后，剩下的字段。
 
-目前国服版本位于 `maimai でらっくす PRiSM` (`舞萌DX 2025`)，日服版本位于 `maimai でらっくす PRiSM PLUS`。
+目前国服版本位于 `maimai でらっくす PRiSM` (`舞萌DX 2025`)，日服版本位于 `maimai でらっくす CiRCLE`。
 
 | 版本全称 | 代号 | 简称 | 版本号 |
 | :-: | :-: | :-: | :-: |
-| maimai | 初[^1] | mi, mai | 0.1 |
-| maimai PLUS | 真 | pl, pls, mi+, mai+ | 0.15 |
-| maimai GreeN | 超 | gr, gre, grn | 0.2 |
-| maimai GreeN PLUS | 檄 | gr+, gre+, grn+ | 0.25 |
-| maimai ORANGE | 橙 | or, org | 0.3 |
-| maimai ORANGE PLUS | 暁 | or+, org+ | 0.35 |
-| maimai PiNK | 桃 | pk, pnk | 0.4 |
-| maimai PiNK PLUS | 櫻 | pk+, pnk+ | 0.45 |
-| maimai MURASAKi | 紫 | ms, msk | 0.5 |
-| maimai MURASAKi PLUS | 堇 | ms+, msk+ | 0.55 |
-| maimai MiLK | 白 | mk, mlk | 0.6 |
-| MiLK PLUS | 雪 | mk+, mlk+ | 0.65 |
-| maimai FiNALE | 輝 | fn, fnl | 0.7 |
-| ALL FiNALE[^2] | 舞 | afn, fn+ | 0.75 |
-| maimai でらっくす | 熊 | dx, dlx, 2020 | 1.0 |
-| maimai でらっくす PLUS[^3] | 華 | dx+, dlx+ | 1.05 |
-| maimai でらっくす Splash | 爽 | sp, spl, 2021 | 1.1 |
-| maimai でらっくす Splash PLUS[^3] | 煌 | sp+, spl+ | 1.15 |
-| maimai でらっくす UNiVERSE | 星 | un, uv, unv, 2022 | 1.2 |
-| maimai でらっくす UNiVERSE PLUS[^3] | 宙 | un+, uv+, unv+ | 1.25 |
-| maimai でらっくす FESTiVAL | 祭 | fs, fes, 2023 | 1.3 |
-| maimai でらっくす FESTiVAL PLUS[^3] | 祝 | fs+, fes+ | 1.35 |
-| maimai でらっくす BUDDiES | 双 | bd, bud, 2024 | 1.4 |
-| maimai でらっくす BUDDiES PLUS[^3] | 宴 | bd+, bud+ | 1.45 |
-| maimai でらっくす PRiSM | 鏡 | pr, pri, prs, 2025 | 1.5 |
-| maimai でらっくす PRiSM PLUS[^4] |  | pr+, pri+, prs+ | 1.55 |
+| maimai | 初[^1] | m, mi, mai | 0.1 |
+| maimai PLUS | 真 | m+, pl, pls, mi+, mai+ | 0.15 |
+| maimai GreeN | 超 | g, gr, gre, grn | 0.2 |
+| maimai GreeN PLUS | 檄 | g+, gr+, gre+, grn+ | 0.25 |
+| maimai ORANGE | 橙 | o, or, org | 0.3 |
+| maimai ORANGE PLUS | 暁 | o+, or+, org+ | 0.35 |
+| maimai PiNK | 桃 | p, pk, pnk | 0.4 |
+| maimai PiNK PLUS | 櫻 | p+, pk+, pnk+ | 0.45 |
+| maimai MURASAKi | 紫 | k, ms, msk | 0.5 |
+| maimai MURASAKi PLUS | 堇 | k+, ms+, msk+ | 0.55 |
+| maimai MiLK | 白 | l, mk, mlk | 0.6 |
+| MiLK PLUS | 雪 | l+, mk+, mlk+ | 0.65 |
+| maimai FiNALE | 輝 | n, fn, fnl | 0.7 |
+| ALL FiNALE[^2] | 舞 | n+, afn, fn+ | 0.75 |
+| maimai でらっくす | 熊 | d, dx, dlx, 2020 | 1.0 |
+| maimai でらっくす PLUS[^3] | 華 | d+, dx+, dlx+ | 1.05 |
+| maimai でらっくす Splash | 爽 | s, sp, spl, 2021 | 1.1 |
+| maimai でらっくす Splash PLUS[^3] | 煌 | s+, sp+, spl+ | 1.15 |
+| maimai でらっくす UNiVERSE | 星 | u, un, uv, unv, 2022 | 1.2 |
+| maimai でらっくす UNiVERSE PLUS[^3] | 宙 | u+, un+, uv+, unv+ | 1.25 |
+| maimai でらっくす FESTiVAL | 祭 | f, fs, fes, 2023 | 1.3 |
+| maimai でらっくす FESTiVAL PLUS[^3] | 祝 | f+, fs+, fes+ | 1.35 |
+| maimai でらっくす BUDDiES | 双 | b, bd, bud, 2024 | 1.4 |
+| maimai でらっくす BUDDiES PLUS | 宴 | b+, bd+, bud+ | 1.45 |
+| maimai でらっくす PRiSM | 鏡 | r, pr, pri, prs, 2025 | 1.5 |
+| maimai でらっくす PRiSM PLUS[^3][^4] | 稜[^5] | r+, pr+, pri+, prs+ | 1.55 |
+| maimai でらっくす CiRCLE[^4] |  | c, ci, cr, cc, cir, cle, 2026 | 1.6 |
+| maimai でらっくす CiRCLE PLUS[^3][^4][^5] |  | c+, ci+, cr+, cc+, cir+, cle+ | 1.65 |
 
 :::
 
@@ -277,3 +279,4 @@ copyright: false
 [^2]: 这个版本指的是包括 `FiNALE` 版本之前的所有歌曲。实际上并不指代特定的游戏框体。
 [^3]: 当前国服的命名规则是”舞萌DX“+推出的年份，因此在按版本查询成绩的方法中，无法查询到这几个 PLUS 版本的成绩（都囊括在非 PLUS 版本中了）
 [^4]: 目前国服并没有这个版本的歌曲。
+[^5]: 该名称为推测名称。
