@@ -106,9 +106,9 @@ copyright: false
 | maimai でらっくす FESTiVAL | 祭 | f, fs, fes, 2023 | 1.3 |
 | maimai でらっくす FESTiVAL PLUS[^3] | 祝 | f+, fs+, fes+ | 1.35 |
 | maimai でらっくす BUDDiES | 双 | b, bd, bud, 2024 | 1.4 |
-| maimai でらっくす BUDDiES PLUS | 宴 | b+, bd+, bud+ | 1.45 |
+| maimai でらっくす BUDDiES PLUS[^3] | 宴 | b+, bd+, bud+ | 1.45 |
 | maimai でらっくす PRiSM | 鏡 | r, pr, pri, prs, 2025 | 1.5 |
-| maimai でらっくす PRiSM PLUS[^3][^4] | 稜[^5] | r+, pr+, pri+, prs+ | 1.55 |
+| maimai でらっくす PRiSM PLUS[^3][^4] | 彩 | r+, pr+, pri+, prs+ | 1.55 |
 | maimai でらっくす CiRCLE[^4] |  | c, ci, cr, cc, cir, cle, 2026 | 1.6 |
 | maimai でらっくす CiRCLE PLUS[^3][^4][^5] |  | c+, ci+, cr+, cc+, cir+, cle+ | 1.65 |
 
