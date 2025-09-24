@@ -145,3 +145,13 @@ logo: ./assets/icon/icon-ungroup.svg
 link: privateserver.md
 color: rgba(158, 135, 142, 0.15)
 ```
+
+**其他**
+
+```card
+title: 筛选条件
+desc: 部分筛选器的语法
+logo: ./assets/icon/icon-play.svg
+link: filter.md
+color: rgba(200, 200, 200, 0.15)
+```

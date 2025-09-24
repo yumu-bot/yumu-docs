@@ -107,7 +107,7 @@ copyright: false
 
 **使用方法**
 
-!ymfriend / f (**`:`筛选和排序**) (**数量或区间**|**玩家名**)
+!ymfriend / f (**`:`筛选和排序**) (**数量或区间** / **玩家名** / **查询条件**)
 
 - **<HopeIcon icon="arrow-down-a-z"/> 筛选和排序**：结果的筛选和排序方式。
   - 可以输入的参数：表现分、准确率、游戏次数、游戏时间、总击打数、入坑时间、玩家编号、国家、姓名、在线状态、单向关注：
@@ -123,15 +123,12 @@ copyright: false
     - pp, acc, playcount, playtime, totalhits：<HopeIcon icon="arrow-up-a-z"/> ==降序==（大、时间长或最近发生的在上）。
   - 以上参数（除了布尔值）后加 `+` 号均视作 <HopeIcon icon="arrow-down-a-z"/> ==升序==，加 `-` 号均视作 <HopeIcon icon="arrow-up-a-z"/> ==降序==。
   - 如果你记不清某个参数的相反排序的方向，也可以直接在后面加一个==数字 2==。
-- **<HopeIcon icon="ruler-combined"/> 数量或区间**：可以输入 1-100 内的单个值，也可以输入==差值小于 100== 的区间（|x-y|）。
+- **<HopeIcon icon="ruler-combined"/> 数量或区间**：三选一填，可以输入 1-100 内的单个值，也可以输入==差值小于 100== 的区间（|x-y|）。
   - 输入 1，就是查询自己的好友列表内第 1 个好友。（<HopeIcon icon="arrow-down-a-z"/> 按首字母升序排列）
   - 输入 111-120，就是查询自己好友列表内第 111 到 120 个好友。
   - 如果 <HopeIcon icon="circle-question"/> 不输入任何值，则默认随机查询 20 个好友。
-- **<HopeIcon icon="address-card"/> 玩家名**：可以查询自己是否和对方互相关注（双向好友）。
-  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
-  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
-  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
-  - 如果你并未关注对方，此时，只有在对方也绑定了机器人之后，才可得知对方是否关注了你。
+- **<HopeIcon icon="address-card"/> 玩家名**：三选一填，可以查询自己是否和对方互相关注（双向好友）。
+- **<HopeIcon icon="filter"/> 查询条件**：三选一填，请参阅：[<HopeIcon icon="filter"/> 查询条件·玩家查询器](./filter.md#player)
 
 ## <HopeIcon icon="link"/> 4 获取主页链接 !ymmutual (!mu) {id=mutual}
 
