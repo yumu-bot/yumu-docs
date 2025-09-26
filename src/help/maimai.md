@@ -186,11 +186,9 @@ copyright: false
 
 ![筛选舞萌谱面面板，指令：!mf:u](https://yumemuzi.s-ul.eu/yumu/ZhvQ9LcJ)
 
-
 ::: details 难度对应表
 
 查询的字段可输入难度简称，难度全称，难度中文名，难度颜色。
-
 
 | 难度全称 | 中文名 | 简称 | 颜色 |
 | :-: | :-: | :-: | :-: |

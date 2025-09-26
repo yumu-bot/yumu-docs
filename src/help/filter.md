@@ -80,12 +80,12 @@ copyright: false
 
 | 条件名 | 条件英文名 | 简称 | 查询字段类型 |
 | --- | --- | :-: | --- |
-| 玩家名 | player/user | u/n | 玩家名称 |
+| 玩家名 | player/user | u/n | 三位以上的 ASCII 字符串 |
 | 玩家编号 | userid/id | i | 数字 |
 | 活跃 | active | e | 布尔值 |
 | 机器人 | bot | b | 布尔值 |
 | 在线 | online | o | 布尔值 |
-| 删除 | delete | d | <s>布尔值</s>，目前你能看到的都为 false |
+| 删除 | delete | d | false |
 | 支持者 | supporter | v | 布尔值 |
 | 支持者等级 | supporterlevel | v/vl | 0-3 之间的整数 |
 | 上线时间 | lastvisit/time | t | 时间 |
@@ -111,8 +111,8 @@ copyright: false
 
 | 条件名 | 条件英文名 | 简称 | 查询字段类型 |
 | --- | --- | :-: | --- |
-| 谱师 | creator/host | c/h | 玩家名 |
-| 客串谱师 | gder/mapper/guest | u/gu | 玩家名 |
+| 谱师 | creator/host | c/h | 三位以上的 ASCII 字符串 |
+| 客串谱师 | gder/mapper/guest | u/gu | 三位以上的 ASCII 字符串 |
 | 谱面编号 | beatmapid/bid/id | b | 整数 |
 | 谱面集编号 | beatmapsetid/sid | s | 整数 |
 | 歌曲名 | title/name/song | t | 字符串 |
@@ -147,3 +147,29 @@ copyright: false
 | 客户端 | client/version | v | lazer 或 stable、l、s |
 
 ## <HopeIcon icon="circle"/> 舞萌成绩查询器 {id=maimai}
+
+| 条件名 | 条件英文名 | 简称 | 查询字段类型 |
+| --- | --- | :-: | --- |
+| 谱师 | charter/mapper | c | 字符串 |
+| 编号 | id | i | 整数 |
+| 难度 | difficulty/diff | d | 1-15 的数字（可带 `+` 号） |
+| 难度 | difficulty/diff | d | basic，advanced 等或绿、黄等或 b、a 等。请参阅：[难度对应表](./maimai.md#maifind) |
+| 框体 | cabinet/cab | n | 标准、豪华或 sd、dx 或 standard、deluxe |
+| 版本 | version | v | 版本号，请参阅：[版本号对应表](./maimai.md#version) |
+| 歌曲名 | title/name/song | t | 字符串 |
+| 别名 | alias | l | 字符串 |
+| 歌手名 | artist/singer/art | a | 字符串 |
+| 类型 | category/type | t/g | 流行、v 家等或 pop、vocaloid 等或 p、v 等 |
+| 曲速 | bpm | bm | 小数 |
+| 达成率 | achievement | ac | 小数 |
+| TAP | tap | ta/tp | 整数或比率 |
+| HOLD | hold/hod | ho/hd | 整数或比率 |
+| SLIDE | slide/sld | sl/se | 整数或比率 |
+| TOUCH | touch/toh/tch | th/to | 整数或比率 |
+| BREAK | break/brk | br/bk | 整数或比率 |
+| DX 分数 | dxscore/dx/ds | o | 整数或比率 |
+| DX 星 | dxstar/star/dxsr/dr/sr | s | 0-5 之间的整数 |
+| 评分 | rating/ra/rt | r | 整数 |
+| 评价 | rank | k | 字符串 |
+| 连击 | combo/cb | x | fc、fc+、ap、ap+，其他均为 played |
+| 同步 | sync/sy | y | s (sync)、fs、fs+、fsd (fdx)、fsd+ (fdx+)，其他均为 played |
