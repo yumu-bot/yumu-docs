@@ -128,7 +128,7 @@ copyright: false
 
 **使用方法**
 
-!ymmaimaiscore / ms (**玩家名**) (**(**框体类型**)歌曲名称 / 歌曲编号 / 定数或定数范围**) (**查询条件**) (**页数**)
+!ymmaimaiscore / ms (**玩家名**) (**(**框体类型**)歌曲名称 / 歌曲编号 / 定数或范围**) (**查询条件**) (**页数**)
 
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 - **<HopeIcon icon="rainbow"/> 框体类型**：在输入歌曲名称时，允许按框体类型查询。
@@ -146,7 +146,7 @@ copyright: false
 - **<HopeIcon icon="hashtag"/> 歌曲编号**：三选一填，需要查询的歌曲编号 (SongID)。
   - 只能与查询字段二者选其一输入。
   - 如果歌曲编号在 1-15 之间，则会被识别为定数范围。
-- **<HopeIcon icon="star"/> 定数或定数范围**：三选一填，需要查询的成绩定数或范围（难度）。
+- **<HopeIcon icon="star"/> 定数或范围**：三选一填，需要查询的成绩定数或范围（难度）。
   - 可以输入 1-15 之间的数。
     - 如果只输入一个数字（或是数字后面带 `+` 号），则会按模糊定级处理：
       - 12：12.0-12.5
@@ -160,44 +160,39 @@ copyright: false
 - **<HopeIcon icon="file"/> 页数**：当前所在的页面数。
   - 不输入默认第一页。一页 50 个结果。
 
-## <HopeIcon icon="folder-tree"/> 4 筛选舞萌谱面 !ymmaimaifind (!mf) {id=maifind}
+## <HopeIcon icon="music"/> 4 查询舞萌歌曲 !ymmaimaifind (!mf) {id=maifind}
 
 这个功能可以按版本和难度筛选谱面。
 
+结果会按歌曲编号除以 10000 的余数来降序排布（新歌在上面）。
+
 **使用方法**
 
-!ymmaimaifind / mf (`:`**难度**) (**定数或区间**) (`#`**版本号**) (`*`**DX 分数**)
+!ymmaimaifind / mf (`:`**难度**) (**定数或范围**) (**查询条件**) (**页数**)
 
 - **<HopeIcon icon="arrows-to-dot"/> 难度**：谱面难度。
   - 可以输入 0-5，或是难度的全称、中文名称、三字母简称、二字母简称、首字母。
     - 如：筛选 EXPERT 谱面，可以输入：2、exp、expert、e、红、专家。
-    - 只能输入一种难度。
-- **<HopeIcon icon="ruler-horizontal"/> 定数或区间**：需要限定的谱面定数。
-  - 如果输入单一的整数或是带加号的整数，则按模糊定级处理。
-    - 13: 13.0（包含）-13.6（不包含），13+: 13.6（包含）-14.0（不包含）
-  - 如果输入比较符号，则按以下的逻辑处理。
-    - <13: 0.0（包含）-13.0（不包含），>=14: 14.0（包含）-15.0（包含）
-  - 如果输入区间，则按以下的逻辑处理。
-    - 13-14.7: 13.0（包含）-14.7（包含）
-  - 可以同时输入多个定数或区间。
-- **<HopeIcon icon="coins"/> 版本号**：同上。
-- **<HopeIcon icon="star-half-stroke"/> DX 分数**：需要限定的 DX 分数区间。
-  - 将按照输入的分数至输入的分数 +100 的范围查询。如：1000 则查询 1000（包含）-1100（不包含）
+    - 可以按逗号分隔输入多个难度。
+- **<HopeIcon icon="star"/> 定数或范围**：需要查询的谱面定数或范围（难度）。同上。
+- **<HopeIcon icon="filter"/> 查询条件**：请参阅：[<HopeIcon icon="filter"/> 查询条件·舞萌歌曲查询器](./filter.md#maisong)
+- **<HopeIcon icon="file"/> 页数**：当前所在的页面数。
+  - 不输入默认第一页。一页 48 个结果。
 
-![筛选舞萌谱面面板，指令：!mf:u](https://yumemuzi.s-ul.eu/yumu/ZhvQ9LcJ)
+![查询舞萌歌曲面板，指令：!mf c=沙发太](https://yumemuzi.s-ul.eu/yumu/izjGtzBH)
 
 ::: details 难度对应表
 
 查询的字段可输入难度简称，难度全称，难度中文名，难度颜色。
 
-| 难度全称 | 中文名 | 简称 | 颜色 |
-| :-: | :-: | :-: | :-: |
-| BASIC | 初级 | BSC、B | 绿、<span style="color:#22AC38">⬤</span> |
-| ADVANCED | 高级 | ADV、A | 黄、<span style="color:#FFF100">⬤</span> |
-| EXPERT | 专家 | EXP、E | 红、<span style="color:#D32F2F">⬤</span> |
-| MASTER | 大师 | MAS、M | 紫、<span style="color:#9922EE">⬤</span> |
-| Re: MASTER | 宗师 | REM、R | 白、<span style="color:#DDD">⬤</span> |
-| U☆TA☆GE | 宴 | UTA，U | - |
+| 编号 | 难度全称 | 中文名 | 简称 | 颜色 |
+| :-: | :-: | :-: | :-: | :-: |
+| 1 | BASIC | 初级 | BSC、B | 绿、<span style="color:#22AC38">⬤</span> |
+| 2 | ADVANCED | 高级 | ADV、A | 黄、<span style="color:#FFF100">⬤</span> |
+| 3 | EXPERT | 专家 | EXP、E | 红、<span style="color:#D32F2F">⬤</span> |
+| 4 | MASTER | 大师 | MAS、M | 紫、<span style="color:#9922EE">⬤</span> |
+| 5 | Re: MASTER | 宗师 | REM、R | 白、<span style="color:#DDD">⬤</span> |
+| 6 | U☆TA☆GE | 宴会场 | UTA，U | - |
 
 :::
 

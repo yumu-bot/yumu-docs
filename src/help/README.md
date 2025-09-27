@@ -25,34 +25,18 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
-title: 查询舞萌全连或完美成绩
-desc: maiap / maifc
+title: 查询舞萌歌曲
+desc: maifind
 logo: ./assets/icon/icon-plus.svg
-link: ./maimai.md#maifilter
+link: ./maimai.md#maifind
 color: rgba(200, 200, 200, 0.15)
 ```
 
 ```card
-title: 查询客串谱师
-desc: guestdiff
+title: 查询好友
+desc: friend
 logo: ./assets/icon/icon-plus.svg
-link: ./player.md#guestdiff
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: PPM4
-desc: ppminus
-logo: ./assets/icon/icon-plus.svg
-link: ./player.md#ppminus
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: 绑定群聊游戏模式
-desc: groupmode
-logo: ./assets/icon/icon-plus.svg
-link: ./score.md#groupmode
+link: ./player.md#friend
 color: rgba(200, 200, 200, 0.15)
 ```
 

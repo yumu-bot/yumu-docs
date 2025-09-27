@@ -146,7 +146,7 @@ copyright: false
 | 转谱 | convert | cv | 布尔值 |
 | 客户端 | client/version | v | lazer 或 stable、l、s |
 
-## <HopeIcon icon="circle"/> 舞萌成绩查询器 {id=maimai}
+## <HopeIcon icon="spinner"/> 舞萌成绩查询器 {id=maimai}
 
 | 条件名 | 条件英文名 | 简称 | 查询字段类型 |
 | --- | --- | :-: | --- |
@@ -173,3 +173,24 @@ copyright: false
 | 评价 | rank | k | 字符串 |
 | 连击 | combo/cb | x | fc、fc+、ap、ap+，其他均为 played |
 | 同步 | sync/sy | y | s (sync)、fs、fs+、fsd (fdx)、fsd+ (fdx+)，其他均为 played |
+
+## <HopeIcon icon="music"/> 舞萌歌曲查询器 {id=maisong}
+
+| 条件名 | 条件英文名 | 简称 | 查询字段类型 |
+| --- | --- | :-: | --- |
+| 谱师 | charter/mapper | c | 字符串 |
+| 编号 | id | i | 整数 |
+| 难度 | difficulty/diff | d | 1-15 的数字（可带 `+` 号） |
+| 难度 | difficulty/diff | d | basic，advanced 等或绿、黄等或 b、a 等。请参阅：[难度对应表](./maimai.md#maifind) |
+| 框体 | cabinet/cab | n | 标准、豪华或 sd、dx 或 standard、deluxe |
+| 版本 | version | v | 版本号，请参阅：[版本号对应表](./maimai.md#version) |
+| 歌曲名 | title/name/song | t | 字符串 |
+| 别名 | alias | l | 字符串 |
+| 歌手名 | artist/singer/art | a | 字符串 |
+| 类型 | category/type | t/g | 流行、v 家等或 pop、vocaloid 等或 p、v 等 |
+| 曲速 | bpm | bm | 小数 |
+| TAP | tap | ta/tp | 整数或比率 |
+| HOLD | hold/hod | ho/hd | 整数或比率 |
+| SLIDE | slide/sld | sl/se | 整数或比率 |
+| TOUCH | touch/toh/tch | th/to | 整数或比率 |
+| BREAK | break/brk | br/bk | 整数或比率 |

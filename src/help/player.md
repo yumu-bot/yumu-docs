@@ -128,6 +128,9 @@ copyright: false
   - 输入 111-120，就是查询自己好友列表内第 111 到 120 个好友。
   - 如果 <HopeIcon icon="circle-question"/> 不输入任何值，则默认随机查询 20 个好友。
 - **<HopeIcon icon="address-card"/> 玩家名**：三选一填，可以查询自己是否和对方互相关注（双向好友）。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
 - **<HopeIcon icon="filter"/> 查询条件**：三选一填，请参阅：[<HopeIcon icon="filter"/> 查询条件·玩家查询器](./filter.md#player)
 
 ## <HopeIcon icon="link"/> 4 获取主页链接 !ymmutual (!mu) {id=mutual}
