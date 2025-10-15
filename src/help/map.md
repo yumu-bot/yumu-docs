@@ -311,7 +311,7 @@ Map Minus 是 Skill 的基础项目！这个项目旨在使用独立的一套指
 
 :::
 
-## <HopeIcon icon="file-arrow-up"/> 10 获取谱面完整背景 !ymgetbackground (!rf) {id=getbg}
+## <HopeIcon icon="file-arrow-up"/> 10 获取谱面完整背景 !ymgetbackground (!gb) {id=getbg}
 
 通过镜像站，获取谱面难度的背景。
 
@@ -327,19 +327,11 @@ Map Minus 是 Skill 的基础项目！这个项目旨在使用独立的一套指
 
 :::
 
-::: warning 注意
-
-只有在机器人直接支持的 QQ 号下可以使用这个功能（因为服务是跑在服务器内网的），也就是 1563653406 这个 QQ 下。
-
-其他反代理 QQ 无法使用此功能。
-
-:::
-
-## <HopeIcon icon="file-arrow-up"/> 11 获取谱面背景 !ymgetcover (!rf) {id=getcover}
+## <HopeIcon icon="file-arrow-up"/> 11 获取谱面背景 !ymgetcover (!gc) {id=getcover}
 
 获取 ppy API 提供的谱面背景。这个背景可以用于绘制表格，或者其他。
 
-效果等同于获取 **https://assets.ppy.sh/beatmaps/{SID}/covers/cover.jpg**
+效果等同于获取 **https://assets.ppy.sh/beatmaps/0/covers/cover.jpg**
 
 **使用方法**
 
