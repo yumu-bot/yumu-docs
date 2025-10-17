@@ -107,8 +107,10 @@ copyright: false
 | 谱面集编号 | beatmapsetid/sid | s | 整数 |
 | 歌曲名 | title/name/song | t | 字符串 |
 | 歌手名 | artist/singer/art | a | 字符串 |
-| 来源 | source/src/from | f/o | 字符串 |
-| 标签 | tag | g | 字符串 |
+| 来源 | source/src/from | f/o/sc | 字符串 |
+| 标签 | tag | y/ta/tg | 字符串 |
+| 流派 | genre | g | 字符串 |
+| 语言 | language | l | 字符串 |
 | 难度名 | difficulty/diff | d | 字符串 |
 | 星数 | star/rating | r/sr | 小数 |
 | AR | approach | ar | 小数 |
@@ -117,7 +119,7 @@ copyright: false
 | HP | health | hp | 小数 |
 | 表现分 | performance | p/pp | 整数或千位数 |
 | 评价 | rank | k | 字符串 |
-| 长度 | length | l | 整数 |
+| 长度 | length/long | lh | 整数 |
 | 时间 | time | ti | 时间 |
 | 曲速 | bpm | bm | 小数 |
 | 准确率 | accuracy/acc | ac | 小数 |
@@ -128,7 +130,9 @@ copyright: false
 | OK | 100/可/150/bad/中果/large droplet | bd/ld | 整数或比率 |
 | MEH | 50/poor/小果/small droplet | mh/pr/sd | 整数或比率 |
 | MISS | 0/miss/不可/失误 | ms | 整数或比率 |
-| MISS DROPLET | 漏果 | md |  |
+| 漏大果 | miss fruit | mf | 整数 |
+| 漏中果 | miss drop                         | mp | 整数 |
+| 漏果 | miss droplet | md | 整数 |
 | 模组 | mod | m | 二字符的字符串 |
 | 彩率 | rate | pm/e | 小数 |
 | 圆圈 | circle/rice | ci/cr/rc | 整数或比率 |
@@ -137,6 +141,7 @@ copyright: false
 | 物件总计 | total/object | tt | 整数 |
 | 转谱 | convert | cv | 布尔值 |
 | 客户端 | client/version | v | lazer 或 stable、l、s |
+| 创建时间 | created | ct/ca |  |
 
 ## <HopeIcon icon="spinner"/> 舞萌成绩查询器 {id=maimai}
 
