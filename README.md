@@ -1,10 +1,10 @@
-    # Yumu Docs 开发说明文档
+# Yumu Docs 开发说明文档
 
 ## 介绍
 
 Yumu Docs 是基于 [VuePress Theme Hope](https://theme-hope.vuejs.press/zh/) 搭建的Yumubot帮助文档静态资源项目。
 
-主题目前处于beta阶段，会不定期小版本更新，若开发过程中遇到问题，可以查看 [主题更新日志](https://theme-hope.vuejs.press/zh/changelog.html) 了解详情，或加入 [讨论群](https://jq.qq.com/?_wv=1027&k=rATJyxGK) 咨询开发者。
+主题目前处于 beta 阶段，会不定期小版本更新，若开发过程中遇到问题，可以查看 [主题更新日志](https://theme-hope.vuejs.press/zh/changelog.html) 了解详情，或加入 [讨论群](https://jq.qq.com/?_wv=1027&k=rATJyxGK) 咨询开发者。
 
 ## 开始
 
@@ -14,9 +14,9 @@ Yumu Docs 是基于 [VuePress Theme Hope](https://theme-hope.vuejs.press/zh/) �
 
 ## 运行环境
 
-- [nodejs](https://nodejs.org/en/download) 版本 ≥ 18.16.1
-推荐安装LTS版本的nodejs，避免最新版本的nodejs在开发过程中遇到难以解决的bug。
-若本地其他项目需要用到不同版本的nodejs，可以使用 [nvm](https://nvm.uihtm.com/) 管理nodejs版本。
+- [nodejs](https://nodejs.org/en/download) 版本 ≥ **22.20.0 LTS** 
+推荐安装 LTS 版本的 nodejs，避免最新版本的 nodejs 在开发过程中遇到难以解决的bug。
+若本地其他项目需要用到不同版本的 nodejs，可以使用 [nvm](https://nvm.uihtm.com/) 管理 nodejs 版本。
 
 ## 启动项目
 

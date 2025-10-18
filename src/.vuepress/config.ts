@@ -34,6 +34,7 @@ export default defineUserConfig({
     searchProPlugin({
       // 索引全部内容
       indexContent: true,
-    })
+    }),
+
   ]
 });

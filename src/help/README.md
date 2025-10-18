@@ -2,7 +2,7 @@
 title: 帮助
 index: false
 icon: book
-date: 2025-03-17
+date: 2025-10-19
 category: 功能介绍
 footer: Yumu Docs - 帮助
 sticky: false
@@ -12,7 +12,55 @@ copyright: false
 
 # 目录
 
-单击卡片 <HopeIcon icon="credit-card"/><HopeIcon icon="arrow-pointer"/> 即可进入对应文章。
+<button class="link-like" @click="showNextMessage">{{buttonText}}</button> <HopeIcon icon="credit-card"/><HopeIcon icon="arrow-pointer"/> 即可进入对应文章。
+
+<script setup>
+import { ref, computed } from 'vue';
+
+const clickCount = ref(0);
+const messages = [
+  '是点击下面的卡片，不是点这里',
+  '？',
+  '？？？',
+  '点卡片就行了，点我做甚么？',
+  '你还真是闲呢...',
+  '那你点吧...'
+];
+
+const buttonText = computed(() => {
+  const texts = ['点击卡片', '点击下面的卡片', '点击下面的长得很方又有点圆的卡片', '我说点击下面的卡片你二多龙吗？', '别点了...', '点击...'];
+  return texts[Math.min(clickCount.value, texts.length - 1)];
+});
+
+function showNextMessage() {
+  const messageIndex = Math.min(clickCount.value, messages.length - 1);
+  
+  if (clickCount.value >= messages.length) {
+    alert('你当前已经点击了 ' + (clickCount.value + 1) + ' 次')
+  } else {
+    alert(messages[messageIndex]);
+  }
+
+  clickCount.value++;
+}
+</script>
+
+<style>
+
+.link-like {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+}
+
+.link-like:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+</style>
 
 ```card
 title: 指令列表

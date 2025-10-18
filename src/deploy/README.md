@@ -1,8 +1,8 @@
 ---
-title: 添加至群聊
+title: 部署
+index: false
 icon: circle-nodes
-order: 1
-date: 2024-09-18
+date: 2025-10-19
 category: 部署
 tag:
   - 部署
@@ -10,39 +10,45 @@ tag:
   - Bot
 sticky: false
 star: false
-footer: Yumu Docs - 添加至群聊
+footer: Yumu Docs - 部署
 copyright: false
 ---
 
-::: warning 注意
+## 部署
 
-Bot 已经正式上线（使用[**腾讯开放的机器人 API**](https://bot.q.qq.com/wiki)，并且有官方账号）。
+现在雨沐机器人支持以下四种方式部署或使用。点击卡片即可跳转到对应界面：
 
-如果您想要查询之前的部署方法，请参阅：[**部署分身**](./legacy.md)
 
-:::
+```card
+title: 官方支持
+desc: 简单上手，一键添加
+logo: ./assets/icon/icon-user.svg
+link: official.md
+color: rgba(74, 147, 21, 0.15)
+```
 
-::: tip 提示
+```card
+title: 部署分身
+desc: 自理账号，多重保障
+logo: ./assets/icon/icon-gamepad.svg
+link: doppelganger.md
+color: rgba(120, 177, 212, 0.15)
+```
 
-- 使用官方机器人的好处：
-    - 开箱即用：无需自己搭建机器人，只需添加即可开始使用。
-    - 绑定方便：仅需使用 osu 玩家名绑定。
-    - 易于使用：调用指令时，即可看见使用方法。
-    - 运行稳定：只要服务器在线，机器人就可用。
-- 使用官方机器人的坏处：
-    - 更新缓慢：部分新功能不会部署在官方机器人上。
-    - 功能受限：部分功能需要更高级别的权限，而官方机器人无法获取这些权限。
+<br/>
 
-由于机器人的主账号加入的群聊太多，容易触及腾讯消息封顶限制，从而导致无法发送消息。因此，如果可以的话，还是推荐您使用官方机器人。
+```card
+title: 部署本体
+desc: 完全控制，深度修改
+logo: ./assets/icon/icon-terminal.svg
+link: doItYourself.md
+color: rgba(215, 173, 34, 0.15)
+```
 
-:::
-
-如果您是某群聊的群主或管理员，可以通过手机 QQ 扫描以下二维码添加雨沐 Bot 至您的群聊。
-
-![二维码](./img/QRCode.png)
-
-扫描成功后，您可以看见类似以下这样的界面。
-
-![邀请界面](./img/invite.jpg)
-
-点击==添加到群聊==，并选择您管理或拥有的群聊即可完成添加。
+```card
+title: 其他方式
+desc: 虽不推荐，也可尝试
+logo: ./assets/icon/icon-paw.svg
+link: others.md
+color: rgba(199, 76, 64, 0.15)
+```

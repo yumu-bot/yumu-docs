@@ -1,9 +1,22 @@
 // you can change colors here
-$theme-color: #54454c;
+$theme-color: #00B7EE;
+$theme-color-light: #00B7EE;
+$theme-color-dark: #009FCC;
 $text-color: (
-	light: #1C1719,
-	dark: #9e9e9e,
+	light: #1E3E47, //H193 S40 L10
+	dark: #EDF5F7, //H193 S40 L95
 );
+
+$vp-c-text: #EDF5F7;
+$vp-c-text-mute: #B7D7E0;
+$vp-c-text-subtle: #B7D7E0;
+
+$vp-c-accent: #D32F2F;
+$vp-c-accent-hover: #32D2FF; //H193 S100 L60
+$vp-c-accent-bg: #8A1538;
+$vp-c-accent-text: #FAFAFA;
+$vp-c-accent-soft: #D32F2F55;
+$vp-c-control-hover: #00B7EE;
 
 // add custom font
 @font-face {
