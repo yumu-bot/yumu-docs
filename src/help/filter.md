@@ -108,7 +108,8 @@ copyright: false
 | 歌曲名 | title、name、song | t | 字符串 |
 | 歌手名 | artist、singer、art | a | 字符串 |
 | 来源 | source、src、from | f、o、sc | 字符串 |
-| 标签 | tag | y、ta、tg | 字符串 |
+| 标签 | tag | w、ta、tg | 字符串 |
+| 任何字段 | any | y | 字符串 |
 | 流派 | genre | g | 字符串 |
 | 语言 | language | l | 字符串 |
 | 难度名 | difficulty、diff | d | 字符串 |
@@ -129,7 +130,7 @@ copyright: false
 | GOOD | 200 | gd | 整数或比率 |
 | OK | 100、可、150、bad、中果、large droplet | bd、ld | 整数或比率 |
 | MEH | 50、poor、小果、small droplet | mh、pr、sd | 整数或比率 |
-| MISS | 0、miss、不可、失误 | ms | 整数或比率 |
+| MISS | 0、miss、不可、失误 | x、ms | 整数或比率 |
 | 漏大果 | miss fruit | mf | 整数 |
 | 漏中果 | miss drop                         | mp | 整数 |
 | 漏果 | miss droplet | md | 整数 |
@@ -184,7 +185,7 @@ copyright: false
 | 歌曲名 | title、name、song | t | 字符串 |
 | 别名 | alias | l | 字符串 |
 | 歌手名 | artist、singer、art | a | 字符串 |
-| 类型 | category、type | t、g | 流行、v 家等或 pop、vocaloid 等或 p、v 等 |
+| 类型 | category、type、genre | t、g | 流行、v 家等或 pop、vocaloid 等或 p、v 等 |
 | 曲速 | bpm | bm | 小数 |
 | TAP | tap | ta、tp | 整数或比率 |
 | HOLD | hold、hod | ho、hd | 整数或比率 |
