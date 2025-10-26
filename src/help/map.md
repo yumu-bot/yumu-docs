@@ -79,43 +79,30 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="magnifying-glass"/> 3 搜索谱面 !ymsearch (!o) {id=search}
+## <HopeIcon icon="magnifying-glass"/> 3 探索谱面 !ymexplore (!e) {id=explore}
+
+它完美复刻了 https://osu.ppy.sh/beatmapsets 的功能，并将查询玩家谱面的功能合并到其中。您可以在不打开官网的前提下，快速搜索谱面。
 
 **使用方法**
 
-!ymsearch / o (**`:`游戏模式**) (**`#`谱面状态**) (**艺术家**`-`**曲名**) (**`[`难度名`]`**) (**`(`谱师`)`**) (**`&`曲风**) (**`+`语言**) (**`*`排序**)
+!ymexplore / e (**`:`搜索模式**) (`@`**玩家**) (**查询条件**)
 
-- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[游戏模式](./score.md#mode)
-- **<HopeIcon icon="file-circle-question"/> 谱面状态**：谱面目前的状态。
-  - 可以输入的参数：graveyard, wip, pending, ranked, approved, qualified, loved, has leaderboard。
-  - 或者 g, w, p, r, a, q, l, h。
-  - 如果留空，默认是 any。
-- **<HopeIcon icon="users"/> 艺术家**：需要查询的艺术家姓名。需要和曲名一起查询，并使用 `-` 分隔开。
-- **<HopeIcon icon="signature"/> 曲名**：需要查询的曲名。
-  - 如果想按 <HopeIcon icon="hashtag"/> 谱面编号查询，只需在这里输入数字即可。
-- **<HopeIcon icon="user-graduate"/> 谱师**：同上。
-- **<HopeIcon icon="compact-disc"/> 曲风**：需要查询的曲风。
-  - 可以输入的参数：unspecified, video game, anime, rock, pop, other, novelty, hip hop, electronic, metal, classical, folk, jazz。
-  - 或者 u, v/g, a, r, p, o, n, h, e, m, c, f, j。
-  - 如果留空，默认是 any。
-- **<HopeIcon icon="language"/> 语言**：需要查询的语言。
-  - 可以输入的参数：English, Chinese, French, German, Italian, Japanese, Korean, Spanish, Swedish, Russian, Polish, Instrumental, Unspecified, Other
-  - 或者 en, zh/cn, fr, ge, it, ja, kr, sp, sw, ru, po, in, un, ot。
-  - 或者 e, z/c, f, g, i, j, k, s, w, r, p, n, u, o。
-  - 如果留空，默认是 any。
-- **<HopeIcon icon="arrow-down-a-z"/> 排序**：结果的筛选和排序方式。
-  - 可以输入的参数：title, artist, difficulty/star, maprating, plays, ranked/time。
-  - 或者 t, a, d/s, m, p, r/t。
-  - 以上参数后面不加任何符号或字母，加 `+` 号、加字母 `a`、加 `_asc` 都是 <HopeIcon icon="arrow-down-a-z"/> ==升序==（小的在上）。以上参数后面加 `-` 号、加字母 `d`、加 `_desc` 是 <HopeIcon icon="arrow-up-a-z"/> ==降序==（大的在上）。
-    - 常用参数：rd / ranked_desc：按上架时间降序，刚上架的谱面会排在最上面。
-  - 如果留空，默认是 relevance_desc：按相关度降序，此时，与结果最相似的谱面会排在最上面。
+- **<HopeIcon icon="magnifying-glass-arrow-right"/> 搜索模式**：需要设定的搜索模式。
+  - 可以输入的参数：mostplayed、favourite、graveyard、guest、loved、nominated、pending、ranked。
+  - 或者 m/p、f、g、u、l、n、p、r。
+  - 不输入默认 search 模式。
+- **<HopeIcon icon="address-card"/> 玩家**：需要查询的玩家。留空默认查询自己。
+  - 仅支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
+  - 其他任何字段都会被匹配成查询条件。
+- **<HopeIcon icon="filter"/> 查询条件**：
+  - 对于 search 模式，请参阅：[<HopeIcon icon="filter"/> 查询条件·搜索查询器](./filter.md#search)
+  - 对于 most_played 模式，请参阅：[<HopeIcon icon="filter"/> 查询条件·最多游玩谱面查询器](./filter.md#most_played)
+  - 对于其他模式，请参阅：[<HopeIcon icon="filter"/> 查询条件·谱面集查询器](./filter.md#beatmapset)
+  - 如果不输入任何查询条件，则默认按您输入的字段查询。
 
 ::: tip 提示
 
-如果部分字段包含了以上用于区分的字符，比如：Hitogata (TV Size) 这样的标题会被错误分隔成曲名 Hitogata 和谱师 TV Size。 为了避免获取到错误的结果，您可以：
-
-- 什么都不做。如果程序在错误分隔之后没有找到结果，会尝试将字段拼成玩家输入的原样，再次查询。
-- 使用英文半角引号 `"` 将它们尽可能括起来。
+mostplayed 是最特殊的搜索模式；您可以输入 !em 快速调用它。
 
 :::
 
@@ -352,6 +339,14 @@ raw 类型并非谱面难度当前的背景，而是谱面集的背景。因此�
 
 ## <HopeIcon icon="file-arrow-up"/> 12 刷新谱面文件 !ymrefreshfile (!rf) {id=refreshfile}
 
+::: tip 提示
+
+以下例子中显示的谱面缓存和星数 bug 已经修复。
+
+如非必要，您不需要使用这个功能。
+
+:::
+
 部分机器人缓存的谱面文件可能因为部分不可控原因，导致用于计算 PP 或是星数的谱面文件不完整或已过时。此时可以使用此命令来快速更新谱面文件到官网最新的版本。
 
 **使用方法**
@@ -361,14 +356,6 @@ raw 类型并非谱面难度当前的背景，而是谱面集的背景。因此�
 - **<HopeIcon icon="hashtag"/> 谱面编号**：必填，需要更新的谱面编号 (BID)。
 
 ![将过时的谱面更新至服务器最新的版本](https://yumemuzi.s-ul.eu/yumu/MKFWV5p3)
-
-::: tip 提示
-
-在以上例子中，因为谱面经历了从过审状态被下架，重新上架的这一套流程，所以导致服务器存储的谱面文件已过时。使用指令更新后，即可获得与官网一致的结果。
-
-如果机器人本地存有同一张谱面内的其他难度，也会将其更新为官网最新版本。
-
-:::
 
 ## <HopeIcon icon="note-sticky"/> 备注
 

@@ -73,6 +73,14 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
+title: 探索谱面
+desc: explore
+logo: ./assets/icon/icon-plus.svg
+link: ./map.md#explore
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
 title: 查询舞萌歌曲
 desc: maifind
 logo: ./assets/icon/icon-plus.svg

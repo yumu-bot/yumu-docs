@@ -23,7 +23,7 @@ copyright: false
 | B | !b(`s`) (`:`mode) (user) (filter) (`#`num) | [Best Performance](./score.md/#bestperformance) | 查询最好成绩 | *!bs 使用多成绩模式。*<br />**mode**：游戏模式<br />**user**：玩家名，`qq=`qq号，`uid=`玩家 ID<br />**filter**：筛选条件<br />**num**：也可输入 `-` 分隔的区间 |
 | C | !c (`:`operate) (type) | [Custom](./custom.md) | 自定义 | *可自定义横幅或卡片。*<br />**operate**：操作，比如添加和删除 add/delete<br />**type**：种类，现支持 banner/card |
 | D | !d (num) (decision) | [Dice](./fun.md/#dice) | 扔骰子 | *即 Roll。*<br />**decision**：想做的决定，比如去不去玩 |
-| E | - | - | - | - |
+| E | !e (`:`type) (@user) (filter) | [Explore](./map.md/#explore) | 探索谱面 | **type**：搜索种类<br />**filter**：筛选条件 |
 | F | !f (name) (num) | [Friend](./player.md/#friend) | 查询好友列表 | **num**：也可输入 `-` 分隔的区间 |
 | G | - | - | - | - |
 | H | !h (category) | [Help](./bot.md/#help) | 获取帮助文档 | **category**：功能所属的类别 |
@@ -33,7 +33,7 @@ copyright: false
 | L | !l (`:`mode) **[bid]** | [Leader](./map.md/#leader) | 查询谱面排行 | - |
 | M | !m (`:`mode) **[bid]** (acc`%`) (`x`combo) (`-`miss) (`+`mod) | [Map](./map.md/#map) | 查询谱面信息 | **acc**：准确率<br />**combo**：连击数，或连击占比 (0-1)<br />**miss**：失误数<br />**mod**：模组名称 |
 | N | !n(`b`) **[sid]** | [Nomination](./map.md/#nomination) | 查询上架流程 | *!nb 按谱面 ID (**BID**) 查询。* |
-| O | !o (`:`mode) (`#`status) (beatmap) (`*`sort) | [Search](./map.md/#search) | 搜索谱面 | **beatmap**：格式：artist - title (creator) [difficulty] |
+| O | - | - | - | - |
 | P | !p(`s`) (`:`mode) (user) (filter) (`#`num) | [Pass](./score.md/#pass) | 查询通过成绩 | **num**：也可输入 `-` 分隔的区间 |
 | Q | !q (`:`mode) (`#`status) (`*`sort) (num) | [Qualified](./map.md/#qualified) | 查询过审谱面 | **status**：谱面状态。gwpraql，默认 q<br />**sort**：排序方式，ta(ds)mp(rt) + (asc/desc) |
 | R | !r(`s`) (`:`mode) (user) (filter) (`#`num) | [Recent](./score.md/#recent) | 查询最近成绩 | **num**：也可输入 `-` 分隔的区间 |

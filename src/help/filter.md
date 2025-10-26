@@ -142,7 +142,102 @@ copyright: false
 | 物件总计 | total、object | tt | 整数 |
 | 转谱 | convert | cv | 布尔值 |
 | 客户端 | client、version | v | lazer 或 stable、l、s |
-| 创建时间 | created | ct、ca |  |
+| 创建时间 | created | ct、ca | 时间 |
+
+## <HopeIcon icon="map-location"/> 最多游玩谱面查询器 {id=most_played}
+
+| 条件名 | 条件英文名 | 简称 | 查询字段类型 |
+| --- | --- | :-: | --- |
+| 谱师 | creator、host | c | 三位以上的 ASCII 字符串 |
+| 客串谱师 | gder、mapper、guest | u、gu | 三位以上的 ASCII 字符串 |
+| 谱面编号 | beatmapid、bid、id | b | 整数 |
+| 谱面集编号 | beatmapsetid、sid | s | 整数 |
+| 歌曲名 | title、name、song | t | 字符串 |
+| 歌手名 | artist、singer、art | a | 字符串 |
+| 来源 | source、src、from | f、o、sc | 字符串 |
+| 标签 | tag | w、ta、tg | 字符串 |
+| 任何字段 | any | y | 字符串 |
+| 流派 | genre | g | 字符串 |
+| 语言 | language | l | 字符串 |
+| 难度名 | difficulty、diff | d | 字符串 |
+| 星数 | star、rating | r、sr | 小数 |
+| 模式 | mode | m | 模式 |
+| 谱面状态 | category、status | v、z | 谱面状态 |
+| 游玩次数 | count | n | 整数 |
+
+## <HopeIcon icon="magnifying-glass"/> 搜索查询器 {id=search}
+
+| 条件名 | 条件英文名 | 简称 | 查询字段类型 |
+| --- | --- | :-: | --- |
+| 谱师 | creator、host | c | 三位以上的 ASCII 字符串 |
+| 客串谱师 | gder、mapper、guest | u、gu | 三位以上的 ASCII 字符串 |
+| 谱面编号 | beatmapid、bid、id | b | 整数 |
+| 谱面集编号 | beatmapsetid、sid | s | 整数 |
+| 歌曲名 | title、name、song | t | 字符串 |
+| 歌手名 | artist、singer、art | a | 字符串 |
+| 来源 | source、src、from | f、o、sc | 字符串 |
+| 标签 | tag | w、ta、tg | 字符串 |
+| 任何字段 | any | y | 字符串 |
+| 流派 | genre | g | 字符串 |
+| 语言 | language | l | 字符串 |
+| 难度名 | difficulty、diff | d | 字符串 |
+| 星数 | star、rating | r、sr | 小数 |
+| AR | approach | ar | 小数 |
+| CS | circle、key | cs | 小数 |
+| OD | overall | od | 小数 |
+| HP | health | hp | 小数 |
+| 长度 | length、long | lh、h | 整数 |
+| 模式 | mode | m | 模式 |
+| 谱面状态 | category、status | v、z | 谱面状态 |
+| 评价 | rank | k | 字符串 |
+| 常规、布尔值 | general | e | 字符串，见提示 |
+
+::: tip 常规字段中可以输入的值
+
+- recommended、r：根据玩家的星数推荐的谱面（需要 oauth2 绑定）
+- convert、c：包含转谱
+- follower、f：已关注谱师（需要 oauth2 绑定）
+- spotlights、s、l：聚光灯
+- featured、f、a：精选艺术家
+- explicit、nsfw、e、x、h：过滤不当内容
+- video、v：有视频
+- storyboard、sb、b：有故事板
+- played、p：玩过（需要 oauth2 绑定）
+- unplayed、notplayed、u、n：未玩过（需要 oauth2 绑定）
+
+:::
+
+## <HopeIcon icon="layer-group"/> 谱面集查询器 {id=beatmapset}
+
+| 条件名 | 条件英文名 | 简称 | 查询字段类型 |
+| --- | --- | :-: | --- |
+| 谱师 | creator、host | c | 三位以上的 ASCII 字符串 |
+| 客串谱师 | gder、mapper、guest | u、gu | 三位以上的 ASCII 字符串 |
+| 谱面编号 | beatmapid、bid、id | b | 整数 |
+| 谱面集编号 | beatmapsetid、sid | s | 整数 |
+| 歌曲名 | title、name、song | t | 字符串 |
+| 歌手名 | artist、singer、art | a | 字符串 |
+| 来源 | source、src、from | f、o、sc | 字符串 |
+| 标签 | tag | w、ta、tg | 字符串 |
+| 任何字段 | any | y | 字符串 |
+| 流派 | genre | g | 字符串 |
+| 语言 | language | l | 字符串 |
+| 难度名 | difficulty、diff | d | 字符串 |
+| 星数 | star、rating | r、sr | 小数 |
+| 模式 | mode | m | 模式 |
+| AR | approach | ar | 小数 |
+| CS | circle、key | cs | 小数 |
+| OD | overall | od | 小数 |
+| HP | health | hp | 小数 |
+| 长度 | length、long | lh、h | 整数 |
+| 曲速 | bpm | bm | 小数 |
+| 圆圈 | circle、rice | ci、cr、rc | 整数或比率 |
+| 滑条 | slider、long、longnote | sl、ln | 整数或比率 |
+| 转盘 | spinner、rattle | sp | 整数或比率 |
+| 创建时间 | created | ct、ca | 时间 |
+| 上架时间 | ranked | rt、ra | 时间 |
+| 游玩次数 | playcount | pc | 千数 |
+| 收藏次数 | favorite | fv | 整数 |
 
 ## <HopeIcon icon="spinner"/> 舞萌成绩查询器 {id=maimai}
 
