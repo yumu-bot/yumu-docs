@@ -73,26 +73,26 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
+title: 查询个人信息
+desc: info
+logo: ./assets/icon/icon-plus.svg
+link: ./player.md#info
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
+title: 查询私服个人信息
+desc: info
+logo: ./assets/icon/icon-plus.svg
+link: ./privateserver.md#info
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
 title: 探索谱面
 desc: explore
 logo: ./assets/icon/icon-plus.svg
 link: ./map.md#explore
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: 查询舞萌歌曲
-desc: maifind
-logo: ./assets/icon/icon-plus.svg
-link: ./maimai.md#maifind
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: 查询好友
-desc: friend
-logo: ./assets/icon/icon-plus.svg
-link: ./player.md#friend
 color: rgba(200, 200, 200, 0.15)
 ```
 

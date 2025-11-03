@@ -63,9 +63,12 @@ YumuBot 建议您在不到万不得已之时（比如，您与 bancho 的连接�
 
 ?yminfo / i (**`:`游戏模式**) (**玩家名**)
 
-::: info 备注
 
-暂未开放
+![玩家信息面板，指令：?i id=1104](https://yumemuzi.s-ul.eu/yumu/eRZxx8iV)
+
+::: tip 提示
+
+和正式服不同，ppysb 暂时不提供排名变化和游玩次数变化。能看的数据很有限。
 
 :::
 

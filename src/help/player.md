@@ -34,7 +34,7 @@ copyright: false
 - **<HopeIcon icon="calendar-days"/> 天数**：查询距今数天前的数据，并和现在比较。
   - 即使不输入，也会默认和 1 天前的自己比较。
 
-![玩家信息面板，指令：!i mrekk](https://yumemuzi.s-ul.eu/yumu/NdXXqppQ)
+![玩家信息面板，指令：!i mrekk](https://yumemuzi.s-ul.eu/yumu/j7jQ7KXR)
 
 **内容解析**
 
@@ -61,9 +61,13 @@ copyright: false
 
 ::: tip 提示
 
-使用 !uui 可以获取文字版消息（仅限自己）。
+使用 !uui 可以获取文字版消息。
 
-使用 !ic 可以获取明信片设计。允许使用玩家名、qq= 查询。
+使用 !ic 可以获取明信片设计。
+
+使用 !iw 可以获取 v4 版本的设计（没有正式上线的老婆面板）
+
+使用 !il 可以获取 v3 版本的设计（2025 年 11 月之前的正式版本）
 
 :::
 
