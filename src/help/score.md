@@ -18,21 +18,6 @@ copyright: false
 
 # 成绩指令
 
-::: info 语法糖
-
-<img src="https://yumemuzi.s-ul.eu/yumu/cSjXyfYJ" width="300" alt="玩 osu! 的几个好处"/>
-
-**!bs 30 = !b 1-30 = 最好的 30 个成绩，并非第 30 个成绩**。
-
-**!r 0 = !r 1-100 = 最近 100 个成绩，并非第 0 个成绩**。
-
-只需要输入一个 **s**，就可以不用输入 **1-**。
-只需要输入一个 **0**，就可以不用输入 **1-100**。
-
-b，p，r 均遵守此语法。
-
-:::
-
 ## <HopeIcon icon="list"/> 1 绑定游戏模式 !ymmode (!sm) {id=mode}
 
 如果玩家==绑定==了 <HopeIcon icon="gamepad"/> 游戏模式，那么在之后，玩家想要使用包含游戏模式参数的功能时，不需要通过输入 `:` + <HopeIcon icon="gamepad"/> 游戏模式的方式来设定参数。机器人会==自动为您补齐==。
@@ -366,10 +351,23 @@ b，p，r 均遵守此语法。
 
 **使用方法**
 
-!ymbpf / bf (**`:`游戏模式**) (**玩家名**)
+!ymbpfix / bf (**`:`游戏模式**) (**玩家名**)
 
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
+
+## <HopeIcon icon="crown"/> 10 查询顶流成绩 !ymtopplays (!tp) {id=topplays}
+
+这个功能可以查询全服 pp 最高的成绩。
+
+**使用方法**
+
+!ymtopplays / tp (**`:`游戏模式**) (`#`**页码**)
+
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
+  - 不输入默认查询 osu!standard 模式。
+- **<HopeIcon icon="file"/> 页码**：当前所在的页面编号。
+  - 不输入默认第一页。一页 50 个结果。最大可输入 20 页（前 1000）

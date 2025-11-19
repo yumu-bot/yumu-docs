@@ -128,7 +128,7 @@ copyright: false
 
 **使用方法**
 
-!ymmaimaiscore / ms (**玩家名**) (**(**框体类型**)歌曲名称 / 歌曲编号 / 定数或范围**) (**查询条件**) (**页数**)
+!ymmaimaiscore / ms (**玩家名**) (**(**框体类型**)歌曲名称 / 歌曲编号 / 定数或范围**) (**查询条件**) (**`#`页码**)
 
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
 - **<HopeIcon icon="rainbow"/> 框体类型**：在输入歌曲名称时，允许按框体类型查询。
@@ -157,7 +157,7 @@ copyright: false
       - 12-12.4：12.0-12.4
       - 13.6-13+：13.0-13.6（带 `+` 号不管怎么样都会被等价为 .6-.9） 
 - **<HopeIcon icon="filter"/> 查询条件**：请参阅：[<HopeIcon icon="filter"/> 查询条件·舞萌成绩查询器](./filter.md#maimai)
-- **<HopeIcon icon="file"/> 页数**：当前所在的页面数。
+- **<HopeIcon icon="file"/> 页码**：当前所在的页面编号。
   - 不输入默认第一页。一页 50 个结果。
 
 ## <HopeIcon icon="music"/> 4 查询舞萌歌曲 !ymmaimaifind (!mf) {id=maifind}
@@ -168,7 +168,7 @@ copyright: false
 
 **使用方法**
 
-!ymmaimaifind / mf (`:`**难度**) (**定数或范围**) (**查询条件**) (**页数**)
+!ymmaimaifind / mf (`:`**难度**) (**定数或范围**) (**查询条件**) (`#`**页码**)
 
 - **<HopeIcon icon="arrows-to-dot"/> 难度**：谱面难度。
   - 可以输入 0-5，或是难度的全称、中文名称、三字母简称、二字母简称、首字母。
@@ -176,7 +176,7 @@ copyright: false
     - 可以按逗号分隔输入多个难度。
 - **<HopeIcon icon="star"/> 定数或范围**：需要查询的谱面定数或范围（难度）。同上。
 - **<HopeIcon icon="filter"/> 查询条件**：请参阅：[<HopeIcon icon="filter"/> 查询条件·舞萌歌曲查询器](./filter.md#maisong)
-- **<HopeIcon icon="file"/> 页数**：当前所在的页面数。
+- **<HopeIcon icon="file"/> 页码**：当前所在的页面编号。
   - 不输入默认第一页。一页 48 个结果。
 
 ![查询舞萌歌曲面板，指令：!mf c=沙发太](https://yumemuzi.s-ul.eu/yumu/izjGtzBH)
@@ -202,10 +202,10 @@ copyright: false
 
 **使用方法**
 
-!ymmaimaifullcombo (!maifc / !xc) / !ymmaimaiallperfect (!maiap / !xp) / (**玩家名**) (**`#`页数**)
+!ymmaimaifullcombo (!maifc / !xc) / !ymmaimaiallperfect (!maiap / !xp) / (**玩家名**) (**`#`页码**)
 
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
-- **<HopeIcon icon="file"/> 页数**：当前所在的页面数。
+- **<HopeIcon icon="file"/> 页码**：当前所在的页面编号。
   - 不输入默认第一页。一页 50 个结果。
 
 ## <HopeIcon icon="keyboard"/> 6 查询中二最好成绩 !ymmaimaibest (!y) {id=chubest}

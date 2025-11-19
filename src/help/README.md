@@ -73,6 +73,14 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
+title: 查询顶流成绩
+desc: top plays
+logo: ./assets/icon/icon-plus.svg
+link: ./score.md#topplays
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
 title: 查询个人信息
 desc: info
 logo: ./assets/icon/icon-plus.svg
