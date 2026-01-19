@@ -33,7 +33,7 @@ copyright: false
 | L | !l (`:`mode) **[bid]** | [Leader](./map.md/#leader) | 查询谱面排行 | - |
 | M | !m (`:`mode) **[bid]** (acc`%`) (`x`combo) (`-`miss) (`+`mod) | [Map](./map.md/#map) | 查询谱面信息 | **acc**：准确率<br />**combo**：连击数，或连击占比 (0-1)<br />**miss**：失误数<br />**mod**：模组名称 |
 | N | !n(`b`) **[sid]** | [Nomination](./map.md/#nomination) | 查询上架流程 | *!nb 按谱面 ID (**BID**) 查询。* |
-| O | - | - | - | - |
+| O | !o (users) | [Old Avatar](./aid.md/#oldavater) | 获取旧版头像 | - |
 | P | !p(`s`) (`:`mode) (user) (filter) (`#`num) | [Pass](./score.md/#pass) | 查询通过成绩 | **num**：也可输入 `-` 分隔的区间 |
 | Q | !q (`:`mode) (`#`status) (`*`sort) (num) | [Qualified](./map.md/#qualified) | 查询过审谱面 | **status**：谱面状态。gwpraql，默认 q<br />**sort**：排序方式，ta(ds)mp(rt) + (asc/desc) |
 | R | !r(`s`) (`:`mode) (user) (filter) (`#`num) | [Recent](./score.md/#recent) | 查询最近成绩 | **num**：也可输入 `-` 分隔的区间 |
@@ -58,13 +58,12 @@ copyright: false
 | GP | !gp (`:`mode) (`#`name`#`) [[mod] [bids]] | [Get Pool](./tournament.md/#getpool) | 生成图池图片 | **mod bids**：请**按组输入**模组和谱面 ID，比如：NM 123 456 789。 |
 | IC | !ic (`:`mode) (user) | [Info Card](./player.md/#info) | 查询迷你信息 | *Information 功能的明信片设计。* |
 | IM | !im (user) | [I'm Mapper](./player.md/#immapper) | 查询谱师信息 | - |
-| KT | !kt (bid) (round) (`+`mod) | [Kita](./aid.md/#kita) | 查询喜多杯谱面展览图 | - |
 | ML | !ml **[mid]** (operate) | [Match Listen](./tournament.md/#matchlisten) | 监听比赛房间 | **mid**：比赛房间号<br />**operate**：操作，比如开始和停止 start/stop |
-| MN | !mn **[mid]** (`e`easy) (skip) (ignore) (`[`filter`]`) (`f`) (`r`) | [Match Now](****) | 获取比赛结果 | *与 **RA** 功能的参数相同。* |
-| MS | !ms **[title/id]** | [Maimai Version](./maimai.md/#maisong) | 查询舞萌歌曲 | *不支持输入日本汉字的罗马音。* |
+| MN | !mn **[mid]** (`e`easy) (skip) (ignore) (`[`filter`]`) (`f`) (`r`) | [Match Now](./tournament.md/#matchnow) | 查询比赛结果 | *与 **RA** 功能的参数相同。* |
+| MR | !mr **[mid]** (user) | [Match Recent](./tournament.md/#matchrecent) | 查询比赛成绩 | - |
+| MS | !ms **[title/id]** | [Maimai Song](./maimai.md/#maisong) | 查询舞萌歌曲 | *不支持输入日本汉字的罗马音。* |
 | MU | !mu (user) | [Mutual](./player.md/#mutual) | 获取主页链接 | - |
-| MV | !mv (user) (ver) | [Maimai Version](./maimai.md/#version) | 按版本查询舞萌成绩 | *不输入版本默认当前国服最新版本。* |
-| OA | !oa (users) | [Old Avatar](./aid.md/#oldavater) | 获取旧版头像 | - |
+| MV | !mv (user) **[`#`plate]** | [Maimai Version](./maimai.md/#version) | 查询舞萌姓名框 | - |
 | OC | !oc (users) | [Osu Avatar Card](./aid.md/#oldavater) | 获取卡片头像 | *春晚设计。* |
 | OR | !or **[star]** | [Over Rating](./aid.html#overrating) | 计算超星禁言 | **star**：星数 |
 | PA | !pa **[bid]** (bid2) | [Performance Plus Map](./player.md/#ppplus) | 对比谱面 PP+ | - |
@@ -75,6 +74,7 @@ copyright: false
 | PV | !pv (`:`mode) (user) | [Performance Minus Vs](./player.md/#ppminus) | 对比 PP- | *也可通过 !pmvs 调用。* |
 | PX | !px (`:`mode) (user) | [Performance Plus Vs](./player.md/#ppplus) | 对比 PP+ | *也可通过 !ppvs 调用。* |
 | RA | !ra **[mid]** (`e`easy) (skip) (ignore) (`[`filter`]`) (`f`) (`r`) | [Rating](./tournament.md/#rating) | 查询比赛评分 | *即查询木斗力。也可通过 !mra 调用。*<br />**mid**：比赛房间号<br />**easy**：Easy 模组倍率，支持 0-20<br />**skip**：跳过开头场次<br />**ignore**：忽略结尾场次<br />**filter**：剔除特定场次<br />**f**：统计低分成绩<br />**r**：忽略重复对局 |
+| RO | !ro **[mid]** (position/keyword) | [Match Rounds](./tournament.md/#matchnow) | 查询对局信息 | **position**: 对局位置<br />**keyword**: 关键词 |
 | SC | !sc (time) | [Service Count](./bot.html#servicecount) | 查询服务调用 | *仅管理员使用*<br />**time**：可输入小时或天数，比如 7h 和 2d。默认 1d |
 | SM | !sm (mode) | [Set Mode](./score.md#mode) | 修改默认游戏模式 | **mode**：游戏模式：<br />0，osu，o：主模式<br />1，taiko，t：太鼓模式<br />2，catch，c：接水果模式<br />3，mania，m：下落模式 |
 | SP | !sp (operate) (user) | [Super](./bot.md/#ban) | 封禁解封玩家 | *仅管理员使用*<br />**operate**：操作，wkarbu<br />w：白<br />b：黑<br />a：入白<br />r：出白<br />b：入黑<br />u：出黑 |

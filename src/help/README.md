@@ -73,34 +73,18 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
-title: 查询顶流成绩
-desc: top plays
+title: 查询舞萌姓名框
+desc: mai version
 logo: ./assets/icon/icon-plus.svg
-link: ./score.md#topplays
+link: ./maimai.md#version
 color: rgba(200, 200, 200, 0.15)
 ```
 
 ```card
-title: 查询个人信息
-desc: info
+title: 查询比赛最近成绩
+desc: match recent
 logo: ./assets/icon/icon-plus.svg
-link: ./player.md#info
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: 查询私服个人信息
-desc: info
-logo: ./assets/icon/icon-plus.svg
-link: ./privateserver.md#info
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: 探索谱面
-desc: explore
-logo: ./assets/icon/icon-plus.svg
-link: ./map.md#explore
+link: ./tournament.md#matchrecent
 color: rgba(200, 200, 200, 0.15)
 ```
 

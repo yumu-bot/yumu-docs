@@ -55,7 +55,7 @@ copyright: false
 
 ![获取比赛编号](https://yumemuzi.s-ul.eu/yumu/zSFydj9w)
 
-![比赛斗力面板，指令：!ra 117474455](https://yumemuzi.s-ul.eu/yumu/eHNaxGxX)
+![比赛斗力面板，指令：!ra 117474455](https://yumemuzi.s-ul.eu/yumu/F6BpXpAt)
 
 **内容解析**
 
@@ -244,14 +244,28 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
 此功能的参数和 ra 完全一致。记住一个即可。
 
 :::
+## <HopeIcon icon="square-xmark"/> 6 获取比赛最近成绩 !ymmatchrecent (!mr)  {id=matchrecent}
 
-## <HopeIcon icon="chalkboard-user"/> 6 查看对局信息 !ymmatchround (!mr/ro) {id=round}
+输出玩家在某比赛房间内的所有成绩。
+
+**使用方法**
+
+!ymmatchrecent / mr (**玩家名**)  [`#`**比赛编号**]
+
+- **<HopeIcon icon="hashtag"/> 比赛编号**：同上。
+- **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
+  - 如果玩家名符合比赛编号的定义，则会自动按比赛编号查询自己的最近成绩。
+
+## <HopeIcon icon="chalkboard-user"/> 7 查询对局信息 !ymround (!ro) {id=matchround}
 
 输出一张比赛房间内的某场对局图。
 
 **使用方法**
 
-!ymmatchround / mr / ro [**比赛编号**] (**对局位置**) (**关键字**)
+!ymround / ro [**比赛编号**] (**对局位置**) (**关键字**)
 
 - **<HopeIcon icon="hashtag"/> 比赛编号**：同上。
 - **<HopeIcon icon="location-dot"/> 对局位置**：需要查询的对局场次位置。
@@ -262,7 +276,7 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
 
 ![对局信息面板，指令：!mr 59438351 back to](https://yumemuzi.s-ul.eu/yumu/FODuMtPO)
 
-## <HopeIcon icon="tent-arrows-down"/> 7 生成图池图片 !ymgetpool (!getpool) {id=getpool}
+## <HopeIcon icon="tent-arrows-down"/> 8 生成图池图片 !ymgetpool (!getpool) {id=getpool}
 
 根据输入的模组名称和谱面编号，输出一张可供比赛展示的谱面信息集合图（图池），方便选手查阅。
 
@@ -305,7 +319,7 @@ f 和 r 参数是全局性的，它们会作用到这一系列赛的==所有比�
 
 :::
 
-## <HopeIcon icon="tent"/> ~~8 读取图池 !ymmappool (!po) {id=pool}~~
+## <HopeIcon icon="tent"/> ~~9 读取图池 !ymmappool (!po) {id=pool}~~
 
 根据输入的图池编号，读取==数据库内已经记录好==的图池。
 

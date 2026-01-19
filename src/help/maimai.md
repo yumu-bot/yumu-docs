@@ -49,7 +49,7 @@ copyright: false
   - 可以输入区间，格式为：最小数`-`最大数，如 1-20。
 
 
-![舞萌最好成绩面板，指令：!mai crystalnanami](https://yumemuzi.s-ul.eu/yumu/EYJReQQd)
+![舞萌最好成绩面板，指令：!mai crystalnanami](https://yumemuzi.s-ul.eu/yumu/N1bLHebg)
 
 ::: tip 提示
 
@@ -59,78 +59,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="layer-group"/> 2 按版本查询舞萌成绩 !ymmaimaiversion (!mv) {id=version}
-
-::: info 备注
-
-这个功能即将重构，将变为查询舞萌牌子（将牌、神牌、舞舞牌）的功能。
-
-相应地，这个功能能通过 !ms v=... 来调用。
-
-:::
-
-这个功能可以查询到玩家在某个版本内的歌曲上的成绩。
-
-**使用方法**
-
-!ymmaimaiversion / mv (**玩家名**) (**`#`版本号**)
-
-- **<HopeIcon icon="address-card"/> 玩家名**：同上。
-- **<HopeIcon icon="coins"/> 版本号**：可输入版本号的英文全称，以及两字母简称、三字母简称、小版本号（不带前面的 `v`）。
-  - 举例：想要查询 `maimai でらっくす Splash PLUS` 版本的成绩，可以输入：`splashplus`、`splash plus`、`spl+`、`splash+`、`spp`、`1.1`、`1.10`。
-  - 如果不输入任何参数，即可获取玩家在国服最新版本内的最好成绩。
-  - 其他版本号的缩写格式类似。请参见下表：**版本号对应表**。
-  - 可输入多个版本（建议最多 5 个）。
-  - 版本号之间可通过逗号 `,`、冒号 `:`、或号 `|` 分隔开。
-
-::: details 版本号对应表
-
-查询的字段可输入版本简称，版本号，或是版本全称中（除了初代）剔除掉 maimai 之后，剩下的字段。
-
-目前国服版本位于 `maimai でらっくす PRiSM` (`舞萌DX 2025`)，日服版本位于 `maimai でらっくす CiRCLE`。
-
-| 版本全称 | 代号 | 简称 | 版本号 |
-| :-: | :-: | :-: | :-: |
-| maimai | 初[^1] | m, mi, mai | 0.1 |
-| maimai PLUS | 真 | m+, pl, pls, mi+, mai+ | 0.15 |
-| maimai GreeN | 超 | g, gr, gre, grn | 0.2 |
-| maimai GreeN PLUS | 檄 | g+, gr+, gre+, grn+ | 0.25 |
-| maimai ORANGE | 橙 | o, or, org | 0.3 |
-| maimai ORANGE PLUS | 暁 | o+, or+, org+ | 0.35 |
-| maimai PiNK | 桃 | p, pk, pnk | 0.4 |
-| maimai PiNK PLUS | 櫻 | p+, pk+, pnk+ | 0.45 |
-| maimai MURASAKi | 紫 | k, ms, msk | 0.5 |
-| maimai MURASAKi PLUS | 堇 | k+, ms+, msk+ | 0.55 |
-| maimai MiLK | 白 | l, mk, mlk | 0.6 |
-| MiLK PLUS | 雪 | l+, mk+, mlk+ | 0.65 |
-| maimai FiNALE | 輝 | n, fn, fnl | 0.7 |
-| ALL FiNALE[^2] | 舞 | n+, afn, fn+ | 0.75 |
-| maimai でらっくす | 熊 | d, dx, dlx, 2020 | 1.0 |
-| maimai でらっくす PLUS[^3] | 華 | d+, dx+, dlx+ | 1.05 |
-| maimai でらっくす Splash | 爽 | s, sp, spl, 2021 | 1.1 |
-| maimai でらっくす Splash PLUS[^3] | 煌 | s+, sp+, spl+ | 1.15 |
-| maimai でらっくす UNiVERSE | 星 | u, un, uv, unv, 2022 | 1.2 |
-| maimai でらっくす UNiVERSE PLUS[^3] | 宙 | u+, un+, uv+, unv+ | 1.25 |
-| maimai でらっくす FESTiVAL | 祭 | f, fs, fes, 2023 | 1.3 |
-| maimai でらっくす FESTiVAL PLUS[^3] | 祝 | f+, fs+, fes+ | 1.35 |
-| maimai でらっくす BUDDiES | 双 | b, bd, bud, 2024 | 1.4 |
-| maimai でらっくす BUDDiES PLUS[^3] | 宴 | b+, bd+, bud+ | 1.45 |
-| maimai でらっくす PRiSM | 鏡 | r, pr, pri, prs, 2025 | 1.5 |
-| maimai でらっくす PRiSM PLUS[^3][^4] | 彩 | r+, pr+, pri+, prs+ | 1.55 |
-| maimai でらっくす CiRCLE[^4] |  | c, ci, cr, cc, cir, cle, 2026 | 1.6 |
-| maimai でらっくす CiRCLE PLUS[^3][^4][^5] |  | c+, ci+, cr+, cc+, cir+, cle+ | 1.65 |
-
-:::
-
-::: tip 提示
-
-如果不输入玩家名称（查询自己的成绩），那么版本前的 `#` 号可以忽略。
-
-如果查询的玩家名称与以上可能出现的版本号缩写同名，如 **splash**，建议在其后添加版本参数 (**`#...`**)，便于区分。
-
-:::
-
-## <HopeIcon icon="magnifying-glass"/> 3 查询舞萌歌曲成绩 !ymmaimaiscore (!ms) {id=maiscore}
+## <HopeIcon icon="magnifying-glass"/> 2 查询舞萌歌曲成绩 !ymmaimaiscore (!ms) {id=maiscore}
 
 这个功能可以按歌曲名或歌曲编号，查询到玩家在特定歌曲内的成绩（以及歌曲音符信息）。
 
@@ -178,11 +107,9 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="music"/> 4 查询舞萌歌曲 !ymmaimaifind (!mf) {id=maifind}
+## <HopeIcon icon="music"/> 3 查询舞萌歌曲 !ymmaimaifind (!mf) {id=maifind}
 
-这个功能可以按版本和难度筛选谱面。
-
-结果会按歌曲编号除以 10000 的余数来降序排布（新歌在上面）。
+这个功能可以按版本和难度筛选谱面。结果会按歌曲编号除以 10000 的余数来降序排布（新歌在上面）。
 
 **使用方法**
 
@@ -214,6 +141,75 @@ copyright: false
 | 4 | MASTER | 大师 | MAS、M | 紫、<span style="color:#9922EE">⬤</span> |
 | 5 | Re: MASTER | 宗师 | REM、R | 白、<span style="color:#DDD">⬤</span> |
 | 6 | U☆TA☆GE | 宴会场 | UTA，U | - |
+
+:::
+
+## <HopeIcon icon="id-card-clip"/> 4 查询舞萌姓名框 !ymmaimaiversion (!mv) {id=version}
+
+这个功能可以查询到玩家在某个姓名框内的完成度。
+
+**使用方法**
+
+!ymmaimaiversion / mv (**玩家名**) (**`#`姓名框**)
+
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+- **<HopeIcon icon="id-card-clip"/> 姓名框**：姓名框的名称，即版本号 + 姓名框类别。
+  - 版本号：可输入英文全称，以及两字母简称、三字母简称、版本代号（不带前面的 `v`）、版本号（内部编号）。
+    - 举例：想要查询 `maimai でらっくす Splash PLUS` 版本的姓名框，可以输入：`splashplus`、`splash plus`、`spl+`、`splash+`、`spp`、`1.1`、`1.10`。
+    - 请参见下表。
+  - 姓名框：可输入解锁条件，以及原名。
+    - 请参见下表。
+  - 如果玩家只输入一个字段，并且这个字段可以正常匹配成姓名框，则会查询玩家自己的姓名框。
+
+
+::: details 版本号对应表
+
+查询的字段可输入版本简称，版本号，或是版本全称中（除了初代）剔除掉 maimai 之后，剩下的字段。
+
+| 版本全称 | 代号 | 简称 | 版本代号 | 版本号 |
+| :-: | :-: | :-: | :-: | :-: |
+| maimai | 初[^1] | m, mi, mai | 0.1 | 10000 |
+| maimai PLUS | 真 | m+, pl, pls, mi+, mai+ | 0.15 | 11000 |
+| maimai GreeN | 超 | g, gr, gre, grn | 0.2 | 12000 |
+| maimai GreeN PLUS | 檄 | g+, gr+, gre+, grn+ | 0.25 | 13000 |
+| maimai ORANGE | 橙 | o, or, org | 0.3 | 14000 |
+| maimai ORANGE PLUS | 暁 | o+, or+, org+ | 0.35 | 15000 |
+| maimai PiNK | 桃 | p, pk, pnk | 0.4 | 16000 |
+| maimai PiNK PLUS | 櫻 | p+, pk+, pnk+ | 0.45 | 17000 |
+| maimai MURASAKi | 紫 | k, ms, msk | 0.5 | 18000 |
+| maimai MURASAKi PLUS | 堇 | k+, ms+, msk+ | 0.55 | 18500 |
+| maimai MiLK | 白 | l, mk, mlk | 0.6 | 19000 |
+| MiLK PLUS | 雪 | l+, mk+, mlk+ | 0.65 | 19500 |
+| maimai FiNALE | 輝 | n, fn, fnl | 0.7 | 19900 |
+| ALL FiNALE[^2] | 舞 | n+, afn, fn+ | 0.75 | - |
+| maimai でらっくす | 熊 | d, dx, dlx, 2020 | 1.0 | 20000 |
+| maimai でらっくす PLUS[^3] | 華 | d+, dx+, dlx+ | 1.05 | 20000 |
+| maimai でらっくす Splash | 爽 | s, sp, spl, 2021 | 1.1 | 21000 |
+| maimai でらっくす Splash PLUS[^3] | 煌 | s+, sp+, spl+ | 1.15 | 21000 |
+| maimai でらっくす UNiVERSE | 星 | u, un, uv, unv, 2022 | 1.2 | 22000 |
+| maimai でらっくす UNiVERSE PLUS[^3] | 宙 | u+, un+, uv+, unv+ | 1.25 | 22000 |
+| maimai でらっくす FESTiVAL | 祭 | f, fs, fes, 2023 | 1.3 | 23000 |
+| maimai でらっくす FESTiVAL PLUS[^3] | 祝 | f+, fs+, fes+ | 1.35 | 23000 |
+| maimai でらっくす BUDDiES | 双 | b, bd, bud, 2024 | 1.4 | 24000 |
+| maimai でらっくす BUDDiES PLUS[^3] | 宴 | b+, bd+, bud+ | 1.45 | 24000 |
+| maimai でらっくす PRiSM | 鏡 | r, pr, pri, prs, 2025 | 1.5 | 25000 |
+| maimai でらっくす PRiSM PLUS[^3][^4] | 彩 | r+, pr+, pri+, prs+ | 1.55 | 25000 |
+| maimai でらっくす CiRCLE[^4] |  | c, ci, cr, cc, cir, cle, 2026 | 1.6 | 26000[^5] |
+| maimai でらっくす CiRCLE PLUS[^3][^4][^5] |  | c+, ci+, cr+, cc+, cir+, cle+ | 1.65 | 26000[^5] |
+
+:::
+
+::: details 姓名框类别对应表
+
+姓名框中，真代没有将牌，并且霸者姓名框的获取条件比较特殊。
+
+| 姓名框类别 | 别名 | 完成条件 |
+| :-: | :-: | :-: |
+| 极 | fc、極 | 某版本：全曲/BASIC～MASTER/FULL COMBO |
+| 将 | sss | 某版本：全曲/BASIC～MASTER/RANK SSS |
+| 神 | ap | 某版本：全曲/BASIC～MASTER/ALL PERFECT |
+| 舞舞 | fdx、fsd | 某版本：全曲/BASIC～MASTER/FULL SYNC DX |
+| 霸者 | clear、覇者 | maimai FiNALE 及之前的版本：全曲/BASIC～Re:MASTER/CLEAR |
 
 :::
 
@@ -264,8 +260,8 @@ copyright: false
 
 ## 备注
 
-[^1]: 实际上，最初始的版本和 `maimai PLUS` 版本同归属于`真`代。但是为了区分曲库，这里使用`初`作为版本代号。
+[^1]: 实际上，最初始的版本和 `maimai PLUS` 版本同归属于`真`代。姓名框同理。
 [^2]: 这个版本指的是包括 `FiNALE` 版本之前的所有歌曲。实际上并不指代特定的游戏框体。
-[^3]: 当前国服的命名规则是”舞萌DX“+推出的年份，因此在按版本查询成绩的方法中，无法查询到这几个 PLUS 版本的成绩（都囊括在非 PLUS 版本中了）
+[^3]: 当前国服的命名规则是”舞萌DX“+推出的年份，因此，无法查询到这几个 PLUS 版本的成绩（都归类到非 PLUS 版本中了）。
 [^4]: 目前国服并没有这个版本的歌曲。
 [^5]: 该名称为推测名称。

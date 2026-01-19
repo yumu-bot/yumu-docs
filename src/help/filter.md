@@ -61,7 +61,7 @@ copyright: false
 | 模组 (Mods) | 类似于字符串的处理方式：`=` 和 `<` 类似，`>`、`<`、`>=`、`<=` 的逻辑会映射到参数和目标的长度上。 |
 | 千位数 (Thousand) | 参数本质上是整数 (Integer)，但由于这些目标的值可能会特别大，所以输入的参数小于 100 时，会自动帮您乘以 1000。 |
 | 时间 (time) | 绝对日期模式：输入了 `<=` 或 `>=` 逻辑运算符。机器人会按照查询字段所提示的时间单位，来构建一个绝对日期。 |
-|  | 移动日期模式：输入了除了`<=` 或 `>=` 之外的任意运算符。机器人会自动帮您往前移动参数所代表的时间。 |
+|  | 移动日期模式：输入了 `==` 、`=` 、`>`、`<`运算符。机器人会自动帮您往前移动参数所代表的时间。 |
 |  | 区域日期模式：输入了 `=` 或 `==` 逻辑运算符。此时会限制参数在目标的“当前最小时间向下取整 ~ 当前最小时间的一单位”之内[^2]。 |
 
 :::
@@ -78,7 +78,7 @@ copyright: false
 | 删除 | delete | d | false |
 | 支持者 | supporter | v | 布尔值 |
 | 支持者等级 | supporterlevel | v、vl | 0-3 之间的整数 |
-| 上线时间 | lastvisit、time | t | 时间 |
+| 上线时间 | lastvisit、time | t | 时间（无单位默认为天） |
 | 私信 | pmonly | y | 布尔值 |
 | 国家、地区 | country | c | 国家或地区简称、ISO 3166-1 两字码 |
 | 互相关注 | mutual | m | 布尔值 |
@@ -94,7 +94,7 @@ copyright: false
 | A | ranka | ra | 整数 |
 | 全球排名 | ranking | k | 整数（大小于符号倒置） |
 | 游玩次数 | playcount | pc | 整数或千位数 |
-| 游玩时间 | playtime | pt | 时间 |
+| 游玩时间 | playtime | pt | 时间（无单位默认为天） |
 | 总击打数 | totalhit | tth、th | 整数或千位数 |
 
 ## <HopeIcon icon="gamepad"/> 成绩查询器 {id=score}
@@ -120,8 +120,8 @@ copyright: false
 | HP | health | hp | 小数 |
 | 表现分 | performance | p、pp | 整数或千位数 |
 | 评价 | rank | k | 字符串 |
-| 长度 | length、long | lh、h | 整数 |
-| 时间 | time | ti | 时间 |
+| 长度 | length、long | lh、h | 时间（无单位默认为秒） |
+| 时间 | time | ti | 时间（无单位默认为天） |
 | 曲速 | bpm | bm | 小数 |
 | 准确率 | accuracy、acc | ac | 小数 |
 | 连击 | combo | cb | 整数或比率 |
@@ -142,7 +142,7 @@ copyright: false
 | 物件总计 | total、object | tt | 整数 |
 | 转谱 | convert | cv | 布尔值 |
 | 客户端 | client、version | v | lazer 或 stable、l、s |
-| 创建时间 | created | ct、ca | 时间 |
+| 创建时间 | created | ct、ca | 时间（无单位默认为天） |
 
 ## <HopeIcon icon="map-location"/> 最多游玩谱面查询器 {id=most_played}
 
@@ -186,7 +186,7 @@ copyright: false
 | CS | circle、key | cs | 小数 |
 | OD | overall | od | 小数 |
 | HP | health | hp | 小数 |
-| 长度 | length、long | lh、h | 整数 |
+| 长度 | length、long | lh、h | 时间（无单位默认为秒） |
 | 模式 | mode | m | 模式 |
 | 谱面状态 | category、status | v、z | 谱面状态 |
 | 评价 | rank | k | 字符串 |
@@ -229,13 +229,13 @@ copyright: false
 | CS | circle、key | cs | 小数 |
 | OD | overall | od | 小数 |
 | HP | health | hp | 小数 |
-| 长度 | length、long | lh、h | 整数 |
+| 长度 | length、long | lh、h | 时间（无单位默认为秒） |
 | 曲速 | bpm | bm | 小数 |
 | 圆圈 | circle、rice | ci、cr、rc | 整数或比率 |
 | 滑条 | slider、long、longnote | sl、ln | 整数或比率 |
 | 转盘 | spinner、rattle | sp | 整数或比率 |
-| 创建时间 | created | ct、ca | 时间 |
-| 上架时间 | ranked | rt、ra | 时间 |
+| 创建时间 | created | ct、ca | 时间（无单位默认为天） |
+| 上架时间 | ranked | rt、ra | 时间（无单位默认为天） |
 | 游玩次数 | playcount | pc | 千数 |
 | 收藏次数 | favorite | fv | 整数 |
 
