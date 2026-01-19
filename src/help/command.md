@@ -74,7 +74,7 @@ copyright: false
 | PV | !pv (`:`mode) (user) | [Performance Minus Vs](./player.md/#ppminus) | 对比 PP- | *也可通过 !pmvs 调用。* |
 | PX | !px (`:`mode) (user) | [Performance Plus Vs](./player.md/#ppplus) | 对比 PP+ | *也可通过 !ppvs 调用。* |
 | RA | !ra **[mid]** (`e`easy) (skip) (ignore) (`[`filter`]`) (`f`) (`r`) | [Rating](./tournament.md/#rating) | 查询比赛评分 | *即查询木斗力。也可通过 !mra 调用。*<br />**mid**：比赛房间号<br />**easy**：Easy 模组倍率，支持 0-20<br />**skip**：跳过开头场次<br />**ignore**：忽略结尾场次<br />**filter**：剔除特定场次<br />**f**：统计低分成绩<br />**r**：忽略重复对局 |
-| RO | !ro **[mid]** (position/keyword) | [Match Rounds](./tournament.md/#matchnow) | 查询对局信息 | **position**: 对局位置<br />**keyword**: 关键词 |
+| RO | !ro **[mid]** (position/keyword) | [Match Round](./tournament.md/#round) | 查询对局信息 | **position**: 对局位置<br />**keyword**: 关键词 |
 | SC | !sc (time) | [Service Count](./bot.html#servicecount) | 查询服务调用 | *仅管理员使用*<br />**time**：可输入小时或天数，比如 7h 和 2d。默认 1d |
 | SM | !sm (mode) | [Set Mode](./score.md#mode) | 修改默认游戏模式 | **mode**：游戏模式：<br />0，osu，o：主模式<br />1，taiko，t：太鼓模式<br />2，catch，c：接水果模式<br />3，mania，m：下落模式 |
 | SP | !sp (operate) (user) | [Super](./bot.md/#ban) | 封禁解封玩家 | *仅管理员使用*<br />**operate**：操作，wkarbu<br />w：白<br />b：黑<br />a：入白<br />r：出白<br />b：入黑<br />u：出黑 |
