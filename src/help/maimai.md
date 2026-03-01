@@ -28,7 +28,18 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="wand-magic-sparkles"/> 1 查询舞萌最好成绩 !ymmaimaibest (!x) {id=maibest}
+## <HopeIcon icon="volume-down"/> 1 试听舞萌歌曲 !ymmaimaiaudio (!xa) {id=maiaudio}
+
+这个功能可以试听某首舞萌内的歌曲。
+
+**使用方法**
+
+!ymmaimaiaudio / xa (**歌曲名称**)
+
+- **<HopeIcon icon="address-card"/> 歌曲名称**：需要试听的歌曲名。
+
+
+## <HopeIcon icon="wand-magic-sparkles"/> 2 查询舞萌最好成绩 !ymmaimaibest (!x) {id=maibest}
 
 这个功能可以查询到玩家最好成绩榜（b50）上的成绩。
 
@@ -59,7 +70,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="magnifying-glass"/> 2 查询舞萌歌曲成绩 !ymmaimaiscore (!ms) {id=maiscore}
+## <HopeIcon icon="magnifying-glass"/> 3 查询舞萌歌曲成绩 !ymmaimaiscore (!ms) {id=maiscore}
 
 这个功能可以按歌曲名或歌曲编号，查询到玩家在特定歌曲内的成绩（以及歌曲音符信息）。
 
@@ -107,7 +118,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="music"/> 3 查询舞萌歌曲 !ymmaimaifind (!mf) {id=maifind}
+## <HopeIcon icon="music"/> 4 查询舞萌歌曲 !ymmaimaifind (!mf) {id=maifind}
 
 这个功能可以按版本和难度筛选谱面。结果会按歌曲编号除以 10000 的余数来降序排布（新歌在上面）。
 
@@ -144,7 +155,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="id-card-clip"/> 4 查询舞萌姓名框 !ymmaimaiversion (!mv) {id=version}
+## <HopeIcon icon="id-card-clip"/> 5 查询舞萌姓名框 !ymmaimaiversion (!mv) {id=version}
 
 这个功能可以查询到玩家在某个姓名框内的完成度。
 
@@ -213,7 +224,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="thumbs-up"/> 5 查询舞萌全连或完美成绩 !ymmaifilter (!xc/!xp) {id=maifilter}
+## <HopeIcon icon="thumbs-up"/> 6 查询舞萌全连或完美成绩 !ymmaifilter (!xc/!xp) {id=maifilter}
 
 这个功能可以查询到玩家全连或是完美的成绩。
 
@@ -225,7 +236,7 @@ copyright: false
 - **<HopeIcon icon="file"/> 页码**：当前所在的页面编号。
   - 不输入默认第一页。一页 50 个结果。
 
-## <HopeIcon icon="keyboard"/> 6 查询中二最好成绩 !ymmaimaibest (!y) {id=chubest}
+## <HopeIcon icon="keyboard"/> 7 查询中二最好成绩 !ymmaimaibest (!y) {id=chubest}
 
 这个功能可以查询到玩家最好成绩榜（b30+r10）上的成绩。
 
@@ -248,7 +259,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="magnifying-glass"/> 7 查询水鱼玩家 !ymmaimaiseek (!mk) {id=maiseek}
+## <HopeIcon icon="magnifying-glass"/> 8 查询水鱼玩家 !ymmaimaiseek (!mk) {id=maiseek}
 
 这个功能可以搜索注册了水鱼查分器的玩家，并输出可能的玩家名和玩家评级 (DX Rating)。
 

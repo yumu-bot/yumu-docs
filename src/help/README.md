@@ -73,6 +73,30 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
+title: 查询玩家技巧 v6.1
+desc: skill
+logo: ./assets/icon/icon-plus.svg
+link: ./player.md#skill
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
+title: 查询顶流成绩
+desc: top plays
+logo: ./assets/icon/icon-plus.svg
+link: ./score.md#topplays
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
+title: 查询最近较好成绩
+desc: recent best
+logo: ./assets/icon/icon-plus.svg
+link: ./score.md#recentbest
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
 title: 查询舞萌姓名框
 desc: mai version
 logo: ./assets/icon/icon-plus.svg

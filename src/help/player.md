@@ -51,8 +51,7 @@ copyright: false
   - 下方的灰字指加了 HD、FL、FI <HopeIcon icon="music"/> 模组的成绩。
 - **Ranking**：玩家排名情况。
   - 标题右侧是玩家该模式的 <HopeIcon icon="trophy"/> 世界排名，括号里的灰色字是玩家该模式的 <HopeIcon icon="trophy"/> 国家或地区排名。
-  - 下方的 <HopeIcon icon="chart-line"/> 折线图反映了九十天内，玩家排名的变化情况。
-  - 下方的 <HopeIcon icon="chart-column"/> 条形图反映了玩家 BP 成绩的增加情况。
+  - 下方的折线图反映了九十天内，玩家排名的变化情况。
 - **User Data**：玩家统计数据。
   - 从左到右依次是已上架谱面总分、谱面总分、游玩次数、游玩时间，下方是游玩了多少张谱面、回放被他人查看次数、粉丝数、总点击数。
   - 下方的 <HopeIcon icon="chart-column"/> 条形图反映了这段时间内，玩家游玩次数的变化情况。
@@ -65,7 +64,7 @@ copyright: false
 
 使用 !ic 可以获取明信片设计。
 
-使用 !iw 可以获取 v4 版本的设计（没有正式上线的老婆面板）
+使用 !iw 可以获取 v4 版本的设计（没有上线的老婆面板）
 
 使用 !il 可以获取 v3 版本的设计（2025 年 11 月之前的正式版本）
 
@@ -152,9 +151,9 @@ copyright: false
 
 ::: tip 提示
 
-**SKill** 是 YumuBot 继 PP- 功能后新开发的一套评判系统！它通过分析玩家的最好成绩榜，来尽可能客观地评价玩家的（刷 PP 的）实力。
+**Skill v6.1** 已经正式上线！通过统计玩家的最好成绩，来尽可能客观地评价玩家的各项实力。
 
-==目前仅开放 Mania 游戏模式的技巧查询！其他游戏模式正在制作中。敬请期待。==
+它比 PPM 笼统的统计数据更加有用。
 
 参见：[**Skill 内容解析：Mania**](./map.md#mapminus)
 
@@ -170,6 +169,8 @@ copyright: false
   - **目前这个参数无效。**
 - **<HopeIcon icon="address-card"/> 玩家名**：同上。
   - 不输入默认查询自己的技巧信息。
+
+![玩家技巧面板，指令：!kv Kalkai : dressurf](https://yumemuzi.s-ul.eu/yumu/WJkBBjol)
 
 ## <HopeIcon icon="chart-simple"/> 6 查询 PP- !ymppminus (!ppm) {id=ppminus}
 

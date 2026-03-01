@@ -1,6 +1,6 @@
 {
   "name": "yumu-docs",
-  "version": "1.0.0",
+  "version": "0.7.5",
   "description": "yumubot help docs",
   "main": "index.js",
   "scripts": {
