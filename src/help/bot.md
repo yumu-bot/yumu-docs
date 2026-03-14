@@ -119,34 +119,50 @@ op4->e
 
 :::
 
-## <HopeIcon icon="ban"/> 4 封禁或解封玩家 !ymsuper (!sp) {id=ban}
+## <HopeIcon icon="sliders"/> 4 模块开关 !ymswitch (!s*) {id=switch}
+
+这个功能可以用于限制部分功能在部分群组内的可用状态，超级管理员也可以用这个功能来限制部分用户（即旧版 super、ban 功能）。
 
 **使用方法**
 
-!ymsuper / sp [**操作**] (**对象**)
+!ymswitch / so / sf / sl [**操作**] (**群组号**) (`qq=`**玩家号**) (**功能名**)
 
-- **<HopeIcon icon="hammer"/> 操作**：超级管理员的操作。
-  - 合法的操作：
-    - whitelist、w、l：查询白名单列表
-    - blacklist、k：查询黑名单列表
-    - add、a：添加玩家进白名单
-    - remove、r：移除玩家出白名单
-    - ban、b：添加玩家进黑名单
-    - unban、u：移除玩家出黑名单
-  - 如果不输入或者输错，Bot 会提示你。
-- **<HopeIcon icon="street-view"/> 对象**：被操作执行的对象。
-  - 合法的对象：
-    - qq=123456：对象为玩家 <HopeIcon icon="fa-brands fa-qq"/> QQ。
-    - group=114514：对象为 <HopeIcon icon="user-group"/> QQ 群组。
-    - a long user name：对象为 <HopeIcon icon="address-card"/> 玩家名。
-    - 如果操作是查看列表（whitelist、blacklist），则无需输入对象。其他操作均需输入对象。
-  - 如果未输入需要输入的对象时，Bot 会提示你。
+- **<HopeIcon icon="up-down-left-right"/> 操作**：**必填**，紧跟在 switch 指令之后。
+  - on，或者短链 SO：<HopeIcon icon="toggle-on"/> 开启
+  - off，或者短链 SF：<HopeIcon icon="toggle-off"/> 关闭
+  - list，或者短链 SL：<HopeIcon icon="list"/> 查看目前所有模块状态（仅超级管理员可用）
+- **<HopeIcon icon="slash"/> 群组号**：二选一填，也可都不填。需要特定限制的群组号。
+  - 输入格式也可以为 group=114514。
+- **<HopeIcon icon="slash"/> 玩家号**：二选一填，也可都不填。需要特定限制的玩家号。
+  - 输入格式必须为 qq=114514。
+  - 常规用户无法输入别人的玩家号（只能对自己操作）。
+  - 如果都不填，则视作全局关闭功能（仅超级管理员可用）
+- **<HopeIcon icon="robot"/> 功能名**：可开关的功能名称，或是功能组（一组功能）。
+  - 如果记不住功能名或者功能组，可以留空，或是随便填。Bot 会在找不到正确的名称时提示你。
+
+::: tip 提示
+
+这个功能比较复杂，下面附带了一些用法。
+
+- 例：我在群组 7355608，但我不想有人在这里使用**舞萌**功能！
+  - 您可以在群聊中输入：!sf maimai、或是 !sf 舞萌
+    - 此时，Bot 会提醒您是要对自己操作还是对群聊操作。
+    - 输入对应的数字（2）即可到下一步。
+    - 您也可以直接输入：!sf 7355608 maimai，直接确定操作群聊。
+  - 此时，Bot 会向您发送二次确认，并附带即将关闭的服务列表。
+    - 输入 OK，即可关闭这些服务。
+    - 输入其他任何消息，或是等待 30 秒，即可撤销操作。
+  - 从此之后，非超级管理员的所有用户都无法使用这些功能了。
+
+:::
 
 ::: warning 注意
 
-只有超级管理员可以封禁或解封玩家（QQ、群组）。
+这个功能需要您二次操作（再次输入 OK 确认）。
 
-Bot 将不会回应任何被封禁的玩家（QQ、群组）发出的指令。
+普通用户可以控制自己可用的功能（对自己生效）。
+
+群组的管理员和群主可以控制自己所在的群聊功能（群组号输入自己所属的群即可，对当前群生效）。
 
 :::
 
@@ -156,27 +172,76 @@ Bot 将不会回应任何被封禁的玩家（QQ、群组）发出的指令。
 
 :::
 
-## <HopeIcon icon="sliders"/> 5 模块开关 !ymswitch (!sw) {id=switch}
+功能组对应表
+
+| 功能组 | 名称 | 简称 | 包含的功能内部区分名（部分） |
+| :-: | :-: | :-: | --- |
+| bot | 内部、机器 | o | help、ping、bind |
+| scores | 成绩、分数 | s | set_mode、bp、score_pr、today_bp |
+| player | 玩家、用户 | p | info、friend、mutual、pp_minus |
+| beatmap | 谱面、图 | b | map、audio、explore、qualified_map |
+| match | 比赛、房间 | m | mu_rating、match_now |
+| chat | 聊天 | c | - |
+| fun | 娱乐 | f | dice |
+| maimai | 舞萌、中二 | i | mai_bp、mai_score、chu_bp |
+| aid | 辅助 | a | old_avatar、take |
+| custom | 自定 | u | custom |
+| private | 私服 | e | sb_set_mode、sb_info、sb_bp、sb_score |
+
+
+
+## <HopeIcon icon="reply"/> 5 撤回消息 !ymrevoke (!rv) {id=revoke}
+
+可以撤回机器人已经发送过的消息的功能。
 
 **使用方法**
 
-!ymswitch / sw (**`:`群组号**) (**功能名**) (**操作**)
+!ymrevoke / rv / 撤回
 
-- **<HopeIcon icon="slash"/> 群组号**：需要特定限制的群组号。输入格式也可以为 group=114514，
-  - 一般用于在特定群聊中关闭部分功能，确保不会滥用。
-- **<HopeIcon icon="robot"/> 功能名**：可开关的功能名称。
-  - 如果记不住功能名，可以留空。Bot 会输出一张列出了所有功能的 <HopeIcon icon="image"/> 图片。
-- **<HopeIcon icon="up-down-left-right"/> 操作**：开启或关闭。
-  - on：<HopeIcon icon="toggle-on"/> 开启
-  - off：<HopeIcon icon="toggle-off"/> 关闭
+- <HopeIcon icon="reply"/> 必须回复需要撤回的消息。单独发送命令时，机器人无法定位到上下文。
+  - 未来可能会支持无需回复的撤回功能。
 
 ::: warning 注意
 
-只有超级管理员可以使用模块开关。
+只有群组的管理员或群主才可以撤回他人调用机器人时发送的消息。
+
+如果机器人是管理员或者群主，也可以尝试撤回其他用户发送的普通消息。
+
+如果消息超过 2 分钟，并且机器人不是群聊管理员或群主时，则不会尝试撤回。
 
 :::
 
-## <HopeIcon icon="desktop"/> 6 查询服务调用数量 !ymservicecount (!sc) {id=servicecount}
+## <HopeIcon icon="volume-up"/> 6 回声 !ymecho (!ec) {id=echo}
+
+一个简单的 Bot 回声功能。
+
+**使用方法**
+
+!ymecho / ec (**群组号**) (`qq=`**玩家号**) (**内容**)
+
+- **<HopeIcon icon="slash"/> 群组号**：二选一填，也可都不填。需要回声传递的群组号。
+  - 输入格式也可以为 group=114514。
+- **<HopeIcon icon="slash"/> 玩家号**：二选一填，也可都不填。需要回声传递的玩家号。
+  - 输入格式必须为 qq=114514。
+  - 如果都不填，则默认就在当前群发送回声。
+- **<HopeIcon icon="tv"/> 内容**：需要回声传递的内容。
+  - 如果要发送图片，回复那张图片即可。
+
+::: danger 警告
+
+回声传递给玩家（私聊）虽然功能上没有问题，但是很容易导致账号被封禁。
+
+即使你是超级管理员，也最好不要这么做。
+
+:::
+
+::: warning 注意
+
+只有超级管理员可以使用回声传递。
+
+:::
+
+## <HopeIcon icon="desktop"/> 7 查询服务调用数量 !ymservicecount (!sc) {id=servicecount}
 
 **使用方法**
 
@@ -192,7 +257,7 @@ Bot 将不会回应任何被封禁的玩家（QQ、群组）发出的指令。
 
 :::
 
-## <HopeIcon icon="user-clock"/> 7 查询绑定信息 !ymcheck (!ck) {id=check}
+## <HopeIcon icon="user-clock"/> 8 查询绑定信息 !ymcheck (!ck) {id=check}
 
 **使用方法**
 

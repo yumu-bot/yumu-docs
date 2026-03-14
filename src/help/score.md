@@ -2,7 +2,7 @@
 title: 成绩指令
 icon: gamepad
 order: 4
-date: 2025-03-17
+date: 2026-03-02
 category: 指令
 tag:
   - 指令
@@ -176,7 +176,7 @@ copyright: false
 
 ## <HopeIcon icon="pager"/> 5 查询谱面成绩 !ymscore (!s) {id=score}
 
-这个功能可以查询到上榜（谱面含有在线榜单，并且玩家游玩过）的成绩。
+这个功能可以查询到谱面上任何成绩（只要有）。
 
 **使用方法**
 
@@ -186,7 +186,8 @@ copyright: false
   - 默认获取谱面所有纳入统计的成绩。
 - **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
 - **<HopeIcon icon="hashtag"/> 谱面编号或成绩编号**：需要查询的谱面编号 (BID) 或成绩编号 (SCORE_ID)。
-  - 如果不输入编号，则默认获取玩家最近成绩的谱面，从而获取到玩家在谱面内的 pp 最高成绩（类似于 !r)。
+  - 如果不输入编号，则优先获取之前查询的历史记录，从而获取到玩家在之前查询谱面内的 pp 最高成绩。
+    - 如果没有之前查询的历史记录，则默认获取玩家最近成绩的谱面，从而获取到玩家在谱面内的 pp 最高成绩（类似于 !r)。
   - 如果输入成绩编号，则其他参数均无效（因为一个成绩编号只对应一个确定的成绩）。
     - 默认将编号 100000000 及以上视为成绩编号，而 100000000 以下的会被视为谱面编号。
     - 编号 100000000 的成绩是一个 2013 年的成绩。因此，对于在这之前的成绩，暂时无法通过成绩编号查询。
@@ -196,6 +197,34 @@ copyright: false
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
 - **<HopeIcon icon="music"/> 模组名称**：<HopeIcon icon="music"/> 模组的简称，通常为两位大写字母组成。可以无空格地输入多个 <HopeIcon icon="music"/> 模组。
   - 可输入的 <HopeIcon icon="music"/> 模组名称：EZ、NF、HT、HR、SD、PF、DT、NC、HD、FI、FL、MR
+
+```flow:preset
+
+st=>start: 使用功能
+op1=>operation: 输入 !s
+op2=>operation: 通过群聊获取
+op3=>operation: 通过最近成绩获取
+op4=>operation: 按成绩编号获取
+op5=>operation: 按谱面编号获取
+op6=>operation: 官网获取
+op7=>operation: 本地获取
+cond1=>condition: 是否有参数?
+cond2=>condition: 参数大于一亿?
+cond3=>condition: 是否有群记录?
+cond4=>condition: 是否有榜?
+e=>end: 获取成功
+
+st->op1->cond1
+cond1(no)->cond3
+cond1(yes)->cond2
+cond3(yes)->op2->cond4
+cond3(no,bottom)->op3->cond4
+cond2(yes,left)->op4->cond4
+cond2(no,bottom)->op5(bottom)->cond4
+cond4(yes)->op6->e
+cond4(no)->op7->e
+
+```
 
 ::: tip 提示
 
@@ -295,7 +324,25 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="chart-pie"/> 8 分析最好成绩 !ymbpanalysis (!ba) {id=bpanalysis}
+
+
+## <HopeIcon icon="clock"/> 8 查询最近较好成绩 !ymrecentbest (!rb) {id=recentbest}
+
+这个功能可以从数据库中获取玩家 7 天之内表现较好的成绩。
+
+这个功能和其他获取最好成绩的不一样：它的数据来源是 Bot 数据库。因此可以获取到坟场谱面或者其他不含榜单谱面上的成绩。
+
+**使用方法**
+
+!ymrecentbest / rb (**`:`游戏模式**) (**玩家名**)
+
+- **<HopeIcon icon="gamepad"/> 游戏模式**：同上。请参阅：[<HopeIcon icon="gamepad"/> 游戏模式](#mode)
+- **<HopeIcon icon="address-card"/> 玩家名**：同上。
+  - 支持使用 <HopeIcon icon="fa-brands fa-qq"/> QQ 查询，输入格式为：qq=114514。
+  - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
+  - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
+
+## <HopeIcon icon="chart-pie"/> 9 分析最好成绩 !ymbpanalysis (!ba) {id=bpanalysis}
 
 这个功能可以分析玩家的最好成绩榜，从而判断玩家目前的状态，以及玩家的偏好或技巧。
 
@@ -315,23 +362,31 @@ copyright: false
 
 ::: details 内容解析
 
-- **Top 5 BPs**：玩家 BP <HopeIcon icon="arrow-up"/> 前五位。
-- **Last 5 BPs**：玩家 BP <HopeIcon icon="arrow-down"/> 末五位。
-- **Mods**：玩家 BP 内 <HopeIcon icon="music"/> 模组的分布情况。
-  - 靠中间的 <HopeIcon icon="chart-pie"/> 饼图下方依次是各个 <HopeIcon icon="music"/> 模组的名称、<HopeIcon icon="hashtag"/> 数量（灰色字）以及所占 <HopeIcon icon="medal"/> PP（加权后）。这个 <HopeIcon icon="medal"/> PP 越高，说明玩家在这个 <HopeIcon icon="music"/> 模组上越熟练。
-- **BP Distribution**：BP 分布情况。
-  - 标题右侧是玩家的该模式 <HopeIcon icon="medal"/> 总 PP，括号里的灰色字是 <HopeIcon icon="map"/> 谱面 PP + <HopeIcon icon="sack-dollar"/> 奖励 PP（Bonus PP）。灰色字下方是该 <HopeIcon icon="gamepad"/> 游戏模式。
-  - 下方的 <HopeIcon icon="chart-line"/> 折线图反映了玩家 BP 成绩的 <HopeIcon icon="medal"/> PP 分布。
-  - 下方的 <HopeIcon icon="chart-column"/> 条形图反映了玩家 BP 成绩的 <HopeIcon icon="clock"/> 时长（高度）以及 <HopeIcon icon="ranking-star"/> 评级（颜色）分布。
-- **Length、Combo、Star Rating**：分析玩家 BP 内 <HopeIcon icon="clock"/> 时长、<HopeIcon icon="link"/> 连击数、<HopeIcon icon="star"/> 星数的分布情况。
-  - 带有 <HopeIcon icon="angles-up"/> 图标的指对应值的最大值。相应地，<HopeIcon icon="angles-down"/> 指最小值， <HopeIcon icon="minus"/> 指中位数（不是平均数！）。
-  - 每个图标最下面的 <HopeIcon icon="image"/> 图片即代表了对应的成绩。
-  - 图片 <HopeIcon icon="arrow-left"/> 左上方的 <HopeIcon icon="circle"/> 圆圈表示 <HopeIcon icon="star"/> 星数（SR）。
-  - 图片 <HopeIcon icon="arrow-right"/> 右上方的 <HopeIcon icon="circle"/> 圆圈表示 <HopeIcon icon="ranking-star"/> 评级（Ranking）。
-- **Favorite Mappers**：最喜爱的 <HopeIcon icon="user"/> 谱师分布情况。
-  - 标题右侧指明了玩家的 BP 上，<HopeIcon icon="user"/> 谱师数量总计。
-  - 谱师名称下方依次是各个谱师所制作的谱面的 <HopeIcon icon="hashtag"/> 成绩数量，以及所占 <HopeIcon icon="medal"/> PP（加权后）。这个 PP 越高，说明玩家越能刷这个谱师制作的谱面。
-- **Ranks**：玩家 BP 内 <HopeIcon icon="ranking-star"/> 评级（Ranking）的名称、数量以及所占 <HopeIcon icon="medal"/> PP（加权后，灰字）。
+- Main Statistics
+  - 这里是玩家最好成绩榜上的某些关键信息。
+  - BPM、LEN、CB、SR 即曲速（BPM）、谱面长度（Length）、连击（Combo）、星数（Star Rating）。
+  - 横线左侧和右侧的数据是最小值和最大值。方括号内的数据是中间值（中位数）。
+  - 右侧的编号是这些值所对应的 BP 编号。
+  - 下方的条则展示了这些值所处的范围（相比于常规数据来说）
+- Ranks
+  - 这个饼图展示了玩家最好成绩榜上的评级（Rank）分布。
+  - 下方的数字（如 091）指示了这个评级的数量。右上角的 PP 则为这个评级所覆盖的所有表现分之和。
+- Mods
+  - 这个饼图展示了玩家最好成绩榜上的模组（Mod）分布。
+  - 下方的数字（如 041）指示了这个模组的数量。右上角的 PP 则为这个模组所覆盖的所有表现分之和（复合模组会多次计算）。
+- PP
+  - 这个折线图会展示所有玩家最好成绩的表现分分布。
+- Time Distribution
+  - 这个条形图和点图会展示所有玩家最好成绩在一天之内的获取时间分布（UTC +8）。
+  - 点越密集或越高，则表示玩家越容易在这个时间段内获得好的表现。
+- Bests
+  - 即最好的 6 个成绩。
+- Bests Distribution
+  - 这两个条形图会展示前 100 个玩家最好成绩的分布。
+  - 上方的条形图纵轴是星数，颜色是评级。
+  - 下方的条形图纵轴是时长，颜色是模组。
+- Favorite Mappers
+  - 这里展示了玩家最喜爱（或最容易获取表现分）的谱师。
 
 :::
 
@@ -345,7 +400,7 @@ copyright: false
 
 :::
 
-## <HopeIcon icon="hammer"/> 9 修补最好成绩 !ymbpfix (!bf) {id=bpfix}
+## <HopeIcon icon="hammer"/> 10 修补最好成绩 !ymbpfix (!bf) {id=bpfix}
 
 这个功能可以分析玩家的最好成绩榜，抽出玩家的不完美 (choke) 成绩，并预测当这些成绩被修补成全连 (full combo) 后，玩家能获得多少表现分。
 
@@ -359,7 +414,7 @@ copyright: false
   - 支持使用 <HopeIcon icon="slash"/> UID 查询，输入格式为：uid=1919810。
   - 支持使用 <HopeIcon icon="at"/> @ 查询，输入格式为：@nana7michan。
 
-## <HopeIcon icon="crown"/> 10 查询顶流成绩 !ymtopplays (!tp) {id=topplays}
+## <HopeIcon icon="crown"/> 11 查询顶流成绩 !ymtopplays (!tp) {id=topplays}
 
 这个功能可以查询全服 pp 最高的成绩。
 
@@ -371,3 +426,9 @@ copyright: false
   - 不输入默认查询 osu!standard 模式。
 - **<HopeIcon icon="file"/> 页码**：当前所在的页面编号。
   - 不输入默认第一页。一页 50 个结果。最大可输入 20 页（前 1000）
+
+::: tip 提示
+
+预览版功能。功能目前尚不完善，如果出现了问题，请及时反馈。
+
+:::
