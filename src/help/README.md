@@ -73,42 +73,18 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
+title: 猜歌游戏
+desc: guess
+logo: ./assets/icon/icon-plus.svg
+link: ./fun.md#guess
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
 title: 查询玩家技巧 v6.1
 desc: skill
 logo: ./assets/icon/icon-plus.svg
 link: ./player.md#skill
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: 查询顶流成绩
-desc: top plays
-logo: ./assets/icon/icon-plus.svg
-link: ./score.md#topplays
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: 查询最近较好成绩
-desc: recent best
-logo: ./assets/icon/icon-plus.svg
-link: ./score.md#recentbest
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: 查询舞萌姓名框
-desc: mai version
-logo: ./assets/icon/icon-plus.svg
-link: ./maimai.md#version
-color: rgba(200, 200, 200, 0.15)
-```
-
-```card
-title: 查询比赛最近成绩
-desc: match recent
-logo: ./assets/icon/icon-plus.svg
-link: ./tournament.md#matchrecent
 color: rgba(200, 200, 200, 0.15)
 ```
 
@@ -164,7 +140,7 @@ color: rgba(124, 197, 118, 0.15)
 
 ```card
 title: 娱乐指令
-desc: 扔骰子、抽卡、运势
+desc: 扔骰子、猜歌
 logo: ./assets/icon/icon-paw.svg
 link: fun.md
 color: rgba(59, 184, 120, 0.15)
@@ -180,7 +156,7 @@ color: rgba(26, 187, 180, 0.15)
 
 ```card
 title: 舞萌 & 中二指令
-desc: 查询成绩、筛选谱面
+desc: 查询成绩、歌曲、姓名框
 logo: ./assets/icon/icon-spinner.svg
 link: maimai.md
 color: rgba(67, 140, 202, 0.15)
