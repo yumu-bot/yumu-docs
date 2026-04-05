@@ -73,6 +73,14 @@ color: rgba(200, 200, 200, 0.15)
 **最近更新**
 
 ```card
+title: 查询群谱面排行榜
+desc: group leaderboard
+logo: ./assets/icon/icon-plus.svg
+link: ./map.md#groupleaderboard
+color: rgba(200, 200, 200, 0.15)
+```
+
+```card
 title: 猜歌游戏
 desc: guess
 logo: ./assets/icon/icon-plus.svg
