@@ -59,7 +59,6 @@ copyright: false
 | 字符串 (String) | `=` 等价于：目标包含参数（和 `<` 类似）。`>`、`<`、`>=`、`<=` 的逻辑会映射到参数和目标的长度上，较长的必须包含较短的。 |
 | 布尔值 (Boolean) | `==` 和 `=` 等价，`>`、`<`、`>=`、`<=`  不可用。 |
 | 模组 (Mods) | 类似于字符串的处理方式：`=` 和 `<` 类似，`>`、`<`、`>=`、`<=` 的逻辑会映射到参数和目标的长度上。 |
-| 千位数 (Thousand) | 参数本质上是整数 (Integer)，但由于这些目标的值可能会特别大，所以输入的参数小于 100 时，会自动帮您乘以 1000。 |
 | 时间 (time) | 绝对日期模式：输入了 `<=` 或 `>=` 逻辑运算符。机器人会按照查询字段所提示的时间单位，来构建一个绝对日期。 |
 |  | 移动日期模式：输入了 `==` 、`=` 、`>`、`<`运算符。机器人会自动帮您往前移动参数所代表的时间。 |
 |  | 区域日期模式：输入了 `=` 或 `==` 逻辑运算符。此时会限制参数在目标的“当前最小时间向下取整 ~ 当前最小时间的一单位”之内[^2]。 |
@@ -83,7 +82,7 @@ copyright: false
 | 国家、地区 | country | c | 国家或地区简称、ISO 3166-1 两字码 |
 | 互相关注 | mutual | m | 布尔值 |
 | 战队 | team | tm | 战队名称 |
-| 表现 | performance | p、pp | 整数或千位数 |
+| 表现 | performance | p、pp | 整数 |
 | 准确率 | accuracy、acc | ac | 小数 |
 | 连击 | combo | cb | 整数或比率 |
 | 等级 | level | l、lv | 整数 |
@@ -93,9 +92,9 @@ copyright: false
 | S | ranks | rs、s | 整数 |
 | A | ranka | ra | 整数 |
 | 全球排名 | ranking | k | 整数（大小于符号倒置） |
-| 游玩次数 | playcount | pc | 整数或千位数 |
+| 游玩次数 | playcount | pc | 整数 |
 | 游玩时间 | playtime | pt | 时间（无单位默认为天） |
-| 总击打数 | totalhit | tth、th | 整数或千位数 |
+| 总击打数 | totalhit | tth、th | 整数 |
 
 ## <HopeIcon icon="gamepad"/> 成绩查询器 {id=score}
 
@@ -118,7 +117,7 @@ copyright: false
 | CS | circle、key | cs | 小数 |
 | OD | overall | od | 小数 |
 | HP | health | hp | 小数 |
-| 表现分 | performance | p、pp | 整数或千位数 |
+| 表现分 | performance | p、pp | 整数 |
 | 评价 | rank | k | 字符串 |
 | 长度 | length、long | lh、h | 时间（无单位默认为秒） |
 | 时间 | time | ti | 时间（无单位默认为天） |

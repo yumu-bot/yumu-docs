@@ -25,12 +25,12 @@ copyright: false
 | D | !d (num) (decision) | [Dice](./fun.md/#dice) | 扔骰子 | *即 Roll。*<br />**decision**：想做的决定，比如去不去玩 |
 | E | !e (`:`type) (@user) (filter) | [Explore](./map.md/#explore) | 探索谱面 | **type**：搜索种类<br />**filter**：筛选条件 |
 | F | !f (name) (num) | [Friend](./player.md/#friend) | 查询好友列表 | **num**：也可输入 `-` 分隔的区间 |
-| G | - | - | - | - |
+| G | !g (`:`mode)  (result/character/user) (`#`index) | [Friend](./fun.md/#guess) | 猜歌游戏 | 一个字母视作 **char**<br />多个字母视作 **result**<br />单独输入 # **index** 可以获取提示 |
 | H | !h (category) | [Help](./bot.md/#help) | 获取帮助文档 | **category**：功能所属的类别 |
 | I | !i (`:`mode) (user) (`#`day) | [Information](./player.md/#info) | 查询玩家信息 | **day**：可与过去几天的信息作比较 |
 | J | - | - | - | - |
 | K | !k (user) | [Skill](./map.md/#skill) | 分析玩家技巧 | *测试中* |
-| L | !l (`:`mode) **[bid]** | [Leader](./map.md/#leader) | 查询谱面排行 | - |
+| L | !l (`:`mode) **[bid]** | [Leader](./map.md/#leaderboard) | 查询谱面排行榜 | - |
 | M | !m (`:`mode) **[bid]** (acc`%`) (`x`combo) (`-`miss) (`+`mod) | [Map](./map.md/#map) | 查询谱面信息 | **acc**：准确率<br />**combo**：连击数，或连击占比 (0-1)<br />**miss**：失误数<br />**mod**：模组名称 |
 | N | !n(`b`) **[sid]** | [Nomination](./map.md/#nomination) | 查询上架流程 | *!nb 按谱面 ID (**BID**) 查询。* |
 | O | !o (users) | [Old Avatar](./aid.md/#oldavater) | 获取旧版头像 | - |
@@ -55,6 +55,7 @@ copyright: false
 | GC | !gc (`:`type) (sid) | [Get Cover](./map.md/#getcover) | 获取谱面背景 | **type**：封面类别。cover、list、card、silmcover、raw |
 | GD | !gd (user) (`#`page) | [Guest Diff](./player.md/#guestdiff) | 获取客串谱师 | - |
 | GI | !gi (users) | [Get ID](./player.md/#getid) | 获取玩家 ID | *仅管理员或群主使用。* |
+| GL | !gl (bid) (filter) (`#`page) | [Group Leaderboard](./map.md/#groupleaderboard) | 查询群谱面排行榜 | - |
 | GN | !gn (ids) | [Get Name](./player.md/#getname) | 获取玩家名称 | *仅管理员或群主使用。* |
 | GP | !gp (`:`mode) (`#`name`#`) [[mod] [bids]] | [Get Pool](./tournament.md/#getpool) | 生成图池图片 | **mod bids**：请**按组输入**模组和谱面 ID，比如：NM 123 456 789。 |
 | IC | !ic (`:`mode) (user) | [Info Card](./player.md/#info) | 查询迷你信息 | *Information 功能的明信片设计。* |
