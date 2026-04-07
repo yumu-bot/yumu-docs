@@ -44,7 +44,7 @@ expired="限制已解除"
 
 <Countdown
 time="2026-04-13T09:17:04"
-image="https://q1.qlogo.cn/g?b=qq&nk=3145729213&s=640"
+image="https://q1.qlogo.cn/g?b=qq&nk=2070701187&s=640"
 expired="限制已解除"
 />
 
