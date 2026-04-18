@@ -108,23 +108,22 @@ expired="限制已解除"
 
 :::
 
-::: info <HopeIcon icon="person"/> 其他方案
+::: info <HopeIcon icon="person"/> 其他可行方案
 
-- 基于 Android XP 框架注入的 Shamrock：
-  - 已经停止维护。
-- 基于 [Mirai](https://mirai.mamoe.net/) 的 [go-cqhttp](https://docs.go-cqhttp.org/)：
-  - **不推荐**，作者已被腾讯传唤，并停止维护。
-  - 如果您之前就使用了此解决方案，并且账号依旧可以登录 (未出现 Code 45)，可以直接在配置文件内的 `ws-reverse` 行，填入以上所述的[反向 WebSocket 代理链接](#brief)，完成部署。
-- 基于 HOOK QQNT 的方案 [LiteLoaderQQNT](https://liteloaderqqnt.github.io/) 搭配 [LLOneBot](https://github.com/LLOneBot/LLOneBot)：
-  - 最近在更新，或许可以试试。
-- 基于 C# 实现的 QQNT 消息协议库 [Lagrange.Core](https://lagrangedev.github.io/Lagrange.Doc/)：
-  - 拉格兰的仓库已经留档；拉格兰的签名服务器虽然仍在线，但已经不可用。
+- 主要基于 QQNT HOOK：
+  - [LLBot](https://github.com/LLOneBot/LuckyLilliaBot) - 稳定且活跃更新，值得考虑。
+- 主要基于协议（需搭配签名服务器）：
+  - [icqq.js](https://github.com/icqqjs) + [onebots](github.com/lc-cn/onebots) - 安卓协议实现，邀请制。
+  - [LagrangeV2](https://github.com/LagrangeDev/LagrangeV2/) - Linux 协议实现，[Lagrange.Core](https://github.com/LagrangeDev/Lagrange.Core) 的新版本，目前没有适配 Onebot11 通信协议，需动手适配。
+  - [Yogurt](https://acidify.ntqqrev.org/yogurt/start) - Linux 协议实现，目前没有适配 Onebot11 通信协议，需动手适配。
 
 :::
 
 ::: info 备注
 
 Bot 有多账号在同一个环境中时的消息去重机制。因此您可以放心大胆地部署。不会发生“发送一条指令返回多个结果“的情况。
+
+如果您使用的框架支持简单的消息过滤（如 LLBot，go-cqhttp），请启用这个功能，并仅允许以 `!` 开头和其他 Yumu 指令相关的消息上报，这不仅可以保护您的隐私，也可以大幅节省服务器的带宽。
 
 :::
 
