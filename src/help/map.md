@@ -266,6 +266,10 @@ Map Minus 已更新至 v6.1 版本。这个版本重构了算法，相比于 v4 
 
 如果要指定榜单类型，则需要您使用链接绑定，并且同时是 osu!supporter。
 
+这个面板设计有参考 fluXis 的榜单界面：
+
+![](https://yumemuzi.s-ul.eu/yumu/qGQ3YCVN)
+
 :::
 
 ## <HopeIcon icon="list-ol"/> 8 查询群内谱面排行榜 !ymgroupleaderboard (!l) {id=groupleaderboard}

@@ -19,11 +19,18 @@ copyright: false
 
 # 比赛指令
 
-## <HopeIcon icon="elevator"/> ~~1 查询匹配信息 !ymmatch (!ma)~~ {id=match}
+## <HopeIcon icon="elevator"/> 1 查询匹配信息 !ymquickplay (!qp) {id=quickplay}
+
+**使用方法**
+
+!ymquickplay / qp / rp (**玩家名**) (**`#`序号**)
+
+- **<HopeIcon icon="address-card"/> 玩家名**：需要查询的玩家名称。留空默认查询自己。
+- **<HopeIcon icon="slash"/> 序号**：需要查询的场次序号（并非房间号）。留空默认查询最近的一场 (#1)。
 
 ::: info 备注
 
-在不久后的将来，这将会作为 quick play 功能的信息面板。
+预览版功能。功能目前尚不完善。如果出现了问题，请及时反馈。
 
 :::
 
