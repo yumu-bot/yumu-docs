@@ -122,7 +122,7 @@ expired="限制已解除"
   - 需要你有一个安卓设备来挂框架和 QQ。我的古董机已经变成暖手宝了。
   - 如果你只有安卓设备，可以尝试。记得保活，并关闭各种省电策略。
 - 主要基于协议（需搭配签名服务器）：
-  - [icqq.js](https://github.com/icqqjs) + [onebots](github.com/lc-cn/onebots)
+  - [icqq.js](https://github.com/icqqjs) + [onebots](https://github.com/lc-cn/onebots)
     - 安卓协议实现，邀请制。
   - [LagrangeV2](https://github.com/LagrangeDev/LagrangeV2/) 
     - Linux 协议实现，[Lagrange.Core](https://github.com/LagrangeDev/Lagrange.Core) 的新版本，目前没有适配 Onebot11 通信协议，需动手适配。
