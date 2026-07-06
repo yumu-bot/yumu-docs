@@ -7,7 +7,11 @@ export default defineUserConfig({
 
     bundler: viteBundler(),
 
-    lang: "zh-CN", title: "Yumu Docs", description: "Yumu Docs",
+    lang: "zh-CN",
+
+    title: "Yumu Docs",
+    description: "雨沐机器人文档站",
 
     theme,
+
 });

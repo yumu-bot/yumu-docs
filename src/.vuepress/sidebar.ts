@@ -28,10 +28,19 @@ export default sidebar({
               expanded: false,
               children: "structure"
           },
+          {
+              icon: "user",
+              text: "玩家指令",
+              prefix: "player/",
+              link: "player/",
+              collapsible: true,
+              expanded: false,
+              children: "structure"
+          },
       ],
     },
      {
-      text: "部署",
+      text: "使用",
       icon: "circle-nodes",
       prefix: "deploy/",
       link: "deploy/",

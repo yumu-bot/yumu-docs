@@ -1,5 +1,5 @@
 ---
-title: 部署
+title: 使用
 index: false
 icon: circle-nodes
 date: 2025-10-19
@@ -14,10 +14,9 @@ footer: Yumu Docs - 部署
 copyright: false
 ---
 
-## 部署
+现在雨沐机器人支持以下五种方式部署或使用。
 
-现在雨沐机器人支持以下四种方式部署或使用。点击卡片即可跳转到对应界面：
-
+点击卡片即可跳转到对应界面。
 
 <VPCard
 title="官方支持"

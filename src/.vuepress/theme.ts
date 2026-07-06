@@ -8,7 +8,7 @@ export default hopeTheme({
 
     favicon: "/favicon.ico",
 
-    hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+    hostname: "https://docs.365246692.xyz/",
 
     logo: "/favicon.ico",
 
@@ -22,7 +22,7 @@ export default hopeTheme({
 
     docsRepo: "https://github.com/yumu-bot/yumu-docs",
 
-    docsDir: "src", // navbar
+    docsDir: "src",
     navbar,
     navbarAutoHide: "mobile",
 
@@ -43,6 +43,17 @@ export default hopeTheme({
     },
 
     plugins: {
+        seo: {
+            canonical: "https://docs.365246692.xyz/",
+        },
+
+        sitemap: {
+            excludePaths: [
+                "/wiki/**",
+                "/wiki/"
+            ],
+        },
+
         components: {
             components: [
                 "Badge",

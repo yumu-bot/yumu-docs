@@ -10,6 +10,12 @@ export default navbar([
   },
 
   {
+    text: "使用",
+    icon: "circle-nodes",
+    link: "deploy/",
+  },
+
+  {
     text: "字段",
     icon: "key",
     link: "tips/field/",
