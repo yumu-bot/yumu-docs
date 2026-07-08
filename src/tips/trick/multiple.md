@@ -12,13 +12,21 @@ order: 2
 
 ::: tip 示例
 
-
-
 比如[玩家/获取主页链接](../../help/player/mutual.md)功能：如果要获取多个玩家的主页链接，可以这样输入：
 
+``` qq
 !mu pippi, mocha
+```
 
 此时 `, ` 作为分隔符。
+
+机器人将会这样返回：
+
+``` qq
+@pippi: https//osu.ppy.sh/users/1
+@mocha: https//osu.ppy.sh/users/2
+
+```
 
 :::
 

@@ -5,14 +5,6 @@ index: false
 footer: Yumu Docs - 小提示
 copyright: false
 ---
-## 目录
 
-### Bot 功能
-
-- [Bot 功能](botFunction/botFunction.md)
-- ...
-
-### osu! 冷知识
-
-- [osu! 冷知识](osuTrivia/osuTrivia.md)
-- ...
+- [字段](field/README.md)
+- [技巧](trick/README.md)

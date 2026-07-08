@@ -45,7 +45,6 @@ export default sidebar({
       prefix: "deploy/",
       link: "deploy/",
       children: "structure",
-      // children:["botFunction"]
     },
      {
       text: "小提示",
@@ -53,7 +52,6 @@ export default sidebar({
       prefix: "tips/",
       link: "tips/",
       children: "structure",
-      // children:["botFunction"]
     },
     {
       text: "维基",
@@ -61,7 +59,6 @@ export default sidebar({
       prefix: "wiki/",
       link: "wiki/",
       children: "structure",
-      // children:["botFunction"]
     },
     {
       text: "关于",
