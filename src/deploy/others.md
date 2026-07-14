@@ -14,9 +14,19 @@ copyright: false
 
 ## Discord
 
-Discord 部分功能目前暂时荒废，无法使用。
+<VPCard
+title="YumuBot#2604"
+desc="试运营账号<br />（请邀请我！）"
+logo="https://cdn.discordapp.com/app-icons/1362820888914821320/825a0531442a2e826c593de8c610f3f3.png"
+link="https://discord.com/oauth2/authorize?client_id=1362820888914821320&permissions=277025778752&scope=bot%20applications.commands&response_type=code"
+background="rgba(74, 190, 21,0.15)"
+/>
 
-未来可能会重新修复并上线。
+仅保证最低程度的运行，如果科学上网挂了，就没法用。
+
+暂时不支持绑定。
+
+你可以邀请来试用一下。未来会部署 Discord 的绑定流程。
 
 ## HTTP GET/SET
 
@@ -25,5 +35,7 @@ Discord 部分功能目前暂时荒废，无法使用。
 ## Yumu APP
 
 [yumu-app](https://github.com/yumu-bot/yumu-app)
+
+[yumu-app-next?](https://www.bilibili.com/video/BV1GJ411x7h7/)
 
 咕了。
