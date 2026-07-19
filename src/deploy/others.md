@@ -18,7 +18,7 @@ copyright: false
 title="YumuBot#2604"
 desc="试运营账号<br />（请邀请我！）"
 logo="https://cdn.discordapp.com/app-icons/1362820888914821320/825a0531442a2e826c593de8c610f3f3.png"
-link="https://discord.com/oauth2/authorize?client_id=1362820888914821320&permissions=277025778752&scope=bot%20applications.commands&response_type=code"
+link="https://discord.com/oauth2/authorize?client_id=1362820888914821320&permissions=277025778752&scope=bot%20applications.commands"
 background="rgba(74, 190, 21,0.15)"
 />
 
