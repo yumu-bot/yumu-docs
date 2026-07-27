@@ -39,6 +39,14 @@ link="https://qm.qq.com/q/zK2BggSQcU"
 background="rgba(246, 142, 85,0.15)"
 />
 
+3145729213 (雨沐) 账号解封倒计时：
+
+<Countdown
+time="2026-08-26T09:26:00"
+image="https://q1.qlogo.cn/g?b=qq&nk=3145729213&s=640"
+expired="限制已解除"
+/>
+
 ::: danger 警告
 
 邀请分身机器人之前请确认...
