@@ -16,35 +16,35 @@ copyright: false
 开发者有自己主营的分身账号，来搭载雨沐机器人。开发者会优先保证这些分身账号正常运行。
 
 <VPCard
-  title="3145729213"
-  desc="目前主要运行的账号<br />（请邀请我！）"
-  logo="https://q1.qlogo.cn/g?b=qq&nk=3145729213&s=640"
-  link="https://qm.qq.com/q/p3kK5xsBBC"
-  background="rgba(74, 190, 21,0.15)"
-/>
-
-<VPCard
 title="2070701187"
 desc="后备运行的账号<br />（只保留关键群，不接受申请）"
 logo="https://q1.qlogo.cn/g?b=qq&nk=2070701187&s=640"
 link="https://qm.qq.com/q/lPIJdXnajC"
-background="rgba(253,220,138,0.15)"  
+background="rgba(74,190,21,0.15)"
 />
 
 <VPCard
 title="1563653406"
-desc="待命的账号<br />（未挂载，不接受申请）"
+desc="待命的账号<br />~~（未挂载，不接受申请）~~ 可申请，但是还没有部署"
 logo="https://q1.qlogo.cn/g?b=qq&nk=1563653406&s=640"
 link="https://qm.qq.com/q/zK2BggSQcU"
-background="rgba(246, 142, 85,0.15)"
+background="rgba(253,220,138,0.15)"  
+/>
+
+<VPCard
+title="3145729213"
+desc="目前主要运行的账号<br />~~（请邀请我！）~~"
+logo="https://q1.qlogo.cn/g?b=qq&nk=3145729213&s=640"
+link="https://qm.qq.com/q/p3kK5xsBBC"
+background="rgba(246,142,85,0.15)"
 />
 
 3145729213 (雨沐) 账号解封倒计时：
 
 <Countdown
-time="2026-08-26T09:26:00"
-image="https://q1.qlogo.cn/g?b=qq&nk=3145729213&s=640"
-expired="限制已解除"
+  time="2026-08-26T09:26:00"
+  image="https://q1.qlogo.cn/g?b=qq&nk=3145729213&s=640"
+  expired="限制已解除"
 />
 
 ::: danger 警告
