@@ -17,18 +17,18 @@ copyright: false
 
 <VPCard
 title="1563653406"
-desc="待命的账号<br />（优先接受申请）"
+desc="待命的账号<br />（不一定接受申请，我先正常跑一段时间）"
 logo="https://q1.qlogo.cn/g?b=qq&nk=1563653406&s=640"
 link="https://qm.qq.com/q/zK2BggSQcU"
-background="rgba(253,220,138,0.15)"  
+background="rgba(74,190,21,0.15)"
 />
 
 <VPCard
 title="2070701187"
-desc="后备运行的账号<br />（只保留关键群，不接受申请）"
+desc="目前主要被封的账号<br />（别踢我！）"
 logo="https://q1.qlogo.cn/g?b=qq&nk=2070701187&s=640"
 link="https://qm.qq.com/q/lPIJdXnajC"
-background="rgba(74,190,21,0.15)"
+background="rgba(246,142,85,0.15)"
 />
 
 <VPCard
@@ -39,12 +39,20 @@ link="https://qm.qq.com/q/p3kK5xsBBC"
 background="rgba(246,142,85,0.15)"
 />
 
-3145729213 (雨沐) 账号解封倒计时：
+3145729213 账号解封倒计时：
 
 <Countdown
   time="2026-08-26T09:26:00"
   image="https://q1.qlogo.cn/g?b=qq&nk=3145729213&s=640"
   expired="限制已解除"
+/>
+
+2070701187 账号解封倒计时：
+
+<Countdown
+time="2026-08-09T09:09:00"
+image="https://q1.qlogo.cn/g?b=qq&nk=2070701187&s=640"
+expired="限制已解除"
 />
 
 ::: danger 警告
