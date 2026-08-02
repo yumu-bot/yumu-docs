@@ -50,7 +50,7 @@ background="rgba(246,142,85,0.15)"
 2070701187 账号解封倒计时：
 
 <Countdown
-time="2026-08-09T09:09:00"
+time="2026-08-05T09:09:00"
 image="https://q1.qlogo.cn/g?b=qq&nk=2070701187&s=640"
 expired="限制已解除"
 />
