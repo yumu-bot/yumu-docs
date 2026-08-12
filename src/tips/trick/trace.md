@@ -4,7 +4,9 @@ icon: backward-fast
 order: 1
 ---
 
-在 [v0.7.0 版本](https://github.com/yumu-bot/yumu-bot/releases/tag/v0.7.0)，机器人引入了回溯机制，也就是记录同一群聊下，所有用户使用指令时留下的关键数据，比如 ::hashtag:: 谱面编号。
+在 [v0.7.0 版本](https://github.com/yumu-bot/yumu-bot/releases/tag/v0.7.0)，机器人引入了回溯机制，
+
+也就是记录同一群聊下，所有用户使用指令时留下的关键数据，比如 ::hashtag:: 谱面编号。
 
 这在很多情况下很有用，可以方便玩家直接纵向比对数据，或是省略繁琐的参数输入等。
 

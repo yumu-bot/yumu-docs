@@ -1,7 +1,7 @@
 ---
 title: 玩家名
 icon: address-card
-order: 2
+order: 3
 category: 字段
 tag:
 - 字段

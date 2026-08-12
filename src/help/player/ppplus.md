@@ -8,7 +8,7 @@ PerformancePlus (PP+) 是一个民间 osu! 主模式的排名系统，旨在更�
 
 ::: tip 提示
 
-~~PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已于 2017 年停止维护，功能暂不可用。~~
+PP+ 的官网 [Syrin.me](https://syrin.me/pp+/) 已于 2017 年停止维护，已经无法通过官网来查询或刷新数据。
 
 但是 Syrin 把他移植进了 Lazer 里！并且可以通过 Docker 挂载并运行。
 
@@ -22,7 +22,7 @@ PerformancePlus (PP+) 是一个民间 osu! 主模式的排名系统，旨在更�
 
 @tab ::gamepad:: 游戏模式
 
-可选。参见：[成绩/绑定游戏模式 (SM)](../scores/mode.md)
+可选。参见：[字段/游戏模式](../../tips/field/mode.md)
 
 @tab:active ::address-card:: 玩家名
 
@@ -38,7 +38,7 @@ PerformancePlus (PP+) 是一个民间 osu! 主模式的排名系统，旨在更�
 
 @tab ::gamepad:: 游戏模式
 
-可选。参见：[成绩/绑定游戏模式 (SM)](../scores/mode.md)
+可选。参见：[字段/游戏模式](../../tips/field/mode.md)
 
 @tab ::address-card:: 玩家名
 

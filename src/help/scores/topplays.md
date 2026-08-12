@@ -14,7 +14,7 @@ order: 12
 
 @tab:active ::gamepad:: 游戏模式
 
-可选。参见：[成绩/绑定游戏模式 (SM)](./mode.md)
+可选。参见：[字段/游戏模式](../../tips/field/mode.md)
 
 默认查询 ::circle-dot:: 主模式。
 

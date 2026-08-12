@@ -15,7 +15,7 @@ order: 3
 
 @tab ::gamepad:: 游戏模式
 
-可选。参见：[成绩/绑定游戏模式 (SM)](./mode.md)
+可选。参见：[字段/游戏模式](../../tips/field/mode.md)
 
 @tab ::address-card:: 玩家名
 
@@ -49,7 +49,7 @@ order: 3
 
 @tab ::gamepad:: 游戏模式
 
-可选。参见：[成绩/绑定游戏模式 (SM)](./mode.md)
+可选。参见：[字段/游戏模式](../../tips/field/mode.md)
 
 @tab ::address-card:: 玩家名
 

@@ -37,6 +37,15 @@ export default sidebar({
               expanded: false,
               children: "structure"
           },
+          {
+              icon: "map",
+              text: "谱面指令",
+              prefix: "beatmap/",
+              link: "beatmap/",
+              collapsible: true,
+              expanded: false,
+              children: "structure"
+          },
       ],
     },
      {

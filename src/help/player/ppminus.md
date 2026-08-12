@@ -6,6 +6,8 @@ order: 6
 
 **PP-** 是 YumuBot 参考了 [PP+](https://syrin.me/pp+/) 等系统，开发的一套特殊评价系统，来从不同角度量化玩家的~~实力~~部分数据。
 
+参见：[玩家/查询 PP+](./ppplus.md)
+
 ::::: info 使用方法
 
 !ppminus / pm / 表现分减 (`:` ::gamepad:: 游戏模式) ( ::address-card:: 玩家名)
@@ -14,7 +16,7 @@ order: 6
 
 @tab ::gamepad:: 游戏模式
 
-可选。参见：[成绩/绑定游戏模式 (SM)](../scores/mode.md)
+可选。参见：[字段/游戏模式](../../tips/field/mode.md)
 
 @tab:active ::address-card:: 玩家名
 
@@ -30,7 +32,7 @@ order: 6
 
 @tab ::gamepad:: 游戏模式
 
-可选。参见：[成绩/绑定游戏模式 (SM)](../scores/mode.md)
+可选。参见：[字段/游戏模式](../../tips/field/mode.md)
 
 @tab ::address-card:: 玩家名
 

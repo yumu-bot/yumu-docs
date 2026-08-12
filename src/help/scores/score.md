@@ -14,7 +14,7 @@ order: 5
 
 @tab ::gamepad:: 游戏模式
 
-可选。参见：[成绩/绑定游戏模式 (SM)](./mode.md)
+可选。参见：[字段/游戏模式](../../tips/field/mode.md)
 
 @tab:active ::hashtag:: 谱面编号/成绩编号
 
@@ -52,7 +52,7 @@ order: 5
 
 @tab ::gamepad:: 游戏模式
 
-可选。参见：[成绩/绑定游戏模式 (SM)](./mode.md)
+可选。参见：[字段/游戏模式](../../tips/field/mode.md)
 
 @tab:active ::hashtag:: 谱面编号/成绩编号
 
