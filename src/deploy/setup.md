@@ -28,17 +28,16 @@ copyright: false
 
 ::: info 运行环境
 
-- JDK 21，或是支持虚拟线程（Virtual Thread）的其他更高版本。
+- Java Runtime Environment (JRE，JDK 包含它)
+  - 最低 [22](https://www.oracle.com/java/technologies/downloads/)，或者支持虚拟线程、[FFM API](https://inside.java/2025/06/14/javaone-ffm/) 的更高正式版本
   - 程序运行时，至少需要 400MB 留给代码，其他每多一个 QQ 链接，堆内存需要再加 20 MB。
   - 推荐开启 ZGC。
   - 在只有一个 QQ 链接时，这样启动：`java -XX:+UseZGC -Xmx2G -Xms1G -jar nowbot.jar`。
-- PostgreSQL 15，用来存储玩家数据，节省 osu!API 开销。
+- PostgreSQL 数据库
+  - 记录存储各种信息，避免鸿儒 ppy 的 api
+  - 最低 15，越新越好
   - 部分数据库可能需要您设置 ==GIN== 索引或 ==pg-tram== 三元组索引，替换 JPA 无法生成的除 B-tree 之外的索引。
   - 在低并发下可以无需设置。
-- Redis 分布式缓存
-  - 暂时无法关闭，您需要在 `6379` 端口上开启服务。可不设密码。
-  - 主服务基本没有用到它，但是又必须依赖它。
-  - 以后修改。
 
 :::
 
