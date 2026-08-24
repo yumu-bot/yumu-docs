@@ -60,3 +60,5 @@ order: 3
 most_played 是最特殊的搜索模式；您可以输入 !em 快捷调用它。
 
 :::
+
+![谱面探索面板](https://yumemuzi.s-ul.eu/yumunext/hNSahyWT)

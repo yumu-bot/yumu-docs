@@ -20,4 +20,4 @@ order: 8
 
 :::::
 
-![主页奖牌面板，指令：!bd chocomint](https://yumemuzi.s-ul.eu/yumu/ZTbK1eYN)
+![主页奖牌面板](https://yumemuzi.s-ul.eu/yumunext/2MBKx8v4)

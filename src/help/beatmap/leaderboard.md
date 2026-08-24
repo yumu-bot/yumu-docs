@@ -6,8 +6,6 @@ order: 7
 
 可以查询谱面的排行榜（包括激光版成绩的总榜），以及稳定版排行榜。
 
-
-
 ::::: info 使用方法
 
 !leaderboard / l / 查询谱面排行 (`:` ::gamepad:: 游戏模式) ( ::hashtag:: 谱面编号) (`#` ::ruler-horizontal:: 偏移量或区间) (`*` ::globe:: 范围) (`+` ::music:: 模组名)
@@ -72,10 +70,18 @@ order: 7
 
 :::::
 
+![谱面排行面板](https://yumemuzi.s-ul.eu/yumunext/x2DTLSRX)
+
 ::: tip 提示
 
-这个面板设计有参考 fluXis 的榜单界面：
+如果查询的谱面没有排行榜，则会自动转换为群组排行面板。参阅：[谱面/查询群组排行](./groupleaderboard.md)
 
-![](https://yumemuzi.s-ul.eu/yumu/qGQ3YCVN)
+:::
+
+::: tip 提示
+
+这个面板设计有参考 fluXis 的谱面排行：
+
+![fluXis 的谱面排行](https://yumemuzi.s-ul.eu/yumu/qGQ3YCVN)
 
 :::

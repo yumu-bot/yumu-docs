@@ -40,7 +40,7 @@ Map Minus 已更新至 v6.1 版本。这个版本重构了算法，相比于 v4 
 
 :::::
 
-![谱面 Minus 面板，指令：!mm 3281146。这个结果很好地表现了这张谱面含有过于困难的叠键](https://yumemuzi.s-ul.eu/yumu/jKjRsOyL)
+![谱面 Minus 面板](https://yumemuzi.s-ul.eu/yumunext/YiTNZtvS)
 
 ::: details 参数详解
 

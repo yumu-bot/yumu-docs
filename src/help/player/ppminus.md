@@ -42,7 +42,7 @@ order: 6
 
 :::::
 
-![PP- 面板，指令：!pm siyuyuko](https://yumemuzi.s-ul.eu/yumu/fQEqgpcn)
+![PP- 面板](https://yumemuzi.s-ul.eu/yumunext/CUgAO7Y6)
 
 ::: details 数值解析
 

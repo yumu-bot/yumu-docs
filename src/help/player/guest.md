@@ -26,4 +26,4 @@ order: 9
 
 :::::
 
-![客串谱师面板，指令：!gd wIntEr7z](https://yumemuzi.s-ul.eu/yumu/arCbhz6f)
+![客串谱师面板](https://yumemuzi.s-ul.eu/yumunext/AvylIEds)

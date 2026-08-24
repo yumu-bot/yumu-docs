@@ -52,7 +52,7 @@ order: 1
 
 :::::
 
-![谱面信息面板，指令：!m 3667014 98 0.9 +HD](https://yumemuzi.s-ul.eu/yumu/zSsTDPQJ)
+![谱面信息面板](https://yumemuzi.s-ul.eu/yumunext/2Hs7EmN4)
 
 ::: tip 提示
 

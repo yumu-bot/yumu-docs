@@ -34,7 +34,7 @@ order: 5
 
 目前这个参数无效。
 
-@tab ::address-card:: 玩家名
+@tab:active ::address-card:: 玩家名
 
 可选。参见：[字段/玩家名](../../tips/field/player.md)
 
@@ -42,5 +42,5 @@ order: 5
 
 :::::
 
-![玩家技巧面板，指令：!kv Kalkai:dressurf](https://yumemuzi.s-ul.eu/yumu/WJkBBjol)
+![玩家技巧面板](https://yumemuzi.s-ul.eu/yumunext/yWBBgkpJ)
 

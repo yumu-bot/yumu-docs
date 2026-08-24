@@ -30,4 +30,4 @@ order: 7
 
 :::::
 
-![战队信息面板，指令：!team *1](https://yumemuzi.s-ul.eu/yumu/bl3yU8gB)
+![战队信息面板](https://yumemuzi.s-ul.eu/yumunext/AokfJPlS)

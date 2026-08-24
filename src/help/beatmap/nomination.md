@@ -20,8 +20,6 @@ order: 5
 
 :::::
 
-![上架流程面板，指令：!n 2016251](https://yumemuzi.s-ul.eu/yumu/m2nBN8Te)
-
 ::: details 内容解析
 
 - **左上角**：玩家的 ::circle-user:: 头像、::heading:: 名称、玩家所属的 ::users:: 组织。
@@ -43,3 +41,5 @@ order: 5
 - **G/L**：::icons:: 曲风和 ::language:: 语言 (Genre / Language)。
 
 :::
+
+![上架流程面板](https://yumemuzi.s-ul.eu/yumunext/5D4erR4Q)
