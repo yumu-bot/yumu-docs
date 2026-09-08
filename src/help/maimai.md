@@ -180,7 +180,7 @@ copyright: false
 | 版本全称 | 代号 | 简称 | 版本代号 | 版本号 |
 | :-: | :-: | :-: | :-: | :-: |
 | maimai | 初[^1] | m, mi, mai | 0.1 | 10000 |
-| maimai PLUS | 真 | m+, pl, pls, mi+, mai+ | 0.15 | 11000 |
+| maimai PLUS | 真 | m+, mp, pl, pls, mi+, mai+ | 0.15 | 11000 |
 | maimai GreeN | 超 | g, gr, gre, grn | 0.2 | 12000 |
 | maimai GreeN PLUS | 檄 | g+, gr+, gre+, grn+ | 0.25 | 13000 |
 | maimai ORANGE | 橙 | o, or, org | 0.3 | 14000 |
@@ -195,7 +195,7 @@ copyright: false
 | ALL FiNALE[^2] | 舞 | n+, afn, fn+ | 0.75 | - |
 | maimai でらっくす | 熊 | d, dx, dlx, 2020 | 1.0 | 20000 |
 | maimai でらっくす PLUS[^3] | 華 | d+, dx+, dlx+ | 1.05 | 20500 |
-| maimai でらっくす Splash | 爽 | s, sp, spl, 2021 | 1.1 | 21000 |
+| maimai でらっくす Splash | 爽 | s, sl, spl, 2021 | 1.1 | 21000 |
 | maimai でらっくす Splash PLUS[^3] | 煌 | s+, sp+, spl+ | 1.15 | 21500 |
 | maimai でらっくす UNiVERSE | 星 | u, un, uv, unv, 2022 | 1.2 | 22000 |
 | maimai でらっくす UNiVERSE PLUS[^3] | 宙 | u+, un+, uv+, unv+ | 1.25 | 22500 |
@@ -205,8 +205,10 @@ copyright: false
 | maimai でらっくす BUDDiES PLUS[^3] | 宴 | b+, bd+, bud+ | 1.45 | 24500 |
 | maimai でらっくす PRiSM | 鏡 | r, pr, pri, prs, 2025 | 1.5 | 25000 |
 | maimai でらっくす PRiSM PLUS | 彩 | r+, pr+, pri+, prs+, 2026 | 1.55 | 25500 |
-| maimai でらっくす CiRCLE[^4] | 丸 | c, ci, cr, cc, cir | 1.6 | 26000[^5] |
-| maimai でらっくす CiRCLE PLUS[^4][^5] | - | c+, ci+, cr+, cc+, cir+, 2027 | 1.65 | 26500[^5] |
+| maimai でらっくす CiRCLE[^4] | 丸 | c, ci, cr, cc, cir, 2027 | 1.6 | 26000 |
+| maimai でらっくす CiRCLE PLUS[^4] | 珠[^5] | c+, ci+, cr+, cc+, cir+ | 1.65 | 26500 |
+| maimai でらっくす MAGiCAL[^4] | 魔[^5] | a, ma, mg, mag, mgc, 2028 | 1.7 | 27000 |
+| maimai でらっくす MAGiCAL PLUS[^4] | 奏[^5] | a+, ma+, mg+, mag+, mgc+ | 1.75 | 27500 |
 
 :::
 
@@ -275,4 +277,4 @@ copyright: false
 [^2]: 这个版本指的是包括 `FiNALE` 版本之前的所有歌曲。实际上并不指代特定的游戏框体。
 [^3]: 当前国服的命名规则是”舞萌DX“+推出的年份，因此，无法查询到这几个 PLUS 版本的成绩（都归类到非 PLUS 版本中了）。
 [^4]: 目前国服并没有这个版本的歌曲。
-[^5]: 该名称为推测名称。
+[^5]: 该名称为推测的临时名称。一切以官方发布为准。
