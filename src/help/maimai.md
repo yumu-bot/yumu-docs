@@ -184,17 +184,17 @@ copyright: false
 | maimai GreeN | 超 | g, gr, gre, grn | 0.2 | 12000 |
 | maimai GreeN PLUS | 檄 | g+, gr+, gre+, grn+ | 0.25 | 13000 |
 | maimai ORANGE | 橙 | o, or, org | 0.3 | 14000 |
-| maimai ORANGE PLUS | 暁 | o+, or+, org+ | 0.35 | 15000 |
+| maimai ORANGE PLUS | 暁 | o+, or+, org+, 晓 | 0.35 | 15000 |
 | maimai PiNK | 桃 | p, pk, pnk | 0.4 | 16000 |
-| maimai PiNK PLUS | 櫻 | p+, pk+, pnk+ | 0.45 | 17000 |
+| maimai PiNK PLUS | 櫻 | p+, pk+, pnk+, 樱 | 0.45 | 17000 |
 | maimai MURASAKi | 紫 | k, ms, msk | 0.5 | 18000 |
 | maimai MURASAKi PLUS | 堇 | k+, ms+, msk+ | 0.55 | 18500 |
 | maimai MiLK | 白 | l, mk, mlk | 0.6 | 19000 |
 | maimai MiLK PLUS | 雪 | l+, mk+, mlk+ | 0.65 | 19500 |
-| maimai FiNALE | 輝 | n, fn, fnl | 0.7 | 19900 |
+| maimai FiNALE | 輝 | n, fn, fnl, 辉 | 0.7 | 19900 |
 | ALL FiNALE[^2] | 舞 | n+, afn, fn+ | 0.75 | - |
 | maimai でらっくす | 熊 | d, dx, dlx, 2020 | 1.0 | 20000 |
-| maimai でらっくす PLUS[^3] | 華 | d+, dx+, dlx+ | 1.05 | 20500 |
+| maimai でらっくす PLUS[^3] | 華 | d+, dx+, dlx+, 华 | 1.05 | 20500 |
 | maimai でらっくす Splash | 爽 | s, sl, spl, 2021 | 1.1 | 21000 |
 | maimai でらっくす Splash PLUS[^3] | 煌 | s+, sp+, spl+ | 1.15 | 21500 |
 | maimai でらっくす UNiVERSE | 星 | u, un, uv, unv, 2022 | 1.2 | 22000 |
@@ -203,10 +203,10 @@ copyright: false
 | maimai でらっくす FESTiVAL PLUS[^3] | 祝 | f+, fs+, fes+ | 1.35 | 23500 |
 | maimai でらっくす BUDDiES | 双 | b, bd, bud, 2024 | 1.4 | 24000 |
 | maimai でらっくす BUDDiES PLUS[^3] | 宴 | b+, bd+, bud+ | 1.45 | 24500 |
-| maimai でらっくす PRiSM | 鏡 | r, pr, pri, prs, 2025 | 1.5 | 25000 |
+| maimai でらっくす PRiSM | 鏡 | r, pr, pri, prs, 2025, 镜 | 1.5 | 25000 |
 | maimai でらっくす PRiSM PLUS | 彩 | r+, pr+, pri+, prs+, 2026 | 1.55 | 25500 |
 | maimai でらっくす CiRCLE[^4] | 丸 | c, ci, cr, cc, cir, 2027 | 1.6 | 26000 |
-| maimai でらっくす CiRCLE PLUS[^4] | 珠[^5] | c+, ci+, cr+, cc+, cir+ | 1.65 | 26500 |
+| maimai でらっくす CiRCLE PLUS[^4] | 廻 | c+, ci+, cr+, cc+, cir+, 回 | 1.65 | 26500 |
 | maimai でらっくす MAGiCAL[^4] | 魔[^5] | a, ma, mg, mag, mgc, 2028 | 1.7 | 27000 |
 | maimai でらっくす MAGiCAL PLUS[^4] | 奏[^5] | a+, ma+, mg+, mag+, mgc+ | 1.75 | 27500 |
 
