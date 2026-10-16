@@ -34,7 +34,17 @@ copyright: false
 
 请使用支持 OneBot V11 协议的 QQ 客户端，配置==反向 WebSocket（客户端）==协议代理链接为下即可。
 
-::tower-cell:: <button class="link-like" @click="copyToClipboard2">{{ copyText2 }}</button> ← 点击复制
+::tower-cell:: 分流1 <button class="link-like" @click="copyToClipboard(linkList[0])">点击复制</button>
+
+```
+'ws://121.41.63.60:11735/pub/onebotSocket'
+```
+
+::tower-cell:: 分流2 <button class="link-like" @click="copyToClipboard(linkList[1])">点击复制</button>
+
+```
+'ws://121.41.63.60:11735/pub/onebotSocket'
+```
 
 @tab ::people-pulling:: 详细部署
 
@@ -116,13 +126,13 @@ copyright: false
 :::
 
 <script setup>
-import { ref } from 'vue';
 
-const link = 'ws://121.41.63.60:11735/pub/onebotSocket';
+const linkList = [
+'ws://121.41.63.60:11735/pub/onebotSocket',
+'ws://82.156.247.33:11735/pub/onebotSocket'
+];
 
-const copyText2 = ref(link);
-
-async function copyToClipboard2() {
+async function copyToClipboard(link) {
   const text = link;
 
   try {
@@ -146,17 +156,11 @@ async function copyToClipboard2() {
       }
     }
     
-    copyText2.value = '复制成功！';
-    setTimeout(() => {
-      copyText2.value = link
-    }, 2000)
+    alert('复制成功!');
 
   } catch (err) {
     console.error('复制失败:', err);
-    copyText2.value = '复制失败，请手动复制: ' + link;
-    setTimeout(() => {
-      copyText2.value = link;
-    }, 3000)
+    alert('复制失败，请手动复制');
   }
 }
 
