@@ -43,7 +43,7 @@ copyright: false
 ::tower-cell:: 分流2 <button class="link-like" @click="copyToClipboard(linkList[1])">点击复制</button>
 
 ```
-'ws://121.41.63.60:11735/pub/onebotSocket'
+'ws://82.156.247.33:11735/pub/onebotSocket'
 ```
 
 @tab ::people-pulling:: 详细部署
